@@ -99,16 +99,32 @@ async function sync(){
     if (remoteBehind) await gh("/gists/" + cfg.gist, {method:"PATCH", body:JSON.stringify({files:{[GIST_FILE]:{content:JSON.stringify(S)}}})});
     cfg.last = Date.now(); saveCfg();
     setSync("ok", "Đã đồng bộ lúc " + new Date().toLocaleTimeString("vi-VN", {hour:"2-digit", minute:"2-digit"}));
-    if (gotNew){ Q = null; render(); }
+    if (gotNew) refresh();
   } catch (e){
     if (e.status === 401) setSync("err", "Token sai hoặc đã hết hạn, vào Tiến độ để nhập lại");
     else if (e.status === 404){ cfg.gist = ""; saveCfg(); setSync("err", "Không thấy Gist, thử đồng bộ lại"); }
     else setSync("err", "Chưa đồng bộ được (" + (e.status || "mạng") + "), dữ liệu vẫn lưu trên máy");
   } finally { syncing = false; }
 }
-function queueSync(){ if (!cfg.token) return; clearTimeout(syncTimer); syncTimer = setTimeout(sync, 2500); }
-document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") sync(); else if (syncTimer){ clearTimeout(syncTimer); sync(); } });
+function queueSync(){ if (!cfg.token) return; clearTimeout(syncTimer); syncTimer = setTimeout(() => { syncTimer = null; sync(); }, 2500); }
+// Re-render with data pulled from the other device, without disturbing a card mid-review or text being typed.
+let pendingRender = false;
+function refresh(){
+  const a = document.activeElement;
+  if (a && /INPUT|TEXTAREA/.test(a.tagName)){ pendingRender = true; return; }
+  pendingRender = false;
+  if (!(tab === "cards" && cmode === "review" && Q && qi < Q.length)) Q = null;
+  render();
+}
+document.addEventListener("focusout", () => { if (pendingRender) setTimeout(refresh, 0); });
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible") sync();
+  else if (syncTimer){ clearTimeout(syncTimer); syncTimer = null; sync(); }
+});
+let lastFocusSync = 0;
+window.addEventListener("focus", () => { if (Date.now() - lastFocusSync > 5000){ lastFocusSync = Date.now(); sync(); } });
 window.addEventListener("online", sync);
+setInterval(() => { if (document.visibilityState === "visible" && !syncTimer) sync(); }, 20000);
 
 /* ---------- audio ---------- */
 const player = $("#player");

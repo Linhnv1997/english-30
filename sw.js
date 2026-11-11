@@ -1,6 +1,6 @@
 // App shell: network first (so updates land), cached copy when offline.
 // Audio: cache first, with Range support so iOS Safari can play cached files.
-const SHELL = "en30-shell-v1", AUDIO = "en30-audio", FONTS = "en30-fonts";
+const SHELL = "en30-shell-v2", AUDIO = "en30-audio", FONTS = "en30-fonts";
 const FILES = ["./", "index.html", "app.js", "data.js", "manifest.webmanifest", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", e => { e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES))); self.skipWaiting(); });
