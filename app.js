@@ -114,6 +114,7 @@ function refresh(){
   if (a && /INPUT|TEXTAREA/.test(a.tagName)){ pendingRender = true; return; }
   pendingRender = false;
   if (!(tab === "cards" && cmode === "review" && Q && qi < Q.length)) Q = null;
+  if (!(tab === "cards" && deck === "v3" && vmode === "review" && VQ && vqi < VQ.length)) VQ = null;
   render();
 }
 document.addEventListener("focusout", () => { if (pendingRender) setTimeout(refresh, 0); });
@@ -147,7 +148,7 @@ function setDay(n){ n = Math.min(30, Math.max(1, n)); if (n !== cur()){ put("cur
 $("#prev").onclick = () => setDay(cur() - 1);
 $("#next").onclick = () => setDay(cur() + 1);
 
-function dueCount(){ const q = buildQueue(); return q.due.length + q.fresh.length; }
+function dueCount(){ const q = buildQueue(), v = vReviewCounts(); return q.due.length + q.fresh.length + v.due + v.fresh; }
 function renderTabs(){
   const n = dueCount();
   $("#tabs").innerHTML = TABS.map(([k, l]) => `<button data-tab="${k}" ${k === tab ? 'aria-current="page"' : ""}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICON[k]}</svg>${l}${k === "cards" && n ? `<span class="badge">${n}</span>` : ""}</button>`).join("");
@@ -178,6 +179,11 @@ function vToday(){
 }
 
 function vCards(){
+  const dk = `<div class="seg" role="group" aria-label="Bộ thẻ">${[["d30","Lộ trình 30 ngày"],["v3","3000 từ + cụm từ"]].map(([k, l]) => `<button data-deck="${k}" aria-pressed="${deck === k}">${l}</button>`).join("")}</div>`;
+  if (deck === "v3") return dk + vV3();
+  return dk + vCards30();
+}
+function vCards30(){
   const seg = `<div class="seg" role="group" aria-label="Chế độ">${[["review","Ôn thẻ"],["list","Danh sách ngày " + cur()]].map(([k, l]) => `<button data-cm="${k}" aria-pressed="${cmode === k}">${l}</button>`).join("")}</div>`;
   if (cmode === "list") return seg + vList();
   if (!Q){ const b = buildQueue(); Q = b.due.concat(b.fresh); Q.freshTotal = b.freshTotal; qi = 0; flipped = false; again = []; }
@@ -289,6 +295,7 @@ function vProg(){
     <table class="t"><tr><th>Mức độ</th><th>Đã biết</th><th>Tổng</th></tr>${Object.entries(lv).map(([l, v]) => `<tr><td>${LV[l]}</td><td>${v[0]}</td><td>${v[1]}</td></tr>`).join("")}</table>
     <table class="t"><tr><th>Nguồn</th><th>Đã biết</th><th>Tổng</th></tr>${Object.entries(src).map(([k, v]) => `<tr><td>${k}</td><td>${v[0]}</td><td>${v[1]}</td></tr>`).join("")}</table>
   </div>
+  ${vSummary()}
   ${vSync()}
   <div class="card"><h3>Dùng offline</h3>
     <p class="mute">Tải sẵn toàn bộ audio (khoảng 25 MB) để học khi không có mạng.</p>
@@ -317,6 +324,154 @@ function vSync(){
     <p class="mute">Token chỉ lưu trên thiết bị này và chỉ đọc/ghi được Gist, không đụng tới code hay repo.</p></div>`;
 }
 
+/* ---------- 3000 workplace + TOEIC words (separate deck, loaded on demand) ---------- */
+// Status per word: none = chưa biết (default), "n" = đã xem, vẫn chưa biết, "l" = đang học (goes into review), "k" = đã biết.
+let deck = (() => { try { return localStorage.getItem("en30-deck") || "d30"; } catch (e) { return "d30"; } })();
+let V = null, vLoading = false, vmode = "check", vsrc = "all", vtopic = "all", vstat = "all", vq = "", vshow = 40;
+let vFlip = false, vUndo = [], VQ = null, vqi = 0, vAgain = [];
+const VST = {"": "Chưa biết", n: "Chưa biết", l: "Đang học", k: "Đã biết"};
+const vst = id => (get("v:" + id) || {}).s || "";
+const vAudio = id => `audio/v/${String(id).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}.mp3`;
+function loadV(){
+  if (V || vLoading) return; vLoading = true;
+  const s = document.createElement("script"); s.src = "vocab3000.js";
+  s.onload = () => { V = window.V3.map(r => ({id:r[1], w:r[1], pos:r[2], ipa:r[3], vi:r[4], ex:r[5], tp:r[6], src:r[7]})); render(); };
+  s.onerror = () => { vLoading = false; const el = $("#vload"); if (el) el.textContent = "Chưa tải được bộ từ. Kiểm tra mạng rồi mở lại tab."; };
+  document.head.appendChild(s);
+}
+const vMatch = v => (vsrc === "all" || v.src.includes(vsrc)) && (vtopic === "all" || v.tp === vtopic);
+function vReviewCounts(){                 // works from synced items alone, so the tab badge needs no word data
+  const t = today(); let due = 0, fresh = 0, intro = 0;
+  for (const k in S.items){
+    if (k.startsWith("v:") && S.items[k].s === "l"){ const c = get("vc:" + k.slice(2)); if (!c) fresh++; else if (c.due <= t) due++; }
+    else if (k.startsWith("vc:") && S.items[k].first === t) intro++;
+  }
+  return {due, fresh: Math.min(fresh, Math.max(0, (cfg.v3new || 20) - intro))};
+}
+function buildVQueue(){
+  const t = today(), due = [], fresh = []; let intro = 0;
+  V.forEach(v => { const c = get("vc:" + v.id); if (c && c.first === t) intro++;
+    if (vst(v.id) !== "l" || !vMatch(v)) return;
+    if (!c) fresh.push(v); else if (c.due <= t) due.push([v, c.due]); });
+  due.sort((a, b) => a[1] - b[1]);
+  return due.map(x => x[0]).concat(fresh.slice(0, Math.max(0, (cfg.v3new || 20) - intro)));
+}
+const TOPIC_VI = {"Office & admin":"Văn phòng","Meetings & communication":"Họp & giao tiếp","Finance & accounting":"Tài chính",
+  "Sales & marketing":"Bán hàng & marketing","HR & careers":"Nhân sự","Customers & service":"Khách hàng","Production & logistics":"Sản xuất & kho vận",
+  "Travel & events":"Đi lại & sự kiện","Technology":"Công nghệ","Law & contracts":"Pháp lý & hợp đồng","Property & facilities":"Cơ sở vật chất","General":"Chung",
+  "Meeting: opening & agenda":"Họp: mở đầu & agenda","Meeting: opinions":"Họp: nêu ý kiến","Meeting: agreeing & disagreeing":"Họp: đồng ý & phản đối",
+  "Meeting: clarifying":"Họp: hỏi lại cho rõ","Meeting: turns & interrupting":"Họp: xin lời & ngắt lời","Meeting: action items":"Họp: chốt việc cần làm",
+  "Meeting: closing":"Họp: kết thúc","Deadlines & scheduling":"Deadline & lịch","Problems & risks":"Sự cố & rủi ro","Presenting & explaining":"Trình bày",
+  "Negotiating & decisions":"Thương lượng & quyết định","Email & abbreviations":"Email & viết tắt","Online calls":"Họp online","Small talk":"Nói chuyện xã giao",
+  "Status updates":"Báo cáo tiến độ"};
+const SRC_VI = {TOEIC:"TOEIC", Business:"Business", Core:"Thông dụng", Phrase:"Cụm từ"};
+function vFilters(){
+  return `<div class="row"><select id="vsrc" class="btn sm grow" aria-label="Nguồn">${[["all","Mọi nguồn"],["Phrase","Cụm từ công việc & họp"],["TOEIC","TOEIC"],["Business","Business"],["Core","Thông dụng"]].map(([k, l]) => `<option value="${k}" ${vsrc === k ? "selected" : ""}>${l}</option>`).join("")}</select>
+  <select id="vtopic" class="btn sm grow" aria-label="Chủ đề"><option value="all">Mọi chủ đề</option>${Object.entries(TOPIC_VI).map(([k, l]) => `<option value="${esc(k)}" ${vtopic === k ? "selected" : ""}>${l}</option>`).join("")}</select></div>`;
+}
+function vCounts(){
+  const c = {u:0, l:0, k:0}; V.forEach(v => { if (!vMatch(v)) return; const s = vst(v.id); if (s === "l") c.l++; else if (s === "k") c.k++; else c.u++; }); return c;
+}
+function vRow(v){
+  const s = vst(v.id);
+  return `<div class="wi"><button class="play" data-va="${esc(v.id)}" aria-label="Nghe ${esc(v.w)}">${PLAY}</button>
+    <div class="t"><b>${esc(v.w)} <span class="mute">${v.ipa ? esc(v.ipa) + " · " + esc(v.pos) : "cụm từ"}</span></b><small>${esc(v.vi)}</small><small><i>${esc(v.ex)}</i></small></div>
+    <div class="seg vs" role="group" aria-label="Trạng thái ${esc(v.w)}">${[["l","~"],["k","✓"]].map(([k, l]) => `<button data-vset="${esc(v.id)}|${k}" aria-pressed="${s === k}" title="${VST[k]}">${l}</button>`).join("")}</div></div>`;
+}
+function vV3(){
+  if (!V){ loadV(); return `<div class="card empty" id="vload"><b>Đang tải 3000 từ…</b><p class="mute">Lần đầu mất vài giây.</p></div>`; }
+  const c = vCounts(), rv = vReviewCounts();
+  const nWords = V.filter(v => v.src !== "Phrase").length;
+  const partial = nWords < 3000 ? ` · <span title="Phần còn lại sẽ tự bổ sung, trạng thái đã chọn được giữ nguyên">đã có ${nWords}/3000 từ + ${V.length - nWords} cụm từ</span>` : "";
+  const head = `<div class="seg" role="group" aria-label="Chế độ 3000 từ">${[["check","Kiểm tra"],["review","Ôn tập" + (rv.due + rv.fresh ? ` (${rv.due + rv.fresh})` : "")],["browse","Tra cứu"]].map(([k, l]) => `<button data-vm="${k}" aria-pressed="${vmode === k}">${l}</button>`).join("")}</div>
+  ${vFilters()}
+  <p class="mute"><b style="color:var(--no)">${c.u}</b> chưa biết · <b style="color:var(--mid)">${c.l}</b> đang học · <b style="color:var(--ok)">${c.k}</b> đã biết${partial}</p>`;
+  if (vmode === "browse"){
+    const q = vq.trim().toLowerCase();
+    const list = V.filter(v => vMatch(v) && (vstat === "all" || (vstat === "u" ? !["l","k"].includes(vst(v.id)) : vst(v.id) === vstat)) && (!q || v.w.includes(q) || v.vi.toLowerCase().includes(q)));
+    return head + `<div class="card">
+      <input type="text" id="vq" placeholder="Tìm từ tiếng Anh hoặc nghĩa tiếng Việt" value="${esc(vq)}" autocapitalize="off" autocomplete="off">
+      <div class="seg" role="group" aria-label="Lọc trạng thái">${[["all","Tất cả"],["u","Chưa biết"],["l","Đang học"],["k","Đã biết"]].map(([k, l]) => `<button data-vst="${k}" aria-pressed="${vstat === k}">${l}</button>`).join("")}</div>
+      <p class="mute">${list.length} từ · bấm <b>~</b> để đưa vào ôn tập, <b>✓</b> nếu đã biết, bấm lại để bỏ.</p>
+      <div class="wl">${list.slice(0, vshow).map(vRow).join("")}</div>
+      ${list.length > vshow ? `<button class="btn" id="vmore">Xem thêm ${Math.min(40, list.length - vshow)} từ</button>` : ""}</div>`;
+  }
+  if (vmode === "check"){
+    const v = V.find(x => vMatch(x) && !vst(x.id));
+    if (!v) return head + `<div class="card empty"><b>Đã kiểm tra hết từ trong mục này</b><p class="mute">Đổi nguồn hoặc chủ đề, hoặc qua Tra cứu để xem lại những từ đã đánh dấu chưa biết.</p></div>`;
+    return head + `
+    <div class="card flash" id="vflash" role="button" tabindex="0" aria-label="Lật thẻ">
+      <div class="tags"><span class="tag">${esc(TOPIC_VI[v.tp] || v.tp)}</span><span class="row" style="gap:4px">${v.src.split(",").map(s => `<span class="tag src">${SRC_VI[s] || s}</span>`).join("")}</span></div>
+      <div class="term">${esc(v.w)}</div><div class="pos">${v.ipa ? esc(v.ipa) + " · " : ""}${v.pos === "phrase" ? "cụm từ" : esc(v.pos)}</div>
+      ${vFlip ? `<hr><div class="vi">${esc(v.vi)}</div><div class="ex">${esc(v.ex)}</div>` : `<div class="hint">Bạn có biết từ này không? Chạm để xem nghĩa</div>`}
+      <div class="count">còn ${c.u}</div>
+    </div>
+    <div class="row"><button class="btn grow" id="vsay">🔊 Nghe phát âm</button>${vUndo.length ? `<button class="btn" id="vundo">↶ Hoàn tác</button>` : ""}</div>
+    <div class="rate" style="grid-template-columns:repeat(3,1fr)">
+      <button class="r1" data-vt="n">Chưa biết<small>để sau</small></button>
+      <button class="r2" data-vt="l">Đang học<small>đưa vào ôn</small></button>
+      <button class="r3" data-vt="k">Đã biết<small>bỏ qua</small></button></div>
+    <div class="kbdhint"><kbd>Space</kbd> lật · <kbd>1</kbd> chưa biết · <kbd>2</kbd> đang học · <kbd>3</kbd> đã biết · <kbd>R</kbd> nghe</div>`;
+  }
+  if (!VQ){ VQ = buildVQueue(); vqi = 0; vAgain = []; vFlip = false; }
+  if (vqi >= VQ.length && vAgain.length){ VQ = VQ.concat(vAgain); vAgain = []; }
+  if (vqi >= VQ.length) return head + `<div class="card empty"><b>Không còn thẻ cần ôn</b><p class="mute">${c.l ? `Mỗi ngày mở tối đa ${cfg.v3new || 20} từ đang học mới. Quay lại ngày mai, hoặc đổi số này ở tab Tiến độ.` : "Vào Kiểm tra hoặc Tra cứu, chọn “Đang học” cho những từ muốn học."}</p></div>`;
+  const v = VQ[vqi], cd = get("vc:" + v.id), pv = r => ivlLabel(schedule(cd, r).ivl);
+  return head + `
+  <div class="card flash" id="vflash" role="button" tabindex="0" aria-label="Lật thẻ">
+    <div class="tags"><span class="tag">${esc(TOPIC_VI[v.tp] || v.tp)}</span>${cd ? "" : '<span class="tag new">Mới</span>'}</div>
+    <div class="term">${esc(v.w)}</div><div class="pos">${v.ipa ? esc(v.ipa) + " · " : ""}${v.pos === "phrase" ? "cụm từ" : esc(v.pos)}</div>
+    ${vFlip ? `<hr><div class="vi">${esc(v.vi)}</div><div class="ex">${esc(v.ex)}</div>` : `<div class="hint">Nghĩ nghĩa của từ, rồi chạm để lật</div>`}
+    <div class="count">${vqi + 1}/${VQ.length + vAgain.length}</div>
+  </div>
+  <div class="row"><button class="btn grow" id="vsay">🔊 Nghe phát âm</button>${vFlip ? `<button class="btn" data-vset="${esc(v.id)}|k">✓ Đã biết rồi</button>` : ""}</div>
+  ${vFlip ? `<div class="rate">${[1, 2, 3, 4].map(r => `<button class="r${r}" data-vr="${r}">${["Lại","Khó","Được","Dễ"][r - 1]}<small>${pv(r)}</small></button>`).join("")}</div>`
+  : `<button class="btn pri" id="vflip">Xem nghĩa</button>`}
+  <div class="kbdhint"><kbd>Space</kbd> lật · <kbd>1</kbd>–<kbd>4</kbd> chấm · <kbd>R</kbd> nghe</div>`;
+}
+function vTriage(s){
+  const v = V.find(x => vMatch(x) && !vst(x.id)); if (!v) return;
+  vUndo.push(v.id); if (vUndo.length > 20) vUndo.shift();
+  put("v:" + v.id, {s}); vFlip = false; render();
+}
+function vRate(r){
+  const v = VQ[vqi], c = schedule(get("vc:" + v.id), r);
+  put("vc:" + v.id, c);
+  if (c.ivl >= 21) put("v:" + v.id, {s:"k"});        // remembered for 3 weeks: count as known
+  if (r === 1) vAgain.push(v);
+  vqi++; vFlip = false; render();
+}
+function vFlipCard(){
+  vFlip = !vFlip; render();
+  if (vFlip){ const v = vmode === "check" ? V.find(x => vMatch(x) && !vst(x.id)) : VQ && VQ[vqi]; if (v) play(vAudio(v.id)); }
+}
+function vSummary(){
+  let l = 0, k = 0; for (const key in S.items) if (key.startsWith("v:")){ const s = S.items[key].s; if (s === "l") l++; else if (s === "k") k++; }
+  return `<div class="card"><h3>3000 từ + cụm từ công việc</h3>${window.V3 && window.V3.filter(r => r[7] !== "Phrase").length < 3000 ? `<p class="mute">Đã có ${window.V3.filter(r => r[7] !== "Phrase").length}/3000 từ, phần còn lại đang được bổ sung.</p>` : ""}
+    <div class="stats"><div class="stat"><b>${k}</b><span>đã biết</span></div><div class="stat"><b>${l}</b><span>đang học</span></div><div class="stat"><b>${(window.V3 ? window.V3.length : 3000) - k - l}</b><span>chưa biết</span></div></div>
+    <div class="bar" aria-label="Tiến độ 3000 từ"><i style="width:${(k / 30).toFixed(1)}%"></i></div>
+    <div class="row"><span class="mute">Từ đang học mới mỗi ngày</span><div class="seg grow" role="group" aria-label="Từ mới mỗi ngày">${[10, 20, 30, 50].map(v => `<button data-v3n="${v}" aria-pressed="${(cfg.v3new || 20) === v}">${v}</button>`).join("")}</div></div></div>`;
+}
+function bindV3(on){
+  on("[data-deck]", b => b.onclick = () => { deck = b.dataset.deck; try { localStorage.setItem("en30-deck", deck); } catch (e) {} render(); });
+  on("[data-vm]", b => b.onclick = () => { vmode = b.dataset.vm; vFlip = false; VQ = null; render(); });
+  const vs = $("#vsrc"); if (vs) vs.onchange = () => { vsrc = vs.value; vshow = 40; VQ = null; vFlip = false; render(); };
+  const vt = $("#vtopic"); if (vt) vt.onchange = () => { vtopic = vt.value; vshow = 40; VQ = null; vFlip = false; render(); };
+  on("[data-vst]", b => b.onclick = () => { vstat = b.dataset.vst; vshow = 40; render(); });
+  const q = $("#vq"); if (q){ let t; q.oninput = () => { clearTimeout(t); t = setTimeout(() => { vq = q.value; vshow = 40; render(); const n = $("#vq"); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }, 250); }; }
+  const vm = $("#vmore"); if (vm) vm.onclick = () => { vshow += 40; render(); };
+  on("[data-va]", b => b.onclick = () => play(vAudio(b.dataset.va), b));
+  on("[data-vset]", b => b.onclick = () => { const [id, s] = b.dataset.vset.split("|"); put("v:" + id, {s: vst(id) === s && vmode === "browse" ? "n" : s});
+    if (vmode === "review" && VQ){ vqi++; vFlip = false; } render(); });
+  const fl = $("#vflash"); if (fl) fl.onclick = vFlipCard;
+  const ff = $("#vflip"); if (ff) ff.onclick = vFlipCard;
+  const sy = $("#vsay"); if (sy) sy.onclick = () => { const v = vmode === "check" ? V.find(x => vMatch(x) && !vst(x.id)) : VQ[vqi]; if (v) play(vAudio(v.id), sy); };
+  on("[data-vt]", b => b.onclick = () => vTriage(b.dataset.vt));
+  const un = $("#vundo"); if (un) un.onclick = () => { const id = vUndo.pop(); if (id != null) put("v:" + id, {s: ""}); vFlip = false; render(); };
+  on("[data-vr]", b => b.onclick = () => vRate(+b.dataset.vr));
+  on("[data-v3n]", b => b.onclick = () => { cfg.v3new = +b.dataset.v3n; saveCfg(); VQ = null; render(); });
+}
+
 const VIEWS = {today:vToday, cards:vCards, dict:vDict, pron:vPron, prog:vProg};
 function render(){
   const d = day();
@@ -341,6 +496,7 @@ function flip(){ flipped = !flipped; render(); if (flipped && cfg.autoplay !== f
 
 function bind(){
   const on = (sel, fn) => document.querySelectorAll(sel).forEach(fn);
+  bindV3(on);
   on("[data-tab]", b => b.onclick = () => go(b.dataset.tab));
   on("[data-go]", b => b.onclick = () => go(b.dataset.go));
   const dn = $("#done"); if (dn) dn.onclick = () => { const st = get("d:" + cur()) || {}; put("d:" + cur(), Object.assign({}, st, {done: !st.done})); render(); };
@@ -404,6 +560,15 @@ function bind(){
 }
 
 document.addEventListener("keydown", e => {
+  if (tab === "cards" && deck === "v3" && V && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) && vmode !== "browse"){
+    const hasCard = vmode === "check" ? V.some(x => vMatch(x) && !vst(x.id)) : VQ && vqi < VQ.length;
+    if (!hasCard) return;
+    if (e.key === " " || e.key === "Enter"){ e.preventDefault(); vFlipCard(); }
+    else if (e.key === "r" || e.key === "R"){ const v = vmode === "check" ? V.find(x => vMatch(x) && !vst(x.id)) : VQ[vqi]; play(vAudio(v.id)); }
+    else if (vmode === "check" && "123".includes(e.key)) vTriage(["n", "l", "k"][+e.key - 1]);
+    else if (vmode === "review" && vFlip && "1234".includes(e.key)) vRate(+e.key);
+    return;
+  }
   if (tab !== "cards" || cmode !== "review" || /INPUT|TEXTAREA/.test(e.target.tagName) || !Q || qi >= Q.length) return;
   if (e.key === " " || e.key === "Enter"){ e.preventDefault(); flip(); }
   else if (flipped && "1234".includes(e.key)) rate(+e.key);
