@@ -1,0 +1,1774 @@
+[
+ {
+  "id": "p4-01",
+  "part": 4,
+  "level": 1,
+  "topic": "Finance",
+  "title": "Late invoice payment",
+  "title_vi": "Thanh toán hóa đơn bị trễ",
+  "speakers": {
+   "A": "F-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi, this message is for Daniel Park in the accounts team. This is Rachel Moore from Brightline Retail."
+   ],
+   [
+    "A",
+    "I'm calling about invoice number 4471, which your company sent us on March third."
+   ],
+   [
+    "A",
+    "I just wanted to give you a heads-up that our payment is going to be a little late this month."
+   ],
+   [
+    "A",
+    "We're switching to a new accounting system, and all of our payments have been on hold since Monday."
+   ],
+   [
+    "A",
+    "Our finance director has assured me that everything should be up and running again by next Wednesday."
+   ],
+   [
+    "A",
+    "So you can expect the full amount, about twelve thousand dollars, by the end of next week."
+   ],
+   [
+    "A",
+    "I know this isn't ideal, and I'm really sorry for the inconvenience."
+   ],
+   [
+    "A",
+    "Believe me, we're as frustrated as you are."
+   ],
+   [
+    "A",
+    "In the meantime, could you send me a copy of the invoice by e-mail?"
+   ],
+   [
+    "A",
+    "Our new system needs a digital version, and I can't seem to find the original."
+   ],
+   [
+    "A",
+    "You can reach me at 555-0193 if you have any questions."
+   ],
+   [
+    "A",
+    "Thanks so much, Daniel, and talk to you soon."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is the purpose of the message?",
+    "o": [
+     "To request a discount on an invoice",
+     "To explain a late payment",
+     "To place a new order",
+     "To complain about a product"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "vi": "Câu \"give you a heads-up that our payment is going to be a little late\" cho thấy mục đích là báo thanh toán bị trễ. Bẫy: có nhắc \"invoice\" nhưng không xin giảm giá."
+   },
+   {
+    "q": "Why has the payment been delayed?",
+    "o": [
+     "A manager is on vacation",
+     "An invoice contained an error",
+     "The company is changing its accounting system",
+     "The bank was closed on Monday"
+    ],
+    "a": 2,
+    "ev": [
+     3
+    ],
+    "vi": "\"We're switching to a new accounting system\" = đổi hệ thống kế toán. Bẫy: \"Monday\" có xuất hiện nhưng là ngày bắt đầu tạm dừng thanh toán, không phải ngân hàng đóng cửa."
+   },
+   {
+    "q": "Why does the speaker say, \"Believe me, we're as frustrated as you are\"?",
+    "o": [
+     "To show she understands the listener's situation",
+     "To complain about her finance director",
+     "To ask for an extra month to pay",
+     "To deny that the invoice was received"
+    ],
+    "a": 0,
+    "ev": [
+     6,
+     7
+    ],
+    "vi": "Sau lời xin lỗi \"I'm really sorry for the inconvenience\", câu này thể hiện sự đồng cảm với người nghe. Bẫy: \"finance director\" có trong bài nhưng cô không phàn nàn về ông ấy."
+   },
+   {
+    "q": "What does the speaker ask the listener to do?",
+    "o": [
+     "Call the finance director",
+     "Visit her office next Wednesday",
+     "Correct the invoice amount",
+     "Send an electronic copy of a document"
+    ],
+    "a": 3,
+    "ev": [
+     8,
+     9
+    ],
+    "vi": "\"could you send me a copy of the invoice by e-mail?\" = gửi bản điện tử của hóa đơn. Bẫy: \"next Wednesday\" là ngày hệ thống chạy lại, không phải hẹn gặp."
+   }
+  ]
+ },
+ {
+  "id": "p4-02",
+  "part": 4,
+  "level": 2,
+  "topic": "IT",
+  "title": "Weekend system maintenance",
+  "title_vi": "Bảo trì hệ thống cuối tuần",
+  "speakers": {
+   "A": "M-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "Good afternoon, everyone. This is Tom from the IT operations team with a quick announcement."
+   ],
+   [
+    "A",
+    "This Saturday, we'll be carrying out planned maintenance on our main database servers."
+   ],
+   [
+    "A",
+    "The work will start at ten p.m. on Saturday and should be finished by six a.m. on Sunday."
+   ],
+   [
+    "A",
+    "During that time, the customer portal and the internal HR system will be unavailable."
+   ],
+   [
+    "A",
+    "E-mail and chat won't be affected, so you can still contact each other as usual."
+   ],
+   [
+    "A",
+    "If you're on call this weekend, please note that alerts will be paused for the duration of the maintenance."
+   ],
+   [
+    "A",
+    "Before you leave on Friday, make sure you save any open work and log out of all internal tools."
+   ],
+   [
+    "A",
+    "Anything left unsaved may be lost when the servers restart."
+   ],
+   [
+    "A",
+    "We'll send a confirmation e-mail as soon as everything is back online."
+   ],
+   [
+    "A",
+    "And if you notice any problems on Sunday morning, please submit a ticket through the help desk rather than messaging the team directly."
+   ],
+   [
+    "A",
+    "That way, we can track and prioritize issues more efficiently."
+   ],
+   [
+    "A",
+    "Thanks for your patience, and have a great weekend."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Who most likely is the speaker?",
+    "o": [
+     "A customer service agent",
+     "A human resources manager",
+     "A database vendor",
+     "An IT staff member"
+    ],
+    "a": 3,
+    "ev": [
+     0
+    ],
+    "vi": "\"This is Tom from the IT operations team\" → nhân viên IT. Bẫy: \"HR system\" và \"database\" có trong bài nhưng không nói về nghề của người nói."
+   },
+   {
+    "q": "When will the maintenance be completed?",
+    "o": [
+     "At ten p.m. on Friday",
+     "At ten p.m. on Saturday",
+     "At six a.m. on Sunday",
+     "On Sunday afternoon"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "vi": "\"should be finished by six a.m. on Sunday\". Bẫy: \"ten p.m. on Saturday\" là giờ bắt đầu, không phải giờ kết thúc."
+   },
+   {
+    "q": "What will still be available during the maintenance?",
+    "o": [
+     "Messaging tools",
+     "The customer portal",
+     "The HR system",
+     "On-call alerts"
+    ],
+    "a": 0,
+    "ev": [
+     4
+    ],
+    "vi": "\"E-mail and chat won't be affected\" → công cụ nhắn tin vẫn dùng được (paraphrase). Bẫy: portal, HR system không dùng được; alerts \"will be paused\"."
+   },
+   {
+    "q": "What are listeners asked to do before leaving on Friday?",
+    "o": [
+     "Submit a help desk ticket",
+     "Restart their computers",
+     "Save their work and log out",
+     "Contact the on-call team"
+    ],
+    "a": 2,
+    "ev": [
+     6
+    ],
+    "vi": "\"save any open work and log out of all internal tools\". Bẫy: \"submit a ticket\" là việc làm nếu có lỗi sáng Chủ nhật."
+   }
+  ]
+ },
+ {
+  "id": "p4-03",
+  "part": 4,
+  "level": 3,
+  "topic": "IT",
+  "title": "Daily stand-up update",
+  "title_vi": "Cập nhật họp stand-up hằng ngày",
+  "speakers": {
+   "A": "F-AU"
+  },
+  "lines": [
+   [
+    "A",
+    "Morning, everyone. Let's keep this quick, since a few of us have the client demo at ten thirty."
+   ],
+   [
+    "A",
+    "Yesterday, we closed out eleven of the fourteen tickets in the sprint backlog, so only three are still open, and we're in pretty good shape."
+   ],
+   [
+    "A",
+    "Those three are all related to the payment module."
+   ],
+   [
+    "A",
+    "Minh found the root cause of the checkout bug last night, so that fix should be merged by noon."
+   ],
+   [
+    "A",
+    "The bad news is that the staging server went down again at around two a.m."
+   ],
+   [
+    "A",
+    "Operations says it's a disk space issue and they're on it, but they can't give us an exact time."
+   ],
+   [
+    "A",
+    "So, if you were planning to test on staging this morning, you might want to hold off."
+   ],
+   [
+    "A",
+    "Use your local environment for now, and I'll post in the team channel once it's back."
+   ],
+   [
+    "A",
+    "One more thing: the sprint review has been pushed from Thursday to Friday at three, because the product owner is traveling."
+   ],
+   [
+    "A",
+    "That actually gives us an extra day, which we definitely need."
+   ],
+   [
+    "A",
+    "If anyone's blocked, grab me right after this call rather than waiting until the afternoon."
+   ],
+   [
+    "A",
+    "Okay, that's it from me. Over to you, Minh."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is the speaker mainly doing?",
+    "o": [
+     "Giving her team a progress update",
+     "Presenting a product to a client",
+     "Reviewing a product owner's plan",
+     "Reporting a server problem to operations"
+    ],
+    "a": 0,
+    "ev": [
+     0,
+     1
+    ],
+    "vi": "Đây là buổi stand-up: \"we closed out eleven of the fourteen tickets...\" → cập nhật tiến độ cho nhóm. Bẫy: \"client demo\" diễn ra lúc 10:30, không phải bây giờ."
+   },
+   {
+    "q": "How many tickets are still unfinished?",
+    "o": [
+     "Two",
+     "Three",
+     "Eleven",
+     "Fourteen"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     2
+    ],
+    "vi": "Người nói: \"only three are still open\" → còn 3 ticket. Bẫy: 11 (đã xong) và 14 (tổng) cũng được nghe thấy."
+   },
+   {
+    "q": "Why does the speaker say, \"you might want to hold off\"?",
+    "o": [
+     "To ask staff to postpone merging a fix",
+     "To recommend waiting until the demo ends",
+     "To warn that the product owner is unavailable",
+     "To advise against using a system that is down"
+    ],
+    "a": 3,
+    "ev": [
+     4,
+     6
+    ],
+    "vi": "Staging server \"went down\" nên cô khuyên đừng test trên staging lúc này. Bẫy: \"merged by noon\" và \"product owner is traveling\" là thông tin khác."
+   },
+   {
+    "q": "What will most likely happen next?",
+    "o": [
+     "Another team member will speak",
+     "The client demo will begin",
+     "The sprint review will start",
+     "A server will be restarted"
+    ],
+    "a": 0,
+    "ev": [
+     11
+    ],
+    "vi": "\"Over to you, Minh\" → Minh (đồng nghiệp) sẽ nói tiếp. Bẫy: sprint review đã dời sang thứ Sáu lúc 3 giờ, demo lúc 10:30."
+   }
+  ]
+ },
+ {
+  "id": "p4-04",
+  "part": 4,
+  "level": 1,
+  "topic": "HR",
+  "title": "New engineering manager",
+  "title_vi": "Giới thiệu quản lý kỹ thuật mới",
+  "speakers": {
+   "A": "M-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Okay, everyone, before we get started, I'd like to introduce a new member of our team."
+   ],
+   [
+    "A",
+    "This is Priya Sharma, who's joining us as our new engineering manager."
+   ],
+   [
+    "A",
+    "Priya comes to us from Nexora, where she led a team of twenty developers for six years."
+   ],
+   [
+    "A",
+    "She has a lot of experience with cloud infrastructure and mobile apps, which is exactly what we need right now."
+   ],
+   [
+    "A",
+    "Starting next Monday, Priya will be in charge of both the backend team and the mobile team."
+   ],
+   [
+    "A",
+    "So going forward, please send your weekly reports to her instead of me."
+   ],
+   [
+    "A",
+    "I'll still be around, of course, but I'll be focusing on our new partnership projects."
+   ],
+   [
+    "A",
+    "Priya would like to meet each of you individually over the next two weeks."
+   ],
+   [
+    "A",
+    "She'll send out calendar invitations later today, so please accept one that works for you."
+   ],
+   [
+    "A",
+    "Also, we're having a small welcome lunch for her this Friday at the Italian place across the street."
+   ],
+   [
+    "A",
+    "Lunch is on the company, so I hope everyone can make it."
+   ],
+   [
+    "A",
+    "Now, Priya, would you like to say a few words?"
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is the purpose of the talk?",
+    "o": [
+     "To announce a company merger",
+     "To describe a new mobile app",
+     "To introduce a new colleague",
+     "To explain a reporting system"
+    ],
+    "a": 2,
+    "ev": [
+     0,
+     1
+    ],
+    "vi": "\"I'd like to introduce a new member of our team\" → giới thiệu đồng nghiệp mới. Bẫy: \"mobile apps\", \"weekly reports\" chỉ là chi tiết phụ."
+   },
+   {
+    "q": "How long did Priya work at Nexora?",
+    "o": [
+     "Two weeks",
+     "Six years",
+     "Twenty years",
+     "One month"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "vi": "\"led a team of twenty developers for six years\". Bẫy: \"twenty\" là số lập trình viên, \"two weeks\" là thời gian gặp riêng từng người."
+   },
+   {
+    "q": "What are listeners asked to do going forward?",
+    "o": [
+     "Send their weekly reports to Priya",
+     "Join the mobile team",
+     "Prepare a short speech",
+     "Contact Nexora's developers"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "vi": "\"going forward, please send your weekly reports to her instead of me\". Bẫy: \"say a few words\" là việc Priya được mời làm, không phải người nghe."
+   },
+   {
+    "q": "What will happen on Friday?",
+    "o": [
+     "Priya will start her new role",
+     "Calendar invitations will be sent",
+     "Individual meetings will end",
+     "The team will eat together"
+    ],
+    "a": 3,
+    "ev": [
+     9
+    ],
+    "vi": "\"a small welcome lunch for her this Friday\" → cả nhóm ăn trưa cùng nhau. Bẫy: Priya bắt đầu phụ trách từ \"next Monday\"; lời mời lịch gửi \"later today\"."
+   }
+  ]
+ },
+ {
+  "id": "p4-05",
+  "part": 4,
+  "level": 2,
+  "topic": "Travel",
+  "title": "Gate change and delay",
+  "title_vi": "Đổi cổng và hoãn chuyến bay",
+  "speakers": {
+   "A": "F-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "Attention, please. This is an announcement for passengers on Skyways flight 382 to Singapore."
+   ],
+   [
+    "A",
+    "Due to a technical issue with the aircraft, this flight has been delayed."
+   ],
+   [
+    "A",
+    "The new departure time is eleven forty-five, about ninety minutes later than scheduled."
+   ],
+   [
+    "A",
+    "In addition, the flight will now depart from gate 27 instead of gate 12."
+   ],
+   [
+    "A",
+    "Gate 27 is in Terminal B, so please allow about fifteen minutes to walk there."
+   ],
+   [
+    "A",
+    "Boarding is expected to begin at eleven ten."
+   ],
+   [
+    "A",
+    "We know this isn't the news you were hoping for."
+   ],
+   [
+    "A",
+    "To make up for the inconvenience, passengers can collect a meal voucher worth fifteen dollars at the Skyways service desk."
+   ],
+   [
+    "A",
+    "Please have your boarding pass ready when you pick it up."
+   ],
+   [
+    "A",
+    "If you have a connecting flight in Singapore, our staff at the desk can help you rebook it if necessary."
+   ],
+   [
+    "A",
+    "We'll make further announcements if anything changes."
+   ],
+   [
+    "A",
+    "Thank you for your patience, and we apologize for the delay."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Where is the announcement being made?",
+    "o": [
+     "At a train station",
+     "At an airport",
+     "On an airplane",
+     "At a travel agency"
+    ],
+    "a": 1,
+    "ev": [
+     0,
+     3
+    ],
+    "vi": "\"passengers on Skyways flight 382\", \"depart from gate 27\" → thông báo ở sân bay. Bẫy: \"On an airplane\" sai vì hành khách chưa lên máy bay."
+   },
+   {
+    "q": "Where will the flight now depart from?",
+    "o": [
+     "Gate 12",
+     "The service desk",
+     "Gate 15",
+     "A gate in Terminal B"
+    ],
+    "a": 3,
+    "ev": [
+     3,
+     4
+    ],
+    "vi": "\"depart from gate 27 instead of gate 12. Gate 27 is in Terminal B\". Bẫy: gate 12 là cổng cũ; \"fifteen\" là số phút đi bộ."
+   },
+   {
+    "q": "Why does the speaker say, \"We know this isn't the news you were hoping for\"?",
+    "o": [
+     "To acknowledge passengers' disappointment",
+     "To announce that the flight is cancelled",
+     "To report a change of destination",
+     "To ask passengers to board quickly"
+    ],
+    "a": 0,
+    "ev": [
+     6
+    ],
+    "vi": "Sau khi báo hoãn chuyến và đổi cổng, câu này thừa nhận hành khách thất vọng. Bẫy: chuyến bay chỉ bị hoãn, không bị hủy."
+   },
+   {
+    "q": "What should passengers bring to collect a voucher?",
+    "o": [
+     "Their passport",
+     "A receipt",
+     "Fifteen dollars",
+     "Their boarding pass"
+    ],
+    "a": 3,
+    "ev": [
+     7,
+     8
+    ],
+    "vi": "\"Please have your boarding pass ready when you pick it up\". Bẫy: \"fifteen dollars\" là giá trị phiếu ăn, không phải tiền phải mang."
+   }
+  ]
+ },
+ {
+  "id": "p4-06",
+  "part": 4,
+  "level": 3,
+  "topic": "Business",
+  "title": "Tech firm opens Asian office",
+  "title_vi": "Công ty công nghệ mở văn phòng ở châu Á",
+  "speakers": {
+   "A": "M-AU"
+  },
+  "lines": [
+   [
+    "A",
+    "In business news today, Seattle-based software company Cloudvane has announced plans to open its first Asian office in Ho Chi Minh City."
+   ],
+   [
+    "A",
+    "The office, which will be located in the city's new technology park, is scheduled to open in September."
+   ],
+   [
+    "A",
+    "Cloudvane says it will hire around three hundred engineers there by the end of next year, and that number could double by 2028."
+   ],
+   [
+    "A",
+    "The company had originally considered Singapore and Bangkok, but chose Vietnam because of its large pool of young software developers."
+   ],
+   [
+    "A",
+    "Chief executive Laura Bennett said the move would allow the company to provide round-the-clock support to customers in different time zones."
+   ],
+   [
+    "A",
+    "However, not everyone is convinced."
+   ],
+   [
+    "A",
+    "Some analysts point out that competition for experienced engineers in the region is already intense."
+   ],
+   [
+    "A",
+    "Salaries for senior developers have risen by nearly twenty percent over the past two years."
+   ],
+   [
+    "A",
+    "Still, Cloudvane's shares rose four percent after the announcement."
+   ],
+   [
+    "A",
+    "The company plans to hold a recruitment event in the city in July, ahead of the opening."
+   ],
+   [
+    "A",
+    "Ms. Bennett will also meet with local university leaders to discuss internship programs."
+   ],
+   [
+    "A",
+    "Coming up after the break, we'll have the latest on the housing market."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is the news report mainly about?",
+    "o": [
+     "A company's expansion overseas",
+     "A merger between two software firms",
+     "Rising salaries in Singapore",
+     "A new university program"
+    ],
+    "a": 0,
+    "ev": [
+     0
+    ],
+    "vi": "\"open its first Asian office in Ho Chi Minh City\" → mở rộng ra nước ngoài (paraphrase). Bẫy: Singapore và internship programs chỉ là chi tiết phụ."
+   },
+   {
+    "q": "Why did Cloudvane choose Vietnam?",
+    "o": [
+     "Office rents are lower there",
+     "It has many available developers",
+     "It is close to its customers",
+     "The government offered tax benefits"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "vi": "\"because of its large pool of young software developers\" = có nhiều lập trình viên. Bẫy: \"customers in different time zones\" là lợi ích của việc hỗ trợ 24/7, không phải lý do chọn Việt Nam."
+   },
+   {
+    "q": "Why does the speaker say, \"not everyone is convinced\"?",
+    "o": [
+     "To report that shareholders rejected the plan",
+     "To suggest that the opening will be delayed",
+     "To indicate that some experts have doubts",
+     "To show that local officials oppose the project"
+    ],
+    "a": 2,
+    "ev": [
+     5,
+     6
+    ],
+    "vi": "Câu tiếp theo \"Some analysts point out that competition... is already intense\" → một số chuyên gia nghi ngờ. Bẫy: cổ phiếu lại tăng 4%, nên cổ đông không phản đối."
+   },
+   {
+    "q": "What will happen in July?",
+    "o": [
+     "The new office will open",
+     "Salaries will be reviewed",
+     "Shares will be offered to staff",
+     "A hiring event will be held"
+    ],
+    "a": 3,
+    "ev": [
+     9
+    ],
+    "vi": "\"hold a recruitment event in the city in July\" = sự kiện tuyển dụng (paraphrase). Bẫy: văn phòng mở vào \"September\", không phải tháng 7."
+   }
+  ]
+ },
+ {
+  "id": "p4-07",
+  "part": 4,
+  "level": 1,
+  "topic": "HR",
+  "title": "Interview invitation",
+  "title_vi": "Lời mời phỏng vấn từ nhà tuyển dụng",
+  "speakers": {
+   "A": "F-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Hello, this is a message for Linh Nguyen. My name is Karen Wells, and I'm a recruiter at Talent Bridge."
+   ],
+   [
+    "A",
+    "Thank you for applying for the senior backend developer position with our client, Orbit Payments."
+   ],
+   [
+    "A",
+    "I'm happy to let you know that they were very impressed with your application."
+   ],
+   [
+    "A",
+    "They'd like to invite you to a first-round interview by video call."
+   ],
+   [
+    "A",
+    "The interview will last about forty-five minutes and will be with two members of their engineering team."
+   ],
+   [
+    "A",
+    "They've suggested either Tuesday at two p.m. or Thursday at ten a.m., Vietnam time."
+   ],
+   [
+    "A",
+    "Please let me know which time works better for you by end of day tomorrow."
+   ],
+   [
+    "A",
+    "You'll also be asked to solve a short coding problem during the call, so make sure you have a laptop with a working camera."
+   ],
+   [
+    "A",
+    "After the interview, I'll follow up with feedback within a few days."
+   ],
+   [
+    "A",
+    "You can reply to my e-mail or call me back at 555-0147."
+   ],
+   [
+    "A",
+    "Congratulations on getting this far, and I look forward to hearing from you."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Why is the speaker calling?",
+    "o": [
+     "To offer the listener a job",
+     "To invite the listener to an interview",
+     "To ask for a reference",
+     "To cancel a video call"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "vi": "\"They'd like to invite you to a first-round interview\". Bẫy: chưa phải mời nhận việc (job offer), chỉ là vòng phỏng vấn đầu."
+   },
+   {
+    "q": "How long will the interview last?",
+    "o": [
+     "About ten minutes",
+     "About two hours",
+     "About forty-five minutes",
+     "About an hour and a half"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "vi": "\"The interview will last about forty-five minutes\". Bẫy: \"two\" là số người phỏng vấn và giờ \"two p.m.\", \"ten\" là \"ten a.m.\"."
+   },
+   {
+    "q": "What is the listener asked to do by tomorrow?",
+    "o": [
+     "Send a coding sample",
+     "Buy a new laptop",
+     "Call the client directly",
+     "Choose an interview time"
+    ],
+    "a": 3,
+    "ev": [
+     5,
+     6
+    ],
+    "vi": "\"let me know which time works better for you by end of day tomorrow\" → chọn giờ phỏng vấn. Bẫy: laptop chỉ cần có camera, không phải mua mới."
+   },
+   {
+    "q": "What will the listener do during the interview?",
+    "o": [
+     "Give a presentation",
+     "Meet the company's CEO",
+     "Sign a contract",
+     "Solve a programming task"
+    ],
+    "a": 3,
+    "ev": [
+     7
+    ],
+    "vi": "\"You'll also be asked to solve a short coding problem\" = giải bài lập trình (paraphrase). Bẫy: phỏng vấn với \"two members of their engineering team\", không phải CEO."
+   }
+  ]
+ },
+ {
+  "id": "p4-08",
+  "part": 4,
+  "level": 2,
+  "topic": "Manufacturing",
+  "title": "Factory tour",
+  "title_vi": "Tham quan nhà máy",
+  "speakers": {
+   "A": "M-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "Good morning, and welcome to Greenfield Electronics. I'm David, and I'll be your guide for today's tour of our main factory."
+   ],
+   [
+    "A",
+    "This plant produces around five thousand circuit boards every day, which are shipped to customers in over thirty countries."
+   ],
+   [
+    "A",
+    "The tour will take about an hour, and we'll start here in the assembly area."
+   ],
+   [
+    "A",
+    "After that, we'll move on to the testing lab, and then we'll see the packaging department."
+   ],
+   [
+    "A",
+    "Before we go in, please put on the safety glasses and the blue jackets you were given at reception."
+   ],
+   [
+    "A",
+    "They help protect our products from dust and static electricity."
+   ],
+   [
+    "A",
+    "Also, photography isn't permitted inside the testing lab, so please keep your phones in your pockets there."
+   ],
+   [
+    "A",
+    "The machines are quite loud in the assembly area, so stay close to me if you want to hear my explanations."
+   ],
+   [
+    "A",
+    "Trust me, you don't want to miss the robots."
+   ],
+   [
+    "A",
+    "At the end of the tour, we'll head to the cafeteria for some refreshments, and I'll be happy to answer any questions."
+   ],
+   [
+    "A",
+    "Alright, if everyone's ready, please follow me."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Who most likely are the listeners?",
+    "o": [
+     "Factory workers",
+     "Visitors to a facility",
+     "Delivery drivers",
+     "Job applicants"
+    ],
+    "a": 1,
+    "ev": [
+     0
+    ],
+    "vi": "\"welcome to Greenfield Electronics... I'll be your guide for today's tour\" → khách tham quan. Bẫy: \"Factory workers\" dùng lại từ factory nhưng họ không làm việc ở đó."
+   },
+   {
+    "q": "Where will the tour begin?",
+    "o": [
+     "In the cafeteria",
+     "In the testing lab",
+     "In the assembly area",
+     "At reception"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "vi": "\"we'll start here in the assembly area\". Bẫy: cafeteria là nơi kết thúc; reception là nơi đã nhận áo và kính."
+   },
+   {
+    "q": "What are listeners asked to do before entering?",
+    "o": [
+     "Leave their phones at reception",
+     "Put on protective gear",
+     "Sign a safety form",
+     "Watch a short video"
+    ],
+    "a": 1,
+    "ev": [
+     4
+    ],
+    "vi": "\"put on the safety glasses and the blue jackets\" = mặc đồ bảo hộ (paraphrase). Bẫy: điện thoại chỉ cần để trong túi ở phòng testing lab."
+   },
+   {
+    "q": "Why does the speaker say, \"Trust me, you don't want to miss the robots\"?",
+    "o": [
+     "To warn that the machines are dangerous",
+     "To explain why photos are not allowed",
+     "To point out an interesting part of the tour",
+     "To ask listeners to wait for the robots"
+    ],
+    "a": 2,
+    "ev": [
+     7,
+     8
+    ],
+    "vi": "Sau khi dặn \"stay close to me\", anh nhấn mạnh phần robot rất đáng xem. Bẫy: máy móc chỉ \"loud\" (ồn), không nói là nguy hiểm."
+   }
+  ]
+ },
+ {
+  "id": "p4-09",
+  "part": 4,
+  "level": 3,
+  "topic": "IT",
+  "title": "New project-tracking tool",
+  "title_vi": "Hướng dẫn dùng công cụ quản lý dự án mới",
+  "speakers": {
+   "A": "F-AU"
+  },
+  "lines": [
+   [
+    "A",
+    "Today I'll walk you through TaskFlow, the project-tracking tool we're moving to next month."
+   ],
+   [
+    "A",
+    "We've been using spreadsheets and e-mail threads, and things have been slipping through the cracks."
+   ],
+   [
+    "A",
+    "First, open the link I sent this morning and sign in with your company account. You don't need to create a new password."
+   ],
+   [
+    "A",
+    "On the left, you'll see your projects. Click on one, and you'll get a board with three columns: To Do, In Progress, and Done."
+   ],
+   [
+    "A",
+    "To create a task, click the plus button, add a short title, and assign it to a team member."
+   ],
+   [
+    "A",
+    "Make sure you always set a due date. Tasks without one won't show up in the weekly report."
+   ],
+   [
+    "A",
+    "You can also attach files of up to twenty-five megabytes, but for anything bigger, please use a shared drive link."
+   ],
+   [
+    "A",
+    "The old spreadsheets will be switched to read-only on the fifteenth, and they'll be archived completely at the end of the month."
+   ],
+   [
+    "A",
+    "So any active tasks need to be moved into TaskFlow before the fifteenth."
+   ],
+   [
+    "A",
+    "Now, I'll give you ten minutes to create two or three sample tasks of your own."
+   ],
+   [
+    "A",
+    "If you get stuck, raise your hand and either Sam or I will come over."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is the main purpose of the workshop?",
+    "o": [
+     "To train staff on new software",
+     "To review weekly reports",
+     "To choose a new tracking tool",
+     "To explain a password policy"
+    ],
+    "a": 0,
+    "ev": [
+     0
+    ],
+    "vi": "\"I'll walk you through TaskFlow, the project-tracking tool we're moving to\" → đào tạo dùng phần mềm mới. Bẫy: công cụ đã được chọn rồi, không phải đang chọn."
+   },
+   {
+    "q": "According to the speaker, why should a due date be set?",
+    "o": [
+     "So the task can be assigned",
+     "So the task appears in a regular summary",
+     "So larger files can be attached",
+     "So the task moves to the Done column"
+    ],
+    "a": 1,
+    "ev": [
+     5
+    ],
+    "vi": "\"Tasks without one won't show up in the weekly report\" → báo cáo hằng tuần = regular summary (paraphrase). Bẫy: \"assign it to a team member\" là bước khác."
+   },
+   {
+    "q": "By when must active tasks be transferred?",
+    "o": [
+     "By the end of the month",
+     "Within ten minutes",
+     "By the fifteenth",
+     "By the end of next month"
+    ],
+    "a": 2,
+    "ev": [
+     7,
+     8
+    ],
+    "vi": "\"any active tasks need to be moved into TaskFlow before the fifteenth\". Bẫy: \"end of the month\" là lúc lưu trữ hẳn bảng tính cũ; \"ten minutes\" là thời gian thực hành."
+   },
+   {
+    "q": "What will listeners most likely do next?",
+    "o": [
+     "Practice creating tasks",
+     "Archive old spreadsheets",
+     "Watch a demonstration by Sam",
+     "Reset their passwords"
+    ],
+    "a": 0,
+    "ev": [
+     9
+    ],
+    "vi": "\"I'll give you ten minutes to create two or three sample tasks\" → thực hành tạo task. Bẫy: Sam chỉ hỗ trợ khi bị kẹt; không cần mật khẩu mới."
+   }
+  ]
+ },
+ {
+  "id": "p4-10",
+  "part": 4,
+  "level": 1,
+  "topic": "Finance",
+  "title": "Quarterly results",
+  "title_vi": "Trình bày kết quả quý",
+  "speakers": {
+   "A": "M-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Thanks, everyone. Let's move on to our results for the third quarter."
+   ],
+   [
+    "A",
+    "Overall, it was a strong quarter. Total revenue reached four point two million dollars, up eight percent from the second quarter."
+   ],
+   [
+    "A",
+    "Most of that growth came from our cloud services, which now make up nearly half of our sales."
+   ],
+   [
+    "A",
+    "Our mobile app subscriptions also did well, especially in Japan and Australia."
+   ],
+   [
+    "A",
+    "On the other hand, hardware sales dropped by about five percent."
+   ],
+   [
+    "A",
+    "That wasn't a big surprise, since we stopped producing two older models in July."
+   ],
+   [
+    "A",
+    "We also kept costs under control, mainly by reducing travel and moving more meetings online."
+   ],
+   [
+    "A",
+    "As a result, our profit margin improved slightly."
+   ],
+   [
+    "A",
+    "Looking ahead, we expect the fourth quarter to be even busier, with the holiday season and two major product launches."
+   ],
+   [
+    "A",
+    "I'll send the full report to everyone by end of day, so please take a look before our planning session on Monday."
+   ],
+   [
+    "A",
+    "Now, let's open it up for questions."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is the speaker mainly discussing?",
+    "o": [
+     "A company's financial performance",
+     "A new product launch",
+     "A change in travel policy",
+     "A hiring plan"
+    ],
+    "a": 0,
+    "ev": [
+     0,
+     1
+    ],
+    "vi": "\"our results for the third quarter... Total revenue\" → kết quả tài chính. Bẫy: \"product launches\" và \"reducing travel\" chỉ là chi tiết."
+   },
+   {
+    "q": "By how much did total revenue increase?",
+    "o": [
+     "Two percent",
+     "Five percent",
+     "Eight percent",
+     "Fifty percent"
+    ],
+    "a": 2,
+    "ev": [
+     1
+    ],
+    "vi": "\"up eight percent from the second quarter\". Bẫy: \"five percent\" là mức giảm của hardware; \"half\" là tỉ trọng cloud."
+   },
+   {
+    "q": "Why does the speaker say, \"That wasn't a big surprise\"?",
+    "o": [
+     "Cloud sales always grow in summer",
+     "The hardware decline was expected",
+     "Travel was reduced as planned",
+     "The app was popular in Japan"
+    ],
+    "a": 1,
+    "ev": [
+     4,
+     5
+    ],
+    "vi": "Câu này nói về việc \"hardware sales dropped\" vì \"we stopped producing two older models\" → sụt giảm đã được dự đoán."
+   },
+   {
+    "q": "What are listeners asked to do before Monday?",
+    "o": [
+     "Prepare a sales forecast",
+     "Reduce their travel",
+     "Plan a product launch",
+     "Read a document"
+    ],
+    "a": 3,
+    "ev": [
+     9
+    ],
+    "vi": "\"please take a look before our planning session on Monday\" → đọc bản báo cáo (paraphrase \"Read a document\"). Bẫy: \"planning\" không có nghĩa là lên kế hoạch ra mắt sản phẩm."
+   }
+  ]
+ },
+ {
+  "id": "p4-11",
+  "part": 4,
+  "level": 2,
+  "topic": "Office",
+  "title": "Coworking space ad",
+  "title_vi": "Quảng cáo không gian làm việc chung",
+  "speakers": {
+   "A": "F-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "Tired of working from your kitchen table? Or paying too much for an office you only use three days a week?"
+   ],
+   [
+    "A",
+    "Then come and check out HubWorks, the newest coworking space in the city center."
+   ],
+   [
+    "A",
+    "Located just two minutes from Central Station, HubWorks offers fast Wi-Fi, quiet phone booths, and meeting rooms you can book online."
+   ],
+   [
+    "A",
+    "Our members also enjoy free coffee, a rooftop terrace, and regular networking events with local start-ups."
+   ],
+   [
+    "A",
+    "A flexible desk costs just one hundred and fifty dollars a month, and a private office for up to four people starts at six hundred."
+   ],
+   [
+    "A",
+    "And this month only, new members get their first two weeks absolutely free."
+   ],
+   [
+    "A",
+    "Not sure if it's right for you? Book a free tour on our website, and see the space for yourself."
+   ],
+   [
+    "A",
+    "We're open from seven a.m. to ten p.m. on weekdays, and members with a private office have access twenty-four hours a day."
+   ],
+   [
+    "A",
+    "Visit hubworks dot com today, and use the code START to get ten percent off your first month."
+   ],
+   [
+    "A",
+    "HubWorks. Work your way."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is being advertised?",
+    "o": [
+     "A coffee shop",
+     "A shared workspace",
+     "A train station",
+     "A business course"
+    ],
+    "a": 1,
+    "ev": [
+     1
+    ],
+    "vi": "\"the newest coworking space\" = không gian làm việc chung. Bẫy: \"free coffee\", \"Central Station\" chỉ là chi tiết."
+   },
+   {
+    "q": "What is offered to new members this month?",
+    "o": [
+     "A free private office",
+     "Ten free coffee vouchers",
+     "Two weeks at no cost",
+     "A discount on meeting rooms"
+    ],
+    "a": 2,
+    "ev": [
+     5
+    ],
+    "vi": "\"new members get their first two weeks absolutely free\". Bẫy: \"ten percent off\" là mã giảm giá tháng đầu, không phải phiếu cà phê."
+   },
+   {
+    "q": "What are listeners encouraged to do if they are unsure?",
+    "o": [
+     "Call the main office",
+     "Visit Central Station",
+     "Arrange a visit online",
+     "Attend a networking event"
+    ],
+    "a": 2,
+    "ev": [
+     6
+    ],
+    "vi": "\"Book a free tour on our website\" = đặt lịch tham quan trực tuyến (paraphrase). Bẫy: networking events là quyền lợi của thành viên."
+   },
+   {
+    "q": "Who can use the space at any time of day?",
+    "o": [
+     "Private office members",
+     "All members",
+     "Start-up founders",
+     "Weekend visitors"
+    ],
+    "a": 0,
+    "ev": [
+     7
+    ],
+    "vi": "\"members with a private office have access twenty-four hours a day\". Bẫy: thành viên thường chỉ vào được 7 a.m.–10 p.m. ngày thường."
+   }
+  ]
+ },
+ {
+  "id": "p4-12",
+  "part": 4,
+  "level": 3,
+  "topic": "Office",
+  "title": "Fire drill this afternoon",
+  "title_vi": "Diễn tập phòng cháy chiều nay",
+  "speakers": {
+   "A": "M-AU"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi, everyone, this is Mark from Facilities. Just a quick heads-up about this afternoon."
+   ],
+   [
+    "A",
+    "We'll be holding a fire drill at around three fifteen, not at two as stated in last week's e-mail."
+   ],
+   [
+    "A",
+    "When the alarm goes off, please stop what you're doing and leave the building by the nearest staircase."
+   ],
+   [
+    "A",
+    "Do not use the elevators under any circumstances."
+   ],
+   [
+    "A",
+    "Our meeting point is the parking lot behind the building, not the front entrance where we gathered last time."
+   ],
+   [
+    "A",
+    "Floor wardens will be wearing orange vests, and they'll check that each area is empty."
+   ],
+   [
+    "A",
+    "Once you reach the parking lot, please find your team leader so they can confirm you're there."
+   ],
+   [
+    "A",
+    "The whole drill should take about twenty minutes, so you'll be back at your desks by around three thirty-five."
+   ],
+   [
+    "A",
+    "I know some of you have client calls this afternoon."
+   ],
+   [
+    "A",
+    "If you can't avoid one, let your manager know before lunch, and we'll see what we can do."
+   ],
+   [
+    "A",
+    "Last year, it took us almost eight minutes to get everyone out. This time, we're aiming for under five."
+   ],
+   [
+    "A",
+    "Thanks for your cooperation."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Who most likely is the speaker?",
+    "o": [
+     "A team leader",
+     "A floor warden",
+     "A building facilities employee",
+     "A client manager"
+    ],
+    "a": 2,
+    "ev": [
+     0
+    ],
+    "vi": "\"this is Mark from Facilities\" → nhân viên bộ phận cơ sở vật chất. Bẫy: \"floor wardens\" và \"team leader\" là những người khác được nhắc tới."
+   },
+   {
+    "q": "Where should employees gather during the drill?",
+    "o": [
+     "At the front entrance",
+     "Near the elevators",
+     "By the nearest staircase",
+     "Behind the building"
+    ],
+    "a": 3,
+    "ev": [
+     4
+    ],
+    "vi": "\"the parking lot behind the building\" → phía sau tòa nhà. Bẫy: \"front entrance\" là điểm tập trung lần trước; staircase là lối thoát."
+   },
+   {
+    "q": "What should employees do after arriving at the meeting point?",
+    "o": [
+     "Put on orange vests",
+     "Check that each area is empty",
+     "Report to their team leader",
+     "Return to their desks"
+    ],
+    "a": 2,
+    "ev": [
+     6
+    ],
+    "vi": "\"please find your team leader so they can confirm you're there\" = báo danh với trưởng nhóm. Bẫy: áo cam và kiểm tra khu vực là việc của floor wardens."
+   },
+   {
+    "q": "Why does the speaker say, \"I know some of you have client calls this afternoon\"?",
+    "o": [
+     "To cancel the fire drill",
+     "To recognize a possible scheduling conflict",
+     "To ask staff to move all meetings",
+     "To remind managers about a deadline"
+    ],
+    "a": 1,
+    "ev": [
+     8,
+     9
+    ],
+    "vi": "Anh thừa nhận buổi diễn tập có thể trùng cuộc gọi khách hàng, rồi nói \"let your manager know before lunch, and we'll see what we can do\". Bẫy: không hủy diễn tập, cũng không bắt dời mọi cuộc họp."
+   }
+  ]
+ },
+ {
+  "id": "p4-13",
+  "part": 4,
+  "level": 1,
+  "topic": "Logistics",
+  "title": "Wrong items delivered",
+  "title_vi": "Nhà cung cấp giao nhầm hàng",
+  "speakers": {
+   "A": "F-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Hello, this is Jenny Lopez from Prime Office Supplies, calling for Mr. Tran at Bluewave Software."
+   ],
+   [
+    "A",
+    "I'm calling about your order of office chairs that was delivered yesterday."
+   ],
+   [
+    "A",
+    "Unfortunately, our warehouse made a mistake. You ordered twenty black chairs, but we sent you twenty gray ones."
+   ],
+   [
+    "A",
+    "I'm very sorry about that."
+   ],
+   [
+    "A",
+    "We'll deliver the correct chairs this Thursday morning, between nine and eleven."
+   ],
+   [
+    "A",
+    "Our driver will pick up the gray chairs at the same time, so please keep them in their original boxes if possible."
+   ],
+   [
+    "A",
+    "Of course, there's no extra charge for this."
+   ],
+   [
+    "A",
+    "And to apologize, we'll take fifteen percent off your next order."
+   ],
+   [
+    "A",
+    "Could you call me back to confirm that someone will be at the office on Thursday to receive the delivery?"
+   ],
+   [
+    "A",
+    "My direct number is 555-0182."
+   ],
+   [
+    "A",
+    "Again, sorry for the trouble, and thank you for your patience."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is the purpose of the message?",
+    "o": [
+     "To advertise new office chairs",
+     "To report a problem with an order",
+     "To request payment for a delivery",
+     "To cancel an order"
+    ],
+    "a": 1,
+    "ev": [
+     1,
+     2
+    ],
+    "vi": "\"our warehouse made a mistake\" về đơn ghế → báo lỗi đơn hàng. Bẫy: \"no extra charge\" nên không phải đòi tiền."
+   },
+   {
+    "q": "What was wrong with the delivery?",
+    "o": [
+     "The chairs were damaged",
+     "Too few chairs were sent",
+     "The chairs were the wrong color",
+     "The delivery was late"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "vi": "\"You ordered twenty black chairs, but we sent you twenty gray ones\" → sai màu. Bẫy: số lượng vẫn là 20, đủ."
+   },
+   {
+    "q": "What does the speaker offer?",
+    "o": [
+     "Free delivery for a year",
+     "Twenty extra chairs",
+     "A full refund",
+     "A discount on a future order"
+    ],
+    "a": 3,
+    "ev": [
+     7
+    ],
+    "vi": "\"we'll take fifteen percent off your next order\" = giảm giá đơn sau (paraphrase). Bẫy: \"twenty\" là số ghế đã đặt."
+   },
+   {
+    "q": "What is the listener asked to do?",
+    "o": [
+     "Return the chairs to the warehouse",
+     "Choose a different color",
+     "Pay a delivery fee",
+     "Confirm that someone can receive a delivery"
+    ],
+    "a": 3,
+    "ev": [
+     8
+    ],
+    "vi": "\"call me back to confirm that someone will be at the office on Thursday\". Bẫy: tài xế sẽ tự đến lấy ghế xám, người nghe không phải mang trả."
+   }
+  ]
+ },
+ {
+  "id": "p4-14",
+  "part": 4,
+  "level": 2,
+  "topic": "IT",
+  "title": "New app release briefing",
+  "title_vi": "Giới thiệu tính năng bản app mới",
+  "speakers": {
+   "A": "M-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi, team. I want to give you a quick overview of version 3.0 of our mobile banking app, which goes live next Tuesday."
+   ],
+   [
+    "A",
+    "The biggest change is the new home screen. Users can now see all their accounts and recent transactions in one place."
+   ],
+   [
+    "A",
+    "We've also added fingerprint and face login, which our customers have been asking for since last year."
+   ],
+   [
+    "A",
+    "Another new feature is instant transfers between our bank and five partner banks."
+   ],
+   [
+    "A",
+    "Those transfers used to take up to two business days, so this is a big deal."
+   ],
+   [
+    "A",
+    "On top of that, the app now supports dark mode and loads about thirty percent faster."
+   ],
+   [
+    "A",
+    "Since you're the ones who'll be answering customers' questions, it's important that you understand these changes."
+   ],
+   [
+    "A",
+    "We'll run a short training session on Monday afternoon, and I'll share a one-page summary right after this meeting."
+   ],
+   [
+    "A",
+    "If customers report any bugs, please log them in the support system with screenshots, and tag them 'version three'."
+   ],
+   [
+    "A",
+    "The development team will be monitoring those reports closely during the first week."
+   ],
+   [
+    "A",
+    "Okay, let's take a look at a quick demo."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Who most likely are the listeners?",
+    "o": [
+     "App developers",
+     "Customer support staff",
+     "Bank investors",
+     "New customers"
+    ],
+    "a": 1,
+    "ev": [
+     6,
+     8
+    ],
+    "vi": "\"you're the ones who'll be answering customers' questions\" và \"log them in the support system\" → nhân viên hỗ trợ khách hàng. Bẫy: \"development team\" được nhắc như một nhóm khác."
+   },
+   {
+    "q": "Why does the speaker say, \"this is a big deal\"?",
+    "o": [
+     "To stress that a feature is a major improvement",
+     "To warn about a security risk",
+     "To announce a new partnership deal",
+     "To complain about a delay"
+    ],
+    "a": 0,
+    "ev": [
+     3,
+     4
+    ],
+    "vi": "Chuyển khoản trước đây \"used to take up to two business days\", nay là tức thì → cải tiến lớn. Bẫy: \"deal\" ở đây không phải hợp đồng với \"partner banks\"."
+   },
+   {
+    "q": "When will the training session be held?",
+    "o": [
+     "Next Tuesday",
+     "On Monday afternoon",
+     "Right after this meeting",
+     "During the first week"
+    ],
+    "a": 1,
+    "ev": [
+     7
+    ],
+    "vi": "\"a short training session on Monday afternoon\". Bẫy: thứ Ba là ngày ra mắt app; \"right after this meeting\" là lúc gửi bản tóm tắt."
+   },
+   {
+    "q": "What will most likely happen next?",
+    "o": [
+     "A demonstration will be shown",
+     "Bugs will be logged",
+     "The app will go live",
+     "Customers will be called"
+    ],
+    "a": 0,
+    "ev": [
+     10
+    ],
+    "vi": "\"let's take a look at a quick demo\" → sẽ xem bản demo. Bẫy: app ra mắt \"next Tuesday\", không phải ngay sau đó."
+   }
+  ]
+ },
+ {
+  "id": "p4-15",
+  "part": 4,
+  "level": 3,
+  "topic": "Service",
+  "title": "AI in customer service",
+  "title_vi": "AI trong chăm sóc khách hàng",
+  "speakers": {
+   "A": "F-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "Thank you. It's great to be here."
+   ],
+   [
+    "A",
+    "When we first introduced an AI chat assistant at our company three years ago, I'll admit I was skeptical."
+   ],
+   [
+    "A",
+    "Our customer service team was handling about eight thousand inquiries a week, and I worried that a chatbot would just frustrate people."
+   ],
+   [
+    "A",
+    "Well, I was wrong. Today, the assistant resolves around sixty percent of inquiries on its own, without any human involvement."
+   ],
+   [
+    "A",
+    "Average waiting time has dropped from twelve minutes to under two."
+   ],
+   [
+    "A",
+    "But here's what surprised me most: our customer satisfaction scores actually went up."
+   ],
+   [
+    "A",
+    "That's because our human agents now spend their time on the complicated cases, where empathy really matters."
+   ],
+   [
+    "A",
+    "We didn't cut a single job. Instead, we retrained our staff to handle escalations and to review the AI's answers."
+   ],
+   [
+    "A",
+    "Of course, it wasn't all smooth. In the first few months, the assistant gave some incorrect answers about refunds."
+   ],
+   [
+    "A",
+    "So my advice is simple: start small, keep humans in the loop, and measure everything."
+   ],
+   [
+    "A",
+    "In a moment, I'll show you some real conversations, and you can judge the results for yourselves."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is the talk mainly about?",
+    "o": [
+     "Building a chatbot from scratch",
+     "Reducing the number of support staff",
+     "A new refund policy",
+     "One company's experience with AI support"
+    ],
+    "a": 3,
+    "ev": [
+     1,
+     3
+    ],
+    "vi": "Cả bài kể kết quả khi công ty \"introduced an AI chat assistant\" → trải nghiệm dùng AI hỗ trợ khách hàng. Bẫy: \"We didn't cut a single job\" nên không phải cắt giảm nhân sự."
+   },
+   {
+    "q": "Why does the speaker say, \"Well, I was wrong\"?",
+    "o": [
+     "The assistant turned out to be effective",
+     "She gave customers incorrect information",
+     "She miscounted the weekly inquiries",
+     "She chose the wrong software vendor"
+    ],
+    "a": 0,
+    "ev": [
+     1,
+     2,
+     3
+    ],
+    "vi": "Cô từng \"skeptical\" và lo chatbot làm khách bực, nhưng thực tế AI tự giải quyết 60% yêu cầu → hóa ra hiệu quả. Bẫy: \"incorrect answers\" là lỗi của AI, không phải của cô."
+   },
+   {
+    "q": "What does the speaker say about the company's support staff?",
+    "o": [
+     "Some of them were let go",
+     "They answer sixty percent of inquiries",
+     "They now review refund requests only",
+     "They focus on more difficult cases"
+    ],
+    "a": 3,
+    "ev": [
+     6,
+     7
+    ],
+    "vi": "\"human agents now spend their time on the complicated cases\" = tập trung vào ca khó (paraphrase). Bẫy: 60% là phần AI tự xử lý, không phải nhân viên."
+   },
+   {
+    "q": "What will the speaker most likely do next?",
+    "o": [
+     "Present examples of chats",
+     "Answer questions from the audience",
+     "Introduce another speaker",
+     "Explain the refund rules"
+    ],
+    "a": 0,
+    "ev": [
+     10
+    ],
+    "vi": "\"I'll show you some real conversations\" → trình bày ví dụ hội thoại thực tế. Bẫy: không nhắc tới phần hỏi đáp hay diễn giả khác."
+   }
+  ]
+ }
+]

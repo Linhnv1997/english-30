@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "p3-01",
+  "part": 3,
+  "level": 1,
+  "topic": "IT",
+  "title": "Sprint deadline moved",
+  "title_vi": "Dời hạn sprint",
+  "speakers": {
+   "A": "M-US",
+   "B": "F-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi Emma, have you got a minute? I need to talk to you about the sprint deadline."
+   ],
+   [
+    "B",
+    "Sure, Mark. Is something wrong? You sound a bit worried."
+   ],
+   [
+    "A",
+    "Well, the payment team just told me their new API won't be ready until next Monday."
+   ],
+   [
+    "B",
+    "Oh no. We can't finish the checkout page without it, can we?"
+   ],
+   [
+    "A",
+    "Not really. So I'd like to move our deadline from this Friday to next Thursday. That gives us three days to test."
+   ],
+   [
+    "B",
+    "That sounds reasonable. Have you told the client yet?"
+   ],
+   [
+    "A",
+    "Not yet. I wanted to touch base with you first before we tell anyone."
+   ],
+   [
+    "B",
+    "OK. I'll send them an email this afternoon and explain the delay."
+   ],
+   [
+    "A",
+    "Great, thanks. And could you loop in the QA team too?"
+   ],
+   [
+    "B",
+    "Sure. I'll copy them on the email so everyone's on the same page."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What problem are the speakers discussing?",
+    "o": [
+     "A client has cancelled the project",
+     "Another team's API will be late",
+     "The checkout page has a bug",
+     "The QA team is too busy"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "vi": "Người đàn ông nói \"their new API won't be ready until next Monday\" – API của nhóm khác bị trễ. Bẫy: \"checkout page\" có xuất hiện nhưng không phải bị lỗi."
+   },
+   {
+    "q": "When is the new deadline?",
+    "o": [
+     "This Friday",
+     "Next Monday",
+     "In three days",
+     "Next Thursday"
+    ],
+    "a": 3,
+    "ev": [
+     4
+    ],
+    "vi": "\"move our deadline from this Friday to next Thursday\". Bẫy: Friday là hạn cũ, Monday là ngày API xong."
+   },
+   {
+    "q": "What does the woman say she will do this afternoon?",
+    "o": [
+     "Call the payment team",
+     "Test the checkout page",
+     "Email the client",
+     "Meet with the QA team"
+    ],
+    "a": 2,
+    "ev": [
+     7
+    ],
+    "vi": "\"I'll send them an email this afternoon\" – \"them\" là khách hàng (the client)."
+   },
+   {
+    "q": "What does the man ask the woman to do?",
+    "o": [
+     "Include the QA team",
+     "Delay the testing",
+     "Update the API",
+     "Reschedule a meeting"
+    ],
+    "a": 0,
+    "ev": [
+     8
+    ],
+    "vi": "\"could you loop in the QA team\" – loop in = đưa ai vào cuộc trao đổi, tức là include."
+   }
+  ]
+ },
+ {
+  "id": "p3-02",
+  "part": 3,
+  "level": 2,
+  "topic": "IT",
+  "title": "Critical bug before release",
+  "title_vi": "Lỗi nghiêm trọng trước ngày phát hành",
+  "speakers": {
+   "A": "F-AU",
+   "B": "M-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Hey Daniel, got a sec? QA just found a critical bug in the login flow."
+   ],
+   [
+    "B",
+    "Seriously? The release is tomorrow morning at nine."
+   ],
+   [
+    "A",
+    "I know. Users with two-factor authentication can't sign in at all. That's roughly fifteen percent of our customers."
+   ],
+   [
+    "B",
+    "That's a big chunk. Who's the best person to fix it?"
+   ],
+   [
+    "A",
+    "Priya wrote that module, but she's on leave until Thursday."
+   ],
+   [
+    "B",
+    "Hmm. What about Tom? He reviewed her code last month."
+   ],
+   [
+    "A",
+    "He could, but he's already flat out with the database migration."
+   ],
+   [
+    "B",
+    "OK, I'll take it myself, then. If it's a simple fix, I should have it done by tonight."
+   ],
+   [
+    "A",
+    "And if it isn't?"
+   ],
+   [
+    "B",
+    "Then we'll push the release to Friday. I'll give the product manager a heads-up just in case."
+   ],
+   [
+    "A",
+    "Good idea. I'll ask QA to stay a bit later to retest."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What problem does the woman report?",
+    "o": [
+     "Some users are unable to log in",
+     "A database migration has failed",
+     "A team member has resigned",
+     "The release notes are missing"
+    ],
+    "a": 0,
+    "ev": [
+     0,
+     2
+    ],
+    "vi": "\"Users with two-factor authentication can't sign in at all\" = không đăng nhập được. Bẫy: \"database migration\" là việc của Tom, không phải sự cố."
+   },
+   {
+    "q": "Why can't Priya fix the bug?",
+    "o": [
+     "She is busy with a migration",
+     "She is not familiar with the code",
+     "She is away until Thursday",
+     "She is reviewing another project"
+    ],
+    "a": 2,
+    "ev": [
+     4
+    ],
+    "vi": "\"she's on leave until Thursday\" = đang nghỉ phép. Bẫy: bận migration là Tom, không phải Priya."
+   },
+   {
+    "q": "What does the woman mean when she says, \"he's already flat out with the database migration\"?",
+    "o": [
+     "Tom has finished the migration",
+     "Tom has no time to help",
+     "The migration has been cancelled",
+     "Tom needs help with the database"
+    ],
+    "a": 1,
+    "ev": [
+     6
+    ],
+    "vi": "\"flat out\" = cực kỳ bận, nên Tom không có thời gian giúp sửa lỗi."
+   },
+   {
+    "q": "According to the man, what will happen if the fix is not simple?",
+    "o": [
+     "QA will retest on Thursday",
+     "Priya will return early",
+     "Tom will take over the fix",
+     "The release will move to Friday"
+    ],
+    "a": 3,
+    "ev": [
+     8,
+     9
+    ],
+    "vi": "\"Then we'll push the release to Friday\" – push = dời lại. Bẫy: Thursday là ngày Priya quay lại."
+   }
+  ]
+ },
+ {
+  "id": "p3-03",
+  "part": 3,
+  "level": 3,
+  "topic": "IT",
+  "title": "Client change request",
+  "title_vi": "Yêu cầu thay đổi từ khách hàng",
+  "speakers": {
+   "A": "F-US",
+   "B": "M-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "Oliver, Northwind just sent a change request. They want the dashboard to export to PDF as well as Excel."
+   ],
+   [
+    "B",
+    "At this stage? We're only two weeks from handover."
+   ],
+   [
+    "A",
+    "I know. I've had a rough look, and I think it's about forty extra hours of work."
+   ],
+   [
+    "B",
+    "Forty hours at our standard rate is, what, around six thousand dollars?"
+   ],
+   [
+    "A",
+    "Right. But they've mentioned the budget's tight, so they might push back."
+   ],
+   [
+    "B",
+    "Well, we could offer the PDF export as a phase-two item. That way the handover date stays on the fifteenth."
+   ],
+   [
+    "A",
+    "That's an option. Or we deliver everything on the twenty-ninth, if they're willing to pay the full amount."
+   ],
+   [
+    "B",
+    "Let's give them both and let them choose. Can you put together a short estimate?"
+   ],
+   [
+    "A",
+    "Sure. I'll have it ready by tomorrow noon. Should I copy in their project manager?"
+   ],
+   [
+    "B",
+    "Yes, please. And I'll set up a call with them on Thursday to walk through it."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What does the client want?",
+    "o": [
+     "A reduced project budget",
+     "Another export option in the dashboard",
+     "An earlier handover date",
+     "Extra hours of support"
+    ],
+    "a": 1,
+    "ev": [
+     0
+    ],
+    "vi": "\"export to PDF as well as Excel\" được diễn đạt lại thành \"another export option\". Bẫy: \"budget\", \"hours\" có trong bài nhưng không phải yêu cầu."
+   },
+   {
+    "q": "How much would the change cost?",
+    "o": [
+     "About $4,000",
+     "About $6,000",
+     "About $15,000",
+     "About $40,000"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "vi": "\"around six thousand dollars\". Bẫy: forty (giờ công) và fifteen (ngày bàn giao) là số gây nhiễu."
+   },
+   {
+    "q": "What does the man suggest?",
+    "o": [
+     "Moving the handover to the twenty-ninth",
+     "Hiring an extra developer",
+     "Asking the client for more budget",
+     "Delivering one feature at a later stage"
+    ],
+    "a": 3,
+    "ev": [
+     5
+    ],
+    "vi": "\"offer the PDF export as a phase-two item\" = giao tính năng ở giai đoạn sau. Bẫy: ngày 29 là đề xuất của người phụ nữ."
+   },
+   {
+    "q": "What will the woman do by tomorrow noon?",
+    "o": [
+     "Hold a call with the client",
+     "Finish the PDF export",
+     "Prepare a cost estimate",
+     "Revise the budget"
+    ],
+    "a": 2,
+    "ev": [
+     7,
+     8
+    ],
+    "vi": "\"put together a short estimate\" – \"I'll have it ready by tomorrow noon\". Bẫy: cuộc gọi thứ Năm là việc của người đàn ông."
+   }
+  ]
+ },
+ {
+  "id": "p3-04",
+  "part": 3,
+  "level": 1,
+  "topic": "Office",
+  "title": "Booking a workshop room",
+  "title_vi": "Đặt phòng cho buổi workshop",
+  "speakers": {
+   "A": "F-US",
+   "B": "M-AU"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi, this is Sarah from Marketing. I'd like to book a meeting room for a workshop next Tuesday."
+   ],
+   [
+    "B",
+    "Sure. Is it a full day or a half day?"
+   ],
+   [
+    "A",
+    "Just the morning, from nine to one. There'll be about twenty people."
+   ],
+   [
+    "B",
+    "OK, let me check. Room 5B holds twenty-five, and it's free that morning. It's on the fifth floor, right next to the lifts."
+   ],
+   [
+    "A",
+    "Perfect. Does it have a projector?"
+   ],
+   [
+    "B",
+    "Yes, it does. But the microphone in that room isn't working right now."
+   ],
+   [
+    "A",
+    "Oh. Could we borrow a portable one?"
+   ],
+   [
+    "B",
+    "Sure, I can bring one up from the IT office on Monday afternoon."
+   ],
+   [
+    "A",
+    "That'd be great. Also, we'll need two flip charts."
+   ],
+   [
+    "B",
+    "No problem, there are a couple in the storage room. I'll send you a confirmation email in a few minutes, and just let me know if anything changes."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Why is the woman calling?",
+    "o": [
+     "To fix a projector",
+     "To reserve a room",
+     "To order office supplies",
+     "To hire a speaker"
+    ],
+    "a": 1,
+    "ev": [
+     0
+    ],
+    "vi": "\"I'd like to book a meeting room\" – book = reserve."
+   },
+   {
+    "q": "How many people will attend the workshop?",
+    "o": [
+     "Nine",
+     "Twenty-five",
+     "Two",
+     "About twenty"
+    ],
+    "a": 3,
+    "ev": [
+     2
+    ],
+    "vi": "\"There'll be about twenty people\". Bẫy: 25 là sức chứa phòng, 9 là giờ bắt đầu."
+   },
+   {
+    "q": "What problem does the man mention?",
+    "o": [
+     "The room is already booked",
+     "The projector is old",
+     "A microphone is broken",
+     "The flip charts are missing"
+    ],
+    "a": 2,
+    "ev": [
+     5
+    ],
+    "vi": "\"the microphone in that room isn't working\" = micro bị hỏng."
+   },
+   {
+    "q": "What does the man offer to do on Monday?",
+    "o": [
+     "Bring a portable microphone",
+     "Set up the projector",
+     "Send an invoice",
+     "Move the workshop"
+    ],
+    "a": 0,
+    "ev": [
+     6,
+     7
+    ],
+    "vi": "\"I can bring one up from the IT office on Monday afternoon\" – \"one\" = portable microphone."
+   }
+  ]
+ },
+ {
+  "id": "p3-05",
+  "part": 3,
+  "level": 2,
+  "topic": "Logistics",
+  "title": "Supplier shipment delayed",
+  "title_vi": "Lô hàng nhà cung cấp bị trễ",
+  "speakers": {
+   "A": "M-GB",
+   "B": "F-AU",
+   "C": "M-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Thanks for joining, both of you. Bad news: the circuit boards from our supplier in Shenzhen are stuck at the port."
+   ],
+   [
+    "B",
+    "How long is the delay, James?"
+   ],
+   [
+    "A",
+    "They're saying ten days, maybe longer, because of a customs inspection."
+   ],
+   [
+    "C",
+    "That's going to hit our production line. We've only got enough stock for about a week."
+   ],
+   [
+    "B",
+    "Could we ship part of the order by air instead?"
+   ],
+   [
+    "A",
+    "We could, but air freight would cost an extra four thousand dollars."
+   ],
+   [
+    "C",
+    "Honestly, that's peanuts compared to shutting down the line."
+   ],
+   [
+    "B",
+    "Agreed. There's also a distributor in Singapore that keeps some of these boards in stock."
+   ],
+   [
+    "A",
+    "Good thinking, Lucy. Could you contact them today and ask about prices?"
+   ],
+   [
+    "B",
+    "Sure, I'll call them after lunch."
+   ],
+   [
+    "C",
+    "And I'll let the production manager know what's going on, so he can plan around it."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Why is the shipment delayed?",
+    "o": [
+     "The supplier ran out of stock",
+     "The goods are being checked by customs",
+     "The air freight was cancelled",
+     "The production line shut down"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "vi": "\"because of a customs inspection\" = hải quan đang kiểm tra hàng."
+   },
+   {
+    "q": "How long will the company's current stock last?",
+    "o": [
+     "About ten days",
+     "About four days",
+     "About a month",
+     "About a week"
+    ],
+    "a": 3,
+    "ev": [
+     3
+    ],
+    "vi": "\"enough stock for about a week\". Bẫy: ten days là thời gian trễ hàng."
+   },
+   {
+    "q": "What does one of the men mean when he says, \"that's peanuts compared to shutting down the line\"?",
+    "o": [
+     "The extra cost is worth paying",
+     "Air freight is too expensive",
+     "The line should stop for a while",
+     "The supplier should pay the cost"
+    ],
+    "a": 0,
+    "ev": [
+     5,
+     6
+    ],
+    "vi": "\"peanuts\" = số tiền rất nhỏ; 4.000 đô vẫn đáng trả hơn là dừng dây chuyền."
+   },
+   {
+    "q": "What will the woman do this afternoon?",
+    "o": [
+     "Visit the port",
+     "Speak to the production manager",
+     "Call a distributor",
+     "Cancel the original order"
+    ],
+    "a": 2,
+    "ev": [
+     7,
+     8,
+     9
+    ],
+    "vi": "Lucy nói \"I'll call them after lunch\" – \"them\" là nhà phân phối ở Singapore. Bẫy: báo production manager là việc của người đàn ông kia."
+   }
+  ]
+ },
+ {
+  "id": "p3-06",
+  "part": 3,
+  "level": 3,
+  "topic": "HR",
+  "title": "Onboarding a new hire",
+  "title_vi": "Chuẩn bị cho nhân viên mới",
+  "speakers": {
+   "A": "F-GB",
+   "B": "M-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi Kevin, it's Rachel from HR. Our new back-end developer, Minh, starts on Monday the third."
+   ],
+   [
+    "B",
+    "Right, she's on my list. Her laptop arrived yesterday, but I still need to install the dev tools."
+   ],
+   [
+    "A",
+    "Will it be ready in time?"
+   ],
+   [
+    "B",
+    "Should be. I'll finish it by Friday afternoon. Her email's already active, but I can't open up repository access until her manager approves it."
+   ],
+   [
+    "A",
+    "That'd be Alan. He's at a conference until Wednesday, though."
+   ],
+   [
+    "B",
+    "Then she won't be able to touch the code for her first two days."
+   ],
+   [
+    "A",
+    "Not ideal. Could his deputy, Joanna, sign it off instead?"
+   ],
+   [
+    "B",
+    "Yes, any team lead can approve it. I'll send Joanna the request now."
+   ],
+   [
+    "A",
+    "Great. And the access badge?"
+   ],
+   [
+    "B",
+    "Security only prints badges at the start of the week, so she'll collect it from the front desk at ten on her first day."
+   ],
+   [
+    "A",
+    "Fine. I'll mention that in her welcome email."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What are the speakers mainly discussing?",
+    "o": [
+     "Preparing for a new employee's arrival",
+     "Repairing a broken laptop",
+     "Planning a conference trip",
+     "Interviewing a back-end developer"
+    ],
+    "a": 0,
+    "ev": [
+     0
+    ],
+    "vi": "Cả bài nói về laptop, tài khoản, thẻ ra vào cho Minh, người \"starts on Monday the third\". Bẫy: \"conference\" là nơi Alan đang đi."
+   },
+   {
+    "q": "Why can't the man set up repository access yet?",
+    "o": [
+     "The laptop hasn't arrived",
+     "A manager must give permission",
+     "The email account isn't active",
+     "Security is closed until Monday"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "vi": "\"can't open up repository access until her manager approves it\" = cần quản lý phê duyệt. Bẫy: laptop đã đến, email đã hoạt động."
+   },
+   {
+    "q": "What will the man probably do next?",
+    "o": [
+     "Install the development tools",
+     "Call Alan at the conference",
+     "Print an access badge",
+     "Send a request to Joanna"
+    ],
+    "a": 3,
+    "ev": [
+     7
+    ],
+    "vi": "\"I'll send Joanna the request now\" – \"now\" = việc làm ngay. Bẫy: cài dev tools thì đến thứ Sáu mới xong."
+   },
+   {
+    "q": "When will the new employee receive her badge?",
+    "o": [
+     "On Friday afternoon",
+     "On Wednesday",
+     "On Monday morning",
+     "Before her start date"
+    ],
+    "a": 2,
+    "ev": [
+     0,
+     9
+    ],
+    "vi": "\"at ten on her first day\" – ngày đầu là Monday the third, nên là sáng thứ Hai. Đây là câu suy luận kết hợp hai chi tiết."
+   }
+  ]
+ },
+ {
+  "id": "p3-07",
+  "part": 3,
+  "level": 1,
+  "topic": "IT",
+  "title": "Rescheduling a client demo",
+  "title_vi": "Dời lịch demo cho khách hàng",
+  "speakers": {
+   "A": "M-AU",
+   "B": "F-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi Jessica. The client in Chicago just emailed. They can't make the demo on Thursday."
+   ],
+   [
+    "B",
+    "Oh, really? That's a shame, we were all set. Did they say why?"
+   ],
+   [
+    "A",
+    "Their CEO wants to join, but she's traveling that day."
+   ],
+   [
+    "B",
+    "OK, that makes sense. So when can they do it instead?"
+   ],
+   [
+    "A",
+    "They suggested Friday at eight a.m., Chicago time."
+   ],
+   [
+    "B",
+    "Hmm, that's nine p.m. for us. A bit late, but I can manage if it's only an hour."
+   ],
+   [
+    "A",
+    "Me too. I'll send them a new calendar invite, then, and confirm the time on both sides."
+   ],
+   [
+    "B",
+    "Great. Should we do a quick test run before the demo?"
+   ],
+   [
+    "A",
+    "Good idea. How about Friday afternoon at two?"
+   ],
+   [
+    "B",
+    "Works for me. I'll book a room and let the team know. We should also double-check that the demo data is up to date."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Why is the demo being rescheduled?",
+    "o": [
+     "The product isn't ready",
+     "A room is unavailable",
+     "A client executive is traveling",
+     "The team is too busy"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "vi": "\"Their CEO ... she's traveling that day\" – CEO được diễn đạt lại là \"client executive\"."
+   },
+   {
+    "q": "What time will the demo start for the speakers?",
+    "o": [
+     "At 8 a.m.",
+     "At 2 p.m.",
+     "At 4 p.m.",
+     "At 9 p.m."
+    ],
+    "a": 3,
+    "ev": [
+     5
+    ],
+    "vi": "\"that's nine p.m. for us\". Bẫy: 8 a.m. là giờ Chicago, 2 p.m. là buổi chạy thử."
+   },
+   {
+    "q": "What will the man do?",
+    "o": [
+     "Send a calendar invitation",
+     "Book a room",
+     "Call the CEO",
+     "Prepare some slides"
+    ],
+    "a": 0,
+    "ev": [
+     6
+    ],
+    "vi": "\"I'll send them a new calendar invite\". Bẫy: đặt phòng là việc của người phụ nữ."
+   },
+   {
+    "q": "What does the woman suggest?",
+    "o": [
+     "Cancelling the demo",
+     "Having a practice session",
+     "Inviting more clients",
+     "Moving the demo to Thursday"
+    ],
+    "a": 1,
+    "ev": [
+     7
+    ],
+    "vi": "\"do a quick test run before the demo\" = buổi tập/chạy thử (practice session)."
+   }
+  ]
+ },
+ {
+  "id": "p3-08",
+  "part": 3,
+  "level": 2,
+  "topic": "Finance",
+  "title": "Expense report rejected",
+  "title_vi": "Báo cáo chi phí bị từ chối",
+  "speakers": {
+   "A": "F-US",
+   "B": "M-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi, Peter? It's Nina from Finance. I'm calling about your expense report for the Singapore trip."
+   ],
+   [
+    "B",
+    "Oh, hi Nina. Is there a problem?"
+   ],
+   [
+    "A",
+    "I'm afraid it's been rejected. Two receipts are missing: the taxi from the airport and one hotel dinner."
+   ],
+   [
+    "B",
+    "Ah, the taxi driver didn't give me one. But I should have the dinner receipt somewhere."
+   ],
+   [
+    "A",
+    "OK. For the taxi, you can fill in a missing-receipt form, as long as it's under fifty dollars."
+   ],
+   [
+    "B",
+    "It was about thirty-five, so that's fine."
+   ],
+   [
+    "A",
+    "Great. Just send everything back to me by Wednesday."
+   ],
+   [
+    "B",
+    "And when would I get paid?"
+   ],
+   [
+    "A",
+    "If I get it by then, the money will go out with payroll on the twenty-fifth."
+   ],
+   [
+    "B",
+    "That's a relief. Things are a bit tight this month."
+   ],
+   [
+    "A",
+    "I understand. I'll keep an eye out for your email."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Why was the man's report rejected?",
+    "o": [
+     "Some receipts were missing",
+     "It was submitted late",
+     "The hotel was too expensive",
+     "The trip was not approved"
+    ],
+    "a": 0,
+    "ev": [
+     2
+    ],
+    "vi": "\"Two receipts are missing\" – thiếu hóa đơn."
+   },
+   {
+    "q": "What can the man do about the taxi expense?",
+    "o": [
+     "Ask the driver for a copy",
+     "Claim it next month",
+     "Pay for it himself",
+     "Complete a form instead"
+    ],
+    "a": 3,
+    "ev": [
+     4
+    ],
+    "vi": "\"you can fill in a missing-receipt form\" = điền mẫu đơn thay cho hóa đơn. Bẫy: \"driver\" có trong bài nhưng tài xế không đưa hóa đơn."
+   },
+   {
+    "q": "When will the man be reimbursed?",
+    "o": [
+     "On Wednesday",
+     "On the twenty-fifth",
+     "Next month",
+     "In fifty days"
+    ],
+    "a": 1,
+    "ev": [
+     8
+    ],
+    "vi": "\"the money will go out with payroll on the twenty-fifth\". Bẫy: Wednesday là hạn nộp lại giấy tờ."
+   },
+   {
+    "q": "What does the man mean when he says, \"Things are a bit tight this month\"?",
+    "o": [
+     "He has a busy schedule",
+     "His deadline is very close",
+     "He is short of money",
+     "His hotel room was small"
+    ],
+    "a": 2,
+    "ev": [
+     9
+    ],
+    "vi": "\"tight\" ở đây nói về tiền bạc = đang eo hẹp tài chính, nên anh ấy mừng vì sắp được hoàn tiền."
+   }
+  ]
+ },
+ {
+  "id": "p3-09",
+  "part": 3,
+  "level": 3,
+  "topic": "Events",
+  "title": "Anniversary catering",
+  "title_vi": "Đặt tiệc kỷ niệm công ty",
+  "speakers": {
+   "A": "M-US",
+   "B": "F-AU"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi, I'm calling from Brightline Software. We're celebrating our tenth anniversary on the twelfth of June, and we need catering."
+   ],
+   [
+    "B",
+    "Congratulations! How many guests are you expecting?"
+   ],
+   [
+    "A",
+    "We've invited a hundred and fifty, but we're planning for about a hundred and twenty."
+   ],
+   [
+    "B",
+    "OK. Our buffet package is thirty-two dollars a head, and that includes drinks."
+   ],
+   [
+    "A",
+    "Does it cover vegetarian options? About a third of our staff don't eat meat."
+   ],
+   [
+    "B",
+    "Yes, and we can do vegan and gluten-free on request at no extra charge."
+   ],
+   [
+    "A",
+    "Great. What about a cake? I'd like one with our logo on it."
+   ],
+   [
+    "B",
+    "We can do that, but custom cakes need two weeks' notice, so we'd need the design by the twenty-ninth of May."
+   ],
+   [
+    "A",
+    "That's cutting it close. Our designer's away until the twenty-fifth."
+   ],
+   [
+    "B",
+    "That still leaves a few days. I'll email you a quote today, and a twenty percent deposit will lock in the date."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What is the company celebrating?",
+    "o": [
+     "A product launch",
+     "A business milestone",
+     "A staff member's retirement",
+     "A new office opening"
+    ],
+    "a": 1,
+    "ev": [
+     0
+    ],
+    "vi": "\"our tenth anniversary\" = kỷ niệm 10 năm, diễn đạt lại thành \"business milestone\"."
+   },
+   {
+    "q": "How many people does the man expect to attend?",
+    "o": [
+     "About 32",
+     "About 150",
+     "About 120",
+     "About a third of the staff"
+    ],
+    "a": 2,
+    "ev": [
+     2
+    ],
+    "vi": "\"invited a hundred and fifty, but we're planning for about a hundred and twenty\". Bẫy: 150 là số người được mời, 32 là giá mỗi suất."
+   },
+   {
+    "q": "What does the woman say about special diets?",
+    "o": [
+     "They cost extra",
+     "They need two weeks' notice",
+     "They must be ordered by the 25th",
+     "They are available at no charge"
+    ],
+    "a": 3,
+    "ev": [
+     5
+    ],
+    "vi": "\"vegan and gluten-free on request at no extra charge\" = miễn phí. Bẫy: \"two weeks' notice\" là cho bánh kem."
+   },
+   {
+    "q": "What will the woman probably do next?",
+    "o": [
+     "Design a cake",
+     "Collect a deposit",
+     "Send a price quote",
+     "Call the designer"
+    ],
+    "a": 2,
+    "ev": [
+     9
+    ],
+    "vi": "\"I'll email you a quote today\". Bẫy: deposit là việc khách phải làm sau đó, không phải việc tiếp theo của cô ấy."
+   }
+  ]
+ },
+ {
+  "id": "p3-10",
+  "part": 3,
+  "level": 1,
+  "topic": "IT",
+  "title": "Server outage review",
+  "title_vi": "Họp rút kinh nghiệm sự cố máy chủ",
+  "speakers": {
+   "A": "F-US",
+   "B": "M-AU",
+   "C": "F-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "OK, let's keep this short, we've all got a lot on today. Ben, can you walk us through what happened last night?"
+   ],
+   [
+    "B",
+    "Sure. The main web server went down at about eleven fifteen and was offline for forty minutes."
+   ],
+   [
+    "C",
+    "What caused it?"
+   ],
+   [
+    "B",
+    "The disk got full. The old log files weren't being deleted, so they just kept growing."
+   ],
+   [
+    "A",
+    "And how did we find out?"
+   ],
+   [
+    "B",
+    "A customer emailed support. Our monitoring didn't send any alert."
+   ],
+   [
+    "C",
+    "That's not good. We should've known before the customers did. That's the bigger issue here."
+   ],
+   [
+    "A",
+    "Agreed. So, two actions. Ben, can you set up automatic log cleanup?"
+   ],
+   [
+    "B",
+    "Sure, I'll have it done by Wednesday and test it on the staging server first."
+   ],
+   [
+    "A",
+    "And Claire, could you add a disk space alert to our monitoring?"
+   ],
+   [
+    "C",
+    "Leave it with me. I'll do it today."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "How long was the server offline?",
+    "o": [
+     "Eleven minutes",
+     "Fifteen minutes",
+     "About an hour",
+     "Forty minutes"
+    ],
+    "a": 3,
+    "ev": [
+     1
+    ],
+    "vi": "\"offline for forty minutes\". Bẫy: \"eleven fifteen\" là thời điểm sập."
+   },
+   {
+    "q": "What caused the problem?",
+    "o": [
+     "A power cut",
+     "Log files filled up the disk",
+     "A customer's mistake",
+     "A software update"
+    ],
+    "a": 1,
+    "ev": [
+     3
+    ],
+    "vi": "\"The disk got full. The old log files weren't being deleted\" – log đầy ổ đĩa."
+   },
+   {
+    "q": "How did the team learn about the outage?",
+    "o": [
+     "From a monitoring alert",
+     "From a server report",
+     "From a customer's message",
+     "From a manager's call"
+    ],
+    "a": 2,
+    "ev": [
+     5
+    ],
+    "vi": "\"A customer emailed support\". Bẫy: monitoring KHÔNG gửi cảnh báo."
+   },
+   {
+    "q": "What does Claire mean when she says, \"Leave it with me\"?",
+    "o": [
+     "She will handle the task",
+     "She wants to leave the meeting",
+     "She needs more information",
+     "She disagrees with the plan"
+    ],
+    "a": 0,
+    "ev": [
+     9,
+     10
+    ],
+    "vi": "\"Leave it with me\" = để tôi lo việc đó; cô ấy nhận làm cảnh báo dung lượng đĩa ngay hôm nay."
+   }
+  ]
+ },
+ {
+  "id": "p3-11",
+  "part": 3,
+  "level": 2,
+  "topic": "HR",
+  "title": "Interview panel scheduling",
+  "title_vi": "Sắp xếp hội đồng phỏng vấn",
+  "speakers": {
+   "A": "M-GB",
+   "B": "F-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi Laura. I'm putting together the interview panel for the senior developer role. Have you got a moment?"
+   ],
+   [
+    "B",
+    "Sure, Greg. Who's on it so far?"
+   ],
+   [
+    "A",
+    "Me, Hannah from the architecture team, and I'd like you to join as well."
+   ],
+   [
+    "B",
+    "Happy to. When are the interviews?"
+   ],
+   [
+    "A",
+    "We've got three candidates. I was thinking Tuesday the eighth, all afternoon."
+   ],
+   [
+    "B",
+    "Ah, I've got a client workshop that day. Could we do Wednesday the ninth instead?"
+   ],
+   [
+    "A",
+    "Let me check Hannah's calendar. She's free on the ninth, but only until three."
+   ],
+   [
+    "B",
+    "So if each interview's an hour, we'd need to start at noon."
+   ],
+   [
+    "A",
+    "That works. I'll book a room and send invites to the candidates today."
+   ],
+   [
+    "B",
+    "Great. Could you also forward me their CVs? I'd like to prepare some technical questions."
+   ],
+   [
+    "A",
+    "Will do. I'll send them over by the end of the day."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What are the speakers mainly discussing?",
+    "o": [
+     "Arranging job interviews",
+     "Hiring a new architect",
+     "Planning a client workshop",
+     "Reviewing a candidate's code"
+    ],
+    "a": 0,
+    "ev": [
+     0
+    ],
+    "vi": "\"putting together the interview panel for the senior developer role\" – sắp xếp phỏng vấn. Bẫy: \"architecture team\", \"client workshop\" chỉ là chi tiết phụ."
+   },
+   {
+    "q": "Why can't the woman attend on Tuesday?",
+    "o": [
+     "Hannah is unavailable",
+     "She will be on vacation",
+     "She has a client workshop",
+     "The room is booked"
+    ],
+    "a": 2,
+    "ev": [
+     5
+    ],
+    "vi": "\"I've got a client workshop that day\"."
+   },
+   {
+    "q": "What time will the interviews probably start?",
+    "o": [
+     "At three",
+     "At noon",
+     "At nine",
+     "At one"
+    ],
+    "a": 1,
+    "ev": [
+     6,
+     7
+    ],
+    "vi": "\"we'd need to start at noon\" – ba buổi mỗi buổi 1 tiếng, kết thúc trước 3 giờ. Bẫy: three là giờ Hannah bận, nine là ngày 9."
+   },
+   {
+    "q": "What does the woman ask the man to do?",
+    "o": [
+     "Book a meeting room",
+     "Prepare technical questions",
+     "Contact Hannah",
+     "Send her the candidates' résumés"
+    ],
+    "a": 3,
+    "ev": [
+     9
+    ],
+    "vi": "\"forward me their CVs\" – CV = résumé. Bẫy: chuẩn bị câu hỏi là việc cô ấy tự làm."
+   }
+  ]
+ },
+ {
+  "id": "p3-12",
+  "part": 3,
+  "level": 3,
+  "topic": "Office",
+  "title": "Moving to a new floor",
+  "title_vi": "Chuyển sang tầng mới",
+  "speakers": {
+   "A": "F-AU",
+   "B": "M-US"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi Mike. Facilities just confirmed our move to the sixth floor. It's happening the weekend of the twentieth."
+   ],
+   [
+    "B",
+    "Finally. Do we know the seating plan yet?"
+   ],
+   [
+    "A",
+    "Roughly. The dev team gets the area by the windows, and QA's going next to the kitchen."
+   ],
+   [
+    "B",
+    "QA won't be thrilled about that. How many desks are there?"
+   ],
+   [
+    "A",
+    "Forty-two, which is four more than we need, so we've got some room to grow."
+   ],
+   [
+    "B",
+    "Good. What about network ports? Last time, half of them didn't work."
+   ],
+   [
+    "A",
+    "IT's testing every port on the Thursday before, the eighteenth."
+   ],
+   [
+    "B",
+    "And the printer? We've only got the one on four."
+   ],
+   [
+    "A",
+    "They're moving it up, but it won't be connected until Monday at eleven. So anyone who needs printouts for Monday morning should print them on Friday."
+   ],
+   [
+    "B",
+    "Got it. I'll put that in my team update right away."
+   ],
+   [
+    "A",
+    "Thanks. Oh, and packing crates arrive Wednesday; everything has to be labelled by Friday at five."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "When will the office move take place?",
+    "o": [
+     "The weekend of the twentieth",
+     "On Thursday the eighteenth",
+     "On Monday at eleven",
+     "On Wednesday"
+    ],
+    "a": 0,
+    "ev": [
+     0
+    ],
+    "vi": "\"It's happening the weekend of the twentieth\". Bẫy: 18 là ngày kiểm tra cổng mạng, Wednesday là ngày thùng đến."
+   },
+   {
+    "q": "What does the man mean when he says, \"QA won't be thrilled about that\"?",
+    "o": [
+     "QA asked to sit by the windows",
+     "QA will move first",
+     "QA hasn't been told yet",
+     "QA will likely be unhappy with their spot"
+    ],
+    "a": 3,
+    "ev": [
+     2,
+     3
+    ],
+    "vi": "\"won't be thrilled\" = sẽ không vui; QA bị xếp ngồi cạnh bếp."
+   },
+   {
+    "q": "What problem did the man experience during a previous move?",
+    "o": [
+     "Many network ports didn't work",
+     "The printer was lost",
+     "There weren't enough desks",
+     "Packing crates arrived late"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "vi": "\"Last time, half of them didn't work\" – \"them\" = network ports. Bẫy: bàn hiện thừa 4 chỗ, không thiếu."
+   },
+   {
+    "q": "What will the man probably do next?",
+    "o": [
+     "Test the network ports",
+     "Tell his team about the printing arrangements",
+     "Move the printer upstairs",
+     "Label his packing crates"
+    ],
+    "a": 1,
+    "ev": [
+     8,
+     9
+    ],
+    "vi": "\"I'll put that in my team update right away\" – \"that\" = lời khuyên in tài liệu trước vào thứ Sáu. Bẫy: test cổng mạng là việc của IT."
+   }
+  ]
+ },
+ {
+  "id": "p3-13",
+  "part": 3,
+  "level": 1,
+  "topic": "Sales",
+  "title": "Volume discount",
+  "title_vi": "Thương lượng chiết khấu số lượng",
+  "speakers": {
+   "A": "M-US",
+   "B": "F-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi Fiona, thanks for taking my call. We're planning to order more monitors this quarter."
+   ],
+   [
+    "B",
+    "Great to hear, Tom. How many are you thinking?"
+   ],
+   [
+    "A",
+    "About two hundred. Your price is a hundred and eighty dollars each. Can you offer a discount for that volume?"
+   ],
+   [
+    "B",
+    "For two hundred units, I can give you eight percent off."
+   ],
+   [
+    "A",
+    "Hmm. To be honest, another supplier offered us ten percent for the same order."
+   ],
+   [
+    "B",
+    "I see. If you order two hundred and fifty, I can match that."
+   ],
+   [
+    "A",
+    "That's more than we need right now, and we don't have the storage space. Could you include free delivery instead?"
+   ],
+   [
+    "B",
+    "OK. Eight percent plus free delivery. Deal?"
+   ],
+   [
+    "A",
+    "That sounds fair. Can you send me the offer in writing?"
+   ],
+   [
+    "B",
+    "Of course. I'll email it to you by tomorrow morning, and we can finalize it this week."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What does the man want to buy?",
+    "o": [
+     "Laptops",
+     "Printers",
+     "Monitors",
+     "Office chairs"
+    ],
+    "a": 2,
+    "ev": [
+     0
+    ],
+    "vi": "\"We're planning to order more monitors\"."
+   },
+   {
+    "q": "How many items does the man plan to order?",
+    "o": [
+     "About 180",
+     "About 200",
+     "About 250",
+     "About 10"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "vi": "\"About two hundred\". Bẫy: 180 là đơn giá, 250 là số lượng để được giảm 10%."
+   },
+   {
+    "q": "What do the speakers agree on?",
+    "o": [
+     "A ten percent discount",
+     "An order of 250 units",
+     "Free delivery only",
+     "Eight percent off with free delivery"
+    ],
+    "a": 3,
+    "ev": [
+     7,
+     8
+    ],
+    "vi": "\"Eight percent plus free delivery. Deal?\" – \"That sounds fair.\" Bẫy: 10% chỉ có khi đặt 250 chiếc."
+   },
+   {
+    "q": "What will the woman do by tomorrow morning?",
+    "o": [
+     "Send a written offer",
+     "Deliver the monitors",
+     "Call another supplier",
+     "Visit the man's office"
+    ],
+    "a": 0,
+    "ev": [
+     8,
+     9
+    ],
+    "vi": "\"send me the offer in writing\" – \"I'll email it to you by tomorrow morning\"."
+   }
+  ]
+ },
+ {
+  "id": "p3-14",
+  "part": 3,
+  "level": 2,
+  "topic": "IT",
+  "title": "Code review compromise",
+  "title_vi": "Thỏa hiệp khi review code",
+  "speakers": {
+   "A": "M-US",
+   "B": "F-AU",
+   "C": "M-GB"
+  },
+  "lines": [
+   [
+    "A",
+    "So, Sophie, about your pull request. I left a comment asking you to split the payment service into three smaller classes."
+   ],
+   [
+    "B",
+    "Yeah, I saw it, Jake. Honestly, I think that's overkill for now. The class is only about three hundred lines."
+   ],
+   [
+    "A",
+    "But it's going to grow. We're adding refunds next sprint."
+   ],
+   [
+    "C",
+    "Can I jump in? I think you both have a point."
+   ],
+   [
+    "B",
+    "Go on, David."
+   ],
+   [
+    "C",
+    "Sophie, what if you merge it as it is, but put the refund logic in its own class when we build it?"
+   ],
+   [
+    "B",
+    "I can live with that. It means I don't have to redo the tests before Friday's release."
+   ],
+   [
+    "A",
+    "OK, fine by me, as long as we add a ticket so it doesn't get forgotten."
+   ],
+   [
+    "C",
+    "Fair enough. Jake, can you create the ticket?"
+   ],
+   [
+    "A",
+    "Sure, I'll do it right after this call and put it in next sprint."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "What are the speakers mainly discussing?",
+    "o": [
+     "How to structure some code",
+     "When to release a feature",
+     "Who should write the tests",
+     "How to fix a payment bug"
+    ],
+    "a": 0,
+    "ev": [
+     0,
+     1
+    ],
+    "vi": "Tranh luận về việc \"split the payment service into three smaller classes\" – cách tổ chức code. Bẫy: \"release\", \"tests\" chỉ là chi tiết phụ."
+   },
+   {
+    "q": "Why does Jake want Sophie to change her code?",
+    "o": [
+     "The code has too many bugs",
+     "The class will get bigger soon",
+     "The tests are failing",
+     "Sophie asked for his help"
+    ],
+    "a": 1,
+    "ev": [
+     2
+    ],
+    "vi": "\"it's going to grow. We're adding refunds next sprint\" = class sẽ to ra."
+   },
+   {
+    "q": "What does the woman mean when she says, \"I can live with that\"?",
+    "o": [
+     "She needs more time",
+     "She is unhappy with the plan",
+     "She accepts the suggestion",
+     "She wants to rewrite the tests"
+    ],
+    "a": 2,
+    "ev": [
+     6
+    ],
+    "vi": "\"I can live with that\" = tôi chấp nhận được, đồng ý với đề xuất của David."
+   },
+   {
+    "q": "What will Jake do after the call?",
+    "o": [
+     "Release the feature",
+     "Run the tests again",
+     "Split the payment class",
+     "Create a task for next sprint"
+    ],
+    "a": 3,
+    "ev": [
+     8,
+     9
+    ],
+    "vi": "\"I'll do it right after this call and put it in next sprint\" – \"it\" = ticket, diễn đạt lại thành \"task\". Bẫy: tách class đã bị hoãn."
+   }
+  ]
+ },
+ {
+  "id": "p3-15",
+  "part": 3,
+  "level": 3,
+  "topic": "Travel",
+  "title": "Changing flights",
+  "title_vi": "Đổi chuyến bay công tác",
+  "speakers": {
+   "A": "F-US",
+   "B": "M-AU"
+  },
+  "lines": [
+   [
+    "A",
+    "Hi, Liam. Bad news: the Tokyo client just moved our meeting from Thursday to Friday afternoon."
+   ],
+   [
+    "B",
+    "Oh, great. Our return flight's on Friday at six p.m."
+   ],
+   [
+    "A",
+    "Exactly. The meeting runs from two to five, so there's no way we'll make it to the airport."
+   ],
+   [
+    "B",
+    "Right. Let me check the airline's site. There's one at ten on Saturday morning, or one at eleven-forty Friday night."
+   ],
+   [
+    "A",
+    "And when does the late one get in?"
+   ],
+   [
+    "B",
+    "Seven on Saturday morning. Either way, the change fee is a hundred and twenty dollars each."
+   ],
+   [
+    "A",
+    "I'd rather skip the red-eye. Could we stay one more night at the hotel?"
+   ],
+   [
+    "B",
+    "I'll check. Our hotel has rooms at a hundred and fifty a night."
+   ],
+   [
+    "A",
+    "That's fine. Can you rebook the flights, and I'll extend the hotel?"
+   ],
+   [
+    "B",
+    "Sure. I'll also give Finance a heads-up about the extra cost."
+   ]
+  ],
+  "questions": [
+   {
+    "q": "Why do the speakers need to change their plans?",
+    "o": [
+     "Their flight was cancelled",
+     "A client meeting was rescheduled",
+     "The hotel is fully booked",
+     "The client ended the contract"
+    ],
+    "a": 1,
+    "ev": [
+     0
+    ],
+    "vi": "\"the Tokyo client just moved our meeting from Thursday to Friday afternoon\" – cuộc họp bị dời."
+   },
+   {
+    "q": "How much is the fee for changing each ticket?",
+    "o": [
+     "$120",
+     "$150",
+     "$240",
+     "$270"
+    ],
+    "a": 0,
+    "ev": [
+     5
+    ],
+    "vi": "\"the change fee is a hundred and twenty dollars each\". Bẫy: 150 là giá phòng khách sạn mỗi đêm."
+   },
+   {
+    "q": "What does the woman mean when she says, \"I'd rather skip the red-eye\"?",
+    "o": [
+     "She doesn't want an overnight flight",
+     "She is feeling unwell",
+     "She wants to cancel the meeting",
+     "She prefers a cheaper ticket"
+    ],
+    "a": 0,
+    "ev": [
+     3,
+     6
+    ],
+    "vi": "\"red-eye\" = chuyến bay đêm (chuyến 11:40 tối thứ Sáu); cô ấy muốn bay sáng thứ Bảy và ở thêm một đêm."
+   },
+   {
+    "q": "What will the woman do?",
+    "o": [
+     "Rebook the flights",
+     "Contact Finance",
+     "Extend the hotel stay",
+     "Call the client"
+    ],
+    "a": 2,
+    "ev": [
+     8
+    ],
+    "vi": "\"I'll extend the hotel\". Bẫy: đổi vé và báo Finance là việc của Liam."
+   }
+  ]
+ }
+]

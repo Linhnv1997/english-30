@@ -12,9 +12,10 @@ const ICON = {
   cards:'<rect x="4" y="5" width="13" height="15" rx="2"/><path d="M8 3h11a1 1 0 0 1 1 1v13"/>',
   dict:'<path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/>',
   pron:'<path d="M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>',
-  prog:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>'
+  prog:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  listen:'<path d="M6 8.5a6 6 0 0 1 12 0c0 3.5-3.5 4.5-3.5 7.5a3 3 0 0 1-5.5 1.6"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0"/>'
 };
-const TABS = [["today","Hôm nay"],["cards","Thẻ từ"],["dict","Nghe chép"],["pron","Phát âm"],["prog","Tiến độ"]];
+const TABS = [["today","Hôm nay"],["cards","Thẻ từ"],["listen","Luyện nghe"],["dict","Nghe chép"],["pron","Phát âm"],["prog","Tiến độ"]];
 
 /* ---------- state: every record carries a timestamp t, merged per key (newest wins) ---------- */
 const load = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) || d; } catch (e) { return d; } };
@@ -112,6 +113,7 @@ let pendingRender = false;
 function refresh(){
   const a = document.activeElement;
   if (a && /INPUT|TEXTAREA/.test(a.tagName)){ pendingRender = true; return; }
+  if (tab === "listen" && lcur) return;   // re-rendering would restart the lesson audio
   pendingRender = false;
   if (!(tab === "cards" && cmode === "review" && Q && qi < Q.length)) Q = null;
   if (!(tab === "cards" && deck === "v3" && vmode === "review" && VQ && vqi < VQ.length)) VQ = null;
@@ -472,7 +474,98 @@ function bindV3(on){
   on("[data-v3n]", b => b.onclick = () => { cfg.v3new = +b.dataset.v3n; saveCfg(); VQ = null; render(); });
 }
 
-const VIEWS = {today:vToday, cards:vCards, dict:vDict, pron:vPron, prog:vProg};
+/* ---------- listening practice: 30 conversations (Part 3 style) + 30 talks (Part 4 style), 4 questions each ---------- */
+let LSD = null, lLoading = false, lpart = 3, llv = 0, lcur = null, lans = {}, lsub = false, lshow = false, lrate = 1;
+const LLV = {1: "Dễ", 2: "Trung bình", 3: "Khó"}, LLVC = {1: "Easy", 2: "Medium", 3: "Hard"};
+const lrec = id => get("l:" + id) || {};
+function loadL(){
+  if (LSD || lLoading) return; lLoading = true;
+  const s = document.createElement("script"); s.src = "listening.js";
+  s.onload = () => { LSD = window.LS; render(); };
+  s.onerror = () => { lLoading = false; const el = $("#lload"); if (el) el.textContent = "Chưa tải được bài nghe. Kiểm tra mạng rồi mở lại tab."; };
+  document.head.appendChild(s);
+}
+function spkLabels(x){
+  const g = {}, out = {};
+  Object.entries(x.speakers).forEach(([s, v]) => (g[v[0]] = g[v[0]] || []).push(s));
+  Object.entries(x.speakers).forEach(([s, v]) => {
+    const same = g[v[0]], base = x.part === 4 ? "Người nói" : v[0] === "M" ? "Nam" : "Nữ";
+    out[s] = (same.length > 1 && x.part === 3 ? base + " " + (same.indexOf(s) + 1) : base) + " · " + v.slice(2);
+  });
+  return out;
+}
+function vListen(){
+  if (!LSD){ loadL(); return `<div class="card"><p class="mute" id="lload">Đang tải bài nghe…</p></div>`; }
+  if (lcur) return vLesson(LSD.find(x => x.id === lcur));
+  const done = LSD.filter(x => lrec(x.id).best != null), pts = done.reduce((a, x) => a + lrec(x.id).best, 0);
+  const list = LSD.filter(x => x.part === lpart && (!llv || x.level === llv));
+  return `<div class="card">
+    <div class="seg" role="group" aria-label="Dạng bài">${[[3, "Hội thoại (Part 3)"], [4, "Bài nói (Part 4)"]].map(([k, l]) => `<button data-lp="${k}" aria-pressed="${lpart === k}">${l}</button>`).join("")}</div>
+    <div class="seg" role="group" aria-label="Độ khó">${[[0, "Tất cả"], [1, "Dễ"], [2, "Trung bình"], [3, "Khó"]].map(([k, l]) => `<button data-llv="${k}" aria-pressed="${llv === k}">${l}</button>`).join("")}</div>
+    <p class="mute">Đã làm <b>${done.length}</b>/${LSD.length} bài${done.length ? ` · đúng ${pts}/${done.length * 4} câu (${Math.round(pts / done.length / 4 * 100)}%) ở lần tốt nhất` : ""}. Đọc trước câu hỏi, nghe một lần như thi thật, rồi nộp bài để xem script và giải thích.</p>
+  </div>
+  <div class="card"><div class="wl">${list.map(x => { const r = lrec(x.id); return `<button class="li" data-ls="${x.id}">
+    <span class="num">${x.id.slice(3)}</span>
+    <span class="t"><b>${esc(x.title)}</b><small>${esc(x.title_vi)} · ${esc(x.topic)} · <span class="tag ${LLVC[x.level]}">${LLV[x.level]}</span></small></span>
+    <span class="sc ${r.best == null ? "" : r.best === 4 ? "k" : r.best >= 3 ? "l" : "n"}">${r.best == null ? "" : r.best + "/4"}</span></button>`; }).join("")}</div></div>`;
+}
+function vLesson(x){
+  const lab = spkLabels(x), r = lrec(x.id), all = x.questions.every((_, i) => lans[i] != null);
+  const got = lsub ? x.questions.filter((q, i) => lans[i] === q.a).length : 0;
+  const evq = {}; if (lsub) x.questions.forEach((q, i) => q.ev.forEach(e => (evq[e] = evq[e] || []).push(i + 1)));
+  const qs = x.questions.map((q, i) => `<div class="lq"><p><b>${i + 1}.</b> ${esc(q.q)}</p>
+    <div class="opts">${q.o.map((o, j) => { const cls = lsub ? (j === q.a ? "ok" : j === lans[i] ? "no" : "") : lans[i] === j ? "sel" : "";
+      return `<button class="opt ${cls}" data-lq="${i}" data-lo="${j}" ${lsub ? "disabled" : ""} aria-pressed="${lans[i] === j}"><b>${"ABCD"[j]}</b> ${esc(o)}</button>`; }).join("")}</div>
+    ${lsub ? `<p class="expl">${lans[i] === q.a ? "✓" : "✗"} ${esc(q.vi)}</p>` : ""}</div>`).join("");
+  const script = lsub || lshow ? `<ol class="lscript">${x.lines.map(([s, t], i) => `<li data-at="${x.ts[i]}" class="${evq[i] ? "ev" : ""}"><small>${esc(lab[s])}${evq[i] ? ` · <b>câu ${evq[i].join(", ")}</b>` : ""}</small>${esc(t)}</li>`).join("")}</ol>` : "";
+  return `<div class="card">
+    <div class="row"><button class="btn sm" id="lback">‹ Danh sách</button><span class="tag ${LLVC[x.level]}">${LLV[x.level]}</span><span class="mute">${x.part === 3 ? "Hội thoại" : "Bài nói"} · ${esc(x.topic)}</span></div>
+    <h3>${esc(x.title)}</h3><p class="mute">${esc(x.title_vi)} · ${Object.values(lab).join(", ")}${r.best != null ? ` · lần tốt nhất ${r.best}/4, đã làm ${r.n || 1} lần` : ""}</p>
+    <audio id="laud" controls preload="metadata" src="audio/l/${x.id}.mp3"></audio>
+    <div class="row"><span class="mute">Tốc độ</span><div class="seg grow" role="group" aria-label="Tốc độ">${[0.85, 1, 1.1].map(v => `<button data-lrate="${v}" aria-pressed="${lrate === v}">${v}×</button>`).join("")}</div><button class="btn sm" id="lseek">⟲ 5 giây</button></div>
+  </div>
+  <div class="card">${qs}
+    ${lsub ? `<div class="row"><span class="score">${got}/4</span><span class="mute grow">${got === 4 ? "Chính xác hết." : "Đọc script bên dưới, câu chứa đáp án được tô sáng. Bấm vào câu để nghe lại đoạn đó."}</span></div>
+      <button class="btn" id="lretry">Làm lại bài này</button>`
+    : `<button class="btn pri" id="lsubmit" ${all ? "" : "disabled"}>${all ? "Nộp bài" : "Chọn đủ 4 câu để nộp"}</button>`}
+  </div>
+  <div class="card"><h3>Script</h3>${script ? script + `<p class="mute">Bấm vào một câu để nghe từ chỗ đó.</p>` : `<p class="mute">Script hiện sau khi nộp bài.</p><button class="btn sm" id="lpeek">Xem trước (sẽ lộ đáp án)</button>`}</div>`;
+}
+function bindListen(on){
+  on("[data-lp]", b => b.onclick = () => { lpart = +b.dataset.lp; render(); });
+  on("[data-llv]", b => b.onclick = () => { llv = +b.dataset.llv; render(); });
+  on("[data-ls]", b => b.onclick = () => { lcur = b.dataset.ls; lans = {}; lsub = false; lshow = false; render(); scrollTo(0, 0); });
+  const bk = $("#lback"); if (bk) bk.onclick = () => { lcur = null; render(); scrollTo(0, 0); };
+  const a = $("#laud");
+  const keep = fn => { const t = a ? a.currentTime : 0, playing = a && !a.paused; fn(); render(); const na = $("#laud"); if (na){ na.currentTime = t; if (playing) na.play().catch(() => {}); } };
+  if (a){
+    a.onloadedmetadata = () => a.playbackRate = lrate;
+    a.onplay = () => { player.pause(); a.playbackRate = lrate; };
+    a.ontimeupdate = () => {
+      const lis = document.querySelectorAll(".lscript li"); let k = -1;
+      lis.forEach((li, i) => { if (+li.dataset.at <= a.currentTime + 0.05) k = i; });
+      lis.forEach((li, i) => li.classList.toggle("now", i === k && !a.paused));
+    };
+  }
+  on("[data-lrate]", b => b.onclick = () => { lrate = +b.dataset.lrate; if (a) a.playbackRate = lrate; on("[data-lrate]", x => x.setAttribute("aria-pressed", x === b)); });
+  const sk = $("#lseek"); if (sk) sk.onclick = () => { if (a) a.currentTime = Math.max(0, a.currentTime - 5); };
+  on("[data-lo]", b => b.onclick = () => {
+    lans[+b.dataset.lq] = +b.dataset.lo;
+    on(`[data-lq="${b.dataset.lq}"]`, x => { x.classList.toggle("sel", x === b); x.setAttribute("aria-pressed", x === b); });
+    const s = $("#lsubmit"), all = LSD.find(x => x.id === lcur).questions.every((_, i) => lans[i] != null);
+    if (s){ s.disabled = !all; s.textContent = all ? "Nộp bài" : "Chọn đủ 4 câu để nộp"; }
+  });
+  const sb = $("#lsubmit"); if (sb) sb.onclick = () => keep(() => {
+    const x = LSD.find(y => y.id === lcur), got = x.questions.filter((q, i) => lans[i] === q.a).length, r = lrec(x.id);
+    put("l:" + x.id, {best: Math.max(got, r.best == null ? -1 : r.best), last: got, n: (r.n || 0) + 1});
+    lsub = true;
+  });
+  const rt = $("#lretry"); if (rt) rt.onclick = () => { lans = {}; lsub = false; lshow = false; render(); scrollTo(0, 0); };
+  const pk = $("#lpeek"); if (pk) pk.onclick = () => keep(() => { lshow = true; });
+  on("[data-at]", li => li.onclick = () => { if (a){ a.currentTime = +li.dataset.at; a.play().catch(() => {}); } });
+}
+
+const VIEWS = {today:vToday, cards:vCards, listen:vListen, dict:vDict, pron:vPron, prog:vProg};
 function render(){
   const d = day();
   $("#dTitle").textContent = "Ngày " + cur();
@@ -497,6 +590,7 @@ function flip(){ flipped = !flipped; render(); if (flipped && cfg.autoplay !== f
 function bind(){
   const on = (sel, fn) => document.querySelectorAll(sel).forEach(fn);
   bindV3(on);
+  bindListen(on);
   on("[data-tab]", b => b.onclick = () => go(b.dataset.tab));
   on("[data-go]", b => b.onclick = () => go(b.dataset.go));
   const dn = $("#done"); if (dn) dn.onclick = () => { const st = get("d:" + cur()) || {}; put("d:" + cur(), Object.assign({}, st, {done: !st.done})); render(); };
@@ -549,6 +643,7 @@ function bind(){
     const urls = [];
     K.days.forEach((d, di) => { urls.push(`audio/day${pad(di + 1)}.mp3`); d.w.forEach((_, i) => urls.push(wAudio(di + 1, i))); d.s.forEach((_, i) => urls.push(`audio/s/${pad(di + 1)}-${pad(i)}.mp3`)); });
     K.pron.forEach((_, i) => urls.push(`audio/pron/pron${pad(i + 1)}.mp3`));
+    for (const p of [3, 4]) for (let i = 1; i <= 30; i++) urls.push(`audio/l/p${p}-${pad(i)}.mp3`);
     of.disabled = true; let n = 0, fail = 0;
     const c = await caches.open("en30-audio");
     const work = urls.slice();
