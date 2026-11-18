@@ -1,9 +1,9 @@
 // App shell: network first (so updates land), cached copy when offline.
 // Audio: cache first, with Range support so iOS Safari can play cached files.
-const SHELL = "en30-shell-v4", AUDIO = "en30-audio", FONTS = "en30-fonts";
+const SHELL = "en30-shell-v5", AUDIO = "en30-audio", FONTS = "en30-fonts";
 const FILES = ["./", "index.html", "app.js", "data.js", "manifest.webmanifest", "icon-192.png", "icon-512.png"];
 
-self.addEventListener("install", e => { e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES))); self.skipWaiting(); });
+self.addEventListener("install", e => { e.waitUntil(caches.open(SHELL).then(c => c.addAll(FILES.map(f => new Request(f, {cache: "no-cache"}))))); self.skipWaiting(); });
 self.addEventListener("activate", e => {
   e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k.startsWith("en30-shell") && k !== SHELL).map(k => caches.delete(k)))).then(() => self.clients.claim()));
 });
@@ -40,6 +40,6 @@ self.addEventListener("fetch", e => {
     })());
     return;
   }
-  e.respondWith(fetch(req).then(r => { if (r.ok){ const cp = r.clone(); caches.open(SHELL).then(c => c.put(req, cp)); } return r; })
+  e.respondWith(fetch(req, {cache: "no-cache"}).then(r => { if (r.ok){ const cp = r.clone(); caches.open(SHELL).then(c => c.put(req, cp)); } return r; })
     .catch(() => caches.match(req, {ignoreSearch: true}).then(r => r || caches.match("index.html"))));
 });

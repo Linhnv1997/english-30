@@ -687,7 +687,15 @@ document.addEventListener("keydown", e => {
 });
 window.addEventListener("hashchange", () => { const t = location.hash.slice(1); if (VIEWS[t] && t !== tab){ tab = t; render(); } });
 
-if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
+// A new version takes over as soon as it is installed: reload once so the new code shows, and look for updates whenever the app comes back to the foreground.
+if ("serviceWorker" in navigator && location.protocol === "https:"){
+  const hadSW = !!navigator.serviceWorker.controller;
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => { if (hadSW && !reloaded){ reloaded = true; location.reload(); } });
+  navigator.serviceWorker.register("sw.js", {updateViaCache: "none"}).then(reg => {
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") reg.update().catch(() => {}); });
+  }).catch(() => {});
+}
 render();
 sync();
 })();
