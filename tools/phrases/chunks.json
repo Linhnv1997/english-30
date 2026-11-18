@@ -1,0 +1,2036 @@
+[
+ {
+  "w": "come up with",
+  "sp": "",
+  "ipa": "",
+  "vi": "nghĩ ra, đưa ra (ý tưởng)",
+  "ex": "We need to come up with a better solution.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "at the moment",
+  "sp": "",
+  "ipa": "",
+  "vi": "hiện tại, lúc này",
+  "ex": "I'm a bit busy at the moment.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I think so",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi nghĩ vậy",
+  "ex": "Will it be ready by Friday? — I think so.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "by the way",
+  "sp": "",
+  "ipa": "",
+  "vi": "nhân tiện",
+  "ex": "By the way, the client moved the meeting.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "do you have a minute",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn rảnh một phút không",
+  "ex": "Do you have a minute to look at this error?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "got it",
+  "sp": "",
+  "ipa": "",
+  "vi": "hiểu rồi, rõ rồi",
+  "ex": "Got it, I'll update the ticket after lunch.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "deal with",
+  "sp": "",
+  "ipa": "",
+  "vi": "xử lý, giải quyết",
+  "ex": "I'll deal with the merge conflicts first.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "I'd say",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi cho là, theo tôi",
+  "ex": "I'd say it takes about two days.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "actually",
+  "sp": "",
+  "ipa": "",
+  "vi": "thực ra",
+  "ex": "Actually, I already fixed that yesterday.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "any update on",
+  "sp": "",
+  "ipa": "",
+  "vi": "có cập nhật gì về",
+  "ex": "Any update on the payment bug?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "work on",
+  "sp": "",
+  "ipa": "",
+  "vi": "làm (việc gì), đang xử lý",
+  "ex": "I'm working on the login page this sprint.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "I'm on it",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi đang xử lý ngay",
+  "ex": "The build is failing again? I'm on it.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "fix a bug",
+  "sp": "",
+  "ipa": "",
+  "vi": "sửa lỗi",
+  "ex": "I spent the morning fixing a bug in checkout.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "for now",
+  "sp": "",
+  "ipa": "",
+  "vi": "tạm thời, bây giờ",
+  "ex": "Let's keep the old logic for now.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "it seems like",
+  "sp": "",
+  "ipa": "",
+  "vi": "có vẻ như",
+  "ex": "It seems like the server is overloaded.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "that's why",
+  "sp": "",
+  "ipa": "",
+  "vi": "đó là lý do",
+  "ex": "The cache was stale; that's why the data was wrong.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "just to confirm",
+  "sp": "",
+  "ipa": "",
+  "vi": "chỉ để xác nhận lại",
+  "ex": "Just to confirm, the demo is at 3 p.m.?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "not a problem",
+  "sp": "",
+  "ipa": "",
+  "vi": "không vấn đề gì",
+  "ex": "Not a problem, I can review it this afternoon.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "make sure",
+  "sp": "",
+  "ipa": "",
+  "vi": "đảm bảo",
+  "ex": "Make sure all tests pass before you merge.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "right away",
+  "sp": "",
+  "ipa": "",
+  "vi": "ngay lập tức",
+  "ex": "I'll fix it right away.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "it looks like",
+  "sp": "",
+  "ipa": "",
+  "vi": "trông có vẻ như",
+  "ex": "It looks like the tests are failing again.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "in that case",
+  "sp": "",
+  "ipa": "",
+  "vi": "nếu vậy thì",
+  "ex": "In that case, let's postpone the release.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "find out",
+  "sp": "",
+  "ipa": "",
+  "vi": "tìm ra, phát hiện",
+  "ex": "Let me find out who owns this service.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "can I ask you something",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi hỏi bạn chút được không",
+  "ex": "Can I ask you something about the deploy script?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "sure thing",
+  "sp": "",
+  "ipa": "",
+  "vi": "được chứ, chắc chắn rồi",
+  "ex": "Sure thing, I'll send you the logs now.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "point out",
+  "sp": "",
+  "ipa": "",
+  "vi": "chỉ ra",
+  "ex": "Thanks for pointing out that edge case.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "first thing tomorrow",
+  "sp": "",
+  "ipa": "",
+  "vi": "việc đầu tiên sáng mai",
+  "ex": "I'll deploy it first thing tomorrow.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "as far as I know",
+  "sp": "",
+  "ipa": "",
+  "vi": "theo tôi biết",
+  "ex": "As far as I know, the API is stable.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "which means",
+  "sp": "",
+  "ipa": "",
+  "vi": "có nghĩa là",
+  "ex": "The API is down, which means checkout fails.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "could you walk me through",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn giải thích từng bước giúp tôi",
+  "ex": "Could you walk me through the auth flow?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "could you take a look at",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn xem giúp ... được không",
+  "ex": "Could you take a look at my pull request?",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "will do",
+  "sp": "",
+  "ipa": "",
+  "vi": "sẽ làm vậy",
+  "ex": "Please add tests for that case. — Will do.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "on time",
+  "sp": "",
+  "ipa": "",
+  "vi": "đúng giờ, đúng hạn",
+  "ex": "We delivered the release on time.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I'm pretty sure",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi khá chắc",
+  "ex": "I'm pretty sure this worked yesterday.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "open a pull request",
+  "sp": "",
+  "ipa": "",
+  "vi": "tạo pull request",
+  "ex": "I'll open a pull request once the tests pass.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "would you mind",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn có phiền ... không",
+  "ex": "Would you mind reviewing my PR today?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "push a change",
+  "sp": "",
+  "ipa": "",
+  "vi": "đẩy thay đổi lên",
+  "ex": "I just pushed a change to fix the typo.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "I see what you mean",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi hiểu ý bạn",
+  "ex": "I see what you mean, the naming is confusing.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "as of now",
+  "sp": "",
+  "ipa": "",
+  "vi": "tính đến hiện tại",
+  "ex": "As of now, all services are running.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "the thing is",
+  "sp": "",
+  "ipa": "",
+  "vi": "vấn đề là",
+  "ex": "The thing is, we don't have enough test data.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "anyway",
+  "sp": "",
+  "ipa": "",
+  "vi": "dù sao thì, thôi",
+  "ex": "Anyway, let's move to the next item.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "what's the status of",
+  "sp": "",
+  "ipa": "",
+  "vi": "tình hình ... thế nào rồi",
+  "ex": "What's the status of the database migration?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "run a test",
+  "sp": "",
+  "ipa": "",
+  "vi": "chạy kiểm thử",
+  "ex": "Can you run a test on staging first?",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "later this week",
+  "sp": "",
+  "ipa": "",
+  "vi": "cuối tuần này, vài hôm tới",
+  "ex": "I'll send the estimate later this week.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I feel like",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi cảm thấy là",
+  "ex": "I feel like this design is too complex.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "because of",
+  "sp": "",
+  "ipa": "",
+  "vi": "vì, do",
+  "ex": "We missed the deadline because of the outage.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "file a ticket",
+  "sp": "",
+  "ipa": "",
+  "vi": "tạo ticket (báo lỗi/yêu cầu)",
+  "ex": "Please file a ticket so we can track it.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "my bad",
+  "sp": "",
+  "ipa": "",
+  "vi": "lỗi của tôi",
+  "ex": "My bad, I pushed to the wrong branch.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "is it okay if",
+  "sp": "",
+  "ipa": "",
+  "vi": "có ổn không nếu",
+  "ex": "Is it okay if I leave early today?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "ship a feature",
+  "sp": "",
+  "ipa": "",
+  "vi": "phát hành tính năng",
+  "ex": "We plan to ship the feature next Tuesday.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "at the latest",
+  "sp": "",
+  "ipa": "",
+  "vi": "muộn nhất là",
+  "ex": "I need it by Friday at the latest.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "kind of",
+  "sp": "",
+  "ipa": "",
+  "vi": "hơi, kiểu như",
+  "ex": "The new UI is kind of confusing.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "instead of",
+  "sp": "",
+  "ipa": "",
+  "vi": "thay vì",
+  "ex": "Let's use a queue instead of direct calls.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "no rush",
+  "sp": "",
+  "ipa": "",
+  "vi": "không cần vội",
+  "ex": "No rush, just review it when you have time.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "I was wondering if",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi đang tự hỏi liệu",
+  "ex": "I was wondering if you could help me with this.",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "roll out",
+  "sp": "",
+  "ipa": "",
+  "vi": "triển khai dần",
+  "ex": "We'll roll out the update to 10% of users.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "get approval",
+  "sp": "",
+  "ipa": "",
+  "vi": "được phê duyệt",
+  "ex": "We need to get approval from security first.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "in time",
+  "sp": "",
+  "ipa": "",
+  "vi": "kịp lúc",
+  "ex": "Will the fix be ready in time for the demo?",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I'm not a hundred percent sure",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi không chắc lắm",
+  "ex": "I'm not a hundred percent sure, but I think so.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "even though",
+  "sp": "",
+  "ipa": "",
+  "vi": "mặc dù",
+  "ex": "Even though tests passed, the build failed.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "could you help me with",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn giúp tôi ... được không",
+  "ex": "Could you help me with this merge conflict?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "hang on",
+  "sp": "",
+  "ipa": "",
+  "vi": "đợi chút",
+  "ex": "Hang on, let me pull up the dashboard.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "carry out",
+  "sp": "",
+  "ipa": "",
+  "vi": "tiến hành, thực hiện",
+  "ex": "The QA team will carry out the regression tests.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "early next week",
+  "sp": "",
+  "ipa": "",
+  "vi": "đầu tuần sau",
+  "ex": "Let's schedule the review early next week.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "in my experience",
+  "sp": "",
+  "ipa": "",
+  "vi": "theo kinh nghiệm của tôi",
+  "ex": "In my experience, small PRs get reviewed faster.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "so that",
+  "sp": "",
+  "ipa": "",
+  "vi": "để mà",
+  "ex": "Add logs so that we can debug faster.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "follow through on",
+  "sp": "",
+  "ipa": "",
+  "vi": "làm đến nơi đến chốn",
+  "ex": "He always follows through on his commitments.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "do you happen to know",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn có tình cờ biết",
+  "ex": "Do you happen to know who owns this repo?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "never mind",
+  "sp": "",
+  "ipa": "",
+  "vi": "thôi bỏ đi, không sao",
+  "ex": "Never mind, I found the config file.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "end up",
+  "sp": "",
+  "ipa": "",
+  "vi": "rốt cuộc, cuối cùng thì",
+  "ex": "We ended up rewriting the whole module.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "at some point",
+  "sp": "",
+  "ipa": "",
+  "vi": "vào lúc nào đó",
+  "ex": "We'll need to refactor this at some point.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "the point is",
+  "sp": "",
+  "ipa": "",
+  "vi": "điểm chính là",
+  "ex": "The point is, users can't find the button.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "when it comes to",
+  "sp": "",
+  "ipa": "",
+  "vi": "khi nói đến",
+  "ex": "When it comes to security, we can't cut corners.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "mind if I",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn có phiền nếu tôi",
+  "ex": "Mind if I share my screen?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "turn out",
+  "sp": "",
+  "ipa": "",
+  "vi": "hóa ra",
+  "ex": "It turned out the bug was in the cache.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "it's up to you",
+  "sp": "",
+  "ipa": "",
+  "vi": "tùy bạn quyết định",
+  "ex": "Either approach works, so it's up to you.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "sooner rather than later",
+  "sp": "",
+  "ipa": "",
+  "vi": "càng sớm càng tốt",
+  "ex": "We should fix this sooner rather than later.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I might be wrong",
+  "sp": "",
+  "ipa": "",
+  "vi": "có thể tôi sai",
+  "ex": "I might be wrong, but this looks like a race condition.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "in terms of",
+  "sp": "",
+  "ipa": "",
+  "vi": "về mặt",
+  "ex": "In terms of performance, the new version is better.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "work out",
+  "sp": "",
+  "ipa": "",
+  "vi": "tìm ra cách; thành công",
+  "ex": "Let's work out the details tomorrow.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "could you send me",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn gửi cho tôi ... được không",
+  "ex": "Could you send me the link to the doc?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "that's fine",
+  "sp": "",
+  "ipa": "",
+  "vi": "vậy cũng được",
+  "ex": "If you need another day, that's fine.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "break down",
+  "sp": "",
+  "ipa": "",
+  "vi": "chia nhỏ",
+  "ex": "Let's break down this story into smaller tasks.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "from now on",
+  "sp": "",
+  "ipa": "",
+  "vi": "từ giờ trở đi",
+  "ex": "From now on, please tag me in every PR.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "if I'm not mistaken",
+  "sp": "",
+  "ipa": "",
+  "vi": "nếu tôi không nhầm",
+  "ex": "If I'm not mistaken, the token expires in an hour.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "as a result",
+  "sp": "",
+  "ipa": "",
+  "vi": "kết quả là",
+  "ex": "The query was slow; as a result, pages timed out.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "how about",
+  "sp": "",
+  "ipa": "",
+  "vi": "thế còn ... thì sao",
+  "ex": "How about a quick call at 2?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "narrow down",
+  "sp": "",
+  "ipa": "",
+  "vi": "thu hẹp phạm vi",
+  "ex": "We narrowed down the issue to one API call.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "in a bit",
+  "sp": "",
+  "ipa": "",
+  "vi": "lát nữa",
+  "ex": "I'll join the call in a bit.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "more or less",
+  "sp": "",
+  "ipa": "",
+  "vi": "ít nhiều, gần như",
+  "ex": "The feature is more or less finished.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "the reason is",
+  "sp": "",
+  "ipa": "",
+  "vi": "lý do là",
+  "ex": "The reason is we don't have enough test coverage.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "exactly",
+  "sp": "",
+  "ipa": "",
+  "vi": "chính xác",
+  "ex": "Exactly, that's why the cache returns old data.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "give it a try",
+  "sp": "",
+  "ipa": "",
+  "vi": "thử xem",
+  "ex": "I'm not sure it works, but let's give it a try.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "why don't we",
+  "sp": "",
+  "ipa": "",
+  "vi": "sao chúng ta không",
+  "ex": "Why don't we split this into two tickets?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "keep track of",
+  "sp": "",
+  "ipa": "",
+  "vi": "theo dõi",
+  "ex": "We use Jira to keep track of bugs.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "earlier today",
+  "sp": "",
+  "ipa": "",
+  "vi": "hồi sáng, trước đó trong ngày",
+  "ex": "I sent you the link earlier today.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "to be fair",
+  "sp": "",
+  "ipa": "",
+  "vi": "công bằng mà nói",
+  "ex": "To be fair, the requirements changed twice.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "as long as",
+  "sp": "",
+  "ipa": "",
+  "vi": "miễn là",
+  "ex": "It's fine as long as the tests pass.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "absolutely",
+  "sp": "",
+  "ipa": "",
+  "vi": "hoàn toàn đồng ý, chắc chắn",
+  "ex": "Can you join the client call? — Absolutely.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "when do you need it by",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn cần nó trước khi nào",
+  "ex": "Sure, when do you need it by?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "keep an eye on",
+  "sp": "",
+  "ipa": "",
+  "vi": "để mắt tới",
+  "ex": "Please keep an eye on the error rate after deploy.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "the other day",
+  "sp": "",
+  "ipa": "",
+  "vi": "hôm nọ",
+  "ex": "The other day the API went down twice.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "to be clear",
+  "sp": "",
+  "ipa": "",
+  "vi": "nói cho rõ",
+  "ex": "To be clear, this only affects new users.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "at the same time",
+  "sp": "",
+  "ipa": "",
+  "vi": "đồng thời, cùng lúc",
+  "ex": "We need speed, but at the same time, stability.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "take over",
+  "sp": "",
+  "ipa": "",
+  "vi": "tiếp quản",
+  "ex": "Can you take over this task while I'm on leave?",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "of course",
+  "sp": "",
+  "ipa": "",
+  "vi": "dĩ nhiên",
+  "ex": "Of course, I'll walk you through the setup.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "how long will it take",
+  "sp": "",
+  "ipa": "",
+  "vi": "sẽ mất bao lâu",
+  "ex": "How long will it take to fix?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "put together",
+  "sp": "",
+  "ipa": "",
+  "vi": "soạn, tổng hợp",
+  "ex": "I'll put together a short doc for the client.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "by tomorrow morning",
+  "sp": "",
+  "ipa": "",
+  "vi": "trước sáng mai",
+  "ex": "Can you send it by tomorrow morning?",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "it's hard to say",
+  "sp": "",
+  "ipa": "",
+  "vi": "khó nói lắm",
+  "ex": "It's hard to say how long it'll take.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "on top of that",
+  "sp": "",
+  "ipa": "",
+  "vi": "thêm vào đó",
+  "ex": "On top of that, the docs are outdated.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "you're right",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn nói đúng",
+  "ex": "You're right, we should handle the null case.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "write up",
+  "sp": "",
+  "ipa": "",
+  "vi": "viết tóm tắt, viết báo cáo",
+  "ex": "Could you write up the incident report?",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "would it be possible to",
+  "sp": "",
+  "ipa": "",
+  "vi": "có thể ... được không",
+  "ex": "Would it be possible to extend the deadline?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "in advance",
+  "sp": "",
+  "ipa": "",
+  "vi": "trước, sẵn",
+  "ex": "Please share the slides in advance.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "probably not",
+  "sp": "",
+  "ipa": "",
+  "vi": "chắc là không",
+  "ex": "Can we ship today? Probably not.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "apart from that",
+  "sp": "",
+  "ipa": "",
+  "vi": "ngoài điều đó ra",
+  "ex": "Apart from that, everything looks good.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "clean up",
+  "sp": "",
+  "ipa": "",
+  "vi": "dọn dẹp (code)",
+  "ex": "I need to clean up the code before review.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "what's the best way to",
+  "sp": "",
+  "ipa": "",
+  "vi": "cách tốt nhất để ... là gì",
+  "ex": "What's the best way to test this locally?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "good to know",
+  "sp": "",
+  "ipa": "",
+  "vi": "biết vậy thì tốt",
+  "ex": "Good to know, I'll avoid that endpoint then.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "review the code",
+  "sp": "",
+  "ipa": "",
+  "vi": "review code",
+  "ex": "Who's going to review the code for this PR?",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "ahead of time",
+  "sp": "",
+  "ipa": "",
+  "vi": "trước thời hạn",
+  "ex": "Let's prepare the questions ahead of time.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "not necessarily",
+  "sp": "",
+  "ipa": "",
+  "vi": "không hẳn",
+  "ex": "More servers won't necessarily fix the issue.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "as well as",
+  "sp": "",
+  "ipa": "",
+  "vi": "cũng như, và cả",
+  "ex": "We'll update the API as well as the docs.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "leave a comment",
+  "sp": "",
+  "ipa": "",
+  "vi": "để lại bình luận",
+  "ex": "I left a few comments on your PR.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "any thoughts on",
+  "sp": "",
+  "ipa": "",
+  "vi": "có ý kiến gì về",
+  "ex": "Any thoughts on the new API design?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "thanks for letting me know",
+  "sp": "",
+  "ipa": "",
+  "vi": "cảm ơn đã báo tôi",
+  "ex": "Thanks for letting me know about the outage.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "last minute",
+  "sp": "",
+  "ipa": "",
+  "vi": "phút chót",
+  "ex": "The client asked for last-minute changes.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I'd rather",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi thích ... hơn",
+  "ex": "I'd rather fix it properly than patch it.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "otherwise",
+  "sp": "",
+  "ipa": "",
+  "vi": "nếu không thì",
+  "ex": "Merge it today, otherwise it'll miss the release.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "give feedback",
+  "sp": "",
+  "ipa": "",
+  "vi": "góp ý",
+  "ex": "Feel free to give feedback on the design.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "can you point me to",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn chỉ giúp tôi chỗ",
+  "ex": "Can you point me to the deployment docs?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "make changes",
+  "sp": "",
+  "ipa": "",
+  "vi": "chỉnh sửa",
+  "ex": "I'll make the changes you suggested.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "sounds like a plan",
+  "sp": "",
+  "ipa": "",
+  "vi": "nghe hợp lý, cứ thế nhé",
+  "ex": "Deploy Friday and monitor over the weekend? Sounds like a plan.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "up to date",
+  "sp": "",
+  "ipa": "",
+  "vi": "cập nhật mới nhất",
+  "ex": "Please keep the documentation up to date.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "in fact",
+  "sp": "",
+  "ipa": "",
+  "vi": "thực tế là",
+  "ex": "In fact, the issue started last week.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "deploy to production",
+  "sp": "",
+  "ipa": "",
+  "vi": "triển khai lên production",
+  "ex": "We'll deploy to production after the demo.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "where can I find",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi tìm ... ở đâu",
+  "ex": "Where can I find the staging credentials?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "out of date",
+  "sp": "",
+  "ipa": "",
+  "vi": "lỗi thời, cũ",
+  "ex": "This README is out of date.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "it might be better to",
+  "sp": "",
+  "ipa": "",
+  "vi": "có lẽ sẽ tốt hơn nếu",
+  "ex": "It might be better to split this PR.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "due to",
+  "sp": "",
+  "ipa": "",
+  "vi": "do, bởi vì",
+  "ex": "The release is delayed due to a security issue.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "reproduce the bug",
+  "sp": "",
+  "ipa": "",
+  "vi": "tái hiện lỗi",
+  "ex": "I can't reproduce the bug on my machine.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "I hear you",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi hiểu cảm giác của bạn",
+  "ex": "I hear you, the deadline is really tight.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "do you know who",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn có biết ai",
+  "ex": "Do you know who's on call this week?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "merge a pull request",
+  "sp": "",
+  "ipa": "",
+  "vi": "merge pull request",
+  "ex": "Don't merge the pull request until QA approves.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "running late",
+  "sp": "",
+  "ipa": "",
+  "vi": "đang bị trễ",
+  "ex": "Sorry, I'm running late, start without me.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I don't see why not",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi thấy không có lý do gì không",
+  "ex": "Can we use this library? I don't see why not.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "rather than",
+  "sp": "",
+  "ipa": "",
+  "vi": "hơn là, thay vì",
+  "ex": "Let's fix the root cause rather than patch it.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "that's true",
+  "sp": "",
+  "ipa": "",
+  "vi": "đúng vậy",
+  "ex": "That's true, but the old API is still in use.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "bring up",
+  "sp": "",
+  "ipa": "",
+  "vi": "nêu ra (vấn đề)",
+  "ex": "I'll bring up the budget issue in the meeting.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "is there any way to",
+  "sp": "",
+  "ipa": "",
+  "vi": "có cách nào để",
+  "ex": "Is there any way to speed up the build?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "it'll take a while",
+  "sp": "",
+  "ipa": "",
+  "vi": "sẽ mất một lúc",
+  "ex": "The migration will take a while.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "to some extent",
+  "sp": "",
+  "ipa": "",
+  "vi": "ở một mức độ nào đó",
+  "ex": "I agree to some extent, but cost matters too.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "in case",
+  "sp": "",
+  "ipa": "",
+  "vi": "phòng khi",
+  "ex": "Keep a backup in case the migration fails.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "run it by",
+  "sp": "",
+  "ipa": "",
+  "vi": "hỏi ý kiến, trình bày cho ai xem",
+  "ex": "Let me run it by my manager first.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "I guess so",
+  "sp": "",
+  "ipa": "",
+  "vi": "chắc vậy",
+  "ex": "Is this ready to merge? — I guess so.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "come across",
+  "sp": "",
+  "ipa": "",
+  "vi": "tình cờ gặp",
+  "ex": "I came across a similar issue on Stack Overflow.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "let me know when",
+  "sp": "",
+  "ipa": "",
+  "vi": "báo tôi khi",
+  "ex": "Let me know when you're free to talk.",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "in a couple of days",
+  "sp": "",
+  "ipa": "",
+  "vi": "trong vài ngày tới",
+  "ex": "I'll have a draft in a couple of days.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I have a feeling that",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi có cảm giác là",
+  "ex": "I have a feeling that the client will change it.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "unless",
+  "sp": "",
+  "ipa": "",
+  "vi": "trừ khi",
+  "ex": "We'll ship Friday unless QA finds blockers.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "rely on",
+  "sp": "",
+  "ipa": "",
+  "vi": "dựa vào",
+  "ex": "We rely on this library for authentication.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "I don't think so",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi không nghĩ vậy",
+  "ex": "Is this a breaking change? I don't think so.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "could you clarify",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn làm rõ giúp",
+  "ex": "Could you clarify what you mean by 'real-time'?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "by then",
+  "sp": "",
+  "ipa": "",
+  "vi": "đến lúc đó",
+  "ex": "The API should be ready by then.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "as I understand it",
+  "sp": "",
+  "ipa": "",
+  "vi": "theo tôi hiểu",
+  "ex": "As I understand it, the deadline is fixed.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "first of all",
+  "sp": "",
+  "ipa": "",
+  "vi": "trước hết",
+  "ex": "First of all, thanks for joining.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "get rid of",
+  "sp": "",
+  "ipa": "",
+  "vi": "loại bỏ",
+  "ex": "Let's get rid of this unused code.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "hold off on",
+  "sp": "",
+  "ipa": "",
+  "vi": "tạm hoãn",
+  "ex": "Let's hold off on the release until Monday.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "I need your help with",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi cần bạn giúp về",
+  "ex": "I need your help with the release notes.",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "I'll keep that in mind",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi sẽ ghi nhớ",
+  "ex": "Thanks for the tip, I'll keep that in mind.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "until then",
+  "sp": "",
+  "ipa": "",
+  "vi": "cho đến lúc đó",
+  "ex": "Until then, use the old endpoint.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "it's worth",
+  "sp": "",
+  "ipa": "",
+  "vi": "đáng để",
+  "ex": "It's worth checking the logs first.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "after that",
+  "sp": "",
+  "ipa": "",
+  "vi": "sau đó",
+  "ex": "Run the migration; after that, restart the service.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "pick up",
+  "sp": "",
+  "ipa": "",
+  "vi": "nhận (task), tiếp tục",
+  "ex": "I'll pick up the next ticket in the backlog.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "who should I talk to about",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi nên nói chuyện với ai về",
+  "ex": "Who should I talk to about server access?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "not at all",
+  "sp": "",
+  "ipa": "",
+  "vi": "không hề, không có gì",
+  "ex": "Do you mind if I join? — Not at all.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "spin up",
+  "sp": "",
+  "ipa": "",
+  "vi": "khởi tạo (server, môi trường)",
+  "ex": "Can you spin up a new test environment?",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "over the weekend",
+  "sp": "",
+  "ipa": "",
+  "vi": "trong cuối tuần",
+  "ex": "The job failed over the weekend.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "sort of",
+  "sp": "",
+  "ipa": "",
+  "vi": "đại loại, kiểu như",
+  "ex": "It's sort of a hack, but it works.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "in the end",
+  "sp": "",
+  "ipa": "",
+  "vi": "cuối cùng",
+  "ex": "In the end, we chose the simpler solution.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "back up",
+  "sp": "",
+  "ipa": "",
+  "vi": "sao lưu",
+  "ex": "Back up the database before the migration.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "can we schedule",
+  "sp": "",
+  "ipa": "",
+  "vi": "chúng ta lên lịch ... được không",
+  "ex": "Can we schedule a call with the client tomorrow?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "on a daily basis",
+  "sp": "",
+  "ipa": "",
+  "vi": "hằng ngày",
+  "ex": "We check the metrics on a daily basis.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "personally",
+  "sp": "",
+  "ipa": "",
+  "vi": "cá nhân tôi thì",
+  "ex": "Personally, I prefer smaller, frequent releases.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "not only ... but also",
+  "sp": "",
+  "ipa": "",
+  "vi": "không những ... mà còn",
+  "ex": "It's not only faster but also cheaper.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "same here",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi cũng vậy",
+  "ex": "I'm still waiting for access. — Same here.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "pull up",
+  "sp": "",
+  "ipa": "",
+  "vi": "mở ra (màn hình, dữ liệu)",
+  "ex": "Let me pull up the logs from last night.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "do you have time for",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn có thời gian cho",
+  "ex": "Do you have time for a quick sync?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "speed up",
+  "sp": "",
+  "ipa": "",
+  "vi": "tăng tốc",
+  "ex": "Caching should speed up the page load.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "every other week",
+  "sp": "",
+  "ipa": "",
+  "vi": "hai tuần một lần",
+  "ex": "We have a retro every other week.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I suppose",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi cho là vậy",
+  "ex": "I suppose we could add a feature flag.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "that said",
+  "sp": "",
+  "ipa": "",
+  "vi": "dù vậy",
+  "ex": "That said, we still need more testing.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "all good",
+  "sp": "",
+  "ipa": "",
+  "vi": "ổn cả, không sao",
+  "ex": "Sorry for the delay! — All good, no worries.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "break the build",
+  "sp": "",
+  "ipa": "",
+  "vi": "làm hỏng bản build",
+  "ex": "Sorry, my last commit broke the build.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "could you give me a hand",
+  "sp": "",
+  "ipa": "",
+  "vi": "bạn giúp tôi một tay được không",
+  "ex": "Could you give me a hand with this deployment?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "once in a while",
+  "sp": "",
+  "ipa": "",
+  "vi": "thỉnh thoảng",
+  "ex": "Once in a while the test fails randomly.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "it's not ideal",
+  "sp": "",
+  "ipa": "",
+  "vi": "không lý tưởng lắm",
+  "ex": "It's not ideal, but it'll work for now.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "in addition",
+  "sp": "",
+  "ipa": "",
+  "vi": "ngoài ra",
+  "ex": "In addition, we added monitoring alerts.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "make a mistake",
+  "sp": "",
+  "ipa": "",
+  "vi": "mắc lỗi",
+  "ex": "I made a mistake in the migration script.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "let me think about it",
+  "sp": "",
+  "ipa": "",
+  "vi": "để tôi suy nghĩ đã",
+  "ex": "Interesting idea, let me think about it.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "look up",
+  "sp": "",
+  "ipa": "",
+  "vi": "tra cứu",
+  "ex": "Let me look up the error code.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "would it help if",
+  "sp": "",
+  "ipa": "",
+  "vi": "có giúp được không nếu",
+  "ex": "Would it help if I wrote the tests?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "until further notice",
+  "sp": "",
+  "ipa": "",
+  "vi": "cho đến khi có thông báo mới",
+  "ex": "Deployments are frozen until further notice.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "it's a bit tricky",
+  "sp": "",
+  "ipa": "",
+  "vi": "hơi khó, hơi phức tạp",
+  "ex": "Testing this part is a bit tricky.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "in general",
+  "sp": "",
+  "ipa": "",
+  "vi": "nhìn chung",
+  "ex": "In general, the sprint went well.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "come back to",
+  "sp": "",
+  "ipa": "",
+  "vi": "quay lại (vấn đề)",
+  "ex": "Let's come back to this after the demo.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "that's great to hear",
+  "sp": "",
+  "ipa": "",
+  "vi": "nghe vậy mừng quá",
+  "ex": "The client is happy? That's great to hear.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "is anyone working on",
+  "sp": "",
+  "ipa": "",
+  "vi": "có ai đang làm ... không",
+  "ex": "Is anyone working on the flaky test?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "in the coming weeks",
+  "sp": "",
+  "ipa": "",
+  "vi": "trong vài tuần tới",
+  "ex": "We'll release more features in the coming weeks.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "there's a chance that",
+  "sp": "",
+  "ipa": "",
+  "vi": "có khả năng là",
+  "ex": "There's a chance that the fix breaks something.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "speaking of",
+  "sp": "",
+  "ipa": "",
+  "vi": "nhân nói về",
+  "ex": "Speaking of testing, who's handling QA?",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "get used to",
+  "sp": "",
+  "ipa": "",
+  "vi": "quen với",
+  "ex": "I'm still getting used to the new codebase.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "I don't mind",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi không phiền đâu",
+  "ex": "I don't mind taking the late meeting.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "run out of",
+  "sp": "",
+  "ipa": "",
+  "vi": "hết, cạn",
+  "ex": "The server ran out of memory last night.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "is it possible that",
+  "sp": "",
+  "ipa": "",
+  "vi": "có khả năng nào là",
+  "ex": "Is it possible that the cache wasn't cleared?",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "these days",
+  "sp": "",
+  "ipa": "",
+  "vi": "dạo này",
+  "ex": "These days I'm mostly doing backend work.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "I doubt it",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi nghi lắm, chắc không đâu",
+  "ex": "Will they approve it today? I doubt it.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "as opposed to",
+  "sp": "",
+  "ipa": "",
+  "vi": "trái với, so với",
+  "ex": "We use REST, as opposed to GraphQL.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "pair up with",
+  "sp": "",
+  "ipa": "",
+  "vi": "làm cặp với",
+  "ex": "You can pair up with Minh on this task.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ },
+ {
+  "w": "that's a relief",
+  "sp": "",
+  "ipa": "",
+  "vi": "nhẹ cả người",
+  "ex": "The data wasn't lost? That's a relief.",
+  "topic": "Chunks: everyday responses",
+  "src": "Chunk"
+ },
+ {
+  "w": "I'd appreciate it if",
+  "sp": "",
+  "ipa": "",
+  "vi": "tôi sẽ rất cảm kích nếu",
+  "ex": "I'd appreciate it if you could review it today.",
+  "topic": "Chunks: asking & requesting",
+  "src": "Chunk"
+ },
+ {
+  "w": "in the next sprint",
+  "sp": "",
+  "ipa": "",
+  "vi": "trong sprint tới",
+  "ex": "Let's move this story to the next sprint.",
+  "topic": "Chunks: time & planning",
+  "src": "Chunk"
+ },
+ {
+  "w": "generally speaking",
+  "sp": "",
+  "ipa": "",
+  "vi": "nói chung",
+  "ex": "Generally speaking, we avoid global state.",
+  "topic": "Chunks: opinions & hedging",
+  "src": "Chunk"
+ },
+ {
+  "w": "however",
+  "sp": "",
+  "ipa": "",
+  "vi": "tuy nhiên",
+  "ex": "The fix works; however, it's not very clean.",
+  "topic": "Chunks: linking ideas",
+  "src": "Chunk"
+ },
+ {
+  "w": "set aside",
+  "sp": "",
+  "ipa": "",
+  "vi": "dành riêng (thời gian)",
+  "ex": "I'll set aside an hour to review it.",
+  "topic": "Chunks: work verbs",
+  "src": "Chunk"
+ }
+]

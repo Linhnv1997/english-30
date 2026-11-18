@@ -1,0 +1,910 @@
+[
+ {
+  "w": "going to",
+  "sp": "gonna",
+  "ipa": "/ˈɡʌnə/",
+  "vi": "sẽ, định (làm gì)",
+  "ex": "I'm gonna push the fix before lunch.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "want to",
+  "sp": "wanna",
+  "ipa": "/ˈwɑnə/",
+  "vi": "muốn (làm gì)",
+  "ex": "Do you wanna pair on this bug?",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "let me know",
+  "sp": "lemme know",
+  "ipa": "/ˌlɛmi ˈnoʊ/",
+  "vi": "cho tôi biết nhé",
+  "ex": "Lemme know if the build fails again.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "what do you think",
+  "sp": "whaddya think",
+  "ipa": "/ˌwʌdəjə ˈθɪŋk/",
+  "vi": "bạn nghĩ sao",
+  "ex": "Whaddya think about moving the demo to Friday?",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "got to",
+  "sp": "gotta",
+  "ipa": "/ˈɡɑɾə/",
+  "vi": "phải (làm gì)",
+  "ex": "I gotta jump on another call now.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "let me",
+  "sp": "lemme",
+  "ipa": "/ˈlɛmi/",
+  "vi": "để tôi",
+  "ex": "Lemme check the logs real quick.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "got it",
+  "sp": "go-dit",
+  "ipa": "/ˈɡɑɾɪt/",
+  "vi": "hiểu rồi (nối âm)",
+  "ex": "Got it, I'll update the ticket.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "have to",
+  "sp": "hafta",
+  "ipa": "/ˈhæftə/",
+  "vi": "phải (làm gì)",
+  "ex": "We hafta fix this before the release.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "don't know",
+  "sp": "dunno",
+  "ipa": "/dəˈnoʊ/",
+  "vi": "không biết (thân mật)",
+  "ex": "I dunno why the test is flaky.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "kind of",
+  "sp": "kinda",
+  "ipa": "/ˈkaɪndə/",
+  "vi": "hơi, kiểu như",
+  "ex": "The new API is kinda slow today.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "because",
+  "sp": "'cause",
+  "ipa": "/kəz/",
+  "vi": "bởi vì",
+  "ex": "I'm late 'cause the VPN was down.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "you know",
+  "sp": "y'know",
+  "ipa": "/jəˈnoʊ/",
+  "vi": "bạn biết đấy (từ đệm)",
+  "ex": "It's, y'know, a pretty big refactor.",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "did you",
+  "sp": "didja",
+  "ipa": "/ˈdɪdʒə/",
+  "vi": "bạn đã ... chưa (nối âm)",
+  "ex": "Didja merge the hotfix yesterday?",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "give me a sec",
+  "sp": "gimme a sec",
+  "ipa": "/ˌɡɪmi ə ˈsɛk/",
+  "vi": "đợi tôi một chút",
+  "ex": "Gimme a sec, I'm sharing my screen.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "I'm going to need",
+  "sp": "I'm gonna need",
+  "ipa": "/aɪm ˌɡʌnə ˈnid/",
+  "vi": "tôi sẽ cần",
+  "ex": "I'm gonna need access to the staging DB.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "do you want to",
+  "sp": "d'you wanna / ya wanna",
+  "ipa": "/djə ˈwɑnə/",
+  "vi": "bạn có muốn ... không",
+  "ex": "D'you wanna grab lunch after stand-up?",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "did you get a chance to",
+  "sp": "didja get a chance ta",
+  "ipa": "/ˈdɪdʒə ˌɡɛɾ ə ˈtʃæns tə/",
+  "vi": "bạn đã kịp ... chưa",
+  "ex": "Didja get a chance ta review my PR?",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "give me",
+  "sp": "gimme",
+  "ipa": "/ˈɡɪmi/",
+  "vi": "đưa/cho tôi",
+  "ex": "Gimme ten minutes to finish this.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "a lot of",
+  "sp": "a lotta",
+  "ipa": "/əˈlɑɾə/",
+  "vi": "nhiều",
+  "ex": "We've got a lotta tickets this sprint.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "what are you",
+  "sp": "whatcha / whaddaya",
+  "ipa": "/ˈwʌtʃə/",
+  "vi": "bạn đang ... gì",
+  "ex": "Whatcha working on this week?",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "I don't know yet",
+  "sp": "I dunno yet",
+  "ipa": "/aɪ dəˌnoʊ ˈjɛt/",
+  "vi": "tôi chưa biết",
+  "ex": "I dunno yet, I'm still testing it.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "trying to",
+  "sp": "tryna",
+  "ipa": "/ˈtraɪnə/",
+  "vi": "đang cố (rất thân mật)",
+  "ex": "I'm tryna reproduce the crash locally.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "sort of",
+  "sp": "sorta",
+  "ipa": "/ˈsɔrɾə/",
+  "vi": "kiểu như, hơi",
+  "ex": "It sorta works, but it's not stable.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "them",
+  "sp": "'em",
+  "ipa": "/əm/",
+  "vi": "họ, chúng (nó)",
+  "ex": "Just send 'em the link after the call.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "probably",
+  "sp": "prob'ly",
+  "ipa": "/ˈprɑbli/",
+  "vi": "có lẽ",
+  "ex": "It's prob'ly a caching issue.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "should have",
+  "sp": "shoulda",
+  "ipa": "/ˈʃʊdə/",
+  "vi": "lẽ ra nên",
+  "ex": "We shoulda tested this on staging first.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "could you",
+  "sp": "couldja",
+  "ipa": "/ˈkʊdʒə/",
+  "vi": "bạn có thể ... không (nối âm)",
+  "ex": "Couldja share your screen for a sec?",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "would you",
+  "sp": "wouldja",
+  "ipa": "/ˈwʊdʒə/",
+  "vi": "bạn có muốn/vui lòng (nối âm)",
+  "ex": "Wouldja mind taking notes today?",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "can I get back to you",
+  "sp": "can I get back ta ya",
+  "ipa": "/kən aɪ ˌɡɛt ˈbæk tə jə/",
+  "vi": "tôi trả lời bạn sau nhé",
+  "ex": "Can I get back ta ya after lunch?",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "talk to you later",
+  "sp": "talk ta ya later",
+  "ipa": "/ˌtɔk tə jə ˈleɪɾɚ/",
+  "vi": "nói chuyện sau nhé",
+  "ex": "Okay, thanks, talk ta ya later.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "see you tomorrow",
+  "sp": "see ya tomorrow",
+  "ipa": "/ˌsi jə təˈmɑroʊ/",
+  "vi": "hẹn gặp mai",
+  "ex": "Good work today, see ya tomorrow.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "got you",
+  "sp": "gotcha",
+  "ipa": "/ˈɡɑtʃə/",
+  "vi": "hiểu rồi (thân mật)",
+  "ex": "Gotcha, so the deadline is Thursday.",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "what's",
+  "sp": "what's",
+  "ipa": "/wʌts/",
+  "vi": "cái gì là, ... là gì",
+  "ex": "What's the status on the login bug?",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "there's",
+  "sp": "there's",
+  "ipa": "/ðɚz/",
+  "vi": "có (số ít)",
+  "ex": "There's a typo in the config file.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "I'll",
+  "sp": "I'll",
+  "ipa": "/ɑl/",
+  "vi": "tôi sẽ",
+  "ex": "I'll ping you when it's deployed.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "we'll",
+  "sp": "we'll",
+  "ipa": "/wɪl/",
+  "vi": "chúng ta sẽ",
+  "ex": "We'll discuss it in the retro.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "it'll",
+  "sp": "it'll",
+  "ipa": "/ˈɪɾəl/",
+  "vi": "nó sẽ",
+  "ex": "It'll take about two days, I think.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "that'll",
+  "sp": "that'll",
+  "ipa": "/ˈðæɾəl/",
+  "vi": "điều đó sẽ",
+  "ex": "That'll break the mobile app.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "it's going to be",
+  "sp": "it's gonna be",
+  "ipa": "/ɪts ˌɡʌnə ˈbi/",
+  "vi": "sẽ là, sẽ (bị)",
+  "ex": "It's gonna be tight, but we can make it.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "we've got",
+  "sp": "we've got",
+  "ipa": "/wiv ˈɡɑt/",
+  "vi": "chúng ta có",
+  "ex": "We've got three blockers right now.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "come on",
+  "sp": "c'mon",
+  "ipa": "/kəˈmɑn/",
+  "vi": "thôi nào; nhanh lên",
+  "ex": "C'mon, it's just a one-line change.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "out of",
+  "sp": "outta",
+  "ipa": "/ˈaʊɾə/",
+  "vi": "hết; ra khỏi",
+  "ex": "We're running outta time, let's wrap up.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "have got to",
+  "sp": "'ve gotta",
+  "ipa": "/v ˈɡɑɾə/",
+  "vi": "phải (làm gì)",
+  "ex": "We've gotta ship this by Friday.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "has to",
+  "sp": "hasta",
+  "ipa": "/ˈhæstə/",
+  "vi": "phải (ngôi thứ 3)",
+  "ex": "Someone hasta approve the PR first.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "supposed to",
+  "sp": "s'posta",
+  "ipa": "/səˈpoʊstə/",
+  "vi": "lẽ ra phải, được cho là",
+  "ex": "It's s'posta run every night at midnight.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "don't you",
+  "sp": "doncha",
+  "ipa": "/ˈdoʊntʃə/",
+  "vi": "sao bạn không (nối âm)",
+  "ex": "Why doncha ask the backend team?",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "what do you",
+  "sp": "whaddya",
+  "ipa": "/ˈwʌdəjə/",
+  "vi": "bạn ... gì",
+  "ex": "Whaddya need from me for the release?",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "what about",
+  "sp": "wha-da-bout",
+  "ipa": "/ˌwʌɾəˈbaʊt/",
+  "vi": "còn ... thì sao (nối âm)",
+  "ex": "What about the Android version?",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "could have",
+  "sp": "coulda",
+  "ipa": "/ˈkʊdə/",
+  "vi": "lẽ ra đã có thể",
+  "ex": "We coulda caught this in code review.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "would have",
+  "sp": "woulda",
+  "ipa": "/ˈwʊdə/",
+  "vi": "lẽ ra đã",
+  "ex": "I woulda helped if you'd asked.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "must have",
+  "sp": "musta",
+  "ipa": "/ˈmʌstə/",
+  "vi": "chắc hẳn đã",
+  "ex": "Someone musta changed the env variables.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "might have",
+  "sp": "mighta",
+  "ipa": "/ˈmaɪɾə/",
+  "vi": "có lẽ đã",
+  "ex": "I mighta pushed to the wrong branch.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "check it out",
+  "sp": "che-ki-dout",
+  "ipa": "/ˌtʃɛkɪˈɾaʊt/",
+  "vi": "xem thử đi (nối âm)",
+  "ex": "I posted the link, check it out when you can.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "set it up",
+  "sp": "se-di-dup",
+  "ipa": "/ˌsɛɾɪˈɾʌp/",
+  "vi": "cài đặt nó (nối âm)",
+  "ex": "I'll set it up on the test server.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "look into it",
+  "sp": "loo-kin-tu-it",
+  "ipa": "/ˌlʊkˈɪntuɪt/",
+  "vi": "xem xét vấn đề (nối âm)",
+  "ex": "Thanks for flagging, I'll look into it.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "send it over",
+  "sp": "sen-di-dover",
+  "ipa": "/ˌsɛndɪˈɾoʊvɚ/",
+  "vi": "gửi qua (nối âm)",
+  "ex": "When the doc's ready, send it over.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "get it done",
+  "sp": "ge-di-done",
+  "ipa": "/ˌɡɛɾɪˈdʌn/",
+  "vi": "làm xong (nối âm)",
+  "ex": "Don't worry, we'll get it done today.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "first of all",
+  "sp": "firsta-vall",
+  "ipa": "/ˌfɝstəˈvɔl/",
+  "vi": "trước hết (nối âm)",
+  "ex": "First of all, thanks everyone for joining.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "not at all",
+  "sp": "no-da-dall",
+  "ipa": "/ˌnɑɾəˈɾɔl/",
+  "vi": "không hề, không có gì (nối âm)",
+  "ex": "Mind if I record this? Not at all.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "an hour",
+  "sp": "a-nour",
+  "ipa": "/əˈnaʊɚ/",
+  "vi": "một tiếng (nối âm)",
+  "ex": "The meeting's in an hour.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "pick it up",
+  "sp": "pi-ki-dup",
+  "ipa": "/ˌpɪkɪˈɾʌp/",
+  "vi": "nhận làm (nối âm)",
+  "ex": "Nobody's on that ticket, I can pick it up.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "turn it off",
+  "sp": "tur-ni-doff",
+  "ipa": "/ˌtɝnɪˈɾɔf/",
+  "vi": "tắt nó đi (nối âm)",
+  "ex": "The feature flag's buggy, turn it off for now.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "put it on",
+  "sp": "pu-di-don",
+  "ipa": "/ˌpʊɾɪˈɾɑn/",
+  "vi": "đưa vào, ghi vào (nối âm)",
+  "ex": "Good idea, put it on the backlog.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "at all",
+  "sp": "a-dall",
+  "ipa": "/əˈɾɔl/",
+  "vi": "chút nào (nối âm)",
+  "ex": "Is the API responding at all?",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "I'm not sure",
+  "sp": "I'm not sure",
+  "ipa": "/ˌɑm nɑʔ ˈʃʊr/",
+  "vi": "tôi không chắc (t gần như mất)",
+  "ex": "I'm not sure, lemme ask the PM.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "a couple of",
+  "sp": "a coupla",
+  "ipa": "/əˈkʌplə/",
+  "vi": "một vài",
+  "ex": "Gimme a coupla minutes to finish.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "let's",
+  "sp": "less",
+  "ipa": "/lɛs/",
+  "vi": "chúng ta hãy",
+  "ex": "Less start with the demo.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "going to have to",
+  "sp": "gonna hafta",
+  "ipa": "/ˌɡʌnə ˈhæftə/",
+  "vi": "sẽ phải",
+  "ex": "We're gonna hafta postpone the release.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "what are we going to do",
+  "sp": "whatter we gonna do",
+  "ipa": "/ˌwʌɾɚ wi ˌɡʌnə ˈdu/",
+  "vi": "chúng ta sẽ làm gì",
+  "ex": "So whatter we gonna do about the outage?",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "I'm going to",
+  "sp": "I'mma",
+  "ipa": "/ˈaɪmə/",
+  "vi": "tôi sẽ (rất thân mật)",
+  "ex": "I'mma grab coffee before the next call.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "you'd better",
+  "sp": "ya'd better / ya better",
+  "ipa": "/jə ˈbɛɾɚ/",
+  "vi": "bạn nên (kẻo...)",
+  "ex": "Ya better back up the DB first.",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "used to",
+  "sp": "useta",
+  "ipa": "/ˈjustə/",
+  "vi": "đã từng",
+  "ex": "We useta deploy manually every Friday.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "ought to",
+  "sp": "oughta",
+  "ipa": "/ˈɔɾə/",
+  "vi": "nên",
+  "ex": "We oughta add more unit tests here.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "bet you",
+  "sp": "betcha",
+  "ipa": "/ˈbɛtʃə/",
+  "vi": "cá là (thân mật)",
+  "ex": "I betcha it's a timezone bug.",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "meet you",
+  "sp": "meechu",
+  "ipa": "/ˈmitʃu/",
+  "vi": "gặp bạn (nối âm)",
+  "ex": "Nice ta meechu, welcome to the team.",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "need you to",
+  "sp": "needja ta",
+  "ipa": "/ˈnidʒə tə/",
+  "vi": "cần bạn (làm gì)",
+  "ex": "I needja ta update the docs today.",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "last year",
+  "sp": "las chear",
+  "ipa": "/læs ˈtʃɪr/",
+  "vi": "năm ngoái (nối âm)",
+  "ex": "We migrated to AWS last year.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "who's",
+  "sp": "who's",
+  "ipa": "/huz/",
+  "vi": "ai đang/ai là",
+  "ex": "Who's taking notes today?",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "there're",
+  "sp": "there're",
+  "ipa": "/ˈðɛrɚ/",
+  "vi": "có (số nhiều)",
+  "ex": "There're two open bugs on this page.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "how'd",
+  "sp": "how'd",
+  "ipa": "/haʊd/",
+  "vi": "đã ... thế nào",
+  "ex": "How'd the client meeting go?",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "where'd",
+  "sp": "where'd",
+  "ipa": "/wɛrd/",
+  "vi": "đã ... ở đâu",
+  "ex": "Where'd you put the design files?",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "I'd have",
+  "sp": "I'da",
+  "ipa": "/ˈaɪdə/",
+  "vi": "lẽ ra tôi đã",
+  "ex": "I'da finished it if the server hadn't crashed.",
+  "topic": "Reduced: have & of",
+  "src": "Spoken"
+ },
+ {
+  "w": "your",
+  "sp": "yer",
+  "ipa": "/jɚ/",
+  "vi": "của bạn",
+  "ex": "Can you share yer screen?",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "you",
+  "sp": "ya",
+  "ipa": "/jə/",
+  "vi": "bạn",
+  "ex": "Thanks, I'll send ya the link.",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "are you",
+  "sp": "r'ya / ya",
+  "ipa": "/ɚjə/",
+  "vi": "bạn có đang",
+  "ex": "Ya still there? You froze for a sec.",
+  "topic": "Reduced: you & your",
+  "src": "Spoken"
+ },
+ {
+  "w": "how are you doing",
+  "sp": "how ya doin'",
+  "ipa": "/ˌhaʊ jə ˈduɪn/",
+  "vi": "bạn khỏe không",
+  "ex": "Hey Linh, how ya doin'?",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "what's going on",
+  "sp": "what's goin' on",
+  "ipa": "/ˌwʌts ˌɡoʊɪn ˈɑn/",
+  "vi": "có chuyện gì vậy",
+  "ex": "What's goin' on with the pipeline?",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "I don't think so",
+  "sp": "I don' think so",
+  "ipa": "/aɪ ˌdoʊn ˈθɪŋk soʊ/",
+  "vi": "tôi không nghĩ vậy",
+  "ex": "I don' think so, the logs look clean.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "give it a try",
+  "sp": "gi-vi-da try",
+  "ipa": "/ˌɡɪvɪɾə ˈtraɪ/",
+  "vi": "thử xem (nối âm)",
+  "ex": "Not sure it'll work, but give it a try.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "take a look",
+  "sp": "ta-ka look",
+  "ipa": "/ˌteɪkə ˈlʊk/",
+  "vi": "xem qua (nối âm)",
+  "ex": "Can you take a look at this error?",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "as soon as",
+  "sp": "a-soo-nas",
+  "ipa": "/əˈsunəz/",
+  "vi": "ngay khi (nối âm)",
+  "ex": "I'll ping you as soon as it's merged.",
+  "topic": "Linking sounds",
+  "src": "Spoken",
+  "link": true
+ },
+ {
+  "w": "I'll let you know",
+  "sp": "I'll letcha know",
+  "ipa": "/aɪl ˌlɛtʃə ˈnoʊ/",
+  "vi": "tôi sẽ báo bạn",
+  "ex": "Not yet, I'll letcha know by EOD.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "don't worry about it",
+  "sp": "don' worry 'bout it",
+  "ipa": "/ˌdoʊn ˌwɝi ˈbaʊɾɪt/",
+  "vi": "đừng lo",
+  "ex": "Don' worry 'bout it, I'll fix it.",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ },
+ {
+  "w": "about",
+  "sp": "'bout",
+  "ipa": "/baʊt/",
+  "vi": "về, khoảng",
+  "ex": "It'll take 'bout an hour.",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "what time",
+  "sp": "wha' time",
+  "ipa": "/wʌʔ ˈtaɪm/",
+  "vi": "mấy giờ (mất âm t)",
+  "ex": "Wha' time's the client call?",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "tell him",
+  "sp": "tell'im",
+  "ipa": "/ˈtɛlɪm/",
+  "vi": "nói với anh ấy (mất âm h)",
+  "ex": "Can you tell'im the build's fixed?",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "is he",
+  "sp": "izzy",
+  "ipa": "/ˈɪzi/",
+  "vi": "anh ấy có ... không (mất âm h)",
+  "ex": "Izzy joining the call today?",
+  "topic": "Reduced: contractions",
+  "src": "Spoken"
+ },
+ {
+  "w": "want to be",
+  "sp": "wanna be",
+  "ipa": "/ˌwɑnə ˈbi/",
+  "vi": "muốn trở thành, muốn được",
+  "ex": "I wanna be sure before we deploy.",
+  "topic": "Reduced: going to / want to",
+  "src": "Spoken"
+ },
+ {
+  "w": "could you send me",
+  "sp": "couldja sen' me",
+  "ipa": "/ˌkʊdʒə ˈsɛn mi/",
+  "vi": "bạn gửi tôi ... được không",
+  "ex": "Couldja sen' me the meeting notes?",
+  "topic": "Fast phrases at work",
+  "src": "Spoken"
+ }
+]

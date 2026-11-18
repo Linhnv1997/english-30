@@ -116,7 +116,7 @@ function refresh(){
   if (tab === "listen" && lcur) return;   // re-rendering would restart the lesson audio
   pendingRender = false;
   if (!(tab === "cards" && cmode === "review" && Q && qi < Q.length)) Q = null;
-  if (!(tab === "cards" && deck === "v3" && vmode === "review" && VQ && vqi < VQ.length)) VQ = null;
+  if (!(tab === "cards" && (deck === "v3" || deck === "ph") && vmode === "review" && VQ && vqi < VQ.length)) VQ = null;
   render();
 }
 document.addEventListener("focusout", () => { if (pendingRender) setTimeout(refresh, 0); });
@@ -181,8 +181,8 @@ function vToday(){
 }
 
 function vCards(){
-  const dk = `<div class="seg" role="group" aria-label="Bộ thẻ">${[["d30","Lộ trình 30 ngày"],["v3","3000 từ + cụm từ"]].map(([k, l]) => `<button data-deck="${k}" aria-pressed="${deck === k}">${l}</button>`).join("")}</div>`;
-  if (deck === "v3") return dk + vV3();
+  const dk = `<div class="seg" role="group" aria-label="Bộ thẻ">${[["d30","Lộ trình 30 ngày"],["ph","Cụm từ"],["v3","3000 từ"]].map(([k, l]) => `<button data-deck="${k}" aria-pressed="${deck === k}">${l}</button>`).join("")}</div>`;
+  if (deck === "v3" || deck === "ph") return dk + vV3();
   return dk + vCards30();
 }
 function vCards30(){
@@ -329,7 +329,7 @@ function vSync(){
 /* ---------- 3000 workplace + TOEIC words (separate deck, loaded on demand) ---------- */
 // Status per word: none = chưa biết (default), "n" = đã xem, vẫn chưa biết, "l" = đang học (goes into review), "k" = đã biết.
 let deck = (() => { try { return localStorage.getItem("en30-deck") || "d30"; } catch (e) { return "d30"; } })();
-let V = null, vLoading = false, vmode = "check", vsrc = "all", vtopic = "all", vstat = "all", vq = "", vshow = 40;
+let V = null, vLoading = false, vmode = "check", vsrc = "all", psrc = "all", vtopic = "all", vstat = "all", vq = "", vshow = 40;
 let vFlip = false, vUndo = [], VQ = null, vqi = 0, vAgain = [];
 const VST = {"": "Chưa biết", n: "Chưa biết", l: "Đang học", k: "Đã biết"};
 const vst = id => (get("v:" + id) || {}).s || "";
@@ -337,11 +337,14 @@ const vAudio = id => `audio/v/${String(id).replace(/[^a-z0-9]+/g, "-").replace(/
 function loadV(){
   if (V || vLoading) return; vLoading = true;
   const s = document.createElement("script"); s.src = "vocab3000.js";
-  s.onload = () => { V = window.V3.map(r => ({id:r[1], w:r[1], pos:r[2], ipa:r[3], vi:r[4], ex:r[5], tp:r[6], src:r[7]})); render(); };
+  s.onload = () => { V = window.V3.map(r => ({id:r[1], w:r[1], pos:r[2], ipa:r[3], vi:r[4], ex:r[5], tp:r[6], src:r[7], sp:r[8] || ""})); render(); };
   s.onerror = () => { vLoading = false; const el = $("#vload"); if (el) el.textContent = "Chưa tải được bộ từ. Kiểm tra mạng rồi mở lại tab."; };
   document.head.appendChild(s);
 }
-const vMatch = v => (vsrc === "all" || v.src.includes(vsrc)) && (vtopic === "all" || v.tp === vtopic);
+const isPh = src => /Phrase|Chunk|Spoken/.test(src);
+// "Cụm từ" deck: meeting phrases, everyday chunks and fast-speech forms; "3000 từ" deck: single words
+const vSrcOk = v => deck === "ph" ? isPh(v.src) && (psrc === "all" || v.src === psrc) : !isPh(v.src) && (vsrc === "all" || v.src.includes(vsrc));
+const vMatch = v => vSrcOk(v) && (vtopic === "all" || v.tp === vtopic);
 function vReviewCounts(){                 // works from synced items alone, so the tab badge needs no word data
   const t = today(); let due = 0, fresh = 0, intro = 0;
   for (const k in S.items){
@@ -365,27 +368,40 @@ const TOPIC_VI = {"Office & admin":"Văn phòng","Meetings & communication":"H�
   "Meeting: clarifying":"Họp: hỏi lại cho rõ","Meeting: turns & interrupting":"Họp: xin lời & ngắt lời","Meeting: action items":"Họp: chốt việc cần làm",
   "Meeting: closing":"Họp: kết thúc","Deadlines & scheduling":"Deadline & lịch","Problems & risks":"Sự cố & rủi ro","Presenting & explaining":"Trình bày",
   "Negotiating & decisions":"Thương lượng & quyết định","Email & abbreviations":"Email & viết tắt","Online calls":"Họp online","Small talk":"Nói chuyện xã giao",
-  "Status updates":"Báo cáo tiến độ"};
-const SRC_VI = {TOEIC:"TOEIC", Business:"Business", Core:"Thông dụng", Phrase:"Cụm từ"};
+  "Status updates":"Báo cáo tiến độ",
+  "Chunks: everyday responses":"Đáp lời hằng ngày","Chunks: work verbs":"Động từ công việc","Chunks: time & planning":"Thời gian & kế hoạch",
+  "Chunks: opinions & hedging":"Nêu ý kiến, nói giảm","Chunks: asking & requesting":"Hỏi & nhờ vả","Chunks: linking ideas":"Nối ý",
+  "Reduced: going to / want to":"Nói nhanh: gonna, wanna…","Reduced: you & your":"Nói nhanh: didja, whatcha…","Reduced: have & of":"Nói nhanh: shoulda, kinda…",
+  "Reduced: contractions":"Rút gọn: I'll, there's…","Linking sounds":"Nối âm","Fast phrases at work":"Câu nói nhanh ở chỗ làm"};
+const SRC_VI = {TOEIC:"TOEIC", Business:"Business", Core:"Thông dụng", Phrase:"Cụm họp & công việc", Chunk:"Cụm thông dụng", Spoken:"Nói nhanh"};
 function vFilters(){
-  return `<div class="row"><select id="vsrc" class="btn sm grow" aria-label="Nguồn">${[["all","Mọi nguồn"],["Phrase","Cụm từ công việc & họp"],["TOEIC","TOEIC"],["Business","Business"],["Core","Thông dụng"]].map(([k, l]) => `<option value="${k}" ${vsrc === k ? "selected" : ""}>${l}</option>`).join("")}</select>
-  <select id="vtopic" class="btn sm grow" aria-label="Chủ đề"><option value="all">Mọi chủ đề</option>${Object.entries(TOPIC_VI).map(([k, l]) => `<option value="${esc(k)}" ${vtopic === k ? "selected" : ""}>${l}</option>`).join("")}</select></div>`;
+  const ph = deck === "ph", sel = ph ? psrc : vsrc;
+  const srcs = ph ? [["all","Mọi loại cụm"],["Spoken","Nói nhanh: wanna, gonna…"],["Chunk","Cụm thông dụng"],["Phrase","Cụm họp & công việc"]]
+                  : [["all","Mọi nguồn"],["TOEIC","TOEIC"],["Business","Business"],["Core","Thông dụng"]];
+  const topics = [...new Set(V.filter(vSrcOk).map(v => v.tp))];
+  if (vtopic !== "all" && !topics.includes(vtopic)) vtopic = "all";
+  return `<div class="row"><select id="vsrc" class="btn sm grow" aria-label="Loại">${srcs.map(([k, l]) => `<option value="${k}" ${sel === k ? "selected" : ""}>${l}</option>`).join("")}</select>
+  <select id="vtopic" class="btn sm grow" aria-label="Chủ đề"><option value="all">Mọi chủ đề</option>${topics.map(k => `<option value="${esc(k)}" ${vtopic === k ? "selected" : ""}>${esc(TOPIC_VI[k] || k)}</option>`).join("")}</select></div>`;
 }
 function vCounts(){
   const c = {u:0, l:0, k:0}; V.forEach(v => { if (!vMatch(v)) return; const s = vst(v.id); if (s === "l") c.l++; else if (s === "k") c.k++; else c.u++; }); return c;
 }
+function vPos(v){
+  if (v.sp) return `<div class="pos sp">nghe như <b>${esc(v.sp)}</b>${v.ipa ? " " + esc(v.ipa) : ""}</div>`;
+  return `<div class="pos">${v.ipa ? esc(v.ipa) + " · " : ""}${v.pos === "phrase" ? "cụm từ" : esc(v.pos)}</div>`;
+}
 function vRow(v){
   const s = vst(v.id);
   return `<div class="wi"><button class="play" data-va="${esc(v.id)}" aria-label="Nghe ${esc(v.w)}">${PLAY}</button>
-    <div class="t"><b>${esc(v.w)} <span class="mute">${v.ipa ? esc(v.ipa) + " · " + esc(v.pos) : "cụm từ"}</span></b><small>${esc(v.vi)}</small><small><i>${esc(v.ex)}</i></small></div>
+    <div class="t"><b>${esc(v.w)} <span class="mute">${v.sp ? "nghe như " + esc(v.sp) : v.ipa ? esc(v.ipa) + " · " + esc(v.pos) : "cụm từ"}</span></b><small>${esc(v.vi)}</small><small><i>${esc(v.ex)}</i></small></div>
     <div class="seg vs" role="group" aria-label="Trạng thái ${esc(v.w)}">${[["l","~"],["k","✓"]].map(([k, l]) => `<button data-vset="${esc(v.id)}|${k}" aria-pressed="${s === k}" title="${VST[k]}">${l}</button>`).join("")}</div></div>`;
 }
 function vV3(){
   if (!V){ loadV(); return `<div class="card empty" id="vload"><b>Đang tải 3000 từ…</b><p class="mute">Lần đầu mất vài giây.</p></div>`; }
-  const c = vCounts(), rv = vReviewCounts();
-  const nWords = V.filter(v => v.src !== "Phrase").length;
+  const c = vCounts(), rq = vmode === "review" && VQ ? VQ.length - vqi + vAgain.length : buildVQueue().length;
+  const nWords = V.filter(v => !isPh(v.src)).length;
   const partial = nWords < 3000 ? ` · <span title="Phần còn lại sẽ tự bổ sung, trạng thái đã chọn được giữ nguyên">đã có ${nWords}/3000 từ + ${V.length - nWords} cụm từ</span>` : "";
-  const head = `<div class="seg" role="group" aria-label="Chế độ 3000 từ">${[["check","Kiểm tra"],["review","Ôn tập" + (rv.due + rv.fresh ? ` (${rv.due + rv.fresh})` : "")],["browse","Tra cứu"]].map(([k, l]) => `<button data-vm="${k}" aria-pressed="${vmode === k}">${l}</button>`).join("")}</div>
+  const head = `<div class="seg" role="group" aria-label="Chế độ học">${[["check","Kiểm tra"],["review","Ôn tập" + (rq ? ` (${rq})` : "")],["browse","Tra cứu"]].map(([k, l]) => `<button data-vm="${k}" aria-pressed="${vmode === k}">${l}</button>`).join("")}</div>
   ${vFilters()}
   <p class="mute"><b style="color:var(--no)">${c.u}</b> chưa biết · <b style="color:var(--mid)">${c.l}</b> đang học · <b style="color:var(--ok)">${c.k}</b> đã biết${partial}</p>`;
   if (vmode === "browse"){
@@ -404,7 +420,7 @@ function vV3(){
     return head + `
     <div class="card flash" id="vflash" role="button" tabindex="0" aria-label="Lật thẻ">
       <div class="tags"><span class="tag">${esc(TOPIC_VI[v.tp] || v.tp)}</span><span class="row" style="gap:4px">${v.src.split(",").map(s => `<span class="tag src">${SRC_VI[s] || s}</span>`).join("")}</span></div>
-      <div class="term">${esc(v.w)}</div><div class="pos">${v.ipa ? esc(v.ipa) + " · " : ""}${v.pos === "phrase" ? "cụm từ" : esc(v.pos)}</div>
+      <div class="term">${esc(v.w)}</div>${vPos(v)}
       ${vFlip ? `<hr><div class="vi">${esc(v.vi)}</div><div class="ex">${esc(v.ex)}</div>` : `<div class="hint">Bạn có biết từ này không? Chạm để xem nghĩa</div>`}
       <div class="count">còn ${c.u}</div>
     </div>
@@ -422,7 +438,7 @@ function vV3(){
   return head + `
   <div class="card flash" id="vflash" role="button" tabindex="0" aria-label="Lật thẻ">
     <div class="tags"><span class="tag">${esc(TOPIC_VI[v.tp] || v.tp)}</span>${cd ? "" : '<span class="tag new">Mới</span>'}</div>
-    <div class="term">${esc(v.w)}</div><div class="pos">${v.ipa ? esc(v.ipa) + " · " : ""}${v.pos === "phrase" ? "cụm từ" : esc(v.pos)}</div>
+    <div class="term">${esc(v.w)}</div>${vPos(v)}
     ${vFlip ? `<hr><div class="vi">${esc(v.vi)}</div><div class="ex">${esc(v.ex)}</div>` : `<div class="hint">Nghĩ nghĩa của từ, rồi chạm để lật</div>`}
     <div class="count">${vqi + 1}/${VQ.length + vAgain.length}</div>
   </div>
@@ -449,15 +465,15 @@ function vFlipCard(){
 }
 function vSummary(){
   let l = 0, k = 0; for (const key in S.items) if (key.startsWith("v:")){ const s = S.items[key].s; if (s === "l") l++; else if (s === "k") k++; }
-  return `<div class="card"><h3>3000 từ + cụm từ công việc</h3>${window.V3 && window.V3.filter(r => r[7] !== "Phrase").length < 3000 ? `<p class="mute">Đã có ${window.V3.filter(r => r[7] !== "Phrase").length}/3000 từ, phần còn lại đang được bổ sung.</p>` : ""}
+  return `<div class="card"><h3>3000 từ + cụm từ công việc</h3>${window.V3 && window.V3.filter(r => !isPh(r[7])).length < 3000 ? `<p class="mute">Đã có ${window.V3.filter(r => !isPh(r[7])).length}/3000 từ, phần còn lại đang được bổ sung.</p>` : ""}
     <div class="stats"><div class="stat"><b>${k}</b><span>đã biết</span></div><div class="stat"><b>${l}</b><span>đang học</span></div><div class="stat"><b>${(window.V3 ? window.V3.length : 3000) - k - l}</b><span>chưa biết</span></div></div>
     <div class="bar" aria-label="Tiến độ 3000 từ"><i style="width:${(k / 30).toFixed(1)}%"></i></div>
     <div class="row"><span class="mute">Từ đang học mới mỗi ngày</span><div class="seg grow" role="group" aria-label="Từ mới mỗi ngày">${[10, 20, 30, 50].map(v => `<button data-v3n="${v}" aria-pressed="${(cfg.v3new || 20) === v}">${v}</button>`).join("")}</div></div></div>`;
 }
 function bindV3(on){
-  on("[data-deck]", b => b.onclick = () => { deck = b.dataset.deck; try { localStorage.setItem("en30-deck", deck); } catch (e) {} render(); });
+  on("[data-deck]", b => b.onclick = () => { deck = b.dataset.deck; vtopic = "all"; VQ = null; vFlip = false; try { localStorage.setItem("en30-deck", deck); } catch (e) {} render(); });
   on("[data-vm]", b => b.onclick = () => { vmode = b.dataset.vm; vFlip = false; VQ = null; render(); });
-  const vs = $("#vsrc"); if (vs) vs.onchange = () => { vsrc = vs.value; vshow = 40; VQ = null; vFlip = false; render(); };
+  const vs = $("#vsrc"); if (vs) vs.onchange = () => { if (deck === "ph") psrc = vs.value; else vsrc = vs.value; vshow = 40; VQ = null; vFlip = false; render(); };
   const vt = $("#vtopic"); if (vt) vt.onchange = () => { vtopic = vt.value; vshow = 40; VQ = null; vFlip = false; render(); };
   on("[data-vst]", b => b.onclick = () => { vstat = b.dataset.vst; vshow = 40; render(); });
   const q = $("#vq"); if (q){ let t; q.oninput = () => { clearTimeout(t); t = setTimeout(() => { vq = q.value; vshow = 40; render(); const n = $("#vq"); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }, 250); }; }
@@ -655,7 +671,7 @@ function bind(){
 }
 
 document.addEventListener("keydown", e => {
-  if (tab === "cards" && deck === "v3" && V && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) && vmode !== "browse"){
+  if (tab === "cards" && (deck === "v3" || deck === "ph") && V && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName) && vmode !== "browse"){
     const hasCard = vmode === "check" ? V.some(x => vMatch(x) && !vst(x.id)) : VQ && vqi < VQ.length;
     if (!hasCard) return;
     if (e.key === " " || e.key === "Enter"){ e.preventDefault(); vFlipCard(); }
