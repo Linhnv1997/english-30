@@ -1,0 +1,1325 @@
+[
+ {
+  "id": "r1-11",
+  "level": 1,
+  "type": "email",
+  "topic": "Service",
+  "title": "Export bug for Harbor Foods",
+  "title_vi": "Lỗi xuất file cho Harbor Foods",
+  "head": [
+   [
+    "From",
+    "Mai Tran <mai.tran@lumenstack.io>"
+   ],
+   [
+    "To",
+    "Dev team"
+   ],
+   [
+    "Subject",
+    "Client request: CSV export bug"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Hi team,",
+     "Chào cả nhóm,"
+    ]
+   ],
+   [
+    [
+     "Our client Harbor Foods reported a problem yesterday.",
+     "Khách hàng Harbor Foods của chúng ta đã báo một sự cố vào hôm qua."
+    ],
+    [
+     "When they export a report to CSV, the dates are in the wrong format.",
+     "Khi họ xuất báo cáo ra file CSV, ngày tháng bị sai định dạng."
+    ],
+    [
+     "This affects about 40 of their users.",
+     "Lỗi này ảnh hưởng đến khoảng 40 người dùng của họ."
+    ]
+   ],
+   [
+    [
+     "Kevin will be in charge of the fix.",
+     "Kevin sẽ phụ trách việc sửa lỗi."
+    ],
+    [
+     "Please make sure it is tested on both Windows and Mac.",
+     "Vui lòng đảm bảo bản sửa được kiểm thử trên cả Windows và Mac."
+    ],
+    [
+     "The client needs the fix by Thursday at noon, because they send monthly reports to their managers on Friday.",
+     "Khách hàng cần bản sửa trước trưa thứ Năm, vì họ gửi báo cáo hàng tháng cho các quản lý vào thứ Sáu."
+    ]
+   ],
+   [
+    [
+     "I will follow up on the ticket and keep the client updated.",
+     "Tôi sẽ theo dõi ticket này và cập nhật tình hình cho khách hàng."
+    ],
+    [
+     "Let me know if you need more details.",
+     "Hãy cho tôi biết nếu các bạn cần thêm chi tiết."
+    ]
+   ],
+   [
+    [
+     "Thanks,",
+     "Cảm ơn,"
+    ],
+    [
+     "Mai",
+     "Mai"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "client"
+   },
+   {
+    "w": "affect",
+    "f": "affects"
+   },
+   {
+    "w": "user",
+    "f": "users"
+   },
+   {
+    "w": "be in charge of"
+   },
+   {
+    "w": "make sure"
+   },
+   {
+    "w": "test",
+    "f": "tested"
+   },
+   {
+    "w": "manager",
+    "f": "managers"
+   },
+   {
+    "w": "follow up on"
+   },
+   {
+    "w": "ticket"
+   },
+   {
+    "w": "detail",
+    "f": "details"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the problem with the export?",
+    "o": [
+     "The dates are in the wrong format",
+     "The file is empty",
+     "The export is very slow",
+     "Some users cannot log in"
+    ],
+    "a": 0,
+    "vi": "Câu 'the dates are in the wrong format' nêu rõ lỗi. Các lựa chọn khác không được nhắc đến."
+   },
+   {
+    "q": "Who is responsible for fixing the bug?",
+    "o": [
+     "Mai",
+     "Kevin",
+     "A manager at Harbor Foods",
+     "The Windows team"
+    ],
+    "a": 1,
+    "vi": "'Kevin will be in charge of the fix' – Kevin phụ trách sửa lỗi. Mai chỉ theo dõi ticket và cập nhật cho khách hàng."
+   },
+   {
+    "q": "Why does the client need the fix by Thursday?",
+    "o": [
+     "Their contract ends on Thursday",
+     "They have 40 new users",
+     "They send monthly reports on Friday",
+     "They will test it on Mac"
+    ],
+    "a": 2,
+    "vi": "Câu cuối đoạn 2: 'because they send monthly reports to their managers on Friday'. Con số 40 là số người dùng bị ảnh hưởng, là bẫy."
+   }
+  ]
+ },
+ {
+  "id": "r1-12",
+  "level": 1,
+  "type": "chat",
+  "topic": "Data",
+  "title": "Nightly pipeline failed",
+  "title_vi": "Pipeline chạy đêm bị lỗi",
+  "head": [],
+  "paras": [
+   [
+    [
+     "Huy (8:05): Good morning. The nightly data pipeline failed at 2 a.m.",
+     "Huy (8:05): Chào buổi sáng. Pipeline dữ liệu chạy đêm đã bị lỗi lúc 2 giờ sáng."
+    ],
+    [
+     "Huy (8:06): The sales dashboard still shows numbers from Tuesday.",
+     "Huy (8:06): Dashboard doanh số vẫn đang hiển thị số liệu từ thứ Ba."
+    ]
+   ],
+   [
+    [
+     "Sara (8:10): Do you know why?",
+     "Sara (8:10): Anh có biết vì sao không?"
+    ],
+    [
+     "Huy (8:12): It looks like the database password expired.",
+     "Huy (8:12): Có vẻ như mật khẩu cơ sở dữ liệu đã hết hạn."
+    ],
+    [
+     "Huy (8:12): I updated it, and I am running the job again now.",
+     "Huy (8:12): Tôi đã cập nhật mật khẩu và đang chạy lại job ngay bây giờ."
+    ]
+   ],
+   [
+    [
+     "Sara (8:15): How long will it take?",
+     "Sara (8:15): Mất bao lâu vậy anh?"
+    ],
+    [
+     "Huy (8:16): About 90 minutes, so the data should be ready before 10.",
+     "Huy (8:16): Khoảng 90 phút, nên dữ liệu sẽ sẵn sàng trước 10 giờ."
+    ]
+   ],
+   [
+    [
+     "Sara (8:18): Great. The sales team has a meeting at 10:30, so please let me know when it is done.",
+     "Sara (8:18): Tốt quá. Nhóm sales có cuộc họp lúc 10:30, nên khi xong anh báo tôi nhé."
+    ],
+    [
+     "Sara (8:19): Also, could you set a reminder so the password does not expire again?",
+     "Sara (8:19): Ngoài ra, anh có thể đặt lời nhắc để mật khẩu không bị hết hạn nữa được không?"
+    ],
+    [
+     "Huy (8:20): Will do.",
+     "Huy (8:20): Được, tôi sẽ làm."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "pipeline"
+   },
+   {
+    "w": "fail",
+    "f": "failed"
+   },
+   {
+    "w": "expire"
+   },
+   {
+    "w": "password"
+   },
+   {
+    "w": "it looks like"
+   },
+   {
+    "w": "how long will it take"
+   },
+   {
+    "w": "let me know when"
+   },
+   {
+    "w": "reminder"
+   },
+   {
+    "w": "will do"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What caused the pipeline to fail?",
+    "o": [
+     "The dashboard was broken",
+     "The job ran too long",
+     "The server was turned off",
+     "A database password expired"
+    ],
+    "a": 3,
+    "vi": "Huy viết: 'It looks like the database password expired.' Các phương án khác không phải nguyên nhân."
+   },
+   {
+    "q": "When should the data be ready?",
+    "o": [
+     "Before 10 a.m.",
+     "At 2 a.m.",
+     "At 10:30 a.m.",
+     "On Tuesday"
+    ],
+    "a": 0,
+    "vi": "'the data should be ready before 10'. 10:30 là giờ họp của nhóm sales, 2 giờ sáng là lúc lỗi xảy ra."
+   },
+   {
+    "q": "What does Sara ask Huy to do?",
+    "o": [
+     "Cancel the sales meeting",
+     "Set a reminder for the password",
+     "Build a new dashboard",
+     "Call the sales team"
+    ],
+    "a": 1,
+    "vi": "Sara hỏi: 'could you set a reminder so the password does not expire again?' và Huy đồng ý 'Will do'."
+   }
+  ]
+ },
+ {
+  "id": "r1-13",
+  "level": 1,
+  "type": "notice",
+  "topic": "Logistics",
+  "title": "Office move to the 7th floor",
+  "title_vi": "Chuyển văn phòng lên tầng 7",
+  "head": [],
+  "paras": [
+   [
+    [
+     "Office Move Notice",
+     "Thông báo chuyển văn phòng"
+    ]
+   ],
+   [
+    [
+     "The engineering team will move from the 4th floor to the 7th floor on Saturday, March 14.",
+     "Nhóm kỹ thuật sẽ chuyển từ tầng 4 lên tầng 7 vào thứ Bảy, ngày 14 tháng 3."
+    ],
+    [
+     "The new space has more meeting rooms and a quiet area for focus work.",
+     "Không gian mới có nhiều phòng họp hơn và một khu yên tĩnh để làm việc tập trung."
+    ]
+   ],
+   [
+    [
+     "Please pack your desk items into the boxes provided by Friday at 5 p.m.",
+     "Vui lòng đóng đồ trên bàn làm việc vào các thùng được cung cấp trước 5 giờ chiều thứ Sáu."
+    ],
+    [
+     "Write your name and new desk number on each box.",
+     "Hãy ghi tên và số bàn mới của bạn lên từng thùng."
+    ],
+    [
+     "Movers will carry the boxes and monitors.",
+     "Nhân viên chuyển đồ sẽ mang các thùng và màn hình."
+    ],
+    [
+     "However, you must take your laptop home over the weekend.",
+     "Tuy nhiên, bạn phải mang laptop về nhà trong dịp cuối tuần."
+    ]
+   ],
+   [
+    [
+     "Your access card will work on the new floor from Monday morning.",
+     "Thẻ ra vào của bạn sẽ sử dụng được ở tầng mới từ sáng thứ Hai."
+    ],
+    [
+     "If you have any questions, contact Linda Pham in Facilities at extension 214.",
+     "Nếu có câu hỏi, hãy liên hệ chị Linda Pham ở bộ phận Cơ sở vật chất qua số máy lẻ 214."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "notice"
+   },
+   {
+    "w": "item",
+    "f": "items"
+   },
+   {
+    "w": "carry"
+   },
+   {
+    "w": "monitor",
+    "f": "monitors"
+   },
+   {
+    "w": "over the weekend"
+   },
+   {
+    "w": "access"
+   },
+   {
+    "w": "contact"
+   },
+   {
+    "w": "focus"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When is the deadline to pack desk items?",
+    "o": [
+     "Saturday, March 14",
+     "Monday morning",
+     "Friday at 5 p.m.",
+     "Sunday evening"
+    ],
+    "a": 2,
+    "vi": "'pack your desk items ... by Friday at 5 p.m.' Thứ Bảy 14/3 là ngày chuyển, sáng thứ Hai là lúc thẻ có hiệu lực."
+   },
+   {
+    "q": "What should employees do with their laptops?",
+    "o": [
+     "Put them in a box",
+     "Give them to Linda Pham",
+     "Leave them on the 4th floor",
+     "Take them home"
+    ],
+    "a": 3,
+    "vi": "'you must take your laptop home over the weekend'. Người chuyển đồ chỉ mang thùng và màn hình."
+   },
+   {
+    "q": "What will happen on Monday morning?",
+    "o": [
+     "Access cards will work on the 7th floor",
+     "Movers will carry the monitors",
+     "New meeting rooms will be built",
+     "Employees will get new laptops"
+    ],
+    "a": 0,
+    "vi": "'Your access card will work on the new floor from Monday morning.' Việc chuyển màn hình diễn ra vào thứ Bảy."
+   }
+  ]
+ },
+ {
+  "id": "r1-14",
+  "level": 1,
+  "type": "job",
+  "topic": "Product",
+  "title": "Junior AI Engineer",
+  "title_vi": "Kỹ sư AI cấp junior",
+  "head": [],
+  "paras": [
+   [
+    [
+     "Junior AI Engineer – Nova Retail Labs",
+     "Kỹ sư AI cấp junior – Nova Retail Labs"
+    ]
+   ],
+   [
+    [
+     "Nova Retail Labs is hiring a junior AI engineer for our product search team.",
+     "Nova Retail Labs đang tuyển một kỹ sư AI cấp junior cho nhóm tìm kiếm sản phẩm."
+    ],
+    [
+     "You will help build models that recommend products to online shoppers.",
+     "Bạn sẽ tham gia xây dựng các mô hình gợi ý sản phẩm cho người mua sắm trực tuyến."
+    ]
+   ],
+   [
+    [
+     "Requirements: one year of experience with Python and basic knowledge of machine learning.",
+     "Yêu cầu: một năm kinh nghiệm với Python và kiến thức cơ bản về machine learning."
+    ],
+    [
+     "Good written English is important, because our team works with offices in three countries.",
+     "Tiếng Anh viết tốt là điều quan trọng, vì nhóm chúng tôi làm việc với văn phòng ở ba quốc gia."
+    ]
+   ],
+   [
+    [
+     "This is a full-time position based in Da Nang.",
+     "Đây là vị trí toàn thời gian làm việc tại Đà Nẵng."
+    ],
+    [
+     "You may work from home two days a week.",
+     "Bạn có thể làm việc tại nhà hai ngày mỗi tuần."
+    ],
+    [
+     "We offer a yearly training budget of 1,000 dollars.",
+     "Chúng tôi hỗ trợ ngân sách đào tạo 1.000 đô la mỗi năm."
+    ]
+   ],
+   [
+    [
+     "To apply, send your CV and a short code sample to jobs@novaretail.dev by April 30.",
+     "Để ứng tuyển, hãy gửi CV và một đoạn code mẫu ngắn tới jobs@novaretail.dev trước ngày 30 tháng 4."
+    ],
+    [
+     "Only selected candidates will be contacted for an interview.",
+     "Chỉ những ứng viên được chọn mới được liên hệ phỏng vấn."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "hire",
+    "f": "hiring"
+   },
+   {
+    "w": "junior"
+   },
+   {
+    "w": "recommend"
+   },
+   {
+    "w": "requirement",
+    "f": "requirements"
+   },
+   {
+    "w": "knowledge"
+   },
+   {
+    "w": "position"
+   },
+   {
+    "w": "budget"
+   },
+   {
+    "w": "apply"
+   },
+   {
+    "w": "sample"
+   },
+   {
+    "w": "interview"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What will the new engineer work on?",
+    "o": [
+     "Payment systems",
+     "Models that recommend products",
+     "Mobile app design",
+     "Office IT support"
+    ],
+    "a": 1,
+    "vi": "'help build models that recommend products to online shoppers' – mô hình gợi ý sản phẩm."
+   },
+   {
+    "q": "Why is good written English important?",
+    "o": [
+     "The job is in another country",
+     "Candidates must write a test",
+     "The team works with offices in three countries",
+     "The training is in English"
+    ],
+    "a": 2,
+    "vi": "Câu 'because our team works with offices in three countries' giải thích lý do."
+   },
+   {
+    "q": "What must applicants send?",
+    "o": [
+     "A CV and a letter from a manager",
+     "A training plan",
+     "A list of three countries",
+     "A CV and a short code sample"
+    ],
+    "a": 3,
+    "vi": "'send your CV and a short code sample'. Các phương án khác không được yêu cầu."
+   }
+  ]
+ },
+ {
+  "id": "r1-15",
+  "level": 1,
+  "type": "review",
+  "topic": "Product",
+  "title": "Review: TagFlow labeling tool",
+  "title_vi": "Đánh giá: công cụ gán nhãn TagFlow",
+  "head": [],
+  "paras": [
+   [
+    [
+     "TagFlow labeling tool – 4 out of 5 stars",
+     "Công cụ gán nhãn TagFlow – 4 trên 5 sao"
+    ],
+    [
+     "Reviewed by Minh Le, ML engineer at Brightfield AI",
+     "Người đánh giá: Minh Le, kỹ sư ML tại Brightfield AI"
+    ]
+   ],
+   [
+    [
+     "Our team used TagFlow for a two-week trial to label 20,000 product images.",
+     "Nhóm chúng tôi đã dùng thử TagFlow trong hai tuần để gán nhãn 20.000 ảnh sản phẩm."
+    ],
+    [
+     "The interface is clean and easy to learn.",
+     "Giao diện gọn gàng và dễ học."
+    ],
+    [
+     "New team members started labeling after only one hour of training.",
+     "Các thành viên mới đã bắt đầu gán nhãn chỉ sau một giờ đào tạo."
+    ]
+   ],
+   [
+    [
+     "The best feature is the quality check.",
+     "Tính năng tốt nhất là kiểm tra chất lượng."
+    ],
+    [
+     "It shows when two people give the same image different labels.",
+     "Nó cho biết khi hai người gán nhãn khác nhau cho cùng một ảnh."
+    ]
+   ],
+   [
+    [
+     "However, the price is high for small teams.",
+     "Tuy nhiên, giá khá cao đối với các nhóm nhỏ."
+    ],
+    [
+     "It costs 30 dollars per user each month.",
+     "Phí là 30 đô la cho mỗi người dùng mỗi tháng."
+    ],
+    [
+     "Also, exporting large files was slow.",
+     "Ngoài ra, việc xuất các file lớn khá chậm."
+    ]
+   ],
+   [
+    [
+     "Overall, I would recommend it, and we plan to sign a one-year contract in June.",
+     "Nhìn chung, tôi sẽ giới thiệu công cụ này, và chúng tôi dự định ký hợp đồng một năm vào tháng 6."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "interface"
+   },
+   {
+    "w": "feature"
+   },
+   {
+    "w": "quality"
+   },
+   {
+    "w": "contract"
+   },
+   {
+    "w": "recommend"
+   },
+   {
+    "w": "overall"
+   },
+   {
+    "w": "image"
+   },
+   {
+    "w": "file",
+    "f": "files"
+   },
+   {
+    "w": "however"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the reviewer like most about TagFlow?",
+    "o": [
+     "The quality check",
+     "The low price",
+     "The fast export",
+     "The one-hour training"
+    ],
+    "a": 0,
+    "vi": "'The best feature is the quality check.' Giá cao và xuất file chậm là điểm trừ."
+   },
+   {
+    "q": "How much does TagFlow cost?",
+    "o": [
+     "20,000 dollars a year",
+     "1 dollar per image",
+     "30 dollars per team",
+     "30 dollars per user each month"
+    ],
+    "a": 3,
+    "vi": "'It costs 30 dollars per user each month.' Lưu ý là theo người dùng, không phải theo nhóm."
+   },
+   {
+    "q": "What will the team do in June?",
+    "o": [
+     "Start a free trial",
+     "Sign a one-year contract",
+     "Label 20,000 images",
+     "Train new team members"
+    ],
+    "a": 1,
+    "vi": "Câu cuối: 'we plan to sign a one-year contract in June'. Việc gán nhãn 20.000 ảnh đã xảy ra trong thời gian dùng thử."
+   }
+  ]
+ },
+ {
+  "id": "r1-16",
+  "level": 1,
+  "type": "email",
+  "topic": "Sales",
+  "title": "Demo for Greenline Logistics",
+  "title_vi": "Buổi demo cho Greenline Logistics",
+  "head": [
+   [
+    "From",
+    "Tom Becker <tom.becker@quillai.co>"
+   ],
+   [
+    "To",
+    "Anh Nguyen <anh.nguyen@quillai.co>"
+   ],
+   [
+    "Subject",
+    "Demo next Wednesday"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Hi Anh,",
+     "Chào Anh,"
+    ]
+   ],
+   [
+    [
+     "Greenline Logistics wants to see a demo of our document reader next Wednesday at 2 p.m.",
+     "Greenline Logistics muốn xem demo công cụ đọc tài liệu của chúng ta vào 2 giờ chiều thứ Tư tới."
+    ],
+    [
+     "They are comparing us with two other vendors.",
+     "Họ đang so sánh chúng ta với hai nhà cung cấp khác."
+    ],
+    [
+     "If they choose us, the deal is worth about 80,000 dollars a year.",
+     "Nếu họ chọn chúng ta, hợp đồng trị giá khoảng 80.000 đô la mỗi năm."
+    ]
+   ],
+   [
+    [
+     "I will present the pricing, but I need you to show the technical part.",
+     "Tôi sẽ trình bày phần giá, nhưng tôi cần bạn trình bày phần kỹ thuật."
+    ],
+    [
+     "Their main concern is invoices in Vietnamese and Thai.",
+     "Mối quan tâm chính của họ là hóa đơn bằng tiếng Việt và tiếng Thái."
+    ],
+    [
+     "Could you prepare five sample invoices in each language?",
+     "Bạn có thể chuẩn bị năm hóa đơn mẫu cho mỗi ngôn ngữ được không?"
+    ]
+   ],
+   [
+    [
+     "Let's do a practice run on Monday at 4 p.m.",
+     "Chúng ta hãy tập dượt vào 4 giờ chiều thứ Hai nhé."
+    ],
+    [
+     "Please send me your slides before then.",
+     "Vui lòng gửi tôi slide của bạn trước lúc đó."
+    ]
+   ],
+   [
+    [
+     "Best,",
+     "Thân mến,"
+    ],
+    [
+     "Tom",
+     "Tom"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "vendor",
+    "f": "vendors"
+   },
+   {
+    "w": "deal"
+   },
+   {
+    "w": "concern"
+   },
+   {
+    "w": "invoice",
+    "f": "invoices"
+   },
+   {
+    "w": "technical"
+   },
+   {
+    "w": "prepare"
+   },
+   {
+    "w": "sample"
+   },
+   {
+    "w": "practice"
+   },
+   {
+    "w": "need you to"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Greenline Logistics doing?",
+    "o": [
+     "Hiring new engineers",
+     "Sending invoices to Thailand",
+     "Comparing three vendors",
+     "Changing its prices"
+    ],
+    "a": 2,
+    "vi": "'They are comparing us with two other vendors' – tức là tổng cộng ba nhà cung cấp."
+   },
+   {
+    "q": "What will Anh show during the demo?",
+    "o": [
+     "The technical part",
+     "The pricing",
+     "A contract",
+     "The company history"
+    ],
+    "a": 0,
+    "vi": "Tom viết: 'I will present the pricing, but I need you to show the technical part.' Phần giá là của Tom."
+   },
+   {
+    "q": "When will Tom and Anh practice the demo?",
+    "o": [
+     "Wednesday at 2 p.m.",
+     "Wednesday morning",
+     "Friday at 4 p.m.",
+     "Monday at 4 p.m."
+    ],
+    "a": 3,
+    "vi": "'Let's do a practice run on Monday at 4 p.m.' Thứ Tư 2 giờ chiều là buổi demo thật."
+   }
+  ]
+ },
+ {
+  "id": "r1-17",
+  "level": 1,
+  "type": "chat",
+  "topic": "Service",
+  "title": "Login outage",
+  "title_vi": "Sự cố đăng nhập",
+  "head": [],
+  "paras": [
+   [
+    [
+     "Ravi (14:02): Heads up. Customers cannot log in to the mobile app.",
+     "Ravi (14:02): Mọi người chú ý. Khách hàng không thể đăng nhập vào ứng dụng di động."
+    ],
+    [
+     "Ravi (14:03): Support has received 25 tickets in the last ten minutes.",
+     "Ravi (14:03): Bộ phận hỗ trợ đã nhận 25 ticket trong mười phút vừa qua."
+    ]
+   ],
+   [
+    [
+     "Lan (14:05): I'm on it. It started right after the 13:45 release.",
+     "Lan (14:05): Tôi đang xử lý. Lỗi bắt đầu ngay sau bản phát hành lúc 13:45."
+    ],
+    [
+     "Lan (14:06): I'm going to roll back to the old version first.",
+     "Lan (14:06): Tôi sẽ rollback về phiên bản cũ trước."
+    ]
+   ],
+   [
+    [
+     "Ravi (14:20): Logins are working again. Thanks!",
+     "Ravi (14:20): Đăng nhập đã hoạt động lại. Cảm ơn nhé!"
+    ],
+    [
+     "Ravi (14:21): Should I tell customers?",
+     "Ravi (14:21): Tôi có nên thông báo cho khách hàng không?"
+    ]
+   ],
+   [
+    [
+     "Lan (14:23): Yes, please post an update on the status page.",
+     "Lan (14:23): Có, vui lòng đăng cập nhật lên trang trạng thái."
+    ],
+    [
+     "Lan (14:24): I will find out the root cause and write up a short report by tomorrow morning.",
+     "Lan (14:24): Tôi sẽ tìm ra nguyên nhân gốc và viết một báo cáo ngắn trước sáng mai."
+    ],
+    [
+     "Lan (14:25): We will not release again until the review is done.",
+     "Lan (14:25): Chúng ta sẽ không phát hành lại cho đến khi xem xét xong."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "customer",
+    "f": "customers"
+   },
+   {
+    "w": "ticket",
+    "f": "tickets"
+   },
+   {
+    "w": "release"
+   },
+   {
+    "w": "I'm on it"
+   },
+   {
+    "w": "roll back"
+   },
+   {
+    "w": "version"
+   },
+   {
+    "w": "status"
+   },
+   {
+    "w": "find out"
+   },
+   {
+    "w": "the root cause"
+   },
+   {
+    "w": "write up"
+   },
+   {
+    "w": "by tomorrow morning"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When did the problem start?",
+    "o": [
+     "At 14:02",
+     "Right after the 13:45 release",
+     "Ten minutes before the release",
+     "Yesterday morning"
+    ],
+    "a": 1,
+    "vi": "Lan viết: 'It started right after the 13:45 release.' 14:02 là lúc Ravi báo lỗi."
+   },
+   {
+    "q": "What does Lan ask Ravi to do?",
+    "o": [
+     "Roll back the app",
+     "Write a report",
+     "Post an update on the status page",
+     "Close the 25 tickets"
+    ],
+    "a": 2,
+    "vi": "'please post an update on the status page'. Rollback và viết báo cáo là việc của Lan."
+   },
+   {
+    "q": "What will Lan do by tomorrow morning?",
+    "o": [
+     "Write a short report on the cause",
+     "Release a new version",
+     "Call 25 customers",
+     "Fix the status page"
+    ],
+    "a": 0,
+    "vi": "'write up a short report by tomorrow morning'. Họ sẽ không phát hành lại cho tới khi xem xét xong."
+   }
+  ]
+ },
+ {
+  "id": "r1-18",
+  "level": 1,
+  "type": "notice",
+  "topic": "Data",
+  "title": "Training: model evaluation basics",
+  "title_vi": "Khóa đào tạo: cơ bản về đánh giá mô hình",
+  "head": [],
+  "paras": [
+   [
+    [
+     "Training Session: Model Evaluation Basics",
+     "Buổi đào tạo: Cơ bản về đánh giá mô hình"
+    ]
+   ],
+   [
+    [
+     "All new data and AI engineers are invited to a training session on Thursday, May 8, from 9:30 to 11:30 a.m.",
+     "Tất cả kỹ sư dữ liệu và AI mới được mời tham gia buổi đào tạo vào thứ Năm, ngày 8 tháng 5, từ 9:30 đến 11:30 sáng."
+    ],
+    [
+     "It will take place in Room 5B.",
+     "Buổi đào tạo sẽ diễn ra tại phòng 5B."
+    ]
+   ],
+   [
+    [
+     "The trainer, Dr. Hana Sato, will explain how to choose the right metrics and how to avoid common mistakes with test data.",
+     "Giảng viên, tiến sĩ Hana Sato, sẽ giải thích cách chọn đúng metric và cách tránh những lỗi thường gặp với dữ liệu test."
+    ],
+    [
+     "There will also be a short hands-on exercise.",
+     "Buổi học cũng có một bài thực hành ngắn."
+    ]
+   ],
+   [
+    [
+     "Please bring your laptop with Python 3.11 installed.",
+     "Vui lòng mang theo laptop đã cài Python 3.11."
+    ],
+    [
+     "Seats are limited to 20 people.",
+     "Số chỗ ngồi giới hạn ở 20 người."
+    ],
+    [
+     "To register, fill in the form on the HR portal by May 2.",
+     "Để đăng ký, hãy điền vào biểu mẫu trên cổng HR trước ngày 2 tháng 5."
+    ]
+   ],
+   [
+    [
+     "The session will be recorded for people who cannot attend.",
+     "Buổi học sẽ được ghi hình cho những ai không thể tham dự."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "invite",
+    "f": "invited"
+   },
+   {
+    "w": "trainer"
+   },
+   {
+    "w": "metric",
+    "f": "metrics"
+   },
+   {
+    "w": "avoid"
+   },
+   {
+    "w": "mistake",
+    "f": "mistakes"
+   },
+   {
+    "w": "limit",
+    "f": "limited"
+   },
+   {
+    "w": "register"
+   },
+   {
+    "w": "attend"
+   },
+   {
+    "w": "record",
+    "f": "recorded"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where will the training take place?",
+    "o": [
+     "On the HR portal",
+     "Online only",
+     "In Dr. Sato's office",
+     "In Room 5B"
+    ],
+    "a": 3,
+    "vi": "'It will take place in Room 5B.' Cổng HR là nơi đăng ký, không phải nơi học."
+   },
+   {
+    "q": "What is the deadline to register?",
+    "o": [
+     "May 8",
+     "May 2",
+     "May 11",
+     "May 20"
+    ],
+    "a": 1,
+    "vi": "'fill in the form on the HR portal by May 2'. Ngày 8/5 là ngày đào tạo."
+   },
+   {
+    "q": "What should people do if they cannot attend?",
+    "o": [
+     "Ask Dr. Sato for notes",
+     "Join the next session in June",
+     "Watch the recording",
+     "Do the exercise at home"
+    ],
+    "a": 2,
+    "vi": "'The session will be recorded for people who cannot attend' – họ có thể xem bản ghi hình."
+   }
+  ]
+ },
+ {
+  "id": "r1-19",
+  "level": 1,
+  "type": "email",
+  "topic": "Logistics",
+  "title": "Travel and expense claims for the summit",
+  "title_vi": "Công tác và hoàn ứng chi phí cho hội nghị",
+  "head": [
+   [
+    "From",
+    "Julia Moreno <julia.moreno@peakcloud.net>"
+   ],
+   [
+    "To",
+    "Khanh Vo, Ben Ortiz"
+   ],
+   [
+    "Subject",
+    "Your trip to the Singapore summit"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Hi Khanh and Ben,",
+     "Chào Khánh và Ben,"
+    ]
+   ],
+   [
+    [
+     "Your trip to the Data Systems Summit in Singapore is approved.",
+     "Chuyến đi tới hội nghị Data Systems Summit tại Singapore của các bạn đã được duyệt."
+    ],
+    [
+     "I have booked your flights for June 10 and your hotel for three nights.",
+     "Tôi đã đặt vé máy bay cho ngày 10 tháng 6 và khách sạn ba đêm cho các bạn."
+    ],
+    [
+     "The tickets are attached to this email.",
+     "Vé được đính kèm trong email này."
+    ]
+   ],
+   [
+    [
+     "Each of you has a daily allowance of 60 dollars for meals and local transport.",
+     "Mỗi người có phụ cấp 60 đô la mỗi ngày cho ăn uống và đi lại tại địa phương."
+    ],
+    [
+     "Please keep all your receipts.",
+     "Vui lòng giữ lại tất cả hóa đơn."
+    ],
+    [
+     "After the trip, submit your expense claim in the finance app within ten days.",
+     "Sau chuyến đi, hãy nộp yêu cầu hoàn ứng chi phí trên ứng dụng tài chính trong vòng mười ngày."
+    ],
+    [
+     "Claims without receipts cannot be paid.",
+     "Các yêu cầu không có hóa đơn sẽ không được thanh toán."
+    ]
+   ],
+   [
+    [
+     "One more thing: please share your notes from the talks with the team at the stand-up meeting on June 16.",
+     "Thêm một việc nữa: vui lòng chia sẻ ghi chú từ các bài nói với cả nhóm trong buổi họp stand-up ngày 16 tháng 6."
+    ]
+   ],
+   [
+    [
+     "Have a good trip,",
+     "Chúc chuyến đi tốt đẹp,"
+    ],
+    [
+     "Julia",
+     "Julia"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "summit"
+   },
+   {
+    "w": "trip"
+   },
+   {
+    "w": "allowance"
+   },
+   {
+    "w": "receipt",
+    "f": "receipts"
+   },
+   {
+    "w": "expense"
+   },
+   {
+    "w": "daily"
+   },
+   {
+    "w": "finance"
+   },
+   {
+    "w": "stand-up meeting"
+   },
+   {
+    "w": "share"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What has Julia already done?",
+    "o": [
+     "Booked the flights and hotel",
+     "Paid the daily allowance",
+     "Registered them for the talks",
+     "Submitted their expense claims"
+    ],
+    "a": 0,
+    "vi": "'I have booked your flights ... and your hotel for three nights.' Các việc khác là việc của Khánh và Ben hoặc không được nhắc tới."
+   },
+   {
+    "q": "What is the daily allowance for?",
+    "o": [
+     "Hotel rooms",
+     "Flights",
+     "Conference tickets",
+     "Meals and local transport"
+    ],
+    "a": 3,
+    "vi": "'a daily allowance of 60 dollars for meals and local transport'. Khách sạn và vé máy bay đã được Julia đặt riêng."
+   },
+   {
+    "q": "When must they submit their expense claims?",
+    "o": [
+     "Before June 10",
+     "On June 16",
+     "Within ten days after the trip",
+     "Within three days after the trip"
+    ],
+    "a": 2,
+    "vi": "'submit your expense claim ... within ten days' sau chuyến đi. Ngày 16/6 là buổi họp stand-up, 'three' là số đêm khách sạn."
+   }
+  ]
+ },
+ {
+  "id": "r1-20",
+  "level": 1,
+  "type": "job",
+  "topic": "Sales",
+  "title": "Sales Engineer (AI products)",
+  "title_vi": "Kỹ sư bán hàng (sản phẩm AI)",
+  "head": [],
+  "paras": [
+   [
+    [
+     "Sales Engineer – Orbis Data",
+     "Kỹ sư bán hàng – Orbis Data"
+    ]
+   ],
+   [
+    [
+     "Orbis Data sells AI tools that help factories predict when machines will break.",
+     "Orbis Data bán các công cụ AI giúp nhà máy dự đoán khi nào máy móc sẽ hỏng."
+    ],
+    [
+     "We are looking for a sales engineer to join our team in Ho Chi Minh City.",
+     "Chúng tôi đang tìm một kỹ sư bán hàng gia nhập đội ngũ tại TP. Hồ Chí Minh."
+    ]
+   ],
+   [
+    [
+     "You will give product demos, answer technical questions from customers, and help the sales team prepare proposals.",
+     "Bạn sẽ demo sản phẩm, trả lời các câu hỏi kỹ thuật của khách hàng và giúp nhóm sales chuẩn bị đề xuất."
+    ],
+    [
+     "You will report to Peter Wong, Head of Sales.",
+     "Bạn sẽ báo cáo trực tiếp cho Peter Wong, Trưởng phòng Kinh doanh."
+    ]
+   ],
+   [
+    [
+     "We need someone with at least two years of experience in software or data engineering.",
+     "Chúng tôi cần người có ít nhất hai năm kinh nghiệm về kỹ thuật phần mềm hoặc dữ liệu."
+    ],
+    [
+     "You should be comfortable speaking with clients in English.",
+     "Bạn cần tự tin khi giao tiếp với khách hàng bằng tiếng Anh."
+    ],
+    [
+     "The job includes travel to client sites about twice a month.",
+     "Công việc bao gồm đi công tác tới địa điểm của khách hàng khoảng hai lần mỗi tháng."
+    ]
+   ],
+   [
+    [
+     "The salary is 1,800 to 2,500 dollars a month, plus a bonus.",
+     "Mức lương từ 1.800 đến 2.500 đô la mỗi tháng, cộng thêm thưởng."
+    ],
+    [
+     "Please apply through our careers page before May 15.",
+     "Vui lòng ứng tuyển qua trang tuyển dụng của chúng tôi trước ngày 15 tháng 5."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "proposal",
+    "f": "proposals"
+   },
+   {
+    "w": "technical"
+   },
+   {
+    "w": "prepare"
+   },
+   {
+    "w": "customer",
+    "f": "customers"
+   },
+   {
+    "w": "client"
+   },
+   {
+    "w": "site",
+    "f": "sites"
+   },
+   {
+    "w": "bonus"
+   },
+   {
+    "w": "apply"
+   },
+   {
+    "w": "twice"
+   },
+   {
+    "w": "join"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Who will the sales engineer report to?",
+    "o": [
+     "A factory manager",
+     "Peter Wong",
+     "The data engineering team",
+     "A client in Ho Chi Minh City"
+    ],
+    "a": 1,
+    "vi": "'You will report to Peter Wong, Head of Sales.'"
+   },
+   {
+    "q": "How much experience is required?",
+    "o": [
+     "At least two years",
+     "At least one year",
+     "Five years",
+     "No experience"
+    ],
+    "a": 0,
+    "vi": "'at least two years of experience in software or data engineering'. 'twice a month' là tần suất đi công tác, là bẫy."
+   },
+   {
+    "q": "How often will the sales engineer travel?",
+    "o": [
+     "Every week",
+     "Once a year",
+     "Only when needed",
+     "About twice a month"
+    ],
+    "a": 3,
+    "vi": "'travel to client sites about twice a month'."
+   }
+  ]
+ }
+]

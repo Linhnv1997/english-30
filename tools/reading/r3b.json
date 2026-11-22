@@ -1,0 +1,1713 @@
+[
+ {
+  "id": "r3-11",
+  "level": 3,
+  "type": "report",
+  "topic": "Logistics",
+  "title": "Q3 equipment delivery report",
+  "title_vi": "Báo cáo giao thiết bị quý 3",
+  "head": [
+   [
+    "From",
+    "IT Logistics, Larkfield Systems"
+   ],
+   [
+    "To",
+    "Engineering managers"
+   ],
+   [
+    "Period",
+    "July 1 – September 30"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "This report summarizes equipment deliveries to the Da Nang engineering hub of Larkfield Systems between July 1 and September 30.",
+     "Báo cáo này tóm tắt việc giao thiết bị đến trung tâm kỹ thuật Đà Nẵng của Larkfield Systems từ ngày 1 tháng 7 đến ngày 30 tháng 9."
+    ],
+    [
+     "During the quarter, the hub received 214 laptops, 96 monitors and 12 GPU workstations, against a plan of 240, 110 and 12 respectively.",
+     "Trong quý, trung tâm đã nhận 214 laptop, 96 màn hình và 12 máy trạm GPU, so với kế hoạch lần lượt là 240, 110 và 12."
+    ],
+    [
+     "The shortage of laptops was the most serious issue, because 31 new engineers started work in August and September.",
+     "Việc thiếu laptop là vấn đề nghiêm trọng nhất, vì có 31 kỹ sư mới bắt đầu làm việc trong tháng 8 và tháng 9."
+    ]
+   ],
+   [
+    [
+     "The main cause was a customs delay at the port, where one shipment of 40 laptops was held for eleven days in August.",
+     "Nguyên nhân chính là sự chậm trễ thông quan tại cảng, nơi một lô hàng 40 laptop bị giữ lại mười một ngày trong tháng 8."
+    ],
+    [
+     "Our vendor, Brightway Freight, had sent an incomplete invoice that did not list the serial numbers of the devices.",
+     "Nhà cung cấp của chúng ta, Brightway Freight, đã gửi một hóa đơn không đầy đủ, không ghi số sê-ri của các thiết bị."
+    ],
+    [
+     "As a result, eight new hires worked on borrowed machines for up to two weeks, and the onboarding team estimates that about 60 working hours were lost.",
+     "Do đó, tám nhân viên mới phải làm việc trên máy mượn trong tối đa hai tuần, và nhóm onboarding ước tính khoảng 60 giờ làm việc đã bị mất."
+    ],
+    [
+     "Monitor deliveries were also late, but this had little effect on productivity.",
+     "Việc giao màn hình cũng bị trễ, nhưng điều này ít ảnh hưởng đến năng suất."
+    ]
+   ],
+   [
+    [
+     "To prevent the same problem in Q4, the logistics team will make three changes.",
+     "Để tránh lặp lại vấn đề này trong quý 4, nhóm logistics sẽ thực hiện ba thay đổi."
+    ],
+    [
+     "First, all orders for new hires must be placed at least six weeks in advance, instead of the current four.",
+     "Thứ nhất, mọi đơn đặt thiết bị cho nhân viên mới phải được đặt trước ít nhất sáu tuần, thay vì bốn tuần như hiện nay."
+    ],
+    [
+     "Second, Minh Tran from Finance will check every vendor invoice before a shipment leaves the warehouse in Singapore.",
+     "Thứ hai, Minh Trần bên Tài chính sẽ kiểm tra mọi hóa đơn của nhà cung cấp trước khi lô hàng rời kho ở Singapore."
+    ],
+    [
+     "Third, the hub will keep an inventory of ten spare laptops so that no new engineer has to wait for a device.",
+     "Thứ ba, trung tâm sẽ duy trì một lượng dự trữ mười laptop để không kỹ sư mới nào phải chờ thiết bị."
+    ],
+    [
+     "The cost of these spare laptops, about 14,000 dollars, will come from the IT budget.",
+     "Chi phí cho số laptop dự phòng này, khoảng 14.000 đô la, sẽ lấy từ ngân sách IT."
+    ],
+    [
+     "Hiring managers should send their Q4 start dates to logistics@larkfield.io by October 15.",
+     "Các quản lý tuyển dụng cần gửi ngày bắt đầu làm việc của nhân viên mới trong quý 4 tới logistics@larkfield.io trước ngày 15 tháng 10."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "shortage"
+   },
+   {
+    "w": "delay"
+   },
+   {
+    "w": "shipment"
+   },
+   {
+    "w": "vendor"
+   },
+   {
+    "w": "invoice"
+   },
+   {
+    "w": "as a result",
+    "f": "As a result"
+   },
+   {
+    "w": "hire",
+    "f": "hires"
+   },
+   {
+    "w": "estimate",
+    "f": "estimates"
+   },
+   {
+    "w": "productivity"
+   },
+   {
+    "w": "in advance"
+   },
+   {
+    "w": "warehouse"
+   },
+   {
+    "w": "inventory"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What was the most serious problem during the quarter?",
+    "o": [
+     "Late monitor deliveries",
+     "A shortage of laptops",
+     "A lack of GPU workstations",
+     "A rise in shipping costs"
+    ],
+    "a": 1,
+    "vi": "Câu 'The shortage of laptops was the most serious issue' cho đáp án B. Màn hình cũng giao trễ nhưng 'had little effect', còn GPU nhận đủ 12/12."
+   },
+   {
+    "q": "Why was a shipment held at the port?",
+    "o": [
+     "The devices were damaged",
+     "The vendor sent the wrong model",
+     "The invoice did not list serial numbers",
+     "The warehouse in Singapore was closed"
+    ],
+    "a": 2,
+    "vi": "Đoạn 2: nhà cung cấp gửi 'an incomplete invoice that did not list the serial numbers'. Kho Singapore được nhắc ở đoạn 3 nhưng không phải nguyên nhân."
+   },
+   {
+    "q": "What is NOT one of the changes planned for Q4?",
+    "o": [
+     "Ordering devices six weeks ahead",
+     "Having Finance check vendor invoices",
+     "Keeping ten spare laptops",
+     "Switching to a new logistics vendor"
+    ],
+    "a": 3,
+    "vi": "Ba thay đổi là: đặt trước sáu tuần, Minh Trần (Tài chính) kiểm tra hóa đơn, dự trữ mười laptop. Không hề nói đổi nhà cung cấp, nên chọn D."
+   },
+   {
+    "q": "By when must hiring managers send Q4 start dates?",
+    "o": [
+     "October 15",
+     "September 30",
+     "Six weeks before Q4",
+     "The end of Q4"
+    ],
+    "a": 0,
+    "vi": "Câu cuối: 'send their Q4 start dates ... by October 15'. September 30 là ngày kết thúc kỳ báo cáo, 'six weeks' là thời hạn đặt hàng."
+   }
+  ]
+ },
+ {
+  "id": "r3-12",
+  "level": 3,
+  "type": "memo",
+  "topic": "Legal",
+  "title": "New review process for vendor contracts",
+  "title_vi": "Quy trình mới xem xét hợp đồng nhà cung cấp",
+  "head": [
+   [
+    "From",
+    "Grace Okafor, Legal Counsel <grace.okafor@novatide.ai>"
+   ],
+   [
+    "To",
+    "All engineering and product managers"
+   ],
+   [
+    "Date",
+    "March 3"
+   ],
+   [
+    "Subject",
+    "Legal review for vendor contracts"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "As Novatide grows, more teams are signing agreements with outside vendors for training data, labeling services and cloud tools.",
+     "Khi Novatide phát triển, ngày càng nhiều nhóm ký thỏa thuận với các nhà cung cấp bên ngoài về dữ liệu huấn luyện, dịch vụ gán nhãn và công cụ đám mây."
+    ],
+    [
+     "Last quarter, the Legal team found that four of these contracts allowed the vendor to reuse our data for its own models.",
+     "Quý trước, nhóm Pháp chế phát hiện bốn trong số các hợp đồng này cho phép nhà cung cấp tái sử dụng dữ liệu của chúng ta cho các mô hình của riêng họ."
+    ],
+    [
+     "None of them had been checked by Legal before they were signed.",
+     "Không hợp đồng nào trong số đó được Pháp chế kiểm tra trước khi ký."
+    ]
+   ],
+   [
+    [
+     "Effective April 1, every vendor contract worth more than 5,000 dollars a year must go through a formal legal review.",
+     "Có hiệu lực từ ngày 1 tháng 4, mọi hợp đồng với nhà cung cấp trị giá trên 5.000 đô la mỗi năm phải qua bước xem xét pháp lý chính thức."
+    ],
+    [
+     "The requirement also applies to free trials if the vendor will receive any customer data.",
+     "Yêu cầu này cũng áp dụng cho các bản dùng thử miễn phí nếu nhà cung cấp sẽ nhận bất kỳ dữ liệu khách hàng nào."
+    ],
+    [
+     "Managers should open a request in the Legal portal at least ten business days before the planned start date and include the draft contract and a short description of the data involved.",
+     "Các quản lý nên mở yêu cầu trên cổng Pháp chế ít nhất mười ngày làm việc trước ngày dự kiến bắt đầu, kèm theo bản nháp hợp đồng và mô tả ngắn về dữ liệu liên quan."
+    ],
+    [
+     "Contracts that include personal data will also be sent to the compliance team, which may add up to five more days.",
+     "Các hợp đồng có dữ liệu cá nhân cũng sẽ được chuyển cho nhóm tuân thủ, việc này có thể kéo dài thêm tối đa năm ngày."
+    ],
+    [
+     "Legal will reply with comments or a final approval within the same ten days.",
+     "Pháp chế sẽ phản hồi bằng nhận xét hoặc phê duyệt cuối cùng trong cùng khoảng mười ngày đó."
+    ]
+   ],
+   [
+    [
+     "Existing contracts are not affected until they are renewed.",
+     "Các hợp đồng hiện có không bị ảnh hưởng cho đến khi được gia hạn."
+    ],
+    [
+     "However, Daniel Reyes, who is in charge of vendor management, will audit the twenty largest agreements by the end of May.",
+     "Tuy nhiên, Daniel Reyes, người phụ trách quản lý nhà cung cấp, sẽ rà soát hai mươi thỏa thuận lớn nhất trước cuối tháng 5."
+    ],
+    [
+     "If he finds terms that put our data at risk, he will contact the responsible manager directly.",
+     "Nếu phát hiện điều khoản nào khiến dữ liệu của chúng ta gặp rủi ro, anh ấy sẽ liên hệ trực tiếp với quản lý phụ trách."
+    ],
+    [
+     "Please do not sign any vendor document yourself, even a simple order form, unless Legal has confirmed it.",
+     "Vui lòng không tự ký bất kỳ tài liệu nào của nhà cung cấp, kể cả một mẫu đơn đặt hàng đơn giản, trừ khi Pháp chế đã xác nhận."
+    ],
+    [
+     "Questions can be sent to legal-help@novatide.ai, and we will hold a 30-minute briefing for managers on March 12.",
+     "Câu hỏi có thể gửi tới legal-help@novatide.ai, và chúng tôi sẽ tổ chức một buổi phổ biến 30 phút cho các quản lý vào ngày 12 tháng 3."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "agreement",
+    "f": "agreements"
+   },
+   {
+    "w": "vendor"
+   },
+   {
+    "w": "contract",
+    "f": "contracts"
+   },
+   {
+    "w": "effective",
+    "f": "Effective"
+   },
+   {
+    "w": "requirement"
+   },
+   {
+    "w": "request"
+   },
+   {
+    "w": "compliance"
+   },
+   {
+    "w": "renew",
+    "f": "renewed"
+   },
+   {
+    "w": "be in charge of",
+    "f": "is in charge of"
+   },
+   {
+    "w": "audit"
+   },
+   {
+    "w": "risk"
+   },
+   {
+    "w": "confirm",
+    "f": "confirmed"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What problem did Legal find last quarter?",
+    "o": [
+     "Some vendors charged more than agreed",
+     "Some contracts let vendors reuse company data",
+     "Several free trials had expired",
+     "Managers had lost signed agreements"
+    ],
+    "a": 1,
+    "vi": "Đoạn 1: 'four of these contracts allowed the vendor to reuse our data for its own models' → B. Các lựa chọn khác không được nhắc."
+   },
+   {
+    "q": "Which of the following will need a legal review under the new rule?",
+    "o": [
+     "A 3,000-dollar yearly tool that receives no customer data",
+     "An existing contract that has not yet been renewed",
+     "A free trial in which the vendor receives customer data",
+     "An order form that Legal has already confirmed"
+    ],
+    "a": 2,
+    "vi": "Câu 'The requirement also applies to free trials if the vendor will receive any customer data' → C. A dưới mức 5.000 đô la; B không bị ảnh hưởng 'until they are renewed'."
+   },
+   {
+    "q": "How long before the start date should a manager open a request?",
+    "o": [
+     "Five business days",
+     "Thirty days",
+     "By the end of May",
+     "At least ten business days"
+    ],
+    "a": 3,
+    "vi": "'at least ten business days before the planned start date' → D. 'Five more days' là thời gian thêm của nhóm tuân thủ, 'end of May' là hạn rà soát của Daniel."
+   },
+   {
+    "q": "What will Daniel Reyes do?",
+    "o": [
+     "Audit the 20 largest existing agreements",
+     "Approve all free trials",
+     "Run the briefing on March 12",
+     "Sign order forms on behalf of managers"
+    ],
+    "a": 0,
+    "vi": "'Daniel Reyes ... will audit the twenty largest agreements by the end of May' → A. Buổi phổ biến 12/3 do nhóm Pháp chế tổ chức, không nói là Daniel."
+   }
+  ]
+ },
+ {
+  "id": "r3-13",
+  "level": 3,
+  "type": "article",
+  "topic": "Sales",
+  "title": "How a demo sandbox shortened the sales cycle",
+  "title_vi": "Môi trường demo đã rút ngắn chu kỳ bán hàng như thế nào",
+  "head": [],
+  "paras": [
+   [
+    [
+     "When the sales team at Corvane Analytics began offering prospective clients a self-service demo sandbox in January, few people expected it to change the numbers so quickly.",
+     "Khi đội bán hàng của Corvane Analytics bắt đầu cung cấp cho khách hàng tiềm năng một môi trường demo tự phục vụ vào tháng 1, ít ai ngờ nó lại thay đổi các con số nhanh đến vậy."
+    ],
+    [
+     "In the first two quarters of the year, the average time from first meeting to signed deal fell from 94 days to 61 days.",
+     "Trong hai quý đầu năm, thời gian trung bình từ buổi gặp đầu tiên đến khi ký hợp đồng giảm từ 94 ngày xuống 61 ngày."
+    ],
+    [
+     "The win rate rose from 22 to 29 percent, and revenue from new clients reached 3.4 million dollars, 18 percent above target.",
+     "Tỷ lệ thắng tăng từ 22 lên 29 phần trăm, và doanh thu từ khách hàng mới đạt 3,4 triệu đô la, vượt mục tiêu 18 phần trăm."
+    ]
+   ],
+   [
+    [
+     "The sandbox was built in six weeks by a small team led by data engineer Priya Nair.",
+     "Sandbox được xây dựng trong sáu tuần bởi một nhóm nhỏ do kỹ sư dữ liệu Priya Nair dẫn dắt."
+    ],
+    [
+     "It loads a copy of the client's own sample data, so buyers can test real forecasts instead of watching a slide presentation.",
+     "Nó tải một bản sao dữ liệu mẫu của chính khách hàng, nhờ đó người mua có thể thử dự báo thật thay vì ngồi xem slide thuyết trình."
+    ],
+    [
+     "Clients usually see their first results within 20 minutes of signing up.",
+     "Khách hàng thường thấy kết quả đầu tiên trong vòng 20 phút sau khi đăng ký."
+    ],
+    [
+     "According to Nair, the hardest part was not the model but the data pipeline, because every client stores data in a different way.",
+     "Theo Nair, phần khó nhất không phải là mô hình mà là pipeline dữ liệu, vì mỗi khách hàng lưu dữ liệu theo một cách khác nhau."
+    ],
+    [
+     "Her team now supports eleven common file types and adds about one new type each month.",
+     "Nhóm của cô hiện hỗ trợ mười một loại tệp phổ biến và bổ sung khoảng một loại mới mỗi tháng."
+    ]
+   ],
+   [
+    [
+     "The results have not been perfect.",
+     "Kết quả vẫn chưa hoàn hảo."
+    ],
+    [
+     "Sales director Tom Becker points out that large enterprise deals still take more than four months, mainly because their security reviews are long.",
+     "Giám đốc kinh doanh Tom Becker chỉ ra rằng các thương vụ với doanh nghiệp lớn vẫn mất hơn bốn tháng, chủ yếu vì quy trình đánh giá bảo mật của họ kéo dài."
+    ],
+    [
+     "Some clients have also used the sandbox for weeks without ever talking to a salesperson.",
+     "Một số khách hàng cũng dùng sandbox hàng tuần liền mà không hề trao đổi với nhân viên bán hàng nào."
+    ],
+    [
+     "To address this, from October every sandbox account will expire after 21 days, and an account manager will follow up on each one within three days of sign-up.",
+     "Để giải quyết việc này, từ tháng 10, mỗi tài khoản sandbox sẽ hết hạn sau 21 ngày, và một quản lý tài khoản sẽ liên hệ theo dõi từng tài khoản trong vòng ba ngày sau khi đăng ký."
+    ],
+    [
+     "Becker hopes to bring the enterprise cycle under 90 days by next summer.",
+     "Becker hy vọng rút ngắn chu kỳ bán hàng doanh nghiệp xuống dưới 90 ngày vào mùa hè năm sau."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "client",
+    "f": "clients"
+   },
+   {
+    "w": "average"
+   },
+   {
+    "w": "deal"
+   },
+   {
+    "w": "rate"
+   },
+   {
+    "w": "revenue"
+   },
+   {
+    "w": "target"
+   },
+   {
+    "w": "sample"
+   },
+   {
+    "w": "instead of"
+   },
+   {
+    "w": "pipeline"
+   },
+   {
+    "w": "point out",
+    "f": "points out"
+   },
+   {
+    "w": "expire"
+   },
+   {
+    "w": "follow up on"
+   }
+  ],
+  "questions": [
+   {
+    "q": "By how many days did the average sales cycle become shorter?",
+    "o": [
+     "7 days",
+     "18 days",
+     "33 days",
+     "61 days"
+    ],
+    "a": 2,
+    "vi": "Thời gian giảm 'from 94 days to 61 days', tức ngắn hơn 33 ngày → C. 7 là mức tăng tỷ lệ thắng (22→29), 18 là phần trăm vượt mục tiêu."
+   },
+   {
+    "q": "According to Priya Nair, what was the most difficult part of the project?",
+    "o": [
+     "Building the model",
+     "Handling the different ways clients store data",
+     "Finishing the work in six weeks",
+     "Replacing slide presentations"
+    ],
+    "a": 1,
+    "vi": "'the hardest part was not the model but the data pipeline, because every client stores data in a different way' → B. A là bẫy vì câu nói rõ 'not the model'."
+   },
+   {
+    "q": "The word \"address\" in paragraph 3 is closest in meaning to",
+    "o": [
+     "deal with",
+     "speak to",
+     "send to",
+     "write on"
+    ],
+    "a": 0,
+    "vi": "'To address this' = để giải quyết vấn đề này, nghĩa gần nhất là 'deal with' → A. 'address' còn có nghĩa là nói chuyện với ai hay ghi địa chỉ, nhưng không hợp ngữ cảnh."
+   },
+   {
+    "q": "What will change in October?",
+    "o": [
+     "Enterprise security reviews will become shorter",
+     "New file types will be added every week",
+     "The win-rate target will rise to 29 percent",
+     "Sandbox accounts will expire after 21 days"
+    ],
+    "a": 3,
+    "vi": "'from October every sandbox account will expire after 21 days' → D. Loại tệp mới được thêm 'each month', 29% là kết quả đã đạt chứ không phải mục tiêu mới."
+   }
+  ]
+ },
+ {
+  "id": "r3-14",
+  "level": 3,
+  "type": "job",
+  "topic": "HR",
+  "title": "Senior ML Engineer, Model Evaluation",
+  "title_vi": "Kỹ sư ML cấp cao, Đánh giá mô hình",
+  "head": [
+   [
+    "Company",
+    "Quellstone AI"
+   ],
+   [
+    "Location",
+    "Ho Chi Minh City (hybrid)"
+   ],
+   [
+    "Apply by",
+    "December 5"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Quellstone AI is looking for a Senior Machine Learning Engineer to join its Model Evaluation team in Ho Chi Minh City.",
+     "Quellstone AI đang tìm một Kỹ sư Machine Learning cấp cao gia nhập nhóm Đánh giá Mô hình tại TP. Hồ Chí Minh."
+    ],
+    [
+     "The team of seven tests every language model before it is released to our 40 enterprise customers, and reports on accuracy, speed and safety.",
+     "Nhóm gồm bảy người kiểm thử mọi mô hình ngôn ngữ trước khi phát hành cho 40 khách hàng doanh nghiệp của chúng tôi, và báo cáo về độ chính xác, tốc độ và mức độ an toàn."
+    ],
+    [
+     "In the past year, the team has evaluated more than 60 model versions and stopped three releases that did not meet our quality bar.",
+     "Trong năm qua, nhóm đã đánh giá hơn 60 phiên bản mô hình và chặn ba lần phát hành không đạt chuẩn chất lượng."
+    ],
+    [
+     "This position reports to Linh Pham, Head of Evaluation.",
+     "Vị trí này báo cáo trực tiếp cho Linh Phạm, Trưởng bộ phận Đánh giá."
+    ]
+   ],
+   [
+    [
+     "Your main responsibilities will be to design test sets, build automated evaluation pipelines and explain results to product managers in clear English.",
+     "Trách nhiệm chính của bạn là thiết kế bộ dữ liệu kiểm thử, xây dựng pipeline đánh giá tự động và giải thích kết quả cho các quản lý sản phẩm bằng tiếng Anh rõ ràng."
+    ],
+    [
+     "You will also take ownership of the weekly quality metric that the leadership team reviews every Monday.",
+     "Bạn cũng sẽ chịu trách nhiệm về chỉ số chất lượng hàng tuần mà ban lãnh đạo xem xét vào mỗi thứ Hai."
+    ],
+    [
+     "We require at least five years of experience in Python and machine learning, including two years working with large language models.",
+     "Chúng tôi yêu cầu ít nhất năm năm kinh nghiệm với Python và machine learning, trong đó có hai năm làm việc với các mô hình ngôn ngữ lớn."
+    ],
+    [
+     "Experience with Kubernetes is helpful but not necessary, as you will receive training in your first month.",
+     "Kinh nghiệm với Kubernetes là một lợi thế nhưng không bắt buộc, vì bạn sẽ được đào tạo trong tháng đầu tiên."
+    ]
+   ],
+   [
+    [
+     "The position is hybrid, with three days a week in our District 1 office.",
+     "Vị trí này làm việc kết hợp, ba ngày mỗi tuần tại văn phòng Quận 1."
+    ],
+    [
+     "Benefits include private health insurance for you and your family, a yearly learning budget of 1,500 dollars and 18 days of paid leave.",
+     "Phúc lợi bao gồm bảo hiểm sức khỏe tư nhân cho bạn và gia đình, ngân sách học tập hàng năm 1.500 đô la và 18 ngày nghỉ phép có lương."
+    ],
+    [
+     "The hiring process has three steps: a 30-minute call with HR, a take-home task that should take no more than four hours, and a final interview with the team.",
+     "Quy trình tuyển dụng gồm ba bước: một cuộc gọi 30 phút với bộ phận nhân sự, một bài tập về nhà làm không quá bốn giờ, và một buổi phỏng vấn cuối với nhóm."
+    ],
+    [
+     "To apply, send your CV and a short note about one evaluation project you are proud of to careers@quellstone.ai by December 5.",
+     "Để ứng tuyển, hãy gửi CV và một đoạn ngắn về một dự án đánh giá mà bạn tự hào tới careers@quellstone.ai trước ngày 5 tháng 12."
+    ],
+    [
+     "Applications received after this date will not be considered.",
+     "Hồ sơ nhận được sau ngày này sẽ không được xem xét."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "release",
+    "f": "released"
+   },
+   {
+    "w": "accuracy"
+   },
+   {
+    "w": "position"
+   },
+   {
+    "w": "responsibility",
+    "f": "responsibilities"
+   },
+   {
+    "w": "pipeline",
+    "f": "pipelines"
+   },
+   {
+    "w": "take ownership of"
+   },
+   {
+    "w": "metric"
+   },
+   {
+    "w": "require"
+   },
+   {
+    "w": "benefit",
+    "f": "Benefits"
+   },
+   {
+    "w": "budget"
+   },
+   {
+    "w": "interview"
+   },
+   {
+    "w": "apply"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Who will the new engineer report to?",
+    "o": [
+     "The leadership team",
+     "A product manager",
+     "Linh Pham",
+     "The HR team"
+    ],
+    "a": 2,
+    "vi": "'This position reports to Linh Pham, Head of Evaluation' → C. Ban lãnh đạo chỉ xem chỉ số hàng tuần, quản lý sản phẩm là người nghe giải thích kết quả."
+   },
+   {
+    "q": "What is stated about experience with Kubernetes?",
+    "o": [
+     "It is required for all applicants",
+     "It is useful but not necessary",
+     "At least two years are needed",
+     "It will be tested in the take-home task"
+    ],
+    "a": 1,
+    "vi": "'Experience with Kubernetes is helpful but not necessary' → B. 'Two years' là yêu cầu về mô hình ngôn ngữ lớn, không phải Kubernetes."
+   },
+   {
+    "q": "How many days per week must the engineer work in the office?",
+    "o": [
+     "Five",
+     "Seven",
+     "Two",
+     "Three"
+    ],
+    "a": 3,
+    "vi": "'with three days a week in our District 1 office' → D. 'Seven' là số thành viên của nhóm, 'five' là số năm kinh nghiệm."
+   },
+   {
+    "q": "What should applicants send together with their CV?",
+    "o": [
+     "A note about an evaluation project they are proud of",
+     "A list of three references",
+     "A completed take-home task",
+     "Their expected salary"
+    ],
+    "a": 0,
+    "vi": "'send your CV and a short note about one evaluation project you are proud of' → A. Bài tập về nhà là bước sau trong quy trình, chưa gửi lúc nộp hồ sơ."
+   }
+  ]
+ },
+ {
+  "id": "r3-15",
+  "level": 3,
+  "type": "review",
+  "topic": "Service",
+  "title": "Mid-year performance review: Quang Do",
+  "title_vi": "Đánh giá hiệu suất giữa năm: Quang Đỗ",
+  "head": [
+   [
+    "Employee",
+    "Quang Do, Software Engineer II"
+   ],
+   [
+    "Team",
+    "Customer Service Platform"
+   ],
+   [
+    "Reviewer",
+    "Helen Marsh, Engineering Manager"
+   ],
+   [
+    "Period",
+    "January – June"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Quang joined the Customer Service Platform team in January and quickly became the main owner of the ticket routing service.",
+     "Quang gia nhập nhóm Customer Service Platform vào tháng 1 và nhanh chóng trở thành người phụ trách chính của dịch vụ định tuyến ticket."
+    ],
+    [
+     "His biggest contribution this period was the new auto-tagging model, which now assigns a category to about 70 percent of incoming customer tickets.",
+     "Đóng góp lớn nhất của anh trong kỳ này là mô hình gắn thẻ tự động mới, hiện gán danh mục cho khoảng 70 phần trăm ticket khách hàng gửi đến."
+    ],
+    [
+     "As a result, the average first response time fell from 9 hours to just under 4 hours, and customer satisfaction scores rose by 11 points.",
+     "Nhờ đó, thời gian phản hồi đầu tiên trung bình giảm từ 9 giờ xuống chỉ còn dưới 4 giờ, và điểm hài lòng của khách hàng tăng 11 điểm."
+    ]
+   ],
+   [
+    [
+     "Quang also handled two production outages calmly and wrote clear reports afterwards.",
+     "Quang cũng xử lý bình tĩnh hai sự cố ngừng hoạt động trên production và viết báo cáo rõ ràng sau đó."
+    ],
+    [
+     "Feedback from the support agents was very positive, especially about the dashboard he built to show which tickets were waiting longest.",
+     "Phản hồi từ các nhân viên hỗ trợ rất tích cực, đặc biệt về dashboard anh xây dựng để hiển thị những ticket chờ lâu nhất."
+    ],
+    [
+     "He also mentored two interns, who both received full-time offers in June.",
+     "Anh cũng hướng dẫn hai thực tập sinh, và cả hai đều nhận được lời mời làm việc chính thức vào tháng 6."
+    ]
+   ],
+   [
+    [
+     "There are two areas to improve.",
+     "Có hai điểm cần cải thiện."
+    ],
+    [
+     "First, Quang sometimes takes on too much work without telling the team, which caused the March release to be delayed by a week.",
+     "Thứ nhất, Quang đôi khi nhận quá nhiều việc mà không báo cho nhóm, điều này khiến bản phát hành tháng 3 bị trễ một tuần."
+    ],
+    [
+     "He should raise risks early in stand-up meetings instead of trying to fix everything alone.",
+     "Anh nên nêu rủi ro sớm trong các buổi họp stand-up thay vì cố tự mình sửa mọi thứ."
+    ],
+    [
+     "Second, his design documents are technically strong but often too long for non-engineers, so he should add a one-page summary to each one.",
+     "Thứ hai, tài liệu thiết kế của anh rất tốt về mặt kỹ thuật nhưng thường quá dài với những người không làm kỹ thuật, vì vậy anh nên thêm một bản tóm tắt một trang cho mỗi tài liệu."
+    ]
+   ],
+   [
+    [
+     "Overall rating: Exceeds expectations.",
+     "Đánh giá chung: Vượt kỳ vọng."
+    ],
+    [
+     "For the second half of the year, Quang will lead the project to extend auto-tagging to Japanese and Korean tickets, with a target of 60 percent coverage by December.",
+     "Trong nửa cuối năm, Quang sẽ dẫn dắt dự án mở rộng tính năng gắn thẻ tự động cho ticket tiếng Nhật và tiếng Hàn, với mục tiêu bao phủ 60 phần trăm vào tháng 12."
+    ],
+    [
+     "Helen and Quang will meet monthly to follow up on this goal, and he will attend a technical writing course in August.",
+     "Helen và Quang sẽ gặp nhau hàng tháng để theo dõi mục tiêu này, và anh sẽ tham gia một khóa học viết tài liệu kỹ thuật vào tháng 8."
+    ],
+    [
+     "His next formal review will take place in January.",
+     "Buổi đánh giá chính thức tiếp theo của anh sẽ diễn ra vào tháng 1."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "owner"
+   },
+   {
+    "w": "ticket",
+    "f": "tickets"
+   },
+   {
+    "w": "as a result",
+    "f": "As a result"
+   },
+   {
+    "w": "response"
+   },
+   {
+    "w": "outage",
+    "f": "outages"
+   },
+   {
+    "w": "feedback"
+   },
+   {
+    "w": "improve"
+   },
+   {
+    "w": "take on",
+    "f": "takes on"
+   },
+   {
+    "w": "delay",
+    "f": "delayed"
+   },
+   {
+    "w": "instead of"
+   },
+   {
+    "w": "extend"
+   },
+   {
+    "w": "follow up on"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What happened to the average first response time?",
+    "o": [
+     "It fell to just under 4 hours",
+     "It fell by 11 points",
+     "It rose to 9 hours",
+     "It stayed at 70 percent"
+    ],
+    "a": 0,
+    "vi": "'the average first response time fell from 9 hours to just under 4 hours' → A. '11 points' là mức tăng điểm hài lòng, '70 percent' là tỷ lệ ticket được gắn thẻ."
+   },
+   {
+    "q": "Why was the March release delayed?",
+    "o": [
+     "A production outage happened",
+     "Quang took on too much work without telling the team",
+     "The support agents asked for a new dashboard",
+     "The design documents were too long"
+    ],
+    "a": 1,
+    "vi": "'takes on too much work without telling the team, which caused the March release to be delayed by a week' → B. Sự cố và dashboard được nhắc nhưng không gây trễ."
+   },
+   {
+    "q": "What is suggested about Quang's design documents?",
+    "o": [
+     "They contain technical errors",
+     "They are too short",
+     "They are hard for non-engineers to read quickly",
+     "They are written only in Japanese"
+    ],
+    "a": 2,
+    "vi": "'technically strong but often too long for non-engineers' → C. A sai vì tài liệu 'technically strong'; B ngược nghĩa."
+   },
+   {
+    "q": "What will Quang do in August?",
+    "o": [
+     "Lead the Korean support team",
+     "Present at a stand-up meeting",
+     "Reach 60 percent coverage",
+     "Attend a technical writing course"
+    ],
+    "a": 3,
+    "vi": "'he will attend a technical writing course in August' → D. Mục tiêu 60% là đến tháng 12, không phải tháng 8."
+   }
+  ]
+ },
+ {
+  "id": "r3-16",
+  "level": 3,
+  "type": "email",
+  "topic": "Logistics",
+  "title": "Office move to Lotus Tower",
+  "title_vi": "Chuyển văn phòng sang Lotus Tower",
+  "head": [
+   [
+    "From",
+    "Facilities Team <facilities@meridiansoft.vn>"
+   ],
+   [
+    "To",
+    "Platform Engineering"
+   ],
+   [
+    "Subject",
+    "Office move to Lotus Tower – what you need to do"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Hi everyone,",
+     "Chào mọi người,"
+    ]
+   ],
+   [
+    [
+     "As announced at the town hall, the Platform Engineering team will relocate from the 4th floor of Hanh Building to the 12th floor of Lotus Tower on the weekend of November 22–23.",
+     "Như đã thông báo tại buổi họp toàn công ty, nhóm Platform Engineering sẽ chuyển từ tầng 4 tòa Hanh Building sang tầng 12 tòa Lotus Tower vào cuối tuần 22–23 tháng 11."
+    ],
+    [
+     "The new floor has 64 desks, four meeting rooms and a quiet room for on-call engineers.",
+     "Tầng mới có 64 bàn làm việc, bốn phòng họp và một phòng yên tĩnh cho các kỹ sư trực on-call."
+    ],
+    [
+     "Our current lease ends on November 30, so the move cannot be postponed.",
+     "Hợp đồng thuê hiện tại của chúng ta kết thúc vào ngày 30 tháng 11, nên không thể hoãn việc chuyển văn phòng."
+    ]
+   ],
+   [
+    [
+     "Please pack your personal items into the boxes provided by 5 p.m. on Friday, November 21, and label each box with your name and new desk number.",
+     "Vui lòng đóng gói đồ cá nhân vào các thùng được phát trước 5 giờ chiều thứ Sáu, ngày 21 tháng 11, và dán nhãn mỗi thùng với tên và số bàn mới của bạn."
+    ],
+    [
+     "Desk numbers were sent in a separate email on Monday.",
+     "Số bàn đã được gửi trong một email riêng vào thứ Hai."
+    ],
+    [
+     "If you have not received yours, please check your spam folder before contacting us.",
+     "Nếu bạn chưa nhận được, vui lòng kiểm tra thư mục spam trước khi liên hệ với chúng tôi."
+    ],
+    [
+     "The moving company will take care of monitors, docking stations and chairs, but laptops must stay with you.",
+     "Công ty vận chuyển sẽ lo màn hình, docking station và ghế, nhưng laptop phải luôn ở bên bạn."
+    ],
+    [
+     "The two on-premise test servers will be moved separately by the IT team on Saturday morning, so the staging environment will be unavailable from 6 a.m. to 2 p.m. that day.",
+     "Hai máy chủ kiểm thử tại chỗ sẽ được nhóm IT chuyển riêng vào sáng thứ Bảy, nên môi trường staging sẽ không dùng được từ 6 giờ sáng đến 2 giờ chiều hôm đó."
+    ],
+    [
+     "Please do not schedule any deployments during that window.",
+     "Vui lòng không lên lịch deploy nào trong khoảng thời gian đó."
+    ]
+   ],
+   [
+    [
+     "Access cards for Lotus Tower will be handed out at reception from 8 a.m. on Monday, November 24.",
+     "Thẻ ra vào tòa Lotus Tower sẽ được phát tại quầy lễ tân từ 8 giờ sáng thứ Hai, ngày 24 tháng 11."
+    ],
+    [
+     "Parking spaces are limited, so staff who drive should register with Facilities in advance.",
+     "Chỗ đỗ xe có hạn, nên nhân viên đi xe riêng cần đăng ký trước với bộ phận Hành chính."
+    ],
+    [
+     "The coffee machine and lockers on the new floor will be ready from the first day.",
+     "Máy pha cà phê và tủ đồ cá nhân ở tầng mới sẽ sẵn sàng ngay từ ngày đầu tiên."
+    ],
+    [
+     "If you have any questions, contact Thu Le, who is responsible for the move, at extension 2207.",
+     "Nếu có câu hỏi, hãy liên hệ Thu Lê, người chịu trách nhiệm về đợt chuyển văn phòng, qua số máy lẻ 2207."
+    ]
+   ],
+   [
+    [
+     "Thanks, The Facilities Team",
+     "Cảm ơn, Nhóm Hành chính"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "announce",
+    "f": "announced"
+   },
+   {
+    "w": "relocate"
+   },
+   {
+    "w": "lease"
+   },
+   {
+    "w": "postpone",
+    "f": "postponed"
+   },
+   {
+    "w": "personal"
+   },
+   {
+    "w": "take care of"
+   },
+   {
+    "w": "schedule"
+   },
+   {
+    "w": "in advance"
+   },
+   {
+    "w": "be responsible for",
+    "f": "is responsible for"
+   },
+   {
+    "w": "monitor",
+    "f": "monitors"
+   },
+   {
+    "w": "limit",
+    "f": "limited"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why can't the move be postponed?",
+    "o": [
+     "The moving company is fully booked",
+     "The current lease ends on November 30",
+     "Access cards have already been printed",
+     "The town hall voted for the date"
+    ],
+    "a": 1,
+    "vi": "'Our current lease ends on November 30, so the move cannot be postponed' → B. Thẻ ra vào và town hall có nhắc nhưng không phải lý do."
+   },
+   {
+    "q": "Which item should employees NOT leave for the moving company?",
+    "o": [
+     "Monitors",
+     "Chairs",
+     "Docking stations",
+     "Laptops"
+    ],
+    "a": 3,
+    "vi": "'The moving company will take care of monitors, docking stations and chairs, but laptops must stay with you' → D."
+   },
+   {
+    "q": "What will happen on Saturday morning?",
+    "o": [
+     "Access cards will be handed out",
+     "Staff will pack their personal items",
+     "The staging environment will be unavailable",
+     "Parking spaces will be assigned"
+    ],
+    "a": 2,
+    "vi": "Máy chủ test được chuyển sáng thứ Bảy nên 'the staging environment will be unavailable from 6 a.m. to 2 p.m.' → C. Thẻ phát vào thứ Hai, đóng gói trước chiều thứ Sáu."
+   },
+   {
+    "q": "Who should staff contact if they have questions?",
+    "o": [
+     "Thu Le",
+     "The IT team",
+     "The reception desk",
+     "The moving company"
+    ],
+    "a": 0,
+    "vi": "'contact Thu Le, who is responsible for the move' → A. Nhóm IT chỉ chuyển máy chủ, lễ tân chỉ phát thẻ."
+   }
+  ]
+ },
+ {
+  "id": "r3-17",
+  "level": 3,
+  "type": "report",
+  "topic": "Service",
+  "title": "Incident report: chatbot gave wrong order status",
+  "title_vi": "Báo cáo sự cố: chatbot báo sai trạng thái đơn hàng",
+  "head": [
+   [
+    "Incident",
+    "INC-4471"
+   ],
+   [
+    "Severity",
+    "SEV-2"
+   ],
+   [
+    "Owner",
+    "Arjun Mehta, AI Platform"
+   ],
+   [
+    "Date",
+    "September 9"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "On September 9, between 10:40 and 13:15, the customer support chatbot of Pellora Home gave wrong order status information to customers.",
+     "Ngày 9 tháng 9, từ 10:40 đến 13:15, chatbot hỗ trợ khách hàng của Pellora Home đã cung cấp thông tin trạng thái đơn hàng sai cho khách."
+    ],
+    [
+     "About 2,300 conversations were affected, and in roughly 400 of them the bot told customers that orders had been delivered when they were still in the warehouse.",
+     "Khoảng 2.300 cuộc hội thoại bị ảnh hưởng, và trong khoảng 400 cuộc, bot nói với khách rằng đơn hàng đã được giao trong khi hàng vẫn còn trong kho."
+    ],
+    [
+     "The support team received 180 complaints by phone and email before the problem was fixed.",
+     "Đội hỗ trợ đã nhận 180 khiếu nại qua điện thoại và email trước khi sự cố được khắc phục."
+    ]
+   ],
+   [
+    [
+     "The root cause was a change to the order-tracking API that was released at 10:30 the same morning.",
+     "Nguyên nhân gốc là một thay đổi ở API theo dõi đơn hàng được phát hành lúc 10:30 sáng cùng ngày."
+    ],
+    [
+     "The API team renamed one status field, but the chatbot's data pipeline still expected the old name and filled the empty value with a default of \"delivered\".",
+     "Nhóm API đã đổi tên một trường trạng thái, nhưng pipeline dữ liệu của chatbot vẫn chờ tên cũ và điền vào giá trị trống bằng giá trị mặc định \"delivered\" (đã giao)."
+    ],
+    [
+     "Our monitoring did not catch the error because it only checked whether the chatbot was online, not whether its answers were correct.",
+     "Hệ thống giám sát không phát hiện lỗi vì nó chỉ kiểm tra chatbot có đang hoạt động hay không, chứ không kiểm tra câu trả lời có đúng không."
+    ],
+    [
+     "A support agent noticed the pattern and reported it to the on-call engineer at 12:20.",
+     "Một nhân viên hỗ trợ đã nhận ra quy luật này và báo cho kỹ sư trực lúc 12:20."
+    ]
+   ],
+   [
+    [
+     "The on-call engineer rolled back the API change at 13:05, and correct answers returned ten minutes later.",
+     "Kỹ sư trực đã rollback thay đổi API lúc 13:05, và câu trả lời đúng xuất hiện trở lại mười phút sau đó."
+    ],
+    [
+     "Customer Service sent an apology email to all affected customers on September 10, together with a 10-dollar voucher.",
+     "Bộ phận Chăm sóc Khách hàng đã gửi email xin lỗi đến tất cả khách hàng bị ảnh hưởng vào ngày 10 tháng 9, kèm một phiếu giảm giá 10 đô la."
+    ]
+   ],
+   [
+    [
+     "Three actions have been agreed.",
+     "Ba hành động khắc phục đã được thống nhất."
+    ],
+    [
+     "The API team will add a contract test so that any field change breaks the build before release (owner: Sara Lindqvist, due September 20).",
+     "Nhóm API sẽ thêm contract test để mọi thay đổi trường dữ liệu đều làm hỏng build trước khi phát hành (người phụ trách: Sara Lindqvist, hạn 20 tháng 9)."
+    ],
+    [
+     "The AI Platform team will add an accuracy check that compares 50 random chatbot answers per hour with the order database (owner: Arjun Mehta, due September 27).",
+     "Nhóm AI Platform sẽ thêm bước kiểm tra độ chính xác, so sánh 50 câu trả lời ngẫu nhiên của chatbot mỗi giờ với cơ sở dữ liệu đơn hàng (người phụ trách: Arjun Mehta, hạn 27 tháng 9)."
+    ],
+    [
+     "Finally, the chatbot will say \"I'm not sure\" instead of guessing when a status is missing.",
+     "Cuối cùng, chatbot sẽ nói \"Tôi không chắc\" thay vì đoán khi thiếu thông tin trạng thái."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "deliver",
+    "f": "delivered"
+   },
+   {
+    "w": "warehouse"
+   },
+   {
+    "w": "track",
+    "f": "tracking"
+   },
+   {
+    "w": "release",
+    "f": "released"
+   },
+   {
+    "w": "pipeline"
+   },
+   {
+    "w": "apology"
+   },
+   {
+    "w": "voucher"
+   },
+   {
+    "w": "break the build",
+    "f": "breaks the build"
+   },
+   {
+    "w": "owner"
+   },
+   {
+    "w": "due"
+   },
+   {
+    "w": "accuracy"
+   },
+   {
+    "w": "instead of"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long did the incident last?",
+    "o": [
+     "About 25 minutes",
+     "About 1 hour 40 minutes",
+     "About 2 hours 35 minutes",
+     "About 3 hours"
+    ],
+    "a": 2,
+    "vi": "Sự cố kéo dài 'between 10:40 and 13:15', tức khoảng 2 giờ 35 phút → C. 12:20 là lúc báo cho kỹ sư trực, không phải lúc bắt đầu."
+   },
+   {
+    "q": "Why did monitoring fail to detect the problem?",
+    "o": [
+     "It was turned off during the release",
+     "It only checked whether the chatbot was online",
+     "The on-call engineer ignored an alert",
+     "It checked answers only once per hour"
+    ],
+    "a": 1,
+    "vi": "'it only checked whether the chatbot was online, not whether its answers were correct' → B. 'Per hour' là bước kiểm tra mới sẽ thêm sau này."
+   },
+   {
+    "q": "Who first reported the problem to the on-call engineer?",
+    "o": [
+     "A support agent",
+     "The API team",
+     "Arjun Mehta",
+     "Sara Lindqvist"
+    ],
+    "a": 0,
+    "vi": "'A support agent noticed the pattern and reported it to the on-call engineer at 12:20' → A. Arjun và Sara là người phụ trách các hành động khắc phục."
+   },
+   {
+    "q": "What is due on September 27?",
+    "o": [
+     "A contract test for the API",
+     "An apology email to customers",
+     "A 10-dollar voucher",
+     "An hourly accuracy check"
+    ],
+    "a": 3,
+    "vi": "'an accuracy check ... (owner: Arjun Mehta, due September 27)' → D. Contract test có hạn 20/9; email xin lỗi đã gửi ngày 10/9."
+   }
+  ]
+ },
+ {
+  "id": "r3-18",
+  "level": 3,
+  "type": "memo",
+  "topic": "HR",
+  "title": "Changes to expense claims and travel",
+  "title_vi": "Thay đổi về thanh toán chi phí và công tác",
+  "head": [
+   [
+    "From",
+    "Natalia Cruz, HR & Finance Operations"
+   ],
+   [
+    "To",
+    "All employees, Ardent Labs"
+   ],
+   [
+    "Date",
+    "June 2"
+   ],
+   [
+    "Subject",
+    "Changes to expense claims and travel booking"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Following feedback from the spring survey, we are updating how expense claims and business travel work at Ardent Labs.",
+     "Dựa trên phản hồi từ cuộc khảo sát mùa xuân, chúng tôi đang thay đổi cách thanh toán chi phí và đi công tác tại Ardent Labs."
+    ],
+    [
+     "Many employees told us that they waited too long for their money, an average of 24 days, and that the paper forms were confusing.",
+     "Nhiều nhân viên cho biết họ phải chờ tiền quá lâu, trung bình 24 ngày, và các biểu mẫu giấy rất khó hiểu."
+    ]
+   ],
+   [
+    [
+     "From July 1, all claims must be made in the Spendly app, and paper forms will no longer be accepted.",
+     "Từ ngày 1 tháng 7, mọi yêu cầu thanh toán phải được thực hiện trên ứng dụng Spendly, và biểu mẫu giấy sẽ không còn được chấp nhận."
+    ],
+    [
+     "Take a photo of each receipt and add it to the app within 30 days of the purchase.",
+     "Hãy chụp ảnh từng hóa đơn và tải lên ứng dụng trong vòng 30 ngày kể từ ngày mua."
+    ],
+    [
+     "Claims under 200 dollars will be approved automatically, and larger claims will go to your manager, who must respond within five working days.",
+     "Các khoản dưới 200 đô la sẽ được duyệt tự động, còn các khoản lớn hơn sẽ được chuyển đến quản lý của bạn, người phải phản hồi trong vòng năm ngày làm việc."
+    ],
+    [
+     "Once a claim is approved, you will be reimbursed in the next weekly payment run instead of at the end of the month.",
+     "Khi khoản chi được duyệt, bạn sẽ được hoàn tiền trong đợt thanh toán hàng tuần kế tiếp thay vì vào cuối tháng."
+    ]
+   ],
+   [
+    [
+     "There are also changes to travel.",
+     "Cũng có một số thay đổi về công tác."
+    ],
+    [
+     "Flights and hotels for conferences, client visits and training must now be booked through our travel partner, Skyline Desk, at least 14 days in advance.",
+     "Vé máy bay và khách sạn cho hội nghị, thăm khách hàng và đào tạo nay phải được đặt qua đối tác du lịch của chúng tôi là Skyline Desk, trước ít nhất 14 ngày."
+    ],
+    [
+     "The hotel limit rises from 90 to 120 dollars per night in Singapore and Tokyo, but stays the same in other cities.",
+     "Mức trần khách sạn tăng từ 90 lên 120 đô la mỗi đêm tại Singapore và Tokyo, nhưng giữ nguyên ở các thành phố khác."
+    ],
+    [
+     "Taxi rides to and from the airport can be claimed, but meals during a flight cannot.",
+     "Tiền taxi đi và về sân bay được thanh toán, nhưng bữa ăn trong chuyến bay thì không."
+    ],
+    [
+     "Train tickets for trips under 300 kilometers can still be booked by employees themselves.",
+     "Vé tàu cho các chuyến đi dưới 300 km thì nhân viên vẫn có thể tự đặt."
+    ]
+   ],
+   [
+    [
+     "Managers will receive a short training session on the new system on June 18, and a guide for all staff will be posted on the intranet next week.",
+     "Các quản lý sẽ tham gia một buổi đào tạo ngắn về hệ thống mới vào ngày 18 tháng 6, và hướng dẫn cho toàn bộ nhân viên sẽ được đăng trên intranet vào tuần tới."
+    ],
+    [
+     "Claims for May and June can still be made on paper until June 30.",
+     "Các khoản chi của tháng 5 và tháng 6 vẫn có thể nộp bằng giấy đến hết ngày 30 tháng 6."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "feedback"
+   },
+   {
+    "w": "expense"
+   },
+   {
+    "w": "average"
+   },
+   {
+    "w": "accept",
+    "f": "accepted"
+   },
+   {
+    "w": "receipt"
+   },
+   {
+    "w": "purchase"
+   },
+   {
+    "w": "respond"
+   },
+   {
+    "w": "reimburse",
+    "f": "reimbursed"
+   },
+   {
+    "w": "instead of"
+   },
+   {
+    "w": "conference",
+    "f": "conferences"
+   },
+   {
+    "w": "in advance"
+   },
+   {
+    "w": "limit"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What problem did employees report in the survey?",
+    "o": [
+     "Hotel limits were too low everywhere",
+     "They waited too long to get their money back",
+     "The Spendly app crashed often",
+     "Managers rejected too many claims"
+    ],
+    "a": 1,
+    "vi": "'they waited too long for their money, an average of 24 days' → B. Mức trần khách sạn là thay đổi mới, không phải phàn nàn trong khảo sát."
+   },
+   {
+    "q": "What will happen to a 150-dollar claim under the new system?",
+    "o": [
+     "It will go to the employee's manager",
+     "It must be made on paper",
+     "It will be paid at the end of the month",
+     "It will be approved automatically"
+    ],
+    "a": 3,
+    "vi": "'Claims under 200 dollars will be approved automatically' → D. Chỉ khoản lớn hơn 200 đô la mới chuyển cho quản lý (bẫy A)."
+   },
+   {
+    "q": "What is NOT mentioned as a change to travel?",
+    "o": [
+     "Booking through Skyline Desk",
+     "A higher hotel limit in some cities",
+     "A new daily meal allowance",
+     "Booking at least 14 days ahead"
+    ],
+    "a": 2,
+    "vi": "Bài chỉ nói bữa ăn trên máy bay không được thanh toán; không có phụ cấp ăn hàng ngày nào → C."
+   },
+   {
+    "q": "Until when can paper forms still be used?",
+    "o": [
+     "June 30",
+     "June 18",
+     "July 1",
+     "30 days after a purchase"
+    ],
+    "a": 0,
+    "vi": "'Claims for May and June can still be made on paper until June 30' → A. June 18 là buổi đào tạo quản lý, July 1 là ngày bắt đầu dùng Spendly."
+   }
+  ]
+ },
+ {
+  "id": "r3-19",
+  "level": 3,
+  "type": "email",
+  "topic": "Sales",
+  "title": "Request to extend the pilot",
+  "title_vi": "Đề nghị gia hạn chương trình thí điểm",
+  "head": [
+   [
+    "From",
+    "Elena Vasquez <elena.vasquez@harborpoint-ins.com>"
+   ],
+   [
+    "To",
+    "Kevin Ngo <kevin.ngo@orrin.ai>"
+   ],
+   [
+    "Subject",
+    "Pilot extension and next steps"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Dear Kevin,",
+     "Kevin thân mến,"
+    ]
+   ],
+   [
+    [
+     "Thank you for the pilot results you shared last Thursday.",
+     "Cảm ơn anh về kết quả thí điểm mà anh đã chia sẻ hôm thứ Năm tuần trước."
+    ],
+    [
+     "Our claims team was impressed that your document model processed 12,000 claim forms with 93 percent accuracy, compared with 81 percent for our current vendor.",
+     "Nhóm bồi thường của chúng tôi rất ấn tượng khi mô hình xử lý tài liệu của anh xử lý 12.000 hồ sơ bồi thường với độ chính xác 93 phần trăm, so với 81 phần trăm của nhà cung cấp hiện tại."
+    ],
+    [
+     "The pilot also showed that your system needed only 2 seconds per form, while our staff currently spend about 6 minutes on each one.",
+     "Chương trình thí điểm cũng cho thấy hệ thống của anh chỉ cần 2 giây cho mỗi hồ sơ, trong khi nhân viên của chúng tôi hiện mất khoảng 6 phút cho mỗi hồ sơ."
+    ],
+    [
+     "Before we sign a full contract, however, we would like to extend the pilot by six weeks, until January 31.",
+     "Tuy nhiên, trước khi ký hợp đồng chính thức, chúng tôi muốn gia hạn chương trình thí điểm thêm sáu tuần, đến ngày 31 tháng 1."
+    ]
+   ],
+   [
+    [
+     "There are two reasons for this request.",
+     "Có hai lý do cho đề nghị này."
+    ],
+    [
+     "First, the pilot only covered car insurance claims, and our board wants to see results for home insurance, which uses handwritten forms.",
+     "Thứ nhất, chương trình thí điểm chỉ bao gồm hồ sơ bảo hiểm ô tô, trong khi hội đồng quản trị của chúng tôi muốn xem kết quả với bảo hiểm nhà ở, loại dùng mẫu viết tay."
+    ],
+    [
+     "Second, our IT security team has not finished its review of your data storage in Singapore, and they expect to need until mid-January.",
+     "Thứ hai, nhóm bảo mật IT của chúng tôi chưa hoàn tất việc đánh giá hệ thống lưu trữ dữ liệu của bên anh tại Singapore, và họ dự kiến cần đến giữa tháng 1."
+    ]
+   ],
+   [
+    [
+     "We understand that an extension may involve extra cost.",
+     "Chúng tôi hiểu rằng việc gia hạn có thể phát sinh thêm chi phí."
+    ],
+    [
+     "Our budget allows up to 8,000 dollars for the additional six weeks, and we can provide about 3,000 sample home insurance forms by December 12.",
+     "Ngân sách của chúng tôi cho phép tối đa 8.000 đô la cho sáu tuần bổ sung, và chúng tôi có thể cung cấp khoảng 3.000 hồ sơ mẫu bảo hiểm nhà ở trước ngày 12 tháng 12."
+    ],
+    [
+     "Please note that any price above this amount would need approval from our CFO, which could take another month.",
+     "Xin lưu ý rằng mọi mức giá cao hơn số tiền này sẽ cần Giám đốc Tài chính phê duyệt, việc đó có thể mất thêm một tháng."
+    ],
+    [
+     "Could you send me a revised proposal with the new timeline and price by Friday, December 5?",
+     "Anh có thể gửi cho tôi bản đề xuất đã chỉnh sửa với tiến độ và mức giá mới trước thứ Sáu, ngày 5 tháng 12 được không?"
+    ],
+    [
+     "If the extended pilot is successful, we expect to sign a two-year agreement covering all three of our claims centers.",
+     "Nếu chương trình thí điểm mở rộng thành công, chúng tôi dự kiến sẽ ký thỏa thuận hai năm cho cả ba trung tâm bồi thường của chúng tôi."
+    ],
+    [
+     "I'm happy to discuss the details on a call early next week.",
+     "Tôi sẵn lòng trao đổi chi tiết qua một cuộc gọi vào đầu tuần tới."
+    ]
+   ],
+   [
+    [
+     "Best regards,",
+     "Trân trọng,"
+    ],
+    [
+     "Elena Vasquez, Head of Claims Operations, Harborpoint Insurance",
+     "Elena Vasquez, Trưởng bộ phận Vận hành Bồi thường, Harborpoint Insurance"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "accuracy"
+   },
+   {
+    "w": "vendor"
+   },
+   {
+    "w": "sign"
+   },
+   {
+    "w": "contract"
+   },
+   {
+    "w": "however"
+   },
+   {
+    "w": "extend"
+   },
+   {
+    "w": "request"
+   },
+   {
+    "w": "budget"
+   },
+   {
+    "w": "additional"
+   },
+   {
+    "w": "proposal"
+   },
+   {
+    "w": "timeline"
+   },
+   {
+    "w": "early next week"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What accuracy did the client's current vendor achieve?",
+    "o": [
+     "93 percent",
+     "81 percent",
+     "12 percent",
+     "31 percent"
+    ],
+    "a": 1,
+    "vi": "'93 percent accuracy, compared with 81 percent for our current vendor' → B. 93% là kết quả của mô hình bên Kevin (bẫy A)."
+   },
+   {
+    "q": "What is one reason Elena gives for extending the pilot?",
+    "o": [
+     "The model's accuracy was too low",
+     "Kevin's team asked for more time",
+     "The board wants results for handwritten home insurance forms",
+     "The contract with the current vendor ends in January"
+    ],
+    "a": 2,
+    "vi": "Lý do thứ nhất: 'our board wants to see results for home insurance, which uses handwritten forms' → C. Lý do còn lại là đánh giá bảo mật, không có A, B, D."
+   },
+   {
+    "q": "What does Elena ask Kevin to do by December 5?",
+    "o": [
+     "Provide 3,000 sample forms",
+     "Finish the security review",
+     "Sign a two-year agreement",
+     "Send a revised proposal"
+    ],
+    "a": 3,
+    "vi": "'Could you send me a revised proposal ... by Friday, December 5?' → D. 3.000 hồ sơ mẫu là việc bên Elena làm trước 12/12."
+   },
+   {
+    "q": "What is the most the client can pay for the extra six weeks?",
+    "o": [
+     "8,000 dollars",
+     "3,000 dollars",
+     "12,000 dollars",
+     "The amount is not stated"
+    ],
+    "a": 0,
+    "vi": "'Our budget allows up to 8,000 dollars for the additional six weeks' → A. 3.000 và 12.000 là số lượng hồ sơ, không phải tiền."
+   }
+  ]
+ },
+ {
+  "id": "r3-20",
+  "level": 3,
+  "type": "article",
+  "topic": "Legal",
+  "title": "New 90-day rule for user logs",
+  "title_vi": "Quy định 90 ngày mới cho log người dùng",
+  "head": [],
+  "paras": [
+   [
+    [
+     "Starting March 1, Fenwick Health Tech will delete raw user conversation logs after 90 days instead of keeping them for two years.",
+     "Bắt đầu từ ngày 1 tháng 3, Fenwick Health Tech sẽ xóa log hội thoại thô của người dùng sau 90 ngày thay vì lưu giữ trong hai năm."
+    ],
+    [
+     "The change follows an external audit in October, which found that the company stored far more personal data than it needed and that only 15 percent of old logs were ever used again.",
+     "Thay đổi này được đưa ra sau một cuộc kiểm toán bên ngoài vào tháng 10, cho thấy công ty lưu trữ nhiều dữ liệu cá nhân hơn mức cần thiết rất nhiều và chỉ 15 phần trăm log cũ từng được dùng lại."
+    ],
+    [
+     "According to Chief Legal Officer Ruth Adeyemi, the new policy also prepares the company for stricter privacy rules expected in several of its markets next year.",
+     "Theo Giám đốc Pháp chế Ruth Adeyemi, chính sách mới cũng giúp công ty chuẩn bị cho các quy định về quyền riêng tư chặt chẽ hơn dự kiến sẽ áp dụng tại một số thị trường vào năm tới."
+    ]
+   ],
+   [
+    [
+     "For engineers, the biggest impact will be on the machine learning teams, which have used old logs to retrain the symptom-checker model every quarter.",
+     "Với kỹ sư, tác động lớn nhất sẽ rơi vào các nhóm machine learning, vốn dùng log cũ để huấn luyện lại mô hình kiểm tra triệu chứng mỗi quý."
+    ],
+    [
+     "From now on, logs can only be kept longer than 90 days if names, phone numbers and other personal details have been removed.",
+     "Từ nay, log chỉ được giữ quá 90 ngày nếu tên, số điện thoại và các thông tin cá nhân khác đã được loại bỏ."
+    ],
+    [
+     "The data platform team has built a tool that does this automatically, and it was tested on 1.2 million records in January with an error rate below 0.5 percent.",
+     "Nhóm nền tảng dữ liệu đã xây dựng một công cụ làm việc này tự động, và nó đã được thử nghiệm trên 1,2 triệu bản ghi vào tháng 1 với tỷ lệ lỗi dưới 0,5 phần trăm."
+    ]
+   ],
+   [
+    [
+     "Every team that runs a data pipeline must confirm by February 14 that its pipeline sends logs through the new tool.",
+     "Mọi nhóm vận hành pipeline dữ liệu phải xác nhận trước ngày 14 tháng 2 rằng pipeline của mình đưa log qua công cụ mới."
+    ],
+    [
+     "Pipelines that are not confirmed will be paused on March 1 until the owner completes the compliance checklist.",
+     "Các pipeline chưa được xác nhận sẽ bị tạm dừng vào ngày 1 tháng 3 cho đến khi người phụ trách hoàn tất danh sách kiểm tra tuân thủ."
+    ],
+    [
+     "Some engineers have raised concerns that cleaned data will lower model accuracy.",
+     "Một số kỹ sư đã bày tỏ lo ngại rằng dữ liệu đã làm sạch sẽ làm giảm độ chính xác của mô hình."
+    ],
+    [
+     "Early tests suggest the drop is small, about one percentage point, and the Legal team says this is a fair price for lower risk.",
+     "Các thử nghiệm ban đầu cho thấy mức giảm nhỏ, khoảng một điểm phần trăm, và nhóm Pháp chế cho rằng đây là cái giá hợp lý để giảm rủi ro."
+    ],
+    [
+     "Questions about the policy should be posted in the #data-retention channel, where Legal and the data platform team answer every weekday.",
+     "Câu hỏi về chính sách nên được đăng trong kênh #data-retention, nơi nhóm Pháp chế và nhóm nền tảng dữ liệu trả lời vào tất cả các ngày trong tuần."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "delete"
+   },
+   {
+    "w": "instead of"
+   },
+   {
+    "w": "audit"
+   },
+   {
+    "w": "personal"
+   },
+   {
+    "w": "policy"
+   },
+   {
+    "w": "privacy"
+   },
+   {
+    "w": "impact"
+   },
+   {
+    "w": "from now on",
+    "f": "From now on"
+   },
+   {
+    "w": "record",
+    "f": "records"
+   },
+   {
+    "w": "pipeline"
+   },
+   {
+    "w": "confirm"
+   },
+   {
+    "w": "compliance"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did the October audit find?",
+    "o": [
+     "The company kept more personal data than it needed",
+     "The symptom-checker model was inaccurate",
+     "Logs were being deleted too early",
+     "New privacy rules had already started"
+    ],
+    "a": 0,
+    "vi": "'found that the company stored far more personal data than it needed' → A. Quy định quyền riêng tư mới chỉ 'expected ... next year', chưa có hiệu lực (bẫy D)."
+   },
+   {
+    "q": "Under what condition can logs be kept longer than 90 days?",
+    "o": [
+     "If the ML team needs them for retraining",
+     "If personal details have been removed",
+     "If the owner confirms by February 14",
+     "If they are less than two years old"
+    ],
+    "a": 1,
+    "vi": "'logs can only be kept longer than 90 days if names, phone numbers and other personal details have been removed' → B. Ngày 14/2 là hạn xác nhận pipeline."
+   },
+   {
+    "q": "What will happen to pipelines that are not confirmed by the deadline?",
+    "o": [
+     "They will be deleted",
+     "They will be moved to the data platform team",
+     "They will be paused on March 1",
+     "Their owners will be audited"
+    ],
+    "a": 2,
+    "vi": "'Pipelines that are not confirmed will be paused on March 1' → C. Thứ bị xóa là log, không phải pipeline (bẫy A)."
+   },
+   {
+    "q": "The word \"raised\" in paragraph 3 is closest in meaning to",
+    "o": [
+     "lifted",
+     "increased",
+     "grown",
+     "expressed"
+    ],
+    "a": 3,
+    "vi": "'raised concerns' = nêu ra, bày tỏ mối lo ngại → D 'expressed'. Các nghĩa 'nâng lên, tăng lên' của raise không hợp ngữ cảnh."
+   }
+  ]
+ }
+]

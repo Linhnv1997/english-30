@@ -1,0 +1,1648 @@
+[
+ {
+  "id": "r3-01",
+  "level": 3,
+  "type": "report",
+  "topic": "Finance",
+  "title": "Q3 cloud cost review",
+  "title_vi": "Rà soát chi phí cloud quý 3",
+  "head": [],
+  "paras": [
+   [
+    [
+     "This report summarises cloud spending for the AI Platform team at Norvale Systems in the third quarter, from July to September.",
+     "Báo cáo này tóm tắt chi tiêu cloud của nhóm AI Platform tại Norvale Systems trong quý 3, từ tháng 7 đến tháng 9."
+    ],
+    [
+     "Total spending reached $184,000, which was 15% above the quarterly budget of $160,000.",
+     "Tổng chi tiêu đạt 184.000 đô la, cao hơn 15% so với ngân sách quý là 160.000 đô la."
+    ],
+    [
+     "The finance department has asked every team that ran over budget to explain the variance by 14 October.",
+     "Phòng tài chính đã yêu cầu mọi nhóm vượt ngân sách giải trình phần chênh lệch trước ngày 14 tháng 10."
+    ]
+   ],
+   [
+    [
+     "Most of the overrun came from GPU instances used for model training, which cost $96,000 compared with an estimate of $70,000.",
+     "Phần lớn khoản vượt chi đến từ các instance GPU dùng để train model, tốn 96.000 đô la so với mức ước tính 70.000 đô la."
+    ],
+    [
+     "In August, two training jobs were left running over a long weekend after the experiments had already finished, and they incurred about $11,000 in unnecessary charges.",
+     "Vào tháng 8, hai job training bị để chạy suốt một kỳ nghỉ cuối tuần dài dù các thí nghiệm đã kết thúc, và chúng phát sinh khoảng 11.000 đô la phí không cần thiết."
+    ],
+    [
+     "Storage costs rose by 8%, mainly because older datasets were never moved to cheaper archive storage.",
+     "Chi phí lưu trữ tăng 8%, chủ yếu vì các dataset cũ chưa bao giờ được chuyển sang kho lưu trữ archive rẻ hơn."
+    ],
+    [
+     "By contrast, spending on the inference servers fell slightly, as traffic to the chatbot pilot was lower than expected.",
+     "Ngược lại, chi tiêu cho các server inference giảm nhẹ, do lưu lượng truy cập vào bản thử nghiệm chatbot thấp hơn dự kiến."
+    ]
+   ],
+   [
+    [
+     "To prevent a repeat, the team will introduce three changes from 1 November.",
+     "Để tránh lặp lại tình trạng này, nhóm sẽ áp dụng ba thay đổi từ ngày 1 tháng 11."
+    ],
+    [
+     "First, any training job that has been idle for more than two hours will be stopped automatically.",
+     "Thứ nhất, bất kỳ job training nào không hoạt động quá hai giờ sẽ tự động bị dừng."
+    ],
+    [
+     "Second, datasets that have not been accessed for 90 days will be moved to archive storage.",
+     "Thứ hai, các dataset không được truy cập trong 90 ngày sẽ được chuyển sang kho archive."
+    ],
+    [
+     "Third, engineers must get approval from their team lead before launching any job expected to cost more than $2,000.",
+     "Thứ ba, kỹ sư phải được trưởng nhóm phê duyệt trước khi chạy bất kỳ job nào dự kiến tốn hơn 2.000 đô la."
+    ]
+   ],
+   [
+    [
+     "Minh Tran, the platform lead, will be responsible for the new rules, and Sara Kowalski from finance will review the figures every month.",
+     "Minh Trần, trưởng nhóm platform, sẽ chịu trách nhiệm về các quy định mới, còn Sara Kowalski bên tài chính sẽ rà soát số liệu hằng tháng."
+    ],
+    [
+     "If the changes work as planned, the team expects to return to budget in the fourth quarter and save roughly $20,000 compared with Q3.",
+     "Nếu các thay đổi hiệu quả như kế hoạch, nhóm dự kiến sẽ quay lại mức ngân sách trong quý 4 và tiết kiệm khoảng 20.000 đô la so với quý 3."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "quarterly"
+   },
+   {
+    "w": "budget"
+   },
+   {
+    "w": "finance"
+   },
+   {
+    "w": "variance"
+   },
+   {
+    "w": "instance",
+    "f": "instances"
+   },
+   {
+    "w": "estimate"
+   },
+   {
+    "w": "incur",
+    "f": "incurred"
+   },
+   {
+    "w": "archive"
+   },
+   {
+    "w": "idle"
+   },
+   {
+    "w": "get approval"
+   },
+   {
+    "w": "be responsible for"
+   }
+  ],
+  "questions": [
+   {
+    "q": "By how much did total spending exceed the quarterly budget?",
+    "o": [
+     "$11,000",
+     "$24,000",
+     "$26,000",
+     "$20,000"
+    ],
+    "a": 1,
+    "vi": "Đoạn 1: tổng chi 184.000 so với ngân sách 160.000 → vượt 24.000. 26.000 là phần vượt riêng của GPU (96.000 − 70.000), 11.000 là phí job chạy thừa, 20.000 là khoản dự kiến tiết kiệm."
+   },
+   {
+    "q": "What is NOT mentioned as a reason for higher costs?",
+    "o": [
+     "Training jobs left running over a weekend",
+     "Old datasets kept in standard storage",
+     "GPU training costing more than estimated",
+     "Higher traffic to the chatbot pilot"
+    ],
+    "a": 3,
+    "vi": "Đoạn 2 nêu job chạy quên tắt, dataset cũ không chuyển sang archive và GPU vượt ước tính. Lưu lượng chatbot thì thấp hơn dự kiến, làm chi phí inference giảm, nên D không phải lý do."
+   },
+   {
+    "q": "What will happen to a training job that is idle for over two hours?",
+    "o": [
+     "It will be stopped automatically",
+     "It will need approval from a team lead",
+     "It will be moved to archive storage",
+     "It will be reported to finance"
+    ],
+    "a": 0,
+    "vi": "Đoạn 3, thay đổi thứ nhất: job idle quá hai giờ sẽ tự động bị dừng. Phê duyệt của trưởng nhóm là cho job trên 2.000 đô la; chuyển sang archive là dành cho dataset."
+   },
+   {
+    "q": "Who will check the spending figures each month?",
+    "o": [
+     "Minh Tran",
+     "The team leads",
+     "Sara Kowalski",
+     "The finance director"
+    ],
+    "a": 2,
+    "vi": "Đoạn 4: Sara Kowalski bên tài chính rà soát số liệu hằng tháng. Minh Trần chịu trách nhiệm về quy định mới, không phải kiểm tra số liệu."
+   }
+  ]
+ },
+ {
+  "id": "r3-02",
+  "level": 3,
+  "type": "minutes",
+  "topic": "Product",
+  "title": "Sprint 14 planning",
+  "title_vi": "Họp lập kế hoạch Sprint 14",
+  "head": [
+   [
+    "Meeting",
+    "Sprint 14 planning – Mobile team"
+   ],
+   [
+    "Date",
+    "Tuesday, 3 March"
+   ],
+   [
+    "Attendees",
+    "Leah Park (product manager), Duc Nguyen (tech lead), Omar Haddad (QA), Rina Sato (design)"
+   ],
+   [
+    "Absent",
+    "Tom Becker (backend)"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Leah opened the meeting by reviewing Sprint 13, in which the team completed 31 of the 38 story points it had planned.",
+     "Leah mở đầu cuộc họp bằng việc nhìn lại Sprint 13, trong đó nhóm hoàn thành 31 trên 38 story point đã lên kế hoạch."
+    ],
+    [
+     "The main issue was the offline sync feature, which was blocked by an API change that the backend team had not finished.",
+     "Vấn đề chính là tính năng đồng bộ offline, vốn bị chặn bởi một thay đổi API mà nhóm backend chưa làm xong."
+    ],
+    [
+     "As a result, the release of version 4.2, originally scheduled for 10 March, will be postponed to 24 March.",
+     "Do đó, bản phát hành phiên bản 4.2, ban đầu dự kiến vào ngày 10 tháng 3, sẽ được hoãn sang ngày 24 tháng 3."
+    ]
+   ],
+   [
+    [
+     "Duc explained that the sync logic itself is almost done, but it cannot be tested end to end until the new endpoint is deployed to staging.",
+     "Đức giải thích rằng bản thân logic đồng bộ đã gần xong, nhưng chưa thể test end-to-end cho đến khi endpoint mới được deploy lên staging."
+    ],
+    [
+     "Since Tom was absent, Duc agreed to follow up on the endpoint with him on Wednesday morning and report back in the stand-up meeting.",
+     "Vì Tom vắng mặt, Đức nhận sẽ trao đổi tiếp với anh ấy về endpoint vào sáng thứ Tư và báo lại trong buổi họp stand-up."
+    ],
+    [
+     "Omar raised a concern that two weeks of regression testing would not fit into the new timeline if the endpoint slipped again.",
+     "Omar bày tỏ lo ngại rằng hai tuần regression test sẽ không vừa với timeline mới nếu endpoint lại bị trễ."
+    ]
+   ],
+   [
+    [
+     "After some discussion, the team reached a consensus to split the work.",
+     "Sau một hồi thảo luận, cả nhóm đã thống nhất chia nhỏ công việc."
+    ],
+    [
+     "The redesigned settings screen, which does not depend on the backend, will ship in version 4.2 as planned, while offline sync will move to version 4.3 if the endpoint is not ready by 13 March.",
+     "Màn hình cài đặt được thiết kế lại, vốn không phụ thuộc vào backend, sẽ ra mắt trong bản 4.2 như kế hoạch, còn đồng bộ offline sẽ chuyển sang bản 4.3 nếu endpoint chưa sẵn sàng trước ngày 13 tháng 3."
+    ],
+    [
+     "Rina will deliver the final designs for the settings screen by Thursday so that development can start on Friday.",
+     "Rina sẽ bàn giao thiết kế cuối cùng của màn hình cài đặt trước thứ Năm để việc phát triển có thể bắt đầu vào thứ Sáu."
+    ]
+   ],
+   [
+    [
+     "Action items: Duc to confirm the endpoint date with Tom by Wednesday; Rina to share final designs by Thursday; Omar to update the test plan by Monday.",
+     "Đầu việc cần làm: Đức xác nhận ngày hoàn thành endpoint với Tom trước thứ Tư; Rina chia sẻ thiết kế cuối cùng trước thứ Năm; Omar cập nhật test plan trước thứ Hai."
+    ],
+    [
+     "Leah will inform the client success team about the new release date and send the minutes to everyone today.",
+     "Leah sẽ thông báo ngày phát hành mới cho nhóm client success và gửi biên bản họp cho mọi người trong hôm nay."
+    ],
+    [
+     "The next planning meeting will be held on 17 March.",
+     "Buổi họp lập kế hoạch tiếp theo sẽ diễn ra vào ngày 17 tháng 3."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "be blocked by",
+    "f": "blocked by"
+   },
+   {
+    "w": "as a result"
+   },
+   {
+    "w": "release"
+   },
+   {
+    "w": "postpone",
+    "f": "postponed"
+   },
+   {
+    "w": "deploy",
+    "f": "deployed"
+   },
+   {
+    "w": "absent"
+   },
+   {
+    "w": "follow up on"
+   },
+   {
+    "w": "stand-up meeting"
+   },
+   {
+    "w": "raise a concern",
+    "f": "raised a concern"
+   },
+   {
+    "w": "regression"
+   },
+   {
+    "w": "reach a consensus",
+    "f": "reached a consensus"
+   },
+   {
+    "w": "action item",
+    "f": "Action items"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why was the release of version 4.2 delayed?",
+    "o": [
+     "The settings screen designs were late",
+     "QA found too many bugs in Sprint 13",
+     "An API change from the backend team was not finished",
+     "The tech lead was absent"
+    ],
+    "a": 2,
+    "vi": "Đoạn 1: tính năng sync bị chặn bởi thay đổi API mà backend chưa xong, \"As a result\" bản 4.2 bị hoãn. Người vắng mặt là Tom (backend), không phải tech lead Đức."
+   },
+   {
+    "q": "What will happen if the endpoint is not ready by 13 March?",
+    "o": [
+     "Offline sync will be moved to version 4.3",
+     "The whole release will be cancelled",
+     "Regression testing will be shortened to one week",
+     "Tom will join the mobile team"
+    ],
+    "a": 0,
+    "vi": "Đoạn 3: nếu endpoint chưa sẵn sàng trước 13/3, đồng bộ offline chuyển sang bản 4.3; màn hình cài đặt vẫn ra trong bản 4.2, nên bản phát hành không bị hủy."
+   },
+   {
+    "q": "Who will update the test plan?",
+    "o": [
+     "Leah",
+     "Duc",
+     "Rina",
+     "Omar"
+    ],
+    "a": 3,
+    "vi": "Đoạn 4, phần action items: \"Omar to update the test plan by Monday\". Leah gửi biên bản, Đức xác nhận ngày endpoint, Rina gửi thiết kế."
+   },
+   {
+    "q": "The phrase \"reached a consensus\" in paragraph 3, line 1, is closest in meaning to",
+    "o": [
+     "held a vote",
+     "came to a general agreement",
+     "asked for more time",
+     "made a complaint"
+    ],
+    "a": 1,
+    "vi": "\"Reach a consensus\" = đạt được sự đồng thuận, tức cả nhóm cùng nhất trí. Không có bỏ phiếu (held a vote) nào được nhắc đến."
+   }
+  ]
+ },
+ {
+  "id": "r3-03",
+  "level": 3,
+  "type": "email",
+  "topic": "IT",
+  "title": "Office move: IT checklist",
+  "title_vi": "Chuyển văn phòng: danh sách việc cần làm về IT",
+  "head": [
+   [
+    "From",
+    "Huong Le <huong.le@kestrelsoft.io>"
+   ],
+   [
+    "To",
+    "All Hanoi office staff"
+   ],
+   [
+    "Subject",
+    "Office relocation: IT checklist and key dates"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Hi everyone,",
+     "Chào mọi người,"
+    ]
+   ],
+   [
+    [
+     "As you know, our Hanoi office will relocate from Linh Tower to the new Riverside building on the weekend of 18–19 April.",
+     "Như mọi người đã biết, văn phòng Hà Nội của chúng ta sẽ chuyển từ tòa Linh Tower sang tòa nhà Riverside mới vào cuối tuần 18–19 tháng 4."
+    ],
+    [
+     "To keep disruption to a minimum, IT needs everyone's help with a few tasks before and after the move.",
+     "Để hạn chế gián đoạn ở mức thấp nhất, bộ phận IT cần mọi người hỗ trợ một số việc trước và sau khi chuyển."
+    ],
+    [
+     "Please read this email carefully, as some of the deadlines are earlier than the move itself.",
+     "Vui lòng đọc kỹ email này, vì một số hạn chót còn sớm hơn cả ngày chuyển văn phòng."
+    ]
+   ],
+   [
+    [
+     "By Wednesday, 15 April, please back up any files stored only on your desktop computer to the company drive, because desktops will be wiped and reinstalled before they are moved.",
+     "Trước thứ Tư, ngày 15 tháng 4, vui lòng sao lưu mọi file chỉ lưu trên máy tính để bàn lên ổ đĩa công ty, vì các máy để bàn sẽ bị xóa sạch và cài đặt lại trước khi chuyển đi."
+    ],
+    [
+     "Laptops will not be wiped, but you must take them home on Friday, 17 April, and keep them with you over the weekend.",
+     "Laptop sẽ không bị xóa dữ liệu, nhưng bạn phải mang về nhà vào thứ Sáu, ngày 17 tháng 4, và giữ bên mình trong suốt cuối tuần."
+    ],
+    [
+     "Monitors, docking stations and keyboards should be packed in the labelled boxes that Facilities will deliver on Thursday.",
+     "Màn hình, dock và bàn phím cần được đóng vào các thùng có dán nhãn mà bộ phận Hành chính sẽ giao vào thứ Năm."
+    ]
+   ],
+   [
+    [
+     "On Saturday, the internet connection and the VPN will be unavailable from 8 a.m. to 6 p.m. while the network is switched to the new building.",
+     "Vào thứ Bảy, kết nối internet và VPN sẽ không dùng được từ 8 giờ sáng đến 6 giờ chiều trong lúc hệ thống mạng được chuyển sang tòa nhà mới."
+    ],
+    [
+     "If you are on call that day, please use your mobile hotspot and contact the IT helpdesk if you run into a problem accessing production systems.",
+     "Nếu bạn trực on-call hôm đó, hãy dùng hotspot điện thoại và liên hệ helpdesk IT nếu gặp sự cố khi truy cập hệ thống production."
+    ]
+   ],
+   [
+    [
+     "When you arrive on Monday, 20 April, you will need your new access card, which can be collected from reception on the ground floor.",
+     "Khi đến văn phòng vào thứ Hai, ngày 20 tháng 4, bạn sẽ cần thẻ ra vào mới, có thể nhận tại quầy lễ tân ở tầng trệt."
+    ],
+    [
+     "Old cards will stop working at midnight on Sunday.",
+     "Thẻ cũ sẽ ngừng hoạt động lúc nửa đêm Chủ nhật."
+    ],
+    [
+     "Desk numbers and the floor plan are attached.",
+     "Số bàn và sơ đồ mặt bằng được đính kèm theo email này."
+    ],
+    [
+     "Let me know if you have any questions, and thank you in advance for your help.",
+     "Nếu có câu hỏi gì, mọi người cứ cho tôi biết nhé, và cảm ơn trước sự hỗ trợ của mọi người."
+    ]
+   ],
+   [
+    [
+     "Best regards,",
+     "Trân trọng,"
+    ],
+    [
+     "Huong Le, IT Operations",
+     "Lê Hương, bộ phận Vận hành IT"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "relocate"
+   },
+   {
+    "w": "deadline",
+    "f": "deadlines"
+   },
+   {
+    "w": "back up"
+   },
+   {
+    "w": "keyboard",
+    "f": "keyboards"
+   },
+   {
+    "w": "internet"
+   },
+   {
+    "w": "run into a problem"
+   },
+   {
+    "w": "access"
+   },
+   {
+    "w": "reception"
+   },
+   {
+    "w": "let me know if you have any questions"
+   },
+   {
+    "w": "in advance"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the deadline for backing up desktop files?",
+    "o": [
+     "15 April",
+     "17 April",
+     "18 April",
+     "20 April"
+    ],
+    "a": 0,
+    "vi": "Đoạn 3: \"By Wednesday, 15 April, please back up...\". 17/4 là ngày mang laptop về, 18/4 là ngày chuyển, 20/4 là ngày đi làm ở văn phòng mới."
+   },
+   {
+    "q": "What should staff do with their laptops?",
+    "o": [
+     "Leave them on their desks for IT",
+     "Pack them in the labelled boxes",
+     "Take them home before the move weekend",
+     "Bring them to reception on Monday"
+    ],
+    "a": 2,
+    "vi": "Đoạn 3: laptop phải mang về nhà vào thứ Sáu 17/4. Thùng có nhãn dành cho màn hình, dock và bàn phím; lễ tân là nơi nhận thẻ ra vào."
+   },
+   {
+    "q": "What is suggested for staff who are on call on Saturday?",
+    "o": [
+     "Working from the new building",
+     "Using a mobile hotspot",
+     "Connecting to the VPN after 8 a.m.",
+     "Collecting a new access card early"
+    ],
+    "a": 1,
+    "vi": "Đoạn 4: người trực on-call nên dùng hotspot điện thoại vì internet và VPN ngừng từ 8 giờ sáng đến 6 giờ chiều, nên C sai."
+   },
+   {
+    "q": "What is NOT mentioned in the email?",
+    "o": [
+     "When old access cards will stop working",
+     "Where to collect new access cards",
+     "When Facilities will deliver boxes",
+     "Who will move the desktop computers"
+    ],
+    "a": 3,
+    "vi": "Email có nêu thẻ cũ hết hiệu lực lúc nửa đêm Chủ nhật, nhận thẻ mới ở lễ tân, thùng giao vào thứ Năm; nhưng không nói ai sẽ vận chuyển máy để bàn."
+   }
+  ]
+ },
+ {
+  "id": "r3-04",
+  "level": 3,
+  "type": "article",
+  "topic": "Data",
+  "title": "From nightly batch to streaming",
+  "title_vi": "Từ batch hằng đêm sang streaming",
+  "head": [],
+  "paras": [
+   [
+    [
+     "For the past three years, the analytics team at Brightwell Logistics has relied on a nightly batch job to load sales and shipment data into the company's data warehouse.",
+     "Suốt ba năm qua, nhóm phân tích tại Brightwell Logistics dựa vào một job batch chạy hằng đêm để nạp dữ liệu bán hàng và vận chuyển vào data warehouse của công ty."
+    ],
+    [
+     "The job starts at 1 a.m. and usually finishes by 6 a.m., which means managers see yesterday's numbers, not today's.",
+     "Job bắt đầu lúc 1 giờ sáng và thường xong trước 6 giờ sáng, nghĩa là các quản lý chỉ thấy số liệu của hôm qua chứ không phải hôm nay."
+    ],
+    [
+     "When the job fails, as it did eleven times last year, dashboards remain out of date until an engineer fixes it, sometimes for an entire morning.",
+     "Khi job lỗi, như đã xảy ra mười một lần năm ngoái, các dashboard vẫn chứa dữ liệu cũ cho đến khi kỹ sư sửa xong, có khi mất cả buổi sáng."
+    ]
+   ],
+   [
+    [
+     "This quarter, the data engineering team, led by Priya Raman, began replacing the batch job with a streaming pipeline that updates the warehouse every five minutes.",
+     "Quý này, nhóm data engineering do Priya Raman dẫn dắt đã bắt đầu thay job batch bằng một pipeline streaming cập nhật warehouse năm phút một lần."
+    ],
+    [
+     "The first phase, which covers shipment data only, went live on 2 September after a four-week trial with the warehouse operations team.",
+     "Giai đoạn đầu, chỉ bao gồm dữ liệu vận chuyển, đã chạy chính thức vào ngày 2 tháng 9 sau bốn tuần thử nghiệm cùng nhóm vận hành kho."
+    ],
+    [
+     "During the trial, the average delay between an event and its appearance in dashboards dropped from about 14 hours to under 6 minutes.",
+     "Trong thời gian thử nghiệm, độ trễ trung bình từ lúc một sự kiện xảy ra đến khi nó hiện trên dashboard đã giảm từ khoảng 14 giờ xuống dưới 6 phút."
+    ]
+   ],
+   [
+    [
+     "The migration has not been free of problems.",
+     "Quá trình chuyển đổi không phải không có trục trặc."
+    ],
+    [
+     "In the second week, duplicate records appeared when a message queue was restarted, and some reports showed shipment volumes 3% higher than the actual numbers.",
+     "Ở tuần thứ hai, bản ghi trùng lặp xuất hiện khi một message queue được khởi động lại, và một số báo cáo cho thấy khối lượng hàng vận chuyển cao hơn 3% so với số thực tế."
+    ],
+    [
+     "The team fixed the issue by adding a check that removes repeated events before they reach the warehouse.",
+     "Nhóm đã khắc phục bằng cách thêm một bước kiểm tra để loại bỏ các sự kiện lặp trước khi chúng vào đến warehouse."
+    ]
+   ],
+   [
+    [
+     "The second phase, covering sales orders, is planned for November, but Priya says it depends on the finance team approving the new data definitions.",
+     "Giai đoạn hai, bao gồm đơn hàng bán, được lên kế hoạch vào tháng 11, nhưng Priya cho biết điều đó còn phụ thuộc vào việc nhóm tài chính phê duyệt các định nghĩa dữ liệu mới."
+    ],
+    [
+     "Until then, sales dashboards will continue to use the nightly batch job.",
+     "Cho đến lúc đó, các dashboard bán hàng vẫn sẽ dùng job batch hằng đêm."
+    ],
+    [
+     "The old job will be fully switched off in January, as long as both phases run without major issues for a month.",
+     "Job cũ sẽ bị tắt hoàn toàn vào tháng 1, miễn là cả hai giai đoạn chạy ổn định không có sự cố lớn trong một tháng."
+    ],
+    [
+     "Teams that build their own reports on warehouse tables should contact the data engineering channel before the end of October to check whether their queries need to change.",
+     "Các nhóm tự xây báo cáo trên các bảng của warehouse nên liên hệ kênh data engineering trước cuối tháng 10 để kiểm tra xem query của mình có cần thay đổi không."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "rely on",
+    "f": "relied on"
+   },
+   {
+    "w": "shipment"
+   },
+   {
+    "w": "warehouse"
+   },
+   {
+    "w": "out of date"
+   },
+   {
+    "w": "pipeline"
+   },
+   {
+    "w": "average"
+   },
+   {
+    "w": "migration"
+   },
+   {
+    "w": "duplicate"
+   },
+   {
+    "w": "volume",
+    "f": "volumes"
+   },
+   {
+    "w": "it depends on"
+   },
+   {
+    "w": "until then"
+   },
+   {
+    "w": "as long as"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How often does the new pipeline update the warehouse?",
+    "o": [
+     "Every night at 1 a.m.",
+     "Every hour",
+     "Every six minutes",
+     "Every five minutes"
+    ],
+    "a": 3,
+    "vi": "Đoạn 2: pipeline streaming \"updates the warehouse every five minutes\". 1 giờ sáng là giờ chạy job batch cũ; 6 phút là độ trễ trung bình trong thử nghiệm."
+   },
+   {
+    "q": "What problem occurred during the migration?",
+    "o": [
+     "The trial was extended by four weeks",
+     "Some records were counted twice",
+     "The finance team rejected the data definitions",
+     "Dashboards stopped updating for a whole morning"
+    ],
+    "a": 1,
+    "vi": "Đoạn 3: bản ghi trùng lặp (duplicate records) làm số liệu cao hơn 3%. Dashboard đứng cả buổi sáng là vấn đề của job batch cũ; nhóm tài chính chưa từ chối gì cả."
+   },
+   {
+    "q": "What does the second phase depend on?",
+    "o": [
+     "The end of the trial with warehouse operations",
+     "The switch-off of the batch job",
+     "Approval of new data definitions by finance",
+     "Teams changing their queries"
+    ],
+    "a": 2,
+    "vi": "Đoạn 4: \"it depends on the finance team approving the new data definitions\". Việc tắt job batch diễn ra sau, phụ thuộc vào cả hai giai đoạn."
+   },
+   {
+    "q": "What can be inferred about teams that build their own reports?",
+    "o": [
+     "They may need to update their queries",
+     "They must stop using the warehouse in October",
+     "They will lose access to sales data in November",
+     "They caused the duplicate records"
+    ],
+    "a": 0,
+    "vi": "Câu cuối: họ nên liên hệ để kiểm tra \"whether their queries need to change\" → có thể phải sửa query. Không có thông tin họ phải ngừng dùng warehouse."
+   }
+  ]
+ },
+ {
+  "id": "r3-05",
+  "level": 3,
+  "type": "email",
+  "topic": "Finance",
+  "title": "New travel expense rules",
+  "title_vi": "Quy định mới về chi phí công tác",
+  "head": [
+   [
+    "From",
+    "Grace Oduya <grace.oduya@lumencore.ai>"
+   ],
+   [
+    "To",
+    "Engineering department"
+   ],
+   [
+    "Subject",
+    "Changes to travel expense claims from 1 June"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Dear colleagues,",
+     "Kính gửi các anh chị,"
+    ]
+   ],
+   [
+    [
+     "Following the internal audit in March, we are updating the travel expense policy, and the changes will apply to all trips that start on or after 1 June.",
+     "Sau đợt kiểm toán nội bộ hồi tháng 3, chúng tôi đang cập nhật chính sách chi phí công tác, và các thay đổi sẽ áp dụng cho mọi chuyến đi bắt đầu từ ngày 1 tháng 6 trở đi."
+    ],
+    [
+     "The audit found that nearly a quarter of claims last year were sent in more than 60 days after the trip, which made it difficult to close our monthly accounts on time.",
+     "Đợt kiểm toán phát hiện gần một phần tư số đề nghị thanh toán năm ngoái được nộp sau chuyến đi hơn 60 ngày, khiến việc khóa sổ hằng tháng đúng hạn trở nên khó khăn."
+    ]
+   ],
+   [
+    [
+     "The most important change concerns the deadline: claims must now be sent in within 30 days of your return, instead of 90.",
+     "Thay đổi quan trọng nhất liên quan đến hạn chót: đề nghị thanh toán giờ phải được nộp trong vòng 30 ngày sau khi bạn trở về, thay vì 90 ngày."
+    ],
+    [
+     "Claims received after this period will need written justification from your department head and may not be reimbursed.",
+     "Các đề nghị nhận được sau thời hạn này sẽ cần giải trình bằng văn bản từ trưởng bộ phận và có thể không được hoàn tiền."
+    ],
+    [
+     "In addition, every expense above $25 must be supported by an itemised receipt; card statements alone will no longer be accepted.",
+     "Ngoài ra, mọi khoản chi trên 25 đô la phải có hóa đơn ghi chi tiết từng mục; chỉ có sao kê thẻ sẽ không còn được chấp nhận."
+    ]
+   ],
+   [
+    [
+     "The daily meal allowance for domestic trips will rise from $40 to $45, while the allowance for international trips remains at $60.",
+     "Phụ cấp ăn uống hằng ngày cho chuyến công tác trong nước sẽ tăng từ 40 lên 45 đô la, còn phụ cấp cho chuyến đi nước ngoài vẫn giữ ở mức 60 đô la."
+    ],
+    [
+     "Hotel bookings must still be made through our travel portal, but you may now book economy-plus fares on flights longer than six hours without asking in advance.",
+     "Việc đặt khách sạn vẫn phải thực hiện qua cổng đặt chỗ công tác của công ty, nhưng giờ đây bạn có thể đặt vé hạng phổ thông đặc biệt cho chuyến bay dài hơn sáu tiếng mà không cần xin phép trước."
+    ]
+   ],
+   [
+    [
+     "To help everyone get used to the new process, the finance team will run two 30-minute online sessions on 20 and 27 May.",
+     "Để giúp mọi người làm quen với quy trình mới, nhóm tài chính sẽ tổ chức hai buổi hướng dẫn online, mỗi buổi 30 phút, vào ngày 20 và 27 tháng 5."
+    ],
+    [
+     "Attendance is not mandatory, but we strongly recommend it if you travel regularly.",
+     "Việc tham dự không bắt buộc, nhưng chúng tôi rất khuyến khích nếu bạn thường xuyên đi công tác."
+    ],
+    [
+     "If you have claims from earlier trips that are still outstanding, please send them in by 31 May so that they can be processed under the current rules.",
+     "Nếu bạn còn đề nghị thanh toán từ các chuyến đi trước chưa nộp, vui lòng nộp trước ngày 31 tháng 5 để được xử lý theo quy định hiện hành."
+    ]
+   ],
+   [
+    [
+     "Kind regards,",
+     "Trân trọng,"
+    ],
+    [
+     "Grace Oduya, Finance Manager",
+     "Grace Oduya, Trưởng phòng Tài chính"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "audit"
+   },
+   {
+    "w": "expense"
+   },
+   {
+    "w": "policy"
+   },
+   {
+    "w": "justification"
+   },
+   {
+    "w": "reimburse",
+    "f": "reimbursed"
+   },
+   {
+    "w": "in addition"
+   },
+   {
+    "w": "receipt"
+   },
+   {
+    "w": "allowance"
+   },
+   {
+    "w": "fare",
+    "f": "fares"
+   },
+   {
+    "w": "get used to"
+   },
+   {
+    "w": "mandatory"
+   },
+   {
+    "w": "outstanding"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did the internal audit find?",
+    "o": [
+     "Many claims had no receipts",
+     "Many claims were sent in late",
+     "Hotel costs were too high",
+     "The meal allowance was too low"
+    ],
+    "a": 1,
+    "vi": "Đoạn 2: gần một phần tư số đề nghị được nộp sau chuyến đi hơn 60 ngày, tức nộp muộn. Quy định về hóa đơn là thay đổi mới, không phải kết quả kiểm toán."
+   },
+   {
+    "q": "What is the new deadline for sending in a claim?",
+    "o": [
+     "Within 30 days of returning",
+     "Within 60 days of returning",
+     "Within 90 days of returning",
+     "By the end of each month"
+    ],
+    "a": 0,
+    "vi": "Đoạn 3: \"within 30 days of your return, instead of 90\". 90 ngày là quy định cũ; 60 ngày là con số trong kết quả kiểm toán."
+   },
+   {
+    "q": "What is true about the meal allowance?",
+    "o": [
+     "It will rise to $60 for international trips",
+     "It will fall for domestic trips",
+     "It will stay the same for all trips",
+     "It will increase by $5 for domestic trips"
+    ],
+    "a": 3,
+    "vi": "Đoạn 4: phụ cấp trong nước tăng từ 40 lên 45 đô la (+5); phụ cấp nước ngoài vẫn giữ ở 60 đô la chứ không phải tăng lên 60."
+   },
+   {
+    "q": "What should staff with older unpaid claims do?",
+    "o": [
+     "Attend the session on 27 May",
+     "Ask their department head for justification",
+     "Send them in by 31 May",
+     "Book through the travel portal"
+    ],
+    "a": 2,
+    "vi": "Câu cuối đoạn 5: các đề nghị còn tồn đọng (outstanding) nên được nộp trước ngày 31/5 để xử lý theo quy định hiện hành."
+   }
+  ]
+ },
+ {
+  "id": "r3-06",
+  "level": 3,
+  "type": "report",
+  "topic": "Data",
+  "title": "Ticket routing model evaluation",
+  "title_vi": "Đánh giá model phân loại ticket",
+  "head": [],
+  "paras": [
+   [
+    [
+     "This report compares two models for automatically routing customer support tickets at Tellora Cloud: the current production model (v2) and a new fine-tuned model (v3).",
+     "Báo cáo này so sánh hai model tự động phân loại ticket hỗ trợ khách hàng tại Tellora Cloud: model đang chạy production (v2) và một model fine-tune mới (v3)."
+    ],
+    [
+     "Both models were tested on a held-out set of 4,200 tickets collected between January and March and labelled by the support team.",
+     "Cả hai model được kiểm thử trên một tập held-out gồm 4.200 ticket thu thập từ tháng 1 đến tháng 3 và được nhóm hỗ trợ gán nhãn."
+    ]
+   ],
+   [
+    [
+     "Overall, v3 routed 91.4% of tickets to the correct queue, compared with 86.7% for v2.",
+     "Nhìn chung, v3 chuyển đúng hàng đợi 91,4% số ticket, so với 86,7% của v2."
+    ],
+    [
+     "The largest improvement was in the billing category, where accuracy rose from 78% to 90%, mainly because v3 was trained on more examples of refund requests.",
+     "Mức cải thiện lớn nhất nằm ở nhóm thanh toán, nơi độ chính xác tăng từ 78% lên 90%, chủ yếu vì v3 được train trên nhiều ví dụ yêu cầu hoàn tiền hơn."
+    ],
+    [
+     "However, v3 performed slightly worse on tickets written in languages other than English, scoring 82% against 84% for v2.",
+     "Tuy nhiên, v3 làm kém hơn một chút với các ticket viết bằng ngôn ngữ khác tiếng Anh, đạt 82% so với 84% của v2."
+    ],
+    [
+     "Average response time also increased from 120 to 190 milliseconds per ticket, which is still well below the 300-millisecond limit agreed with the support platform team.",
+     "Thời gian phản hồi trung bình cũng tăng từ 120 lên 190 mili giây mỗi ticket, nhưng vẫn thấp hơn nhiều so với giới hạn 300 mili giây đã thống nhất với nhóm support platform."
+    ]
+   ],
+   [
+    [
+     "We also reviewed 200 tickets that v3 misrouted.",
+     "Chúng tôi cũng xem xét 200 ticket mà v3 phân loại sai."
+    ],
+    [
+     "About 40% of these were vague messages, such as \"it doesn't work\", which even human agents found hard to classify.",
+     "Khoảng 40% trong số đó là các tin nhắn mơ hồ, kiểu như \"nó không chạy\", mà ngay cả nhân viên hỗ trợ cũng thấy khó phân loại."
+    ],
+    [
+     "A further 25% came from customers who raised two separate problems in one ticket.",
+     "25% khác đến từ những khách hàng nêu hai vấn đề riêng biệt trong cùng một ticket."
+    ]
+   ],
+   [
+    [
+     "We recommend rolling out v3 step by step rather than replacing v2 at once.",
+     "Chúng tôi đề xuất triển khai v3 từng bước thay vì thay thế v2 ngay lập tức."
+    ],
+    [
+     "From 6 May, v3 will handle 20% of English tickets, and the share will increase to 100% by 3 June if the misrouting rate stays below 10%.",
+     "Từ ngày 6 tháng 5, v3 sẽ xử lý 20% ticket tiếng Anh, và tỷ lệ này sẽ tăng lên 100% trước ngày 3 tháng 6 nếu tỷ lệ phân loại sai duy trì dưới 10%."
+    ],
+    [
+     "Non-English tickets will continue to go to v2 until more training data is collected.",
+     "Ticket không phải tiếng Anh sẽ tiếp tục được chuyển cho v2 cho đến khi thu thập thêm dữ liệu train."
+    ],
+    [
+     "Jae-won Kim will monitor the results weekly and share them with the support managers, and the final decision will be made at the review meeting on 4 June.",
+     "Jae-won Kim sẽ theo dõi kết quả hằng tuần và chia sẻ với các quản lý bộ phận hỗ trợ, còn quyết định cuối cùng sẽ được đưa ra tại cuộc họp đánh giá ngày 4 tháng 6."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "customer"
+   },
+   {
+    "w": "overall"
+   },
+   {
+    "w": "improvement"
+   },
+   {
+    "w": "accuracy"
+   },
+   {
+    "w": "refund"
+   },
+   {
+    "w": "response"
+   },
+   {
+    "w": "limit"
+   },
+   {
+    "w": "recommend"
+   },
+   {
+    "w": "roll out",
+    "f": "rolling out"
+   },
+   {
+    "w": "rather than"
+   },
+   {
+    "w": "share"
+   },
+   {
+    "w": "monitor"
+   }
+  ],
+  "questions": [
+   {
+    "q": "In which category did v3 improve the most?",
+    "o": [
+     "Non-English tickets",
+     "Vague messages",
+     "Billing",
+     "Tickets with two problems"
+    ],
+    "a": 2,
+    "vi": "Đoạn 2: \"The largest improvement was in the billing category\" (78% → 90%). Với ticket không phải tiếng Anh, v3 còn kém hơn v2."
+   },
+   {
+    "q": "What is true about v3's response time?",
+    "o": [
+     "It is faster than v2",
+     "It is above the agreed limit",
+     "It is the same as v2",
+     "It is slower than v2 but within the limit"
+    ],
+    "a": 3,
+    "vi": "Đoạn 2: thời gian phản hồi tăng từ 120 lên 190 ms (chậm hơn v2) nhưng vẫn dưới giới hạn 300 ms."
+   },
+   {
+    "q": "What condition must be met for v3 to handle all English tickets by 3 June?",
+    "o": [
+     "The misrouting rate must stay below 10%",
+     "Accuracy must reach 95%",
+     "More non-English data must be collected",
+     "Support managers must approve the results"
+    ],
+    "a": 0,
+    "vi": "Đoạn 4: tăng lên 100% \"if the misrouting rate stays below 10%\". Việc thu thập thêm dữ liệu chỉ liên quan đến ticket không phải tiếng Anh."
+   },
+   {
+    "q": "The word \"vague\" in paragraph 3, line 2, is closest in meaning to",
+    "o": [
+     "rude",
+     "unclear",
+     "short",
+     "urgent"
+    ],
+    "a": 1,
+    "vi": "\"Vague\" = mơ hồ, không rõ ràng; ví dụ \"it doesn't work\" không nói rõ cái gì hỏng nên khó phân loại."
+   }
+  ]
+ },
+ {
+  "id": "r3-07",
+  "level": 3,
+  "type": "minutes",
+  "topic": "IT",
+  "title": "Login outage post-mortem",
+  "title_vi": "Họp rút kinh nghiệm sự cố đăng nhập",
+  "head": [
+   [
+    "Meeting",
+    "Post-incident review: login outage on 12 August"
+   ],
+   [
+    "Date",
+    "Thursday, 14 August"
+   ],
+   [
+    "Attendees",
+    "Karim Aziz (SRE lead, chair), Mai Pham (backend), Lucas Ferreira (security), Nadia Brooks (customer support)"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Karim summarised the incident: from 09:40 to 11:05 on Tuesday, about 30% of users could not log in to the Fennix web app, while the mobile app was not affected.",
+     "Karim tóm tắt sự cố: từ 9:40 đến 11:05 sáng thứ Ba, khoảng 30% người dùng không đăng nhập được vào web app Fennix, trong khi app mobile không bị ảnh hưởng."
+    ],
+    [
+     "The outage lasted 85 minutes and generated 640 support tickets, the highest number in a single day this year.",
+     "Sự cố kéo dài 85 phút và tạo ra 640 ticket hỗ trợ, con số cao nhất trong một ngày tính từ đầu năm."
+    ]
+   ],
+   [
+    [
+     "Mai explained that the root cause was an expired TLS certificate on one of the three authentication servers.",
+     "Mai giải thích rằng nguyên nhân gốc rễ là một chứng chỉ TLS đã hết hạn trên một trong ba server xác thực."
+    ],
+    [
+     "The certificate should have been renewed automatically, but the renewal script had been failing silently since a configuration change in June.",
+     "Lẽ ra chứng chỉ phải được gia hạn tự động, nhưng script gia hạn đã âm thầm bị lỗi kể từ một lần thay đổi cấu hình hồi tháng 6."
+    ],
+    [
+     "Because the load balancer still sent traffic to the broken server, roughly one in three login attempts failed.",
+     "Vì load balancer vẫn chuyển traffic tới server bị lỗi, cứ khoảng ba lượt đăng nhập thì có một lượt thất bại."
+    ]
+   ],
+   [
+    [
+     "The team agreed that detection was too slow: the first alert came from customer support, not from monitoring, about 25 minutes after the problem began.",
+     "Cả nhóm thống nhất rằng việc phát hiện quá chậm: cảnh báo đầu tiên đến từ bộ phận hỗ trợ khách hàng chứ không phải từ hệ thống monitoring, khoảng 25 phút sau khi sự cố bắt đầu."
+    ],
+    [
+     "Lucas pointed out that certificates on other internal services may have the same issue and proposed an audit of all certificates by the end of the month.",
+     "Lucas chỉ ra rằng chứng chỉ trên các dịch vụ nội bộ khác có thể gặp vấn đề tương tự và đề xuất kiểm tra toàn bộ chứng chỉ trước cuối tháng."
+    ],
+    [
+     "Nadia asked for a status page update within 15 minutes of any future incident, since customers were left without information for almost an hour.",
+     "Nadia đề nghị cập nhật trang trạng thái trong vòng 15 phút mỗi khi có sự cố trong tương lai, vì khách hàng đã không nhận được thông tin gì trong gần một giờ."
+    ]
+   ],
+   [
+    [
+     "Action items: Mai to fix the renewal script and add an alert for failures by 21 August; Lucas to complete the certificate audit by 31 August; Karim to add a health check so that the load balancer removes failing servers automatically; Nadia to prepare a status page template.",
+     "Đầu việc cần làm: Mai sửa script gia hạn và thêm cảnh báo khi lỗi trước ngày 21 tháng 8; Lucas hoàn thành đợt kiểm tra chứng chỉ trước ngày 31 tháng 8; Karim thêm health check để load balancer tự động loại các server lỗi; Nadia chuẩn bị mẫu thông báo cho trang trạng thái."
+    ],
+    [
+     "Karim will share the written post-mortem with the engineering department by Monday.",
+     "Karim sẽ gửi bản post-mortem cho phòng kỹ thuật trước thứ Hai."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "affect",
+    "f": "affected"
+   },
+   {
+    "w": "outage"
+   },
+   {
+    "w": "the root cause"
+   },
+   {
+    "w": "certificate"
+   },
+   {
+    "w": "should have"
+   },
+   {
+    "w": "renew",
+    "f": "renewed"
+   },
+   {
+    "w": "renewal"
+   },
+   {
+    "w": "detection"
+   },
+   {
+    "w": "point out",
+    "f": "pointed out"
+   },
+   {
+    "w": "propose",
+    "f": "proposed"
+   },
+   {
+    "w": "status"
+   },
+   {
+    "w": "template"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What caused the outage?",
+    "o": [
+     "An expired certificate on an authentication server",
+     "A failure in the mobile app",
+     "A security attack on the load balancer",
+     "A shortage of support staff"
+    ],
+    "a": 0,
+    "vi": "Đoạn 2: \"the root cause was an expired TLS certificate\" trên một server xác thực. App mobile không bị ảnh hưởng; không có tấn công nào được nhắc đến."
+   },
+   {
+    "q": "How did the team first learn about the problem?",
+    "o": [
+     "Through an automatic monitoring alert",
+     "Through reports from customer support",
+     "Through the status page",
+     "Through a message from the security team"
+    ],
+    "a": 1,
+    "vi": "Đoạn 3: \"the first alert came from customer support, not from monitoring\". Đây chính là lý do nhóm cho rằng việc phát hiện quá chậm."
+   },
+   {
+    "q": "Who will check the certificates on other services?",
+    "o": [
+     "Karim",
+     "Mai",
+     "Lucas",
+     "Nadia"
+    ],
+    "a": 2,
+    "vi": "Lucas đề xuất và được giao hoàn thành \"the certificate audit by 31 August\". Mai chỉ sửa script gia hạn."
+   },
+   {
+    "q": "What can be inferred about the renewal script?",
+    "o": [
+     "It was written in August",
+     "It was removed after the incident",
+     "It caused the configuration change in June",
+     "It had not worked for about two months before the outage"
+    ],
+    "a": 3,
+    "vi": "Đoạn 2: script lỗi âm thầm \"since a configuration change in June\", còn sự cố xảy ra ngày 12/8 → đã hỏng khoảng hai tháng. Thay đổi cấu hình gây lỗi cho script, chứ không phải ngược lại."
+   }
+  ]
+ },
+ {
+  "id": "r3-08",
+  "level": 3,
+  "type": "email",
+  "topic": "Product",
+  "title": "Extra features for Phase 2",
+  "title_vi": "Tính năng bổ sung cho Giai đoạn 2",
+  "head": [
+   [
+    "From",
+    "Daniel Moreau <daniel.moreau@quillbyte.com>"
+   ],
+   [
+    "To",
+    "Ana Ruiz <ana.ruiz@harborlane.co>"
+   ],
+   [
+    "Cc",
+    "Linh Vo (engineering lead)"
+   ],
+   [
+    "Subject",
+    "Re: Additional reporting features for Phase 2"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Dear Ana,",
+     "Chào chị Ana,"
+    ]
+   ],
+   [
+    [
+     "Thank you for sending over the list of reporting features your team would like to add to Phase 2 of the inventory platform.",
+     "Cảm ơn chị đã gửi danh sách các tính năng báo cáo mà nhóm chị muốn bổ sung vào Giai đoạn 2 của nền tảng quản lý hàng tồn kho."
+    ],
+    [
+     "Linh and I went through the requests with our engineers on Monday, and I would like to explain what we can deliver and when.",
+     "Linh và tôi đã cùng các kỹ sư rà soát các yêu cầu vào thứ Hai, và tôi muốn giải thích những gì chúng tôi có thể bàn giao cũng như thời điểm bàn giao."
+    ]
+   ],
+   [
+    [
+     "Of the five items on your list, three can be included without changing the current deadline of 30 September: the export to Excel, the weekly summary email, and the extra filters on the stock report.",
+     "Trong năm hạng mục chị đưa ra, có ba hạng mục có thể đưa vào mà không thay đổi hạn chót hiện tại là 30 tháng 9: xuất ra Excel, email tóm tắt hằng tuần và các bộ lọc bổ sung cho báo cáo tồn kho."
+    ],
+    [
+     "The other two, a forecasting dashboard and integration with your accounting software, are out of scope for the original agreement.",
+     "Hai hạng mục còn lại, gồm dashboard dự báo và tích hợp với phần mềm kế toán của bên chị, nằm ngoài phạm vi của thỏa thuận ban đầu."
+    ],
+    [
+     "Our rough estimate is that they would require an additional six weeks of work and cost around $18,500.",
+     "Theo ước tính sơ bộ của chúng tôi, hai hạng mục này cần thêm sáu tuần làm việc và chi phí khoảng 18.500 đô la."
+    ]
+   ],
+   [
+    [
+     "We can offer two options.",
+     "Chúng tôi có thể đưa ra hai phương án."
+    ],
+    [
+     "First, we could add both items to Phase 2, which would move the delivery date to mid-November.",
+     "Thứ nhất, chúng tôi có thể thêm cả hai hạng mục vào Giai đoạn 2, khi đó ngày bàn giao sẽ lùi đến giữa tháng 11."
+    ],
+    [
+     "Second, we could keep the September deadline and deliver the two items as a separate Phase 3, starting in October.",
+     "Thứ hai, chúng tôi có thể giữ hạn chót tháng 9 và bàn giao hai hạng mục đó trong một Giai đoạn 3 riêng, bắt đầu từ tháng 10."
+    ],
+    [
+     "We recommend the second option, because your warehouse teams have said they need the current features before the busy season begins.",
+     "Chúng tôi đề xuất phương án thứ hai, vì các nhóm kho của bên chị đã cho biết họ cần các tính năng hiện tại trước khi mùa cao điểm bắt đầu."
+    ]
+   ],
+   [
+    [
+     "Could you let me know which option you prefer by Friday, 8 August?",
+     "Chị có thể cho tôi biết chị chọn phương án nào trước thứ Sáu, ngày 8 tháng 8 được không?"
+    ],
+    [
+     "Once we have your decision, I will send a revised quotation and an updated timeline.",
+     "Khi nhận được quyết định của chị, tôi sẽ gửi báo giá điều chỉnh và timeline cập nhật."
+    ],
+    [
+     "If it would help, Linh and I are happy to jump on a call early next week to go over the details.",
+     "Nếu cần, Linh và tôi sẵn sàng gọi nhanh vào đầu tuần sau để cùng xem qua chi tiết."
+    ]
+   ],
+   [
+    [
+     "Best regards,",
+     "Trân trọng,"
+    ],
+    [
+     "Daniel Moreau, Account Manager, Quillbyte",
+     "Daniel Moreau, Quản lý khách hàng, Quillbyte"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "inventory"
+   },
+   {
+    "w": "go through",
+    "f": "went through"
+   },
+   {
+    "w": "deadline"
+   },
+   {
+    "w": "integration"
+   },
+   {
+    "w": "out of scope"
+   },
+   {
+    "w": "rough estimate"
+   },
+   {
+    "w": "require"
+   },
+   {
+    "w": "option",
+    "f": "options"
+   },
+   {
+    "w": "quotation"
+   },
+   {
+    "w": "timeline"
+   },
+   {
+    "w": "jump on a call"
+   },
+   {
+    "w": "early next week"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many of the client's requests can be delivered by 30 September?",
+    "o": [
+     "One",
+     "Five",
+     "Two",
+     "Three"
+    ],
+    "a": 3,
+    "vi": "Đoạn 3: \"Of the five items on your list, three can be included\" mà không đổi hạn 30/9. Hai hạng mục còn lại nằm ngoài phạm vi."
+   },
+   {
+    "q": "What is the estimated cost of the two extra items?",
+    "o": [
+     "$6,000",
+     "$8,500",
+     "$18,500",
+     "$30,000"
+    ],
+    "a": 2,
+    "vi": "Đoạn 3: ước tính sơ bộ \"cost around $18,500\" và cần thêm sáu tuần (con số 6 là số tuần, không phải tiền)."
+   },
+   {
+    "q": "Why does Daniel recommend the second option?",
+    "o": [
+     "It is cheaper than the first option",
+     "The client's warehouse teams need the current features soon",
+     "His engineers are busy in November",
+     "The accounting software is not ready"
+    ],
+    "a": 1,
+    "vi": "Đoạn 4: \"because your warehouse teams have said they need the current features before the busy season begins\". Email không so sánh giá giữa hai phương án."
+   },
+   {
+    "q": "What will Daniel do after receiving Ana's decision?",
+    "o": [
+     "Send a revised quotation and timeline",
+     "Start work on Phase 3 immediately",
+     "Cancel the forecasting dashboard",
+     "Hire additional engineers"
+    ],
+    "a": 0,
+    "vi": "Đoạn 5: \"Once we have your decision, I will send a revised quotation and an updated timeline.\""
+   }
+  ]
+ },
+ {
+  "id": "r3-09",
+  "level": 3,
+  "type": "article",
+  "topic": "Finance",
+  "title": "A smarter labelling contract",
+  "title_vi": "Hợp đồng gán nhãn dữ liệu hiệu quả hơn",
+  "head": [],
+  "paras": [
+   [
+    [
+     "When Orvia Health's machine-learning team signed its first data-labelling contract in 2023, it paid a fixed monthly fee of $42,000, no matter how many images were actually labelled.",
+     "Khi nhóm machine learning của Orvia Health ký hợp đồng gán nhãn dữ liệu đầu tiên vào năm 2023, họ trả một khoản phí cố định 42.000 đô la mỗi tháng, bất kể thực tế có bao nhiêu ảnh được gán nhãn."
+    ],
+    [
+     "By early this year, the team was using only about 60% of the agreed volume, which meant it was effectively paying for work it never received.",
+     "Đến đầu năm nay, nhóm chỉ dùng khoảng 60% khối lượng đã thỏa thuận, nghĩa là trên thực tế họ đang trả tiền cho phần việc mình không hề nhận."
+    ]
+   ],
+   [
+    [
+     "In February, procurement manager Hana Petrov and ML lead Victor Osei began talks on a new agreement with the vendor, Clearmark Data.",
+     "Vào tháng 2, trưởng phòng mua sắm Hana Petrov và trưởng nhóm ML Victor Osei bắt đầu đàm phán một thỏa thuận mới với nhà cung cấp Clearmark Data."
+    ],
+    [
+     "Instead of a fixed fee, the new contract, which started on 1 May, charges $0.38 per labelled image, with a minimum monthly spend of $15,000.",
+     "Thay vì phí cố định, hợp đồng mới có hiệu lực từ ngày 1 tháng 5 tính 0,38 đô la cho mỗi ảnh được gán nhãn, với mức chi tối thiểu 15.000 đô la mỗi tháng."
+    ],
+    [
+     "Clearmark also agreed to a stricter quality standard: if more than 3% of a batch fails review, the vendor must relabel the batch at no cost within five working days.",
+     "Clearmark cũng đồng ý với tiêu chuẩn chất lượng khắt khe hơn: nếu hơn 3% một lô không đạt khi kiểm duyệt, nhà cung cấp phải gán nhãn lại cả lô miễn phí trong vòng năm ngày làm việc."
+    ]
+   ],
+   [
+    [
+     "The results after the first quarter are promising.",
+     "Kết quả sau quý đầu tiên khá khả quan."
+    ],
+    [
+     "Monthly labelling costs have averaged $27,600, a reduction of more than a third, while the error rate has fallen from 4.8% to 2.1%.",
+     "Chi phí gán nhãn hằng tháng trung bình ở mức 27.600 đô la, giảm hơn một phần ba, trong khi tỷ lệ lỗi giảm từ 4,8% xuống 2,1%."
+    ],
+    [
+     "Victor says the lower error rate has saved his engineers roughly ten hours a week that they used to spend cleaning up labels.",
+     "Victor cho biết tỷ lệ lỗi thấp hơn đã giúp các kỹ sư của anh tiết kiệm khoảng mười giờ mỗi tuần mà trước đây họ phải dành để làm sạch nhãn."
+    ]
+   ],
+   [
+    [
+     "There are trade-offs, however.",
+     "Tuy nhiên, cũng có những đánh đổi."
+    ],
+    [
+     "Urgent requests now carry a 20% extra charge, and the team must give two weeks' notice before any month in which it expects volume to double.",
+     "Các yêu cầu gấp giờ bị tính thêm 20% phí, và nhóm phải báo trước hai tuần trước bất kỳ tháng nào dự kiến khối lượng tăng gấp đôi."
+    ],
+    [
+     "Hana's team will review the contract again in November, before the renewal date in January, and is considering adding a second vendor to reduce the company's dependence on Clearmark.",
+     "Nhóm của Hana sẽ xem xét lại hợp đồng vào tháng 11, trước ngày gia hạn vào tháng 1, và đang cân nhắc bổ sung nhà cung cấp thứ hai để giảm sự phụ thuộc của công ty vào Clearmark."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "contract"
+   },
+   {
+    "w": "fee"
+   },
+   {
+    "w": "volume"
+   },
+   {
+    "w": "procurement"
+   },
+   {
+    "w": "vendor"
+   },
+   {
+    "w": "instead of"
+   },
+   {
+    "w": "used to"
+   },
+   {
+    "w": "clean up",
+    "f": "cleaning up"
+   },
+   {
+    "w": "trade-off",
+    "f": "trade-offs"
+   },
+   {
+    "w": "notice"
+   },
+   {
+    "w": "renewal"
+   },
+   {
+    "w": "dependence"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What was the main problem with the original contract?",
+    "o": [
+     "The quality of the labels was too low",
+     "The team paid for more volume than it used",
+     "The vendor often missed deadlines",
+     "The fee rose every month"
+    ],
+    "a": 1,
+    "vi": "Đoạn 1: phí cố định 42.000 đô la nhưng chỉ dùng khoảng 60% khối lượng → \"paying for work it never received\"."
+   },
+   {
+    "q": "What happens if more than 3% of a batch fails review?",
+    "o": [
+     "The vendor pays a 20% penalty",
+     "The contract is ended",
+     "The team must give two weeks' notice",
+     "The vendor relabels the batch at no cost"
+    ],
+    "a": 3,
+    "vi": "Đoạn 2: nhà cung cấp phải \"relabel the batch at no cost within five working days\". 20% là phụ phí cho yêu cầu gấp; báo trước hai tuần là khi khối lượng tăng gấp đôi."
+   },
+   {
+    "q": "On average, how much has the team spent on labelling per month under the new contract?",
+    "o": [
+     "$15,000",
+     "$42,000",
+     "$27,600",
+     "$38,000"
+    ],
+    "a": 2,
+    "vi": "Đoạn 3: \"Monthly labelling costs have averaged $27,600\". 15.000 là mức chi tối thiểu, 42.000 là phí cố định của hợp đồng cũ."
+   },
+   {
+    "q": "What is the team considering for the future?",
+    "o": [
+     "Adding a second labelling vendor",
+     "Returning to a fixed monthly fee",
+     "Ending the contract in November",
+     "Removing the minimum monthly spend"
+    ],
+    "a": 0,
+    "vi": "Câu cuối: đang cân nhắc \"adding a second vendor to reduce the company's dependence on Clearmark\". Tháng 11 chỉ là lúc xem xét lại hợp đồng, không phải chấm dứt."
+   }
+  ]
+ },
+ {
+  "id": "r3-10",
+  "level": 3,
+  "type": "report",
+  "topic": "Product",
+  "title": "Notewise beta results",
+  "title_vi": "Kết quả bản beta Notewise",
+  "head": [],
+  "paras": [
+   [
+    [
+     "This report summarises the results of the six-week closed beta of Notewise, the AI meeting-notes assistant developed by Pelican Labs.",
+     "Báo cáo này tóm tắt kết quả sáu tuần beta kín của Notewise, trợ lý ghi chú cuộc họp bằng AI do Pelican Labs phát triển."
+    ],
+    [
+     "The beta ran from 2 June to 13 July and involved 350 users from 28 customer companies, selected by the sales team.",
+     "Bản beta diễn ra từ ngày 2 tháng 6 đến 13 tháng 7 với 350 người dùng đến từ 28 công ty khách hàng do nhóm sales lựa chọn."
+    ]
+   ],
+   [
+    [
+     "Engagement was higher than we expected.",
+     "Mức độ sử dụng cao hơn chúng tôi kỳ vọng."
+    ],
+    [
+     "On average, users ran Notewise in 4.6 meetings per week, against a target of 3, and 71% were still active in the final week.",
+     "Trung bình, người dùng chạy Notewise trong 4,6 cuộc họp mỗi tuần, so với mục tiêu là 3, và 71% vẫn còn hoạt động trong tuần cuối cùng."
+    ],
+    [
+     "In the closing questionnaire, 64% said they would be prepared to pay for the product, although most preferred a team plan to an individual subscription.",
+     "Trong bảng khảo sát cuối kỳ, 64% cho biết họ sẵn sàng trả tiền cho sản phẩm, dù phần lớn thích gói theo nhóm hơn là gói đăng ký cá nhân."
+    ]
+   ],
+   [
+    [
+     "The feedback also revealed two serious problems.",
+     "Phản hồi cũng cho thấy hai vấn đề nghiêm trọng."
+    ],
+    [
+     "First, summaries of meetings longer than 45 minutes often missed decisions made near the end, an issue mentioned by almost half of the respondents.",
+     "Thứ nhất, bản tóm tắt của các cuộc họp dài hơn 45 phút thường bỏ sót những quyết định được đưa ra gần cuối, vấn đề được gần một nửa số người trả lời nhắc tới."
+    ],
+    [
+     "Second, several administrators complained that they could not control where recordings were stored, which is a deal breaker for companies in strictly controlled industries such as banking.",
+     "Thứ hai, một số quản trị viên phàn nàn rằng họ không thể kiểm soát nơi lưu trữ bản ghi âm, đây là yếu tố khiến các công ty trong những ngành bị quản lý chặt như ngân hàng từ chối sản phẩm."
+    ]
+   ],
+   [
+    [
+     "Based on these findings, the product team has changed the launch plan.",
+     "Dựa trên những phát hiện này, nhóm sản phẩm đã thay đổi kế hoạch ra mắt."
+    ],
+    [
+     "The public launch, previously set for 1 September, has been pushed back to 6 October so that engineers can improve the handling of long meetings.",
+     "Đợt ra mắt công khai, trước đây dự kiến vào ngày 1 tháng 9, đã được lùi sang ngày 6 tháng 10 để kỹ sư có thể cải thiện khả năng xử lý các cuộc họp dài."
+    ],
+    [
+     "Storage settings for administrators have been moved forward from the Q4 plan and will be included at launch.",
+     "Phần cài đặt lưu trữ dành cho quản trị viên đã được đưa lên sớm hơn so với kế hoạch quý 4 và sẽ có mặt ngay khi ra mắt."
+    ]
+   ],
+   [
+    [
+     "Pricing will be decided by the end of August, when Carmen Diaz from the finance team will present three options to the leadership group.",
+     "Giá bán sẽ được quyết định trước cuối tháng 8, khi Carmen Diaz bên tài chính trình bày ba phương án cho ban lãnh đạo."
+    ],
+    [
+     "In the meantime, beta users will keep free access until the launch date and will receive 30% off their first year.",
+     "Trong thời gian chờ đợi, người dùng beta vẫn được dùng miễn phí đến ngày ra mắt và sẽ được giảm 30% cho năm đầu tiên."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "customer"
+   },
+   {
+    "w": "engagement"
+   },
+   {
+    "w": "target"
+   },
+   {
+    "w": "subscription"
+   },
+   {
+    "w": "feedback"
+   },
+   {
+    "w": "respondent",
+    "f": "respondents"
+   },
+   {
+    "w": "administrator",
+    "f": "administrators"
+   },
+   {
+    "w": "deal breaker"
+   },
+   {
+    "w": "launch"
+   },
+   {
+    "w": "push back",
+    "f": "pushed back"
+   },
+   {
+    "w": "in the meantime"
+   },
+   {
+    "w": "access"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How did actual usage compare with the target?",
+    "o": [
+     "It was lower than the target",
+     "It matched the target exactly",
+     "It was higher than the target",
+     "It was not measured"
+    ],
+    "a": 2,
+    "vi": "Đoạn 2: trung bình 4,6 cuộc họp/tuần so với mục tiêu 3 → cao hơn mục tiêu; câu mở đầu cũng nói \"Engagement was higher than we expected\"."
+   },
+   {
+    "q": "Why was the public launch delayed?",
+    "o": [
+     "To improve summaries of long meetings",
+     "To finish the pricing options",
+     "To add more beta customers",
+     "To build storage settings for banks"
+    ],
+    "a": 0,
+    "vi": "Đoạn 4: lùi sang 6/10 \"so that engineers can improve the handling of long meetings\". Cài đặt lưu trữ được đưa lên sớm nhưng không phải lý do lùi ngày."
+   },
+   {
+    "q": "When will the pricing be decided?",
+    "o": [
+     "By 1 September",
+     "By the end of August",
+     "By 6 October",
+     "By 13 July"
+    ],
+    "a": 1,
+    "vi": "Đoạn 5: \"Pricing will be decided by the end of August\". 1/9 là ngày ra mắt cũ, 6/10 là ngày ra mắt mới, 13/7 là ngày kết thúc beta."
+   },
+   {
+    "q": "The phrase \"deal breaker\" in paragraph 3, line 3, is closest in meaning to",
+    "o": [
+     "a sales opportunity",
+     "a legal contract",
+     "a minor inconvenience",
+     "a reason to reject an agreement"
+    ],
+    "a": 3,
+    "vi": "\"Deal breaker\" = yếu tố khiến một bên từ chối thỏa thuận/không mua; với ngân hàng, không kiểm soát được nơi lưu dữ liệu là lý do để không dùng sản phẩm."
+   }
+  ]
+ }
+]

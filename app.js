@@ -13,9 +13,10 @@ const ICON = {
   dict:'<path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/>',
   pron:'<path d="M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>',
   prog:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  read:'<path d="M3 5.5C5.5 4 9 4 12 6c3-2 6.5-2 9-.5V19c-2.5-1.5-6-1.5-9 .5-3-2-6.5-2-9-.5z"/><path d="M12 6v13.5"/>',
   listen:'<path d="M6 8.5a6 6 0 0 1 12 0c0 3.5-3.5 4.5-3.5 7.5a3 3 0 0 1-5.5 1.6"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0"/>'
 };
-const TABS = [["today","Hôm nay"],["cards","Thẻ từ"],["listen","Luyện nghe"],["dict","Nghe chép"],["pron","Phát âm"],["prog","Tiến độ"]];
+const TABS = [["today","Hôm nay"],["cards","Thẻ từ"],["listen","Luyện nghe"],["read","Luyện đọc"],["dict","Nghe chép"],["pron","Phát âm"],["prog","Tiến độ"]];
 
 /* ---------- state: every record carries a timestamp t, merged per key (newest wins) ---------- */
 const load = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) || d; } catch (e) { return d; } };
@@ -581,7 +582,114 @@ function bindListen(on){
   on("[data-at]", li => li.onclick = () => { if (a){ a.currentTime = +li.dataset.at; a.play().catch(() => {}); } });
 }
 
-const VIEWS = {today:vToday, cards:vCards, listen:vListen, dict:vDict, pron:vPron, prog:vProg};
+/* ---------- reading practice: emails, reports, memos at 3 levels, every sentence translated, deck words highlighted ---------- */
+let RD = null, rLoading = false, rlv = 0, rcur = null, rans = {}, rsub = false, rbi = false, rOpen = new Set();
+const RTYPE = {email:"Email", report:"Báo cáo", memo:"Memo", notice:"Thông báo", chat:"Tin nhắn", minutes:"Biên bản họp", article:"Bài viết", job:"Tin tuyển dụng", review:"Đánh giá"};
+const rrec = id => get("r:" + id) || {};
+function loadR(){
+  if (RD || rLoading) return; rLoading = true;
+  const s = document.createElement("script"); s.src = "reading.js";
+  s.onload = () => { RD = window.RD; render(); };
+  s.onerror = () => { rLoading = false; const el = $("#rload"); if (el) el.textContent = "Chưa tải được bài đọc. Kiểm tra mạng rồi mở lại tab."; };
+  document.head.appendChild(s);
+}
+function vRead(){
+  if (!RD){ loadR(); return `<div class="card"><p class="mute" id="rload">Đang tải bài đọc…</p></div>`; }
+  if (rcur) return vPassage(RD.find(x => x.id === rcur));
+  const done = RD.filter(x => rrec(x.id).best != null);
+  const pts = done.reduce((a, x) => a + rrec(x.id).best, 0), tot = done.reduce((a, x) => a + x.questions.length, 0);
+  const list = RD.filter(x => !rlv || x.level === rlv);
+  return `<div class="card">
+    <div class="seg" role="group" aria-label="Độ khó">${[[0, "Tất cả"], [1, "Dễ"], [2, "Trung bình"], [3, "Khó"]].map(([k, l]) => `<button data-rlv="${k}" aria-pressed="${rlv === k}">${l}</button>`).join("")}</div>
+    <p class="mute">Đã làm <b>${done.length}</b>/${RD.length} bài${done.length ? ` · đúng ${pts}/${tot} câu (${Math.round(pts / tot * 100)}%) ở lần tốt nhất` : ""}. Đọc bằng tiếng Anh trước, bấm vào câu khó để xem nghĩa, bấm vào từ tô màu để ôn từ vựng.</p>
+  </div>
+  <div class="card"><div class="wl">${list.map(x => { const r = rrec(x.id), n = x.questions.length; return `<button class="li" data-rd="${x.id}">
+    <span class="num">${x.id.slice(3)}</span>
+    <span class="t"><b>${esc(x.title)}</b><small>${esc(x.title_vi)} · ${RTYPE[x.type] || x.type} · ${x.words} từ · <span class="tag ${LLVC[x.level]}">${LLV[x.level]}</span></small></span>
+    <span class="sc ${r.best == null ? "" : r.best === n ? "k" : r.best >= n - 1 ? "l" : "n"}">${r.best == null ? "" : r.best + "/" + n}</span></button>`; }).join("")}</div></div>`;
+}
+// Wrap each deck word in the (already escaped) sentence with a tappable mark.
+function rMark(html, x){
+  const forms = x.vocab.map((v, i) => [v.f, i]).sort((a, b) => b[0].length - a[0].length);
+  const re = new RegExp("(?<![A-Za-z])(" + forms.map(f => esc(f[0]).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")(?![A-Za-z])", "gi");
+  return html.replace(re, m => { const f = forms.find(f => esc(f[0]).toLowerCase() === m.toLowerCase()); return `<button class="vw ${vst(x.vocab[f[1]].w) === "k" ? "k" : ""}" data-rw="${f[1]}">${m}</button>`; });
+}
+function vPassage(x){
+  const r = rrec(x.id), n = x.questions.length, all = x.questions.every((_, i) => rans[i] != null);
+  const got = rsub ? x.questions.filter((q, i) => rans[i] === q.a).length : 0;
+  let si = 0;
+  const body = x.paras.map(p => `<p>${p.map(([en, vi]) => { const k = si++, open = rbi || rOpen.has(k);
+    return `<span class="rs ${open ? "open" : ""}" data-rs="${k}">${rMark(esc(en), x)}</span>${open ? `<span class="rvi">${esc(vi)}</span>` : ""} `; }).join("")}</p>`).join("");
+  const head = x.head && x.head.length ? `<dl class="rhead">${x.head.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` : "";
+  const qs = x.questions.map((q, i) => `<div class="lq"><p><b>${i + 1}.</b> ${esc(q.q)}</p>
+    <div class="opts">${q.o.map((o, j) => { const cls = rsub ? (j === q.a ? "ok" : j === rans[i] ? "no" : "") : rans[i] === j ? "sel" : "";
+      return `<button class="opt ${cls}" data-rq="${i}" data-ro="${j}" ${rsub ? "disabled" : ""} aria-pressed="${rans[i] === j}"><b>${"ABCD"[j]}</b> ${esc(o)}</button>`; }).join("")}</div>
+    ${rsub ? `<p class="expl">${rans[i] === q.a ? "✓" : "✗"} ${esc(q.vi)}</p>` : ""}</div>`).join("");
+  const fresh = x.vocab.filter(v => !vst(v.w)).length;
+  const voc = x.vocab.map((v, i) => { const s = vst(v.w); return `<div class="wi">
+    <button class="play" data-rplay="${i}" aria-label="Nghe ${esc(v.w)}">${PLAY}</button>
+    <span class="t"><b>${esc(v.w)}</b> <span class="mute">${esc(v.pos)} ${esc(v.ipa)}</span><small>${esc(v.vi)}</small></span>
+    <div class="seg vs" role="group" aria-label="Trạng thái"><button data-rset="${i}|l" aria-pressed="${s === "l"}" title="Đang học">?</button><button data-rset="${i}|k" aria-pressed="${s === "k"}" title="Đã biết">✓</button></div></div>`; }).join("");
+  return `<div class="card">
+    <div class="row"><button class="btn sm" id="rback">‹ Danh sách</button><span class="tag ${LLVC[x.level]}">${LLV[x.level]}</span><span class="mute">${RTYPE[x.type] || x.type} · ${esc(x.topic)} · ${x.words} từ</span></div>
+    <h3>${esc(x.title)}</h3><p class="mute">${esc(x.title_vi)}${r.best != null ? ` · lần tốt nhất ${r.best}/${n}, đã làm ${r.n || 1} lần` : ""}</p>
+    <div class="seg" role="group" aria-label="Cách đọc"><button data-rbi="0" aria-pressed="${!rbi}">Tiếng Anh</button><button data-rbi="1" aria-pressed="${rbi}">Song ngữ</button></div>
+  </div>
+  <div class="card rdoc ${x.type}">${head}${body}<p class="mute">Bấm vào một câu để xem nghĩa tiếng Việt, bấm vào từ tô màu để xem nghĩa từ.</p></div>
+  <div class="card">${qs}
+    ${rsub ? `<div class="row"><span class="score">${got}/${n}</span><span class="mute grow">${got === n ? "Chính xác hết." : "Đọc lại câu liên quan, bật Song ngữ nếu cần."}</span></div>
+      <button class="btn" id="rretry">Làm lại bài này</button>`
+    : `<button class="btn pri" id="rsubmit" ${all ? "" : "disabled"}>${all ? "Nộp bài" : `Chọn đủ ${n} câu để nộp`}</button>`}
+  </div>
+  <div class="card"><h3>Từ vựng trong bài</h3><p class="mute"><b>?</b> = đang học (vào lượt ôn ở Thẻ từ), <b>✓</b> = đã biết.</p>${voc}
+    ${fresh ? `<button class="btn" id="rlearn">Đưa ${fresh} từ chưa học vào ôn tập</button>` : ""}</div>
+  <div class="rpop" id="rpop" hidden></div>`;
+}
+function bindRead(on){
+  on("[data-rlv]", b => b.onclick = () => { rlv = +b.dataset.rlv; render(); });
+  on("[data-rd]", b => b.onclick = () => { rcur = b.dataset.rd; rans = {}; rsub = false; rOpen = new Set(); render(); scrollTo(0, 0); });
+  const bk = $("#rback"); if (bk) bk.onclick = () => { rcur = null; render(); scrollTo(0, 0); };
+  if (!rcur || !RD) return;
+  const x = RD.find(y => y.id === rcur), keep = fn => { const y = scrollY; fn(); render(); scrollTo(0, y); };
+  on("[data-rbi]", b => b.onclick = () => keep(() => { rbi = b.dataset.rbi === "1"; rOpen = new Set(); }));
+  on("[data-rs]", s => s.onclick = e => { if (e.target.closest(".vw") || rbi) return; const k = +s.dataset.rs; keep(() => rOpen.has(k) ? rOpen.delete(k) : rOpen.add(k)); });
+  const pop = $("#rpop");
+  on("[data-rw]", w => w.onclick = e => {
+    e.stopPropagation();
+    const i = +w.dataset.rw, v = x.vocab[i], s = vst(v.w);
+    pop.innerHTML = `<div class="row"><button class="play" data-rplay="${i}" aria-label="Nghe">${PLAY}</button><span class="t grow"><b>${esc(v.w)}</b> <span class="mute">${esc(v.pos)} ${esc(v.ipa)}</span><br>${esc(v.vi)}</span><button class="btn sm" id="rpx" aria-label="Đóng">✕</button></div>
+      <div class="row"><button class="btn sm grow" data-rset="${i}|l" aria-pressed="${s === "l"}">${s === "l" ? "✓ Đang ôn" : "Thêm vào ôn tập"}</button><button class="btn sm grow" data-rset="${i}|k" aria-pressed="${s === "k"}">${s === "k" ? "✓ Đã biết" : "Đã biết"}</button></div>`;
+    pop.hidden = false;
+    play(vAudio(v.w), pop.querySelector(".play"));
+    $("#rpx").onclick = () => pop.hidden = true;
+    pop.querySelectorAll("[data-rset]").forEach(b => b.onclick = () => {   // update in place so the popup stays open
+      const st = b.dataset.rset.split("|")[1], ns = vst(v.w) === st ? "n" : st;
+      put("v:" + v.w, {s: ns});
+      pop.querySelectorAll("[data-rset]").forEach(y => { const ys = y.dataset.rset.split("|")[1], onp = ys === ns; y.setAttribute("aria-pressed", onp); y.textContent = ys === "l" ? (onp ? "✓ Đang ôn" : "Thêm vào ôn tập") : (onp ? "✓ Đã biết" : "Đã biết"); });
+      on(`[data-rw="${i}"]`, y => y.classList.toggle("k", ns === "k"));
+    });
+    pop.querySelector("[data-rplay]").onclick = b => play(vAudio(v.w), b.currentTarget);
+  });
+  function bindSet(b){ b.onclick = () => { const [i, s] = b.dataset.rset.split("|"), w = x.vocab[+i].w; put("v:" + w, {s: vst(w) === s ? "n" : s}); keep(() => {}); }; }
+  on(".card [data-rset]", bindSet);
+  if (pop) pop.onclick = e => e.stopPropagation();
+  on(".wi [data-rplay]", b => b.onclick = () => play(vAudio(x.vocab[+b.dataset.rplay].w), b));
+  const ln = $("#rlearn"); if (ln) ln.onclick = () => { x.vocab.forEach(v => { if (!vst(v.w)) put("v:" + v.w, {s: "l"}); }); keep(() => {}); };
+  on("[data-ro]", b => b.onclick = () => {
+    rans[+b.dataset.rq] = +b.dataset.ro;
+    on(`[data-rq="${b.dataset.rq}"]`, y => { y.classList.toggle("sel", y === b); y.setAttribute("aria-pressed", y === b); });
+    const s = $("#rsubmit"), all = x.questions.every((_, i) => rans[i] != null);
+    if (s){ s.disabled = !all; s.textContent = all ? "Nộp bài" : `Chọn đủ ${x.questions.length} câu để nộp`; }
+  });
+  const sb = $("#rsubmit"); if (sb) sb.onclick = () => keep(() => {
+    const got = x.questions.filter((q, i) => rans[i] === q.a).length, r = rrec(x.id);
+    put("r:" + x.id, {best: Math.max(got, r.best == null ? -1 : r.best), last: got, n: (r.n || 0) + 1});
+    rsub = true;
+  });
+  const rt = $("#rretry"); if (rt) rt.onclick = () => { rans = {}; rsub = false; render(); scrollTo(0, 0); };
+}
+
+const VIEWS = {today:vToday, cards:vCards, listen:vListen, read:vRead, dict:vDict, pron:vPron, prog:vProg};
 function render(){
   const d = day();
   $("#dTitle").textContent = "Ngày " + cur();
@@ -607,6 +715,7 @@ function bind(){
   const on = (sel, fn) => document.querySelectorAll(sel).forEach(fn);
   bindV3(on);
   bindListen(on);
+  bindRead(on);
   on("[data-tab]", b => b.onclick = () => go(b.dataset.tab));
   on("[data-go]", b => b.onclick = () => go(b.dataset.go));
   const dn = $("#done"); if (dn) dn.onclick = () => { const st = get("d:" + cur()) || {}; put("d:" + cur(), Object.assign({}, st, {done: !st.done})); render(); };
@@ -661,6 +770,7 @@ function bind(){
     K.pron.forEach((_, i) => urls.push(`audio/pron/pron${pad(i + 1)}.mp3`));
     for (const p of [3, 4]) for (let i = 1; i <= 30; i++) urls.push(`audio/l/p${p}-${pad(i)}.mp3`);
     of.disabled = true; let n = 0, fail = 0;
+    await Promise.all(["vocab3000.js", "listening.js", "reading.js"].map(u => fetch(u).catch(() => {})));   // the service worker keeps a copy
     const c = await caches.open("en30-audio");
     const work = urls.slice();
     await Promise.all(Array.from({length: 6}, async () => { while (work.length){ const u = work.shift();

@@ -54,7 +54,7 @@ p{margin:0}
 .grow{flex:1}
 input[type=password],input[type=text]{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg);min-height:44px}
 nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--card);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
-nav.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr)}
+nav.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(7,1fr)}
 nav.tabs button{background:none;border:0;padding:8px 2px 10px;font-size:12px;color:var(--mute);display:flex;flex-direction:column;align-items:center;gap:2px;min-height:56px;position:relative;line-height:1.15;text-align:center}
 nav.tabs button svg{width:22px;height:22px}
 nav.tabs button[aria-current="page"]{color:var(--accent);font-weight:700}
@@ -165,6 +165,19 @@ button.li:first-child{border-top:0}
 .lscript li.ev{background:var(--midbg);border-left-color:var(--mid)}
 .lscript li.now{background:var(--infobg);border-left-color:var(--info)}
 .pos.sp{color:var(--info)} .pos.sp b{font-size:1.1em}
+.rdoc{font-size:17px;line-height:1.65;gap:0}
+.rdoc p{margin:0 0 12px}
+.rdoc.chat p{background:var(--bg);border-radius:12px;padding:8px 12px}
+.rhead{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:0 0 12px;padding-bottom:10px;border-bottom:1px solid var(--line);font-size:14px}
+.rhead dt{color:var(--mute)} .rhead dd{margin:0;overflow-wrap:anywhere}
+.rs{cursor:pointer;border-radius:4px}
+.rs.open{background:var(--infobg)}
+.rvi{display:block;font-size:15px;color:var(--mute);border-left:3px solid var(--info);padding:2px 0 2px 10px;margin:4px 0 8px}
+button.vw{font:inherit;color:inherit;background:var(--midbg);border:0;border-bottom:2px solid var(--mid);border-radius:3px;padding:0 2px;margin:0;line-height:inherit;cursor:pointer}
+button.vw.k{background:none;border-bottom:1px dashed var(--ok)}
+.rpop{position:fixed;left:12px;right:12px;bottom:calc(68px + env(safe-area-inset-bottom,0px));max-width:616px;margin:0 auto;z-index:7;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:0 6px 24px #0003;display:flex;flex-direction:column;gap:8px}
+.rpop[hidden]{display:none}
+.rpop .btn[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:700}
 @media (prefers-reduced-motion:reduce){.blur{transition:none}}
 </style>
 </head>

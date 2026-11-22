@@ -1,0 +1,1367 @@
+[
+ {
+  "id": "r1-01",
+  "level": 1,
+  "type": "notice",
+  "topic": "IT",
+  "title": "VPN maintenance this Saturday",
+  "title_vi": "Bảo trì VPN vào thứ Bảy này",
+  "paras": [
+   [
+    [
+     "Notice: VPN maintenance this Saturday",
+     "Thông báo: Bảo trì VPN vào thứ Bảy này"
+    ]
+   ],
+   [
+    [
+     "The IT team will carry out maintenance on the company VPN this Saturday, March 14.",
+     "Nhóm IT sẽ tiến hành bảo trì VPN của công ty vào thứ Bảy này, ngày 14 tháng 3."
+    ],
+    [
+     "The work will start at 9 p.m. and last about four hours.",
+     "Công việc sẽ bắt đầu lúc 9 giờ tối và kéo dài khoảng bốn tiếng."
+    ],
+    [
+     "During this time, you will not be able to access the code repository or the test servers from home.",
+     "Trong thời gian này, bạn sẽ không thể truy cập kho mã nguồn hoặc các server test từ nhà."
+    ]
+   ],
+   [
+    [
+     "The office network will not be affected.",
+     "Mạng nội bộ tại văn phòng sẽ không bị ảnh hưởng."
+    ],
+    [
+     "If you plan to deploy a release on Saturday evening, please move it to Sunday morning.",
+     "Nếu bạn định deploy một bản release vào tối thứ Bảy, vui lòng dời sang sáng Chủ nhật."
+    ],
+    [
+     "After the update, you must install the new VPN client before Monday.",
+     "Sau khi cập nhật, bạn phải cài đặt VPN client mới trước thứ Hai."
+    ],
+    [
+     "The download link will be sent by email on Sunday.",
+     "Đường link tải về sẽ được gửi qua email vào Chủ nhật."
+    ]
+   ],
+   [
+    [
+     "For questions, contact Daniel Cho at the IT help desk, extension 214.",
+     "Nếu có câu hỏi, hãy liên hệ Daniel Cho ở bộ phận hỗ trợ IT, số máy lẻ 214."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "carry out"
+   },
+   {
+    "w": "access"
+   },
+   {
+    "w": "affect",
+    "f": "affected"
+   },
+   {
+    "w": "network"
+   },
+   {
+    "w": "deploy"
+   },
+   {
+    "w": "release"
+   },
+   {
+    "w": "contact"
+   },
+   {
+    "w": "download"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long will the maintenance last?",
+    "o": [
+     "Two hours",
+     "About four hours",
+     "Until Monday",
+     "Nine hours"
+    ],
+    "a": 1,
+    "vi": "Câu 'The work will start at 9 p.m. and last about four hours.' cho biết kéo dài khoảng bốn tiếng. '9' là giờ bắt đầu (9 p.m.), không phải số giờ."
+   },
+   {
+    "q": "What should staff do with a release planned for Saturday evening?",
+    "o": [
+     "Cancel it",
+     "Deploy it from the office",
+     "Ask Daniel Cho to deploy it",
+     "Move it to Sunday morning"
+    ],
+    "a": 3,
+    "vi": "Thông báo ghi 'please move it to Sunday morning'. Mạng văn phòng không bị ảnh hưởng nhưng không hề bảo deploy từ văn phòng; Daniel Cho chỉ là người giải đáp thắc mắc."
+   },
+   {
+    "q": "When will the download link for the new VPN client be sent?",
+    "o": [
+     "On Sunday",
+     "On Saturday evening",
+     "On Monday",
+     "Before the maintenance starts"
+    ],
+    "a": 0,
+    "vi": "'The download link will be sent by email on Sunday.' Thứ Hai là hạn cài đặt client mới, không phải ngày gửi link."
+   }
+  ]
+ },
+ {
+  "id": "r1-02",
+  "level": 1,
+  "type": "email",
+  "topic": "HR",
+  "title": "Mid-year performance reviews",
+  "title_vi": "Đánh giá hiệu suất giữa năm",
+  "head": [
+   [
+    "From",
+    "Grace Tan <grace.tan@lumora-tech.com>"
+   ],
+   [
+    "To",
+    "Engineering team"
+   ],
+   [
+    "Subject",
+    "Mid-year performance reviews"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Hi everyone,",
+     "Chào mọi người,"
+    ]
+   ],
+   [
+    [
+     "Our mid-year performance reviews will run from June 10 to June 21.",
+     "Đợt đánh giá hiệu suất giữa năm của chúng ta sẽ diễn ra từ ngày 10 đến ngày 21 tháng 6."
+    ],
+    [
+     "Before your meeting, please complete the self-assessment form in the HR portal.",
+     "Trước buổi gặp, vui lòng hoàn thành mẫu tự đánh giá trên cổng thông tin HR."
+    ],
+    [
+     "The deadline for the form is June 7.",
+     "Hạn chót nộp mẫu này là ngày 7 tháng 6."
+    ]
+   ],
+   [
+    [
+     "This year, there is one change.",
+     "Năm nay có một thay đổi."
+    ],
+    [
+     "Each review will include feedback from two teammates, not only from your manager.",
+     "Mỗi buổi đánh giá sẽ có thêm phản hồi từ hai đồng nghiệp, chứ không chỉ từ quản lý của bạn."
+    ],
+    [
+     "You can choose these teammates yourself, but you must send me their names by June 3.",
+     "Bạn có thể tự chọn hai đồng nghiệp này, nhưng phải gửi tên của họ cho tôi trước ngày 3 tháng 6."
+    ]
+   ],
+   [
+    [
+     "Your manager will send you a calendar invite for a 45-minute meeting.",
+     "Quản lý của bạn sẽ gửi cho bạn lời mời trên lịch cho một buổi gặp 45 phút."
+    ],
+    [
+     "If you are on vacation during the review period, please let me know as soon as possible.",
+     "Nếu bạn nghỉ phép trong thời gian đánh giá, vui lòng báo cho tôi càng sớm càng tốt."
+    ]
+   ],
+   [
+    [
+     "Best regards,",
+     "Trân trọng,"
+    ],
+    [
+     "Grace Tan, HR Business Partner",
+     "Grace Tan, HR Business Partner"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "performance"
+   },
+   {
+    "w": "review"
+   },
+   {
+    "w": "complete"
+   },
+   {
+    "w": "deadline"
+   },
+   {
+    "w": "feedback"
+   },
+   {
+    "w": "manager"
+   },
+   {
+    "w": "calendar"
+   },
+   {
+    "w": "invite"
+   },
+   {
+    "w": "vacation"
+   },
+   {
+    "w": "period"
+   },
+   {
+    "w": "let me know"
+   },
+   {
+    "w": "as soon as"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the deadline for the self-assessment form?",
+    "o": [
+     "June 3",
+     "June 10",
+     "June 7",
+     "June 21"
+    ],
+    "a": 2,
+    "vi": "'The deadline for the form is June 7.' Ngày 3/6 là hạn gửi tên đồng nghiệp; 10-21/6 là thời gian đánh giá."
+   },
+   {
+    "q": "What is new in this year's reviews?",
+    "o": [
+     "Feedback from two teammates is included",
+     "Meetings are 45 minutes long",
+     "Managers choose the teammates",
+     "The form is in the HR portal"
+    ],
+    "a": 0,
+    "vi": "Sau câu 'there is one change' là 'Each review will include feedback from two teammates'. Các phương án khác có trong bài nhưng không phải là thay đổi; nhân viên tự chọn đồng nghiệp, không phải quản lý."
+   },
+   {
+    "q": "What should staff do if they are on vacation during the review period?",
+    "o": [
+     "Cancel their review",
+     "Ask a teammate to join instead",
+     "Complete the form after June 21",
+     "Tell Grace Tan as soon as possible"
+    ],
+    "a": 3,
+    "vi": "'If you are on vacation during the review period, please let me know as soon as possible.' Người viết ('me') là Grace Tan."
+   }
+  ]
+ },
+ {
+  "id": "r1-03",
+  "level": 1,
+  "type": "chat",
+  "topic": "Office",
+  "title": "Moving to the 5th floor",
+  "title_vi": "Chuyển lên tầng 5",
+  "paras": [
+   [
+    [
+     "Lena (Office Manager): Hi all, a quick update about the office move.",
+     "Lena (Quản lý văn phòng): Chào mọi người, cập nhật nhanh về việc chuyển chỗ làm việc."
+    ]
+   ],
+   [
+    [
+     "Lena: The AI team will move from the 3rd floor to the 5th floor next Friday.",
+     "Lena: Nhóm AI sẽ chuyển từ tầng 3 lên tầng 5 vào thứ Sáu tuần sau."
+    ],
+    [
+     "Lena: Please pack your desk into the boxes by 5 p.m. on Thursday.",
+     "Lena: Vui lòng cho đồ trên bàn làm việc vào thùng trước 5 giờ chiều thứ Năm."
+    ]
+   ],
+   [
+    [
+     "Huy: Will the movers take our monitors too?",
+     "Huy: Bên chuyển đồ có mang cả màn hình của chúng tôi không?"
+    ]
+   ],
+   [
+    [
+     "Lena: Yes, but please take your laptops home on Thursday night.",
+     "Lena: Có, nhưng vui lòng mang laptop về nhà vào tối thứ Năm."
+    ]
+   ],
+   [
+    [
+     "Priya: What about the GPU server in room 302?",
+     "Priya: Còn server GPU ở phòng 302 thì sao?"
+    ]
+   ],
+   [
+    [
+     "Lena: It will stay on the 3rd floor until the new server room is ready in April.",
+     "Lena: Nó sẽ ở lại tầng 3 cho đến khi phòng server mới sẵn sàng vào tháng 4."
+    ]
+   ],
+   [
+    [
+     "Huy: Should we work from home on Friday?",
+     "Huy: Thứ Sáu chúng tôi có nên làm việc ở nhà không?"
+    ]
+   ],
+   [
+    [
+     "Lena: Yes, everyone on the team should work from home that day.",
+     "Lena: Đúng vậy, mọi người trong nhóm nên làm việc ở nhà hôm đó."
+    ],
+    [
+     "Lena: Your new desks will be ready on Monday morning.",
+     "Lena: Bàn làm việc mới của các bạn sẽ sẵn sàng vào sáng thứ Hai."
+    ],
+    [
+     "Lena: Let me know if you have any questions.",
+     "Lena: Nếu có câu hỏi gì thì cứ báo mình nhé."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "a quick update"
+   },
+   {
+    "w": "monitor",
+    "f": "monitors"
+   },
+   {
+    "w": "ready"
+   },
+   {
+    "w": "stay"
+   },
+   {
+    "w": "laptop",
+    "f": "laptops"
+   },
+   {
+    "w": "what about"
+   },
+   {
+    "w": "manager"
+   },
+   {
+    "w": "let me know if you have any questions"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When must staff pack their desks?",
+    "o": [
+     "Next Friday morning",
+     "Monday morning",
+     "Thursday night",
+     "By 5 p.m. on Thursday"
+    ],
+    "a": 3,
+    "vi": "'Please pack your desk into the boxes by 5 p.m. on Thursday.' Tối thứ Năm là lúc mang laptop về nhà; sáng thứ Hai là lúc bàn mới sẵn sàng."
+   },
+   {
+    "q": "What will happen to the GPU server?",
+    "o": [
+     "It will move to the 5th floor next Friday",
+     "It will stay on the 3rd floor until April",
+     "Huy will take it home",
+     "It will move to room 302"
+    ],
+    "a": 1,
+    "vi": "Lena trả lời Priya: 'It will stay on the 3rd floor until the new server room is ready in April.' Phòng 302 là nơi server đang đặt."
+   },
+   {
+    "q": "What should the team do next Friday?",
+    "o": [
+     "Pack their boxes",
+     "Go to the 5th floor",
+     "Work from home",
+     "Set up the new server room"
+    ],
+    "a": 2,
+    "vi": "Huy hỏi có nên làm ở nhà vào thứ Sáu không, Lena trả lời 'everyone on the team should work from home that day'. Việc đóng thùng phải xong trước thứ Năm."
+   }
+  ]
+ },
+ {
+  "id": "r1-04",
+  "level": 1,
+  "type": "email",
+  "topic": "Travel",
+  "title": "Your trip to Osaka",
+  "title_vi": "Chuyến công tác Osaka của bạn",
+  "head": [
+   [
+    "From",
+    "Mai Hoang <mai.hoang@kestrelsoft.com>"
+   ],
+   [
+    "To",
+    "Linh Tran"
+   ],
+   [
+    "Subject",
+    "Your trip to Osaka"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Hi Linh,",
+     "Chào Linh,"
+    ]
+   ],
+   [
+    [
+     "Your trip to Osaka for the Hanabi Retail workshop is now booked.",
+     "Chuyến đi Osaka của bạn để dự buổi workshop với Hanabi Retail đã được đặt xong."
+    ],
+    [
+     "You will fly out on Tuesday, May 5, at 8:40 a.m. and return on Friday, May 8.",
+     "Bạn sẽ bay đi vào thứ Ba, ngày 5 tháng 5, lúc 8 giờ 40 sáng và trở về vào thứ Sáu, ngày 8 tháng 5."
+    ],
+    [
+     "Your hotel is a ten-minute walk from the client's office.",
+     "Khách sạn của bạn cách văn phòng khách hàng mười phút đi bộ."
+    ]
+   ],
+   [
+    [
+     "The company will pay for your flight and hotel directly.",
+     "Công ty sẽ thanh toán trực tiếp vé máy bay và khách sạn cho bạn."
+    ],
+    [
+     "For meals and taxis, you can spend up to 60 dollars per day.",
+     "Với chi phí ăn uống và taxi, bạn có thể chi tối đa 60 đô la mỗi ngày."
+    ],
+    [
+     "Please keep all receipts and send your expense report within two weeks after you return.",
+     "Vui lòng giữ lại tất cả hóa đơn và gửi báo cáo chi phí trong vòng hai tuần sau khi trở về."
+    ]
+   ],
+   [
+    [
+     "One more thing: the client asked us to bring a demo of the new search model.",
+     "Một điều nữa: khách hàng đã đề nghị chúng ta mang theo bản demo của mô hình tìm kiếm mới."
+    ],
+    [
+     "Please check with Ken that it runs on your laptop before you leave.",
+     "Vui lòng kiểm tra cùng Ken để chắc chắn nó chạy được trên laptop của bạn trước khi đi."
+    ]
+   ],
+   [
+    [
+     "Have a good trip!",
+     "Chúc bạn có một chuyến đi suôn sẻ!"
+    ],
+    [
+     "Mai",
+     "Mai"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "workshop"
+   },
+   {
+    "w": "client"
+   },
+   {
+    "w": "return"
+   },
+   {
+    "w": "directly"
+   },
+   {
+    "w": "expense"
+   },
+   {
+    "w": "receipt",
+    "f": "receipts"
+   },
+   {
+    "w": "trip"
+   },
+   {
+    "w": "search"
+   },
+   {
+    "w": "model"
+   },
+   {
+    "w": "check"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How much can Linh spend on meals and taxis?",
+    "o": [
+     "Up to 60 dollars per day",
+     "60 dollars for the whole trip",
+     "Nothing, because the company pays directly",
+     "Up to 60 dollars per meal"
+    ],
+    "a": 0,
+    "vi": "'For meals and taxis, you can spend up to 60 dollars per day.' Công ty chỉ trả trực tiếp vé máy bay và khách sạn."
+   },
+   {
+    "q": "When should Linh send the expense report?",
+    "o": [
+     "Before leaving for Osaka",
+     "On May 8",
+     "Within two weeks after returning",
+     "Within ten days"
+    ],
+    "a": 2,
+    "vi": "'send your expense report within two weeks after you return'. 8/5 là ngày về; 'ten-minute' là khoảng cách đi bộ đến khách sạn."
+   },
+   {
+    "q": "What did the client ask for?",
+    "o": [
+     "A hotel near the office",
+     "A demo of the new search model",
+     "A new laptop",
+     "A longer workshop"
+    ],
+    "a": 1,
+    "vi": "'the client asked us to bring a demo of the new search model.' Khách sạn gần văn phòng là do công ty đặt, không phải yêu cầu của khách hàng."
+   }
+  ]
+ },
+ {
+  "id": "r1-05",
+  "level": 1,
+  "type": "notice",
+  "topic": "Events",
+  "title": "Spring hackathon",
+  "title_vi": "Hackathon mùa xuân",
+  "paras": [
+   [
+    [
+     "Spring Hackathon: Sign-up Now Open",
+     "Hackathon mùa xuân: Đã mở đăng ký"
+    ]
+   ],
+   [
+    [
+     "Our yearly hackathon will be on April 18 and 19 at the main office.",
+     "Cuộc thi hackathon hằng năm của chúng ta sẽ diễn ra vào ngày 18 và 19 tháng 4 tại văn phòng chính."
+    ],
+    [
+     "This year, the goal is to build tools that save time for our support team.",
+     "Năm nay, mục tiêu là xây dựng các công cụ giúp đội hỗ trợ khách hàng tiết kiệm thời gian."
+    ],
+    [
+     "Teams can have three to five people.",
+     "Mỗi đội có thể có từ ba đến năm người."
+    ]
+   ],
+   [
+    [
+     "To join, register your team on the events page by April 4.",
+     "Để tham gia, hãy đăng ký đội của bạn trên trang sự kiện trước ngày 4 tháng 4."
+    ],
+    [
+     "Each team will demonstrate its project in five minutes on Sunday afternoon.",
+     "Mỗi đội sẽ trình diễn dự án của mình trong năm phút vào chiều Chủ nhật."
+    ],
+    [
+     "The winning team will receive 1,000 dollars and the chance to build its idea in the next quarter.",
+     "Đội chiến thắng sẽ nhận 1.000 đô la và cơ hội phát triển ý tưởng của mình trong quý tới."
+    ]
+   ],
+   [
+    [
+     "Food and drinks will be free on both days.",
+     "Đồ ăn và thức uống sẽ được miễn phí trong cả hai ngày."
+    ],
+    [
+     "Because the room is small, only the first 12 teams can participate.",
+     "Vì phòng nhỏ nên chỉ 12 đội đăng ký đầu tiên được tham gia."
+    ],
+    [
+     "For questions, contact the organizer, Sara Kim, at sara.kim@talonworks.com.",
+     "Nếu có câu hỏi, hãy liên hệ người tổ chức, Sara Kim, qua địa chỉ sara.kim@talonworks.com."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "yearly"
+   },
+   {
+    "w": "register"
+   },
+   {
+    "w": "demonstrate"
+   },
+   {
+    "w": "receive"
+   },
+   {
+    "w": "chance"
+   },
+   {
+    "w": "quarter"
+   },
+   {
+    "w": "free"
+   },
+   {
+    "w": "participate"
+   },
+   {
+    "w": "organizer"
+   },
+   {
+    "w": "goal"
+   },
+   {
+    "w": "tool",
+    "f": "tools"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the deadline to register a team?",
+    "o": [
+     "April 18",
+     "April 4",
+     "April 19",
+     "Sunday afternoon"
+    ],
+    "a": 1,
+    "vi": "'register your team on the events page by April 4.' Ngày 18-19/4 là ngày diễn ra hackathon; chiều Chủ nhật là lúc các đội trình diễn."
+   },
+   {
+    "q": "What will the winning team get?",
+    "o": [
+     "1,000 dollars and a chance to build its idea",
+     "Free food for the next quarter",
+     "A five-minute meeting with Sara Kim",
+     "A place on the support team"
+    ],
+    "a": 0,
+    "vi": "'The winning team will receive 1,000 dollars and the chance to build its idea in the next quarter.' Đồ ăn miễn phí chỉ trong hai ngày thi, cho tất cả mọi người."
+   },
+   {
+    "q": "Why can only 12 teams take part?",
+    "o": [
+     "The prize money is small",
+     "Teams have up to five people",
+     "The hackathon lasts only two days",
+     "The room is small"
+    ],
+    "a": 3,
+    "vi": "'Because the room is small, only the first 12 teams can participate.' Các phương án khác đều có thông tin trong bài nhưng không phải là lý do."
+   }
+  ]
+ },
+ {
+  "id": "r1-06",
+  "level": 1,
+  "type": "memo",
+  "topic": "HR",
+  "title": "Changes to expense claims",
+  "title_vi": "Thay đổi về hoàn tiền chi phí",
+  "head": [
+   [
+    "From",
+    "HR and Finance"
+   ],
+   [
+    "To",
+    "All staff"
+   ],
+   [
+    "Date",
+    "October 1"
+   ],
+   [
+    "Subject",
+    "Changes to expense claims"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Starting November 1, all expense claims must be sent through our new app, ClaimPad.",
+     "Bắt đầu từ ngày 1 tháng 11, mọi yêu cầu hoàn tiền chi phí phải được gửi qua ứng dụng mới của chúng ta, ClaimPad."
+    ],
+    [
+     "We will no longer accept paper forms or claims by email.",
+     "Chúng tôi sẽ không còn chấp nhận mẫu giấy hoặc yêu cầu gửi qua email."
+    ]
+   ],
+   [
+    [
+     "Please take a photo of each receipt and add it to your claim.",
+     "Vui lòng chụp ảnh từng hóa đơn và đính kèm vào yêu cầu của bạn."
+    ],
+    [
+     "Claims must be sent within 30 days of the purchase.",
+     "Yêu cầu phải được gửi trong vòng 30 ngày kể từ ngày mua."
+    ],
+    [
+     "Your team leader will review them, and the payment will come with your monthly pay.",
+     "Trưởng nhóm của bạn sẽ xem xét, và khoản tiền sẽ được trả cùng lương hằng tháng."
+    ]
+   ],
+   [
+    [
+     "We are making this change because paper claims took up to six weeks.",
+     "Chúng tôi thực hiện thay đổi này vì các yêu cầu bằng giấy mất tới sáu tuần mới xử lý xong."
+    ],
+    [
+     "With the app, most claims will be paid in less than ten days.",
+     "Với ứng dụng này, hầu hết các yêu cầu sẽ được thanh toán trong vòng chưa đầy mười ngày."
+    ]
+   ],
+   [
+    [
+     "A short online session about the app will be held on October 20 at 3 p.m.",
+     "Một buổi hướng dẫn trực tuyến ngắn về ứng dụng sẽ được tổ chức vào ngày 20 tháng 10 lúc 3 giờ chiều."
+    ],
+    [
+     "It is optional, but we recommend it for all team leaders.",
+     "Buổi này không bắt buộc, nhưng chúng tôi khuyến khích tất cả trưởng nhóm tham dự."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "expense"
+   },
+   {
+    "w": "accept"
+   },
+   {
+    "w": "receipt"
+   },
+   {
+    "w": "purchase"
+   },
+   {
+    "w": "review"
+   },
+   {
+    "w": "payment"
+   },
+   {
+    "w": "optional"
+   },
+   {
+    "w": "recommend"
+   },
+   {
+    "w": "leader"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When does the new process start?",
+    "o": [
+     "October 1",
+     "October 20",
+     "November 1",
+     "In 30 days"
+    ],
+    "a": 2,
+    "vi": "'Starting November 1, all expense claims must be sent through our new app.' 1/10 là ngày ra thông báo; 20/10 là buổi hướng dẫn."
+   },
+   {
+    "q": "Why is the company making this change?",
+    "o": [
+     "Team leaders asked for an app",
+     "Receipts were often lost",
+     "Monthly pay was often late",
+     "Paper claims took too long"
+    ],
+    "a": 3,
+    "vi": "'We are making this change because paper claims took up to six weeks.' Bài không nói hóa đơn bị mất hay trưởng nhóm yêu cầu ứng dụng."
+   },
+   {
+    "q": "Who is the online session recommended for?",
+    "o": [
+     "Team leaders",
+     "All new staff",
+     "The Finance team only",
+     "Staff with paper claims"
+    ],
+    "a": 0,
+    "vi": "'It is optional, but we recommend it for all team leaders.'"
+   }
+  ]
+ },
+ {
+  "id": "r1-07",
+  "level": 1,
+  "type": "chat",
+  "topic": "IT",
+  "title": "Nightly pipeline failed",
+  "title_vi": "Pipeline chạy đêm bị lỗi",
+  "paras": [
+   [
+    [
+     "Omar: Morning, team. The nightly data pipeline failed at 2:15 a.m.",
+     "Omar: Chào buổi sáng cả nhóm. Data pipeline chạy hằng đêm đã bị lỗi lúc 2 giờ 15 sáng."
+    ],
+    [
+     "Omar: Because of this, the sales dashboard still shows yesterday's numbers.",
+     "Omar: Vì vậy, dashboard bán hàng vẫn đang hiển thị số liệu của hôm qua."
+    ]
+   ],
+   [
+    [
+     "Thu: I checked the logs.",
+     "Thu: Mình đã kiểm tra log rồi."
+    ],
+    [
+     "Thu: One of our vendors changed the date format in their file without telling us.",
+     "Thu: Một nhà cung cấp đã đổi định dạng ngày trong file của họ mà không báo cho chúng ta."
+    ]
+   ],
+   [
+    [
+     "Omar: Can you fix it today?",
+     "Omar: Bạn có sửa được trong hôm nay không?"
+    ]
+   ],
+   [
+    [
+     "Thu: Yes, I can push a fix by 11 a.m. and run the job again.",
+     "Thu: Được, mình có thể đẩy bản sửa trước 11 giờ sáng và chạy lại job."
+    ],
+    [
+     "Thu: It takes about 40 minutes.",
+     "Thu: Việc đó mất khoảng 40 phút."
+    ]
+   ],
+   [
+    [
+     "Omar: Great. I will tell the sales team that the dashboard will be fixed before lunch.",
+     "Omar: Tốt. Mình sẽ báo đội sales rằng dashboard sẽ được sửa xong trước giờ ăn trưa."
+    ]
+   ],
+   [
+    [
+     "Ben: I will contact the vendor and ask them to tell us in advance about any changes.",
+     "Ben: Mình sẽ liên hệ nhà cung cấp và yêu cầu họ báo trước cho chúng ta về mọi thay đổi."
+    ]
+   ],
+   [
+    [
+     "Omar: Thanks. Let's add a format check to the pipeline in the next sprint.",
+     "Omar: Cảm ơn. Hãy thêm bước kiểm tra định dạng vào pipeline trong sprint tới."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "pipeline"
+   },
+   {
+    "w": "fail",
+    "f": "failed"
+   },
+   {
+    "w": "vendor"
+   },
+   {
+    "w": "fix"
+   },
+   {
+    "w": "push"
+   },
+   {
+    "w": "contact"
+   },
+   {
+    "w": "in advance"
+   },
+   {
+    "w": "in the next sprint"
+   },
+   {
+    "w": "data"
+   },
+   {
+    "w": "file"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What caused the pipeline failure?",
+    "o": [
+     "A server crash at 2:15 a.m.",
+     "A bug in the sales dashboard",
+     "A missing log file",
+     "A vendor changed its date format"
+    ],
+    "a": 3,
+    "vi": "Thu kiểm tra log và thấy 'One of our vendors changed the date format in their file without telling us.' 2:15 a.m. chỉ là thời điểm lỗi xảy ra."
+   },
+   {
+    "q": "When will the dashboard probably be fixed?",
+    "o": [
+     "At 2:15 a.m.",
+     "In the next sprint",
+     "Before lunch",
+     "At the end of the day"
+    ],
+    "a": 2,
+    "vi": "Omar nói 'the dashboard will be fixed before lunch' (sửa trước 11 giờ, chạy lại 40 phút). Sprint tới là lúc thêm bước kiểm tra định dạng."
+   },
+   {
+    "q": "What will Ben do?",
+    "o": [
+     "Push a fix by 11 a.m.",
+     "Contact the vendor",
+     "Tell the sales team",
+     "Add a format check"
+    ],
+    "a": 1,
+    "vi": "'Ben: I will contact the vendor...' Đẩy bản sửa là việc của Thu; báo đội sales là việc của Omar."
+   }
+  ]
+ },
+ {
+  "id": "r1-08",
+  "level": 1,
+  "type": "email",
+  "topic": "Office",
+  "title": "Your first day on Monday",
+  "title_vi": "Ngày làm việc đầu tiên vào thứ Hai",
+  "head": [
+   [
+    "From",
+    "Rachel Wong <rachel@quillbyte.io>"
+   ],
+   [
+    "To",
+    "Kevin Do"
+   ],
+   [
+    "Subject",
+    "Your first day on Monday"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Dear Kevin,",
+     "Kevin thân mến,"
+    ]
+   ],
+   [
+    [
+     "Welcome to Quillbyte!",
+     "Chào mừng bạn đến với Quillbyte!"
+    ],
+    [
+     "We are happy to have you on the platform team.",
+     "Chúng tôi rất vui khi có bạn trong nhóm platform."
+    ],
+    [
+     "Your first day is Monday, July 7.",
+     "Ngày làm việc đầu tiên của bạn là thứ Hai, ngày 7 tháng 7."
+    ],
+    [
+     "Please arrive at 9:30 a.m. and go to reception on the 2nd floor.",
+     "Vui lòng đến lúc 9 giờ 30 sáng và tới quầy lễ tân ở tầng 2."
+    ],
+    [
+     "Bring your ID card, because you will need it to get your building pass.",
+     "Hãy mang theo căn cước, vì bạn sẽ cần nó để làm thẻ ra vào tòa nhà."
+    ]
+   ],
+   [
+    [
+     "In the morning, IT will set up your laptop and accounts.",
+     "Buổi sáng, bộ phận IT sẽ cài đặt laptop và các tài khoản cho bạn."
+    ],
+    [
+     "After lunch, your mentor, Tomas Silva, will show you our code and the release process.",
+     "Sau bữa trưa, người hướng dẫn của bạn, Tomas Silva, sẽ giới thiệu cho bạn về code và quy trình release."
+    ],
+    [
+     "During your first two weeks, you will not need to handle production incidents.",
+     "Trong hai tuần đầu, bạn sẽ chưa phải xử lý các sự cố trên production."
+    ]
+   ],
+   [
+    [
+     "If you have any questions before Monday, feel free to reply to this email.",
+     "Nếu có bất kỳ câu hỏi nào trước thứ Hai, cứ thoải mái trả lời email này."
+    ]
+   ],
+   [
+    [
+     "Rachel Wong, Engineering Manager",
+     "Rachel Wong, Quản lý kỹ thuật"
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "arrive"
+   },
+   {
+    "w": "reception"
+   },
+   {
+    "w": "pass"
+   },
+   {
+    "w": "set up"
+   },
+   {
+    "w": "account",
+    "f": "accounts"
+   },
+   {
+    "w": "mentor"
+   },
+   {
+    "w": "release"
+   },
+   {
+    "w": "production"
+   },
+   {
+    "w": "handle"
+   },
+   {
+    "w": "reply"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What should Kevin bring on his first day?",
+    "o": [
+     "His ID card",
+     "His own laptop",
+     "A building pass",
+     "A copy of his contract"
+    ],
+    "a": 0,
+    "vi": "'Bring your ID card, because you will need it to get your building pass.' Thẻ ra vào là thứ sẽ được cấp, không phải thứ mang theo; laptop do IT cài đặt."
+   },
+   {
+    "q": "Who will show Kevin the release process?",
+    "o": [
+     "Rachel Wong",
+     "Tomas Silva",
+     "The IT team",
+     "The receptionist"
+    ],
+    "a": 1,
+    "vi": "'your mentor, Tomas Silva, will show you our code and the release process.' IT chỉ cài đặt laptop và tài khoản."
+   },
+   {
+    "q": "What is true about Kevin's first two weeks?",
+    "o": [
+     "He will work on the 2nd floor",
+     "He will set up his own accounts",
+     "He will not handle production incidents",
+     "He will lead the platform team"
+    ],
+    "a": 2,
+    "vi": "'During your first two weeks, you will not need to handle production incidents.' Tầng 2 chỉ là nơi có quầy lễ tân."
+   }
+  ]
+ },
+ {
+  "id": "r1-09",
+  "level": 1,
+  "type": "memo",
+  "topic": "Events",
+  "title": "Training on model evaluation",
+  "title_vi": "Khóa đào tạo về đánh giá mô hình",
+  "head": [
+   [
+    "From",
+    "Anh Pham, AI Lead"
+   ],
+   [
+    "To",
+    "AI and Data teams"
+   ],
+   [
+    "Date",
+    "September 2"
+   ],
+   [
+    "Subject",
+    "Training on model evaluation"
+   ]
+  ],
+  "paras": [
+   [
+    [
+     "Next month, we will run a two-day training on how to test our AI models.",
+     "Tháng tới, chúng ta sẽ tổ chức một khóa đào tạo hai ngày về cách kiểm thử các mô hình AI."
+    ],
+    [
+     "The sessions will be on October 8 and 9 in Room A on the 6th floor.",
+     "Các buổi học sẽ diễn ra vào ngày 8 và 9 tháng 10 tại Phòng A, tầng 6."
+    ]
+   ],
+   [
+    [
+     "The trainer is Marco Lee from our partner, Bluefin Labs.",
+     "Giảng viên là Marco Lee đến từ công ty đối tác của chúng ta, Bluefin Labs."
+    ],
+    [
+     "He will cover test data, accuracy metrics, and human review.",
+     "Anh ấy sẽ trình bày về dữ liệu kiểm thử, các chỉ số độ chính xác và việc đánh giá bởi con người."
+    ]
+   ],
+   [
+    [
+     "We require everyone on the chatbot project to attend.",
+     "Chúng tôi yêu cầu tất cả thành viên dự án chatbot tham dự."
+    ],
+    [
+     "Others are welcome to join, but the room only holds 30 people.",
+     "Những người khác cũng có thể tham gia, nhưng phòng chỉ chứa được 30 người."
+    ]
+   ],
+   [
+    [
+     "Before the training, please read the short guide in the shared folder.",
+     "Trước khóa đào tạo, vui lòng đọc tài liệu hướng dẫn ngắn trong thư mục chung."
+    ],
+    [
+     "Please confirm that you will attend by sending a message to Jin by September 25.",
+     "Vui lòng xác nhận việc tham dự bằng cách nhắn tin cho Jin trước ngày 25 tháng 9."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "trainer"
+   },
+   {
+    "w": "partner"
+   },
+   {
+    "w": "cover"
+   },
+   {
+    "w": "accuracy"
+   },
+   {
+    "w": "metric",
+    "f": "metrics"
+   },
+   {
+    "w": "require"
+   },
+   {
+    "w": "attend"
+   },
+   {
+    "w": "share",
+    "f": "shared"
+   },
+   {
+    "w": "folder"
+   },
+   {
+    "w": "guide"
+   },
+   {
+    "w": "confirm"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where will the training take place?",
+    "o": [
+     "At Bluefin Labs",
+     "Online",
+     "In Room A on the 6th floor",
+     "In the chatbot team's office"
+    ],
+    "a": 2,
+    "vi": "'The sessions will be on October 8 and 9 in Room A on the 6th floor.' Bluefin Labs là công ty của giảng viên, không phải địa điểm."
+   },
+   {
+    "q": "Who must attend the training?",
+    "o": [
+     "Everyone on the Data team",
+     "Only new engineers",
+     "The first 30 people who sign up",
+     "Everyone on the chatbot project"
+    ],
+    "a": 3,
+    "vi": "'We require everyone on the chatbot project to attend.' Con số 30 là sức chứa của phòng; người khác chỉ được mời nếu muốn."
+   },
+   {
+    "q": "What should staff do by September 25?",
+    "o": [
+     "Confirm their attendance with Jin",
+     "Read the guide",
+     "Send test data to Marco Lee",
+     "Book Room A"
+    ],
+    "a": 0,
+    "vi": "'Please confirm that you will attend by sending a message to Jin by September 25.' Đọc tài liệu là việc cần làm trước khóa học, không gắn với ngày 25/9."
+   }
+  ]
+ },
+ {
+  "id": "r1-10",
+  "level": 1,
+  "type": "chat",
+  "topic": "Travel",
+  "title": "Flight delay before the conference",
+  "title_vi": "Chuyến bay bị hoãn trước hội nghị",
+  "paras": [
+   [
+    [
+     "Nam: Hi Julia, my flight to Berlin has a five-hour delay.",
+     "Nam: Chào Julia, chuyến bay đi Berlin của mình bị hoãn năm tiếng."
+    ],
+    [
+     "Nam: I will arrive at 11 p.m. instead of 6 p.m.",
+     "Nam: Mình sẽ đến nơi lúc 11 giờ đêm thay vì 6 giờ tối."
+    ]
+   ],
+   [
+    [
+     "Julia: Oh no. Your talk at the conference is tomorrow at 10 a.m., right?",
+     "Julia: Ôi không. Bài nói của bạn ở hội nghị là lúc 10 giờ sáng mai, đúng không?"
+    ]
+   ],
+   [
+    [
+     "Nam: Yes. I will still be there on time, but I will miss the speakers' dinner tonight.",
+     "Nam: Đúng vậy. Mình vẫn sẽ đến kịp giờ, nhưng sẽ lỡ bữa tối dành cho diễn giả tối nay."
+    ]
+   ],
+   [
+    [
+     "Julia: No problem. I will tell the organizer.",
+     "Julia: Không sao. Mình sẽ báo cho ban tổ chức."
+    ],
+    [
+     "Julia: Should I change your hotel reservation?",
+     "Julia: Mình có nên đổi đặt phòng khách sạn của bạn không?"
+    ]
+   ],
+   [
+    [
+     "Nam: Please just ask them to keep the room for a late check-in.",
+     "Nam: Bạn chỉ cần nhờ họ giữ phòng vì mình sẽ nhận phòng muộn nhé."
+    ]
+   ],
+   [
+    [
+     "Julia: Done. The hotel will keep the room until 2 a.m.",
+     "Julia: Xong rồi. Khách sạn sẽ giữ phòng đến 2 giờ sáng."
+    ]
+   ],
+   [
+    [
+     "Nam: Thanks! Also, could you send me the final version of my slides?",
+     "Nam: Cảm ơn! Ngoài ra, bạn có thể gửi cho mình bản cuối cùng của slide không?"
+    ]
+   ],
+   [
+    [
+     "Julia: Sure, I will email them in a bit.",
+     "Julia: Chắc chắn rồi, lát nữa mình sẽ gửi email cho bạn."
+    ]
+   ]
+  ],
+  "vocab": [
+   {
+    "w": "delay"
+   },
+   {
+    "w": "instead of"
+   },
+   {
+    "w": "conference"
+   },
+   {
+    "w": "on time"
+   },
+   {
+    "w": "miss"
+   },
+   {
+    "w": "organizer"
+   },
+   {
+    "w": "reservation"
+   },
+   {
+    "w": "final"
+   },
+   {
+    "w": "version"
+   },
+   {
+    "w": "in a bit"
+   },
+   {
+    "w": "could you send me"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What time will Nam arrive in Berlin?",
+    "o": [
+     "6 p.m.",
+     "11 p.m.",
+     "10 a.m.",
+     "2 a.m."
+    ],
+    "a": 1,
+    "vi": "'I will arrive at 11 p.m. instead of 6 p.m.' 6 giờ tối là giờ dự kiến ban đầu; 10 giờ sáng là giờ bài nói; 2 giờ sáng là giờ khách sạn giữ phòng."
+   },
+   {
+    "q": "What will Nam miss?",
+    "o": [
+     "The speakers' dinner",
+     "His talk at the conference",
+     "His hotel check-in",
+     "The final slides"
+    ],
+    "a": 0,
+    "vi": "'I will still be there on time, but I will miss the speakers' dinner tonight.' Anh ấy vẫn kịp bài nói."
+   },
+   {
+    "q": "What did Julia arrange with the hotel?",
+    "o": [
+     "A booking at another hotel",
+     "An early check-in",
+     "A room for two nights",
+     "Keeping the room until 2 a.m."
+    ],
+    "a": 3,
+    "vi": "'The hotel will keep the room until 2 a.m.' Nam nhận phòng muộn, không phải sớm, và không đổi khách sạn."
+   }
+  ]
+ }
+]
